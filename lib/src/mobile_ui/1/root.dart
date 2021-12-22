@@ -8,6 +8,20 @@ import 'package:google_fonts/google_fonts.dart';
 class Page1 extends StatelessWidget {
   const Page1({Key? key}) : super(key: key);
 
+  static const List<String> names = [
+    "Justin Wan",
+    "Eathan Kwan",
+    "Tannzz Wan",
+    "Cecily Wan",
+    "Oscar Wan",
+    "Bukunmi Aluko",
+    "John Doe",
+    "Lorem Master",
+    "Elon Musk",
+    "Bill Gates",
+    "Jeff Bezos"
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -101,7 +115,7 @@ class Page1 extends StatelessWidget {
                       physics: const BouncingScrollPhysics(
                           parent: AlwaysScrollableScrollPhysics()),
                       scrollDirection: Axis.horizontal,
-                      itemCount: 2,
+                      itemCount: names.length,
                       itemBuilder: (c, i) {
                         return SizedBox(
                           width: 59.r,
@@ -166,7 +180,7 @@ class Page1 extends StatelessWidget {
                   ],
                 ),
                 child: ListView.separated(
-                  itemCount: 12,
+                  itemCount: names.length,
                   physics: const BouncingScrollPhysics(
                       parent: AlwaysScrollableScrollPhysics()),
                   itemBuilder: (c, i) {
@@ -200,7 +214,7 @@ class Page1 extends StatelessWidget {
                                   children: [
                                     Expanded(
                                       child: Text(
-                                        "Justin Wan ",
+                                        names[i],
                                         style: GoogleFonts.workSans(
                                           textStyle: TextStyle(
                                             fontSize: 16.sp,
