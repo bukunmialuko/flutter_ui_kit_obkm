@@ -240,7 +240,7 @@ class Page1 extends StatelessWidget {
                                     ),
                                   ],
                                 ),
-                                SizedBox(height: 3.h),
+                                // SizedBox(height: 3.h),
                                 Text(
                                   S.current.loremIpsum,
                                   style: GoogleFonts.workSans(
@@ -251,6 +251,8 @@ class Page1 extends StatelessWidget {
                                       fontWeight: FontWeight.w400,
                                     ),
                                   ),
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
                                 ),
                                 SizedBox(height: 10.h),
                               ],
