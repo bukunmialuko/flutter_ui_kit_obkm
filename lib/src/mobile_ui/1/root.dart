@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/generated/l10n.dart';
 import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
+import 'package:flutter_ui_kit_obkm/src/res/styles.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page1 extends StatelessWidget {
@@ -10,51 +11,97 @@ class Page1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: SafeArea(
-      child: Column(
-        children: [
-          Padding(
-            padding: EdgeInsets.fromLTRB(24.w, 54.h, 24.w, 29.h),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      S.current.contacts,
-                      style: GoogleFonts.workSans(
-                        textStyle: TextStyle(
-                          fontSize: 24.sp,
-                          color: Colors.black,
-                          fontStyle: FontStyle.normal,
-                          fontWeight: FontWeight.w600,
+      backgroundColor: Colors.white,
+      body: SafeArea(
+        child: Column(
+          children: [
+            Padding(
+              padding: EdgeInsets.fromLTRB(24.w, 54.h, 24.w, 29.h),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        S.current.contacts,
+                        style: GoogleFonts.workSans(
+                          textStyle: TextStyle(
+                            fontSize: 24.sp,
+                            color: Colors.black,
+                            fontStyle: FontStyle.normal,
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
+                      ),
+                      SizedBox(
+                        width: 24.r,
+                        height: 24.r,
+                        child: IconButton(
+                          visualDensity: VisualDensity.adaptivePlatformDensity,
+                          padding: EdgeInsets.zero,
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.add_circle,
+                            color: Colors.black,
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                  SizedBox(height: 22.h),
+                  TextFormField(
+                    readOnly: true, //false
+                    autofocus: false,
+                    // style: ,
+                    decoration: InputDecoration(
+                      prefixIcon: Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 8.w),
+                        child: const Icon(Icons.search, color: Colors.black),
+                      ),
+                      prefixIconConstraints:
+                          BoxConstraints(maxHeight: 20.w, maxWidth: 35.w),
+                      hintText: "Contacts",
+                      // hintStyle: textFieldPlaceholderTextStyle(context),
+                      isDense: true,
+                      filled: true,
+                      fillColor: AppColors.grey,
+                      focusedBorder: AppStyles.focusedTransparentBorder,
+                      disabledBorder: AppStyles.focusedTransparentBorder,
+                      enabledBorder: AppStyles.focusedTransparentBorder,
+                      errorBorder: AppStyles.focusedTransparentBorder,
+                      focusedErrorBorder: AppStyles.focusedTransparentBorder,
+                      errorStyle: errorTextStyle(context),
+                    ),
+                    textInputAction: TextInputAction.next,
+                    keyboardType: TextInputType.text,
+                    onSaved: (val) {},
+                    onEditingComplete: () {},
+                    onChanged: (val) {},
+                    // validator: (val) {},
+                    onTap: () {},
+                  ),
+                  SizedBox(height: 30.h),
+                  Text(
+                    S.current.lastContacted,
+                    style: GoogleFonts.workSans(
+                      textStyle: TextStyle(
+                        fontSize: 14.sp,
+                        color: Colors.black,
+                        fontStyle: FontStyle.normal,
+                        fontWeight: FontWeight.w600,
                       ),
                     ),
-                    SizedBox(
-                      width: 24.r,
-                      height: 24.r,
-                      child: IconButton(
-                        visualDensity: VisualDensity.adaptivePlatformDensity,
-                        padding: EdgeInsets.zero,
-                        onPressed: () {},
-                        icon: const Icon(
-                          Icons.add_circle,
-                          color: Colors.black,
-                        ),
-                      ),
-                    )
-                  ],
-                ),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: SizedBox(
+                  ),
+                  SizedBox(height: 24.h),
+                  SizedBox(
                     height: 60.r,
                     width: 359.w,
                     child: ListView.separated(
+                      physics: const BouncingScrollPhysics(
+                          parent: AlwaysScrollableScrollPhysics()),
                       scrollDirection: Axis.horizontal,
-                      itemCount: 8,
+                      itemCount: 2,
                       itemBuilder: (c, i) {
                         return SizedBox(
                           width: 59.r,
@@ -97,13 +144,32 @@ class Page1 extends StatelessWidget {
                       },
                     ),
                   ),
-                )
-              ],
+                ],
+              ),
             ),
-          ),
-          Expanded(child: Container())
-        ],
+            Expanded(
+              child: Container(
+                padding: EdgeInsets.fromLTRB(24.w, 44.h, 26.w, 0),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(24.r),
+                    topRight: Radius.circular(24.r),
+                  ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: const Color(0xffC4C4C4).withOpacity(0.25),
+                      spreadRadius: 0,
+                      blurRadius: 8,
+                      offset: const Offset(0, -4), // changes position of shadow
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
-    ));
+    );
   }
 }

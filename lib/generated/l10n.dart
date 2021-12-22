@@ -69,6 +69,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Last contacted`
+  String get lastContacted {
+    return Intl.message(
+      'Last contacted',
+      name: 'lastContacted',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
