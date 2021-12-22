@@ -79,6 +79,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Lorem ipsum dolor sit amet, consect`
+  String get loremIpsum {
+    return Intl.message(
+      'Lorem ipsum dolor sit amet, consect',
+      name: 'loremIpsum',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -6,5 +6,6 @@
     "placeholders": {}
   },
   "contacts": "Contacts",
-  "lastContacted": "Last contacted"
+  "lastContacted": "Last contacted",
+  "loremIpsum": "Lorem ipsum dolor sit amet, consect"
 }

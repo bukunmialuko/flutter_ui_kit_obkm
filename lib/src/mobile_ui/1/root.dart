@@ -165,6 +165,91 @@ class Page1 extends StatelessWidget {
                     ),
                   ],
                 ),
+                child: ListView.separated(
+                  itemCount: 12,
+                  physics: const BouncingScrollPhysics(
+                      parent: AlwaysScrollableScrollPhysics()),
+                  itemBuilder: (c, i) {
+                    return SizedBox(
+                      width: 340.w,
+                      height: 60.h,
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(8.r),
+                            child: Container(
+                              width: 60.r,
+                              height: 60.r,
+                              // margin: EdgeInsets.only(right: 14.w),
+                              color: AppColors.grey,
+                            ),
+                          ),
+                          SizedBox(width: 14.w),
+                          Expanded(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                SizedBox(height: 9.h),
+                                Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  crossAxisAlignment: CrossAxisAlignment.end,
+                                  children: [
+                                    Expanded(
+                                      child: Text(
+                                        "Justin Wan ",
+                                        style: GoogleFonts.workSans(
+                                          textStyle: TextStyle(
+                                            fontSize: 16.sp,
+                                            color: Colors.black,
+                                            fontStyle: FontStyle.normal,
+                                            fontWeight: FontWeight.w600,
+                                          ),
+                                        ),
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
+                                      ),
+                                    ),
+                                    Text(
+                                      "14:23",
+                                      style: GoogleFonts.workSans(
+                                        textStyle: TextStyle(
+                                          fontSize: 14.sp,
+                                          color: const Color(0xffA8A8A8),
+                                          fontStyle: FontStyle.normal,
+                                          fontWeight: FontWeight.w400,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                SizedBox(height: 3.h),
+                                Text(
+                                  S.current.loremIpsum,
+                                  style: GoogleFonts.workSans(
+                                    textStyle: TextStyle(
+                                      fontSize: 14.sp,
+                                      color: Colors.black,
+                                      fontStyle: FontStyle.normal,
+                                      fontWeight: FontWeight.w400,
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(height: 10.h),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    );
+                  },
+                  separatorBuilder: (c, i) {
+                    return SizedBox(height: 24.h);
+                  },
+                ),
               ),
             ),
           ],
