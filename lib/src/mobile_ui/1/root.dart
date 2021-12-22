@@ -203,9 +203,9 @@ class Page1 extends StatelessWidget {
                           Expanded(
                             child: Column(
                               mainAxisSize: MainAxisSize.min,
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                SizedBox(height: 9.h),
                                 Row(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment:
@@ -240,7 +240,7 @@ class Page1 extends StatelessWidget {
                                     ),
                                   ],
                                 ),
-                                // SizedBox(height: 3.h),
+                                SizedBox(height: 3.h),
                                 Text(
                                   S.current.loremIpsum,
                                   style: GoogleFonts.workSans(
@@ -254,7 +254,6 @@ class Page1 extends StatelessWidget {
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                 ),
-                                SizedBox(height: 10.h),
                               ],
                             ),
                           )
