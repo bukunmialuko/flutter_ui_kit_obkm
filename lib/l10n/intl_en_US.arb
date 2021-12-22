@@ -4,5 +4,6 @@
   "@title": {
     "type": "text",
     "placeholders": {}
-  }
+  },
+  "contacts": "Contacts"
 }
