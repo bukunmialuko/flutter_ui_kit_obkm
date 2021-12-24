@@ -193,8 +193,8 @@ class Page2 extends StatelessWidget {
                         // },
                       ),
                     ),
-                    SizedBox(height: 2.h),
                     Container(
+                      margin: EdgeInsets.only(top: 9.h, bottom: 9.h),
                       height: 50.h,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(50.r),
@@ -262,7 +262,6 @@ class Page2 extends StatelessWidget {
                         ],
                       ),
                     ),
-                    SizedBox(height: 9.h)
                   ],
                 ),
               ),
