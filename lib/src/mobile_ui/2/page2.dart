@@ -28,7 +28,7 @@ class Page2 extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsets.fromLTRB(24.w, 54.h, 24.w, 0),
+              padding: EdgeInsets.fromLTRB(24.w, 20.h, 24.w, 0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
@@ -55,12 +55,18 @@ class Page2 extends StatelessWidget {
                     autofocus: false,
                     // style: ,
                     decoration: InputDecoration(
-                      prefixIcon: Padding(
-                        padding: EdgeInsets.only(left: 8.w, right: 16.r),
+                      prefixIcon: Container(
+                        // color: Colors.blue,
+                        padding: EdgeInsets.only(
+                          left: 9.w,
+                        ),
                         child: const Icon(Icons.search, color: Colors.black),
                       ),
-                      prefixIconConstraints:
-                          BoxConstraints(maxHeight: 24.r, maxWidth: 24.r),
+                      prefixIconConstraints: BoxConstraints(
+                          minHeight: 24.r,
+                          maxHeight: 24.r,
+                          minWidth: 41.w,
+                          maxWidth: 41.r),
                       hintText: "Search conversations",
                       // hintStyle: textFieldPlaceholderTextStyle(context),
                       isDense: true,
@@ -147,11 +153,11 @@ class Page2 extends StatelessWidget {
                       )
                     ],
                   ),
-                  SizedBox(height: 30.h),
+                  // SizedBox(height: 30.h),
                 ],
               ),
             ),
-            SizedBox(height: 24.h),
+            SizedBox(height: 52.h),
             Expanded(
               child: Container(
                 padding: EdgeInsets.fromLTRB(24.w, 44.h, 26.w, 0),
@@ -187,6 +193,7 @@ class Page2 extends StatelessWidget {
                         // },
                       ),
                     ),
+                    SizedBox(height: 2.h),
                     Container(
                       height: 50.h,
                       decoration: BoxDecoration(
@@ -231,7 +238,8 @@ class Page2 extends StatelessWidget {
                           Container(
                             width: 45.r,
                             height: 45.r,
-                            margin: EdgeInsets.symmetric(horizontal: 2.w),
+                            margin: EdgeInsets.symmetric(
+                                horizontal: 2.w, vertical: 2.h),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(45.r),
                               color: const Color(0xffF4F4F4),
@@ -250,10 +258,11 @@ class Page2 extends StatelessWidget {
                                 ),
                               ),
                             ),
-                          )
+                          ),
                         ],
                       ),
-                    )
+                    ),
+                    SizedBox(height: 9.h)
                   ],
                 ),
               ),
