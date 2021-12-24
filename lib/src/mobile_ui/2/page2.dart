@@ -1,12 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_ui_kit_obkm/generated/l10n.dart';
 import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
 import 'package:flutter_ui_kit_obkm/src/res/styles.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page2 extends StatelessWidget {
   const Page2({Key? key}) : super(key: key);
+
+  static List<MessageModel> messages = [
+    MessageModel(
+        text:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie fermentum porttitor diam purus "),
+    MessageModel(
+        text:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie."),
+    MessageModel(text: "Lorem ipsum dolor amet, consectetur adipiscing."),
+    MessageModel(text: "Consectetur"),
+    MessageModel(text: "ipsum .")
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +50,8 @@ class Page2 extends StatelessWidget {
                   ),
                   SizedBox(height: 15.h),
                   TextFormField(
-                    readOnly: true, //false
+                    readOnly: true,
+                    //false
                     autofocus: false,
                     // style: ,
                     decoration: InputDecoration(
@@ -160,7 +172,21 @@ class Page2 extends StatelessWidget {
                 ),
                 child: Column(
                   children: [
-                    Expanded(child: Container()),
+                    Expanded(
+                      child: ListView.builder(
+                        physics: const BouncingScrollPhysics(
+                            parent: AlwaysScrollableScrollPhysics()),
+                        itemCount: messages.length,
+                        itemBuilder: (c, i) {
+                          return _buildChat(messages[i], i % 2 == 1);
+                        },
+                        // separatorBuilder: (BuildContext context, int index) {
+                        //   return SizedBox(
+                        //     height: 42.h,
+                        //   );
+                        // },
+                      ),
+                    ),
                     Container(
                       height: 50.h,
                       decoration: BoxDecoration(
@@ -172,7 +198,8 @@ class Page2 extends StatelessWidget {
                           SizedBox(width: 25.r),
                           Expanded(
                             child: TextFormField(
-                              readOnly: true, //false
+                              readOnly: true,
+                              //false
                               autofocus: false,
                               // style: ,
                               decoration: InputDecoration(
@@ -236,4 +263,91 @@ class Page2 extends StatelessWidget {
       ),
     );
   }
+
+  _buildChat(MessageModel chat, bool isCurrentUser) {
+    return isCurrentUser
+        ? Container(
+            margin: EdgeInsets.only(bottom: 42.h),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                SizedBox(width: 50.w),
+                Flexible(
+                  child: Container(
+                    padding: EdgeInsets.fromLTRB(18.w, 13.h, 48.w, 12.h),
+                    decoration: BoxDecoration(
+                      color: const Color(0xffD0D0D0),
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(20.r),
+                        topRight: Radius.circular(20.r),
+                        bottomLeft: Radius.circular(20.r),
+                      ),
+                    ),
+                    child: Text(
+                      chat.text,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          )
+        : Container(
+            margin: EdgeInsets.only(bottom: 42.h),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(8.r),
+                  child: Container(
+                    width: 40.r,
+                    height: 40.r,
+                    color: const Color(0xffD0D0D0),
+                  ),
+                ),
+                SizedBox(width: 21.w),
+                Flexible(
+                  child: Container(
+                    padding: EdgeInsets.fromLTRB(26.w, 11.h, 16.w, 9.h),
+                    decoration: BoxDecoration(
+                      color: const Color(0xffD0D0D0),
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(20.r),
+                        topRight: Radius.circular(20.r),
+                        bottomRight: Radius.circular(20.r),
+                      ),
+                    ),
+                    child: Text(
+                      chat.text,
+                    ),
+                  ),
+                ),
+                SizedBox(width: 50.w),
+              ],
+            ),
+          );
+  }
+}
+
+class ChatModel {
+  final int chatId;
+  final UserModel sender;
+  final UserModel receiver;
+  final MessageModel message;
+  final String sentAt;
+
+  ChatModel(this.chatId, this.sender, this.receiver, this.message, this.sentAt);
+}
+
+class UserModel {
+  final int userId;
+
+  UserModel(this.userId);
+}
+
+class MessageModel {
+  final String text;
+
+  MessageModel({required this.text});
 }
