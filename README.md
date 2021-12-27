@@ -18,3 +18,8 @@ samples, guidance on mobile development, and a full API reference.
 ## Flutter Screen Util
 Screen utils takes into account the entire screen, including status bar
 
+If the screen is fixed, like two parts(Like no scroll), it is better to separate them into different
+boxes/sections e.g page3 of mobile screen, 
+
+I prefer to start designing with safe area
+

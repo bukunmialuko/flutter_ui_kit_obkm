@@ -38,7 +38,7 @@ class _Page3State extends State<Page3> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            SizedBox(height: 30.h),
+            SizedBox(height: 37.h),
             SizedBox(
               height: 419.h,
               child: Column(
@@ -52,13 +52,14 @@ class _Page3State extends State<Page3> {
                           color: Colors.black,
                           fontStyle: FontStyle.normal,
                           fontWeight: FontWeight.w600,
+                          height: 1,
                         ),
                       ),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
                   ),
-                  SizedBox(height: 26.h),
+                  SizedBox(height: 30.h),
                   Center(
                     child: Text(
                       "${currentPageValue.toInt()} of $maximumPage",
@@ -68,13 +69,14 @@ class _Page3State extends State<Page3> {
                           color: Colors.black,
                           fontStyle: FontStyle.normal,
                           fontWeight: FontWeight.w400,
+                          height: 1,
                         ),
                       ),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
                   ),
-                  SizedBox(height: 8.h),
+                  SizedBox(height: 11.h),
                   SizedBox(
                     height: 340.h,
                     child: PageView.builder(
