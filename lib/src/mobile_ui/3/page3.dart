@@ -40,7 +40,7 @@ class _Page3State extends State<Page3> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            SizedBox(height: 37.h),
+            SizedBox(height: 30.h),
             Center(
               child: Text(
                 "Sally's music",
@@ -56,7 +56,7 @@ class _Page3State extends State<Page3> {
                 overflow: TextOverflow.ellipsis,
               ),
             ),
-            SizedBox(height: 30.h),
+            SizedBox(height: 26.h),
             Center(
               child: Text(
                 "${currentPageValue.toInt()} of $maximumPage",
@@ -72,9 +72,9 @@ class _Page3State extends State<Page3> {
                 overflow: TextOverflow.ellipsis,
               ),
             ),
-            SizedBox(height: 11.h),
+            SizedBox(height: 8.h),
             SizedBox(
-              height: 340.r,
+              height: 340.h,
               child: PageView.builder(
                 controller: _controller,
                 physics: const BouncingScrollPhysics(
@@ -87,7 +87,7 @@ class _Page3State extends State<Page3> {
                         borderRadius: BorderRadius.circular(24.r),
                         child: Container(
                           width: 267.r,
-                          height: 340.r,
+                          height: 340.h,
                           color: const Color(0xffD0D0D0),
                         ),
                       ),
@@ -99,19 +99,19 @@ class _Page3State extends State<Page3> {
                         borderRadius: BorderRadius.circular(24.r),
                         child: Container(
                           width: 267.r,
-                          height: 340.r,
+                          height: 340.h,
                           color: Colors.blue,
                         ),
                       ),
                     );
                   } else {
                     return Transform.scale(
-                      scale: 0.8,
+                      scale: 0.9,
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(24.r),
                         child: Container(
                           width: 267.r,
-                          height: 340.r,
+                          height: 340.h,
                           color: Colors.red,
                         ),
                       ),
@@ -125,7 +125,7 @@ class _Page3State extends State<Page3> {
               padding: EdgeInsets.symmetric(horizontal: 24.w),
               child: Column(
                 children: [
-                  SizedBox(height: 32.h),
+                  SizedBox(height: 28.h),
                   Center(
                     child: Text(
                       "Simply dangerous",
@@ -157,7 +157,7 @@ class _Page3State extends State<Page3> {
                       overflow: TextOverflow.ellipsis,
                     ),
                   ),
-                  SizedBox(height: 32.h),
+                  SizedBox(height: 28.h),
                   // Row(
                   //   children: [],
                   // )
@@ -181,7 +181,7 @@ class _Page3State extends State<Page3> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 63.h),
+                  SizedBox(height: 58.h),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -218,22 +218,11 @@ class _Page3State extends State<Page3> {
                                 ),
                               ),
                             ),
-                            SizedBox(
-                              width: 56.r,
-                              height: 56.r,
-                              child: Container(
-                                width: 45.67.r,
-                                height: 45.67.r,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(45.67.r),
-                                ),
-                                child: SvgPicture.asset(
-                                  AssetResources.PAUSE,
-                                  height: 45.67.r,
-                                  width: 45.67.r,
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
+                            SvgPicture.asset(
+                              AssetResources.PAUSE,
+                              height: 45.67.r,
+                              width: 45.67.r,
+                              fit: BoxFit.fill,
                             ),
                             SizedBox(
                               width: 24.r,
@@ -267,7 +256,7 @@ class _Page3State extends State<Page3> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 56.h),
+                  SizedBox(height: 38.h),
                   Center(
                     child: SizedBox(
                       width: 130.w,
@@ -278,43 +267,25 @@ class _Page3State extends State<Page3> {
                           SizedBox(
                             width: 16.r,
                             height: 16.r,
-                            child: IconButton(
-                              visualDensity:
-                                  VisualDensity.adaptivePlatformDensity,
-                              padding: EdgeInsets.zero,
-                              onPressed: () {},
-                              icon: const Icon(
-                                Icons.shuffle,
-                                color: Colors.black,
-                              ),
+                            child: const Icon(
+                              Icons.shuffle,
+                              color: Colors.black,
                             ),
                           ),
                           SizedBox(
                             width: 16.r,
                             height: 16.r,
-                            child: IconButton(
-                              visualDensity:
-                                  VisualDensity.adaptivePlatformDensity,
-                              padding: EdgeInsets.zero,
-                              onPressed: () {},
-                              icon: const Icon(
-                                Icons.music_note,
-                                color: Colors.black,
-                              ),
+                            child: const Icon(
+                              Icons.music_note,
+                              color: Colors.black,
                             ),
                           ),
                           SizedBox(
                             width: 16.r,
                             height: 16.r,
-                            child: IconButton(
-                              visualDensity:
-                                  VisualDensity.adaptivePlatformDensity,
-                              padding: EdgeInsets.zero,
-                              onPressed: () {},
-                              icon: const Icon(
-                                Icons.playlist_add_rounded,
-                                color: Colors.black,
-                              ),
+                            child: const Icon(
+                              Icons.playlist_add_rounded,
+                              color: Colors.black,
                             ),
                           ),
                         ],
