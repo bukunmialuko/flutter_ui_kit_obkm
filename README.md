@@ -23,3 +23,8 @@ boxes/sections e.g page3 of mobile screen,
 
 I prefer to start designing with safe area
 
+
+## Continue from
+screen three, improve the transition, check flutter card carousel
+
+
