@@ -10,13 +10,20 @@ class Page2 extends StatelessWidget {
   static List<MessageModel> messages = [
     MessageModel(
         text:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie fermentum porttitor diam purus "),
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie fermentum porttitor diam purus ",
+        isRight: false,
+        time: "08:30"),
     MessageModel(
         text:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie."),
-    MessageModel(text: "Lorem ipsum dolor amet, consectetur adipiscing."),
-    MessageModel(text: "Consectetur"),
-    MessageModel(text: "ipsum .")
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie.",
+        isRight: false,
+        time: "08:30"),
+    MessageModel(
+        text: "Lorem ipsum dolor amet, consectetur.",
+        isRight: true,
+        time: "08:30"),
+    MessageModel(text: "Consectetur", isRight: false, time: "08:30"),
+    MessageModel(text: "ipsum .", isRight: true, time: "08:30")
   ];
 
   @override
@@ -184,13 +191,18 @@ class Page2 extends StatelessWidget {
                             parent: AlwaysScrollableScrollPhysics()),
                         itemCount: messages.length,
                         itemBuilder: (c, i) {
-                          return _buildChat(messages[i], i % 2 == 1);
+                          var showProfileBox = true;
+                          if (i != 0) {
+                            var currentChat = messages[i];
+                            var previousChat = messages[i - 1];
+                            showProfileBox =
+                                currentChat.isRight != previousChat.isRight;
+                          }
+                          return _buildChat(
+                            chat: messages[i],
+                            showProfileBox: showProfileBox,
+                          );
                         },
-                        // separatorBuilder: (BuildContext context, int index) {
-                        //   return SizedBox(
-                        //     height: 42.h,
-                        //   );
-                        // },
                       ),
                     ),
                     Container(
@@ -272,67 +284,110 @@ class Page2 extends StatelessWidget {
     );
   }
 
-  _buildChat(MessageModel chat, bool isCurrentUser) {
-    return isCurrentUser
+  _buildChat({required MessageModel chat, required bool showProfileBox}) {
+    return chat.isRight
         ? Container(
             margin: EdgeInsets.only(bottom: 42.h),
             child: Row(
+              mainAxisSize: MainAxisSize.max,
+              crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.end,
-              crossAxisAlignment: CrossAxisAlignment.end,
               children: [
-                SizedBox(width: 50.w),
-                Flexible(
-                  child: Container(
-                    padding: EdgeInsets.fromLTRB(18.w, 13.h, 48.w, 12.h),
-                    decoration: BoxDecoration(
-                      color: const Color(0xffD0D0D0),
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(20.r),
-                        topRight: Radius.circular(20.r),
-                        bottomLeft: Radius.circular(20.r),
-                      ),
-                    ),
-                    child: Text(
-                      chat.text,
-                    ),
-                  ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 8.h),
+                  child: Text(chat.time),
                 ),
+                Expanded(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Flexible(
+                        child: Container(
+                          padding: EdgeInsets.fromLTRB(18.w, 13.h, 18.w, 12.h),
+                          decoration: BoxDecoration(
+                            color: const Color(0xffD0D0D0),
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(20.r),
+                              topRight: Radius.circular(20.r),
+                              bottomLeft: Radius.circular(20.r),
+                            ),
+                          ),
+                          child: Text(
+                            chat.text,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                )
               ],
             ),
           )
         : Container(
             margin: EdgeInsets.only(bottom: 42.h),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(8.r),
-                  child: Container(
-                    width: 40.r,
-                    height: 40.r,
-                    color: const Color(0xffD0D0D0),
-                  ),
-                ),
-                SizedBox(width: 21.w),
-                Flexible(
-                  child: Container(
-                    padding: EdgeInsets.fromLTRB(26.w, 11.h, 16.w, 9.h),
-                    decoration: BoxDecoration(
-                      color: const Color(0xffD0D0D0),
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(20.r),
-                        topRight: Radius.circular(20.r),
-                        bottomRight: Radius.circular(20.r),
+            child: IntrinsicHeight(
+              child: Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Visibility(
+                    visible: showProfileBox,
+                    maintainAnimation: true,
+                    maintainState: true,
+                    maintainSize: true,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(8.r),
+                      child: Container(
+                        width: 40.r,
+                        height: 40.r,
+                        color: const Color(0xffD0D0D0),
                       ),
                     ),
-                    child: Text(
-                      chat.text,
+                  ),
+                  SizedBox(width: 21.w),
+                  Expanded(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Flexible(
+                          child: Container(
+                            padding:
+                                EdgeInsets.fromLTRB(18.w, 13.h, 18.w, 12.h),
+                            decoration: BoxDecoration(
+                              color: const Color(0xffD0D0D0),
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(20.r),
+                                topRight: Radius.circular(20.r),
+                                bottomRight: Radius.circular(20.r),
+                              ),
+                            ),
+                            child: Text(
+                              chat.text,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                ),
-                SizedBox(width: 50.w),
-              ],
+                  Column(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Visibility(
+                        visible: showProfileBox,
+                        maintainAnimation: true,
+                        maintainState: true,
+                        maintainSize: true,
+                        child: Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 8.h),
+                          child: Text(chat.time),
+                        ),
+                      )
+                    ],
+                  ),
+                ],
+              ),
             ),
           );
   }
@@ -357,5 +412,11 @@ class UserModel {
 class MessageModel {
   final String text;
 
-  MessageModel({required this.text});
+  /// Time and is right is supposed to be calculated from chat model,
+  /// these wew used here to increase speed, it ca be improved at a later
+  /// time
+  final String time;
+  final bool isRight;
+
+  MessageModel({required this.text, required this.time, required this.isRight});
 }
