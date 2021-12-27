@@ -16,4 +16,5 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 ## Flutter Screen Util
-390x840 Used, to prevent issues with status bar.
+Screen utils takes into account the entire screen, including status bar
+

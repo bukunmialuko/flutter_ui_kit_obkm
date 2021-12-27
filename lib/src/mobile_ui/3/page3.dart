@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_ui_kit_obkm/res/asset_images.dart';
-import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
-import 'package:flutter_ui_kit_obkm/src/res/styles.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page3 extends StatefulWidget {
@@ -41,91 +39,95 @@ class _Page3State extends State<Page3> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             SizedBox(height: 30.h),
-            Center(
-              child: Text(
-                "Sally's music",
-                style: GoogleFonts.workSans(
-                  textStyle: TextStyle(
-                    fontSize: 16.sp,
-                    color: Colors.black,
-                    fontStyle: FontStyle.normal,
-                    fontWeight: FontWeight.w600,
+            Column(
+              children: [
+                Center(
+                  child: Text(
+                    "Sally's music",
+                    style: GoogleFonts.workSans(
+                      textStyle: TextStyle(
+                        fontSize: 16.sp,
+                        color: Colors.black,
+                        fontStyle: FontStyle.normal,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
                   ),
                 ),
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-              ),
-            ),
-            SizedBox(height: 26.h),
-            Center(
-              child: Text(
-                "${currentPageValue.toInt()} of $maximumPage",
-                style: GoogleFonts.workSans(
-                  textStyle: TextStyle(
-                    fontSize: 14.sp,
-                    color: Colors.black,
-                    fontStyle: FontStyle.normal,
-                    fontWeight: FontWeight.w400,
+                SizedBox(height: 26.h),
+                Center(
+                  child: Text(
+                    "${currentPageValue.toInt()} of $maximumPage",
+                    style: GoogleFonts.workSans(
+                      textStyle: TextStyle(
+                        fontSize: 14.sp,
+                        color: Colors.black,
+                        fontStyle: FontStyle.normal,
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
                   ),
                 ),
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-              ),
+                SizedBox(height: 8.h),
+                SizedBox(
+                  height: 340.h,
+                  child: PageView.builder(
+                    controller: _controller,
+                    physics: const BouncingScrollPhysics(
+                        parent: AlwaysScrollableScrollPhysics()),
+                    itemBuilder: (context, position) {
+                      if (position == currentPageValue.floor()) {
+                        return Container(
+                          margin: EdgeInsets.symmetric(horizontal: 8.w),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(24.r),
+                            child: Container(
+                              width: 267.r,
+                              height: 340.h,
+                              color: const Color(0xffD0D0D0),
+                            ),
+                          ),
+                        );
+                      } else if (position == currentPageValue.floor() + 1) {
+                        return Transform.scale(
+                          scale: 0.9,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(24.r),
+                            child: Container(
+                              width: 267.r,
+                              height: 340.h,
+                              color: Colors.blue,
+                            ),
+                          ),
+                        );
+                      } else {
+                        return Transform.scale(
+                          scale: 0.9,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(24.r),
+                            child: Container(
+                              width: 267.r,
+                              height: 340.h,
+                              color: Colors.red,
+                            ),
+                          ),
+                        );
+                      }
+                    },
+                    itemCount: maximumPage, // Can be null
+                  ),
+                ),
+              ],
             ),
-            SizedBox(height: 8.h),
-            SizedBox(
-              height: 340.h,
-              child: PageView.builder(
-                controller: _controller,
-                physics: const BouncingScrollPhysics(
-                    parent: AlwaysScrollableScrollPhysics()),
-                itemBuilder: (context, position) {
-                  if (position == currentPageValue.floor()) {
-                    return Container(
-                      margin: EdgeInsets.symmetric(horizontal: 8.w),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(24.r),
-                        child: Container(
-                          width: 267.r,
-                          height: 340.h,
-                          color: const Color(0xffD0D0D0),
-                        ),
-                      ),
-                    );
-                  } else if (position == currentPageValue.floor() + 1) {
-                    return Transform.scale(
-                      scale: 0.9,
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(24.r),
-                        child: Container(
-                          width: 267.r,
-                          height: 340.h,
-                          color: Colors.blue,
-                        ),
-                      ),
-                    );
-                  } else {
-                    return Transform.scale(
-                      scale: 0.9,
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(24.r),
-                        child: Container(
-                          width: 267.r,
-                          height: 340.h,
-                          color: Colors.red,
-                        ),
-                      ),
-                    );
-                  }
-                },
-                itemCount: maximumPage, // Can be null
-              ),
-            ),
+            SizedBox(height: 28.h),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 24.w),
               child: Column(
                 children: [
-                  SizedBox(height: 28.h),
                   Center(
                     child: Text(
                       "Simply dangerous",

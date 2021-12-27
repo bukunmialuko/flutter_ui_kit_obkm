@@ -16,7 +16,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(390, 840),
+      designSize: const Size(390, 844),
       builder: () => MaterialApp(
         localizationsDelegates: const [
           S.delegate,
