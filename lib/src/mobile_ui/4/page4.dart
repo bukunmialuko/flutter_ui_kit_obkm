@@ -343,7 +343,7 @@ class _Page4State extends State<Page4> {
                                               children: [
                                                 Flexible(
                                                   child: Text(
-                                                    "Song title here,\nSong title here\nSong title here\nSong title here iyfiyfiyufgoufofoooo\n",
+                                                    "Song title here.",
                                                     style: GoogleFonts.workSans(
                                                       textStyle: TextStyle(
                                                         fontSize: 16.sp,
