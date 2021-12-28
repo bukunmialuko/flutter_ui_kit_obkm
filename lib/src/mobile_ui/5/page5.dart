@@ -81,11 +81,13 @@ class _Page5State extends State<Page5> {
                   child: Container(
                     width: 343.w,
                     height: 170.h,
-                    color: AppColors.grey,
+                    // color: AppColors.grey,
                     child: Stack(
                       children: [
                         PageView.builder(
                           itemCount: 4,
+                          physics: const BouncingScrollPhysics(
+                              parent: AlwaysScrollableScrollPhysics()),
                           itemBuilder: (c, i) {
                             return Container(
                               width: 343.w,
