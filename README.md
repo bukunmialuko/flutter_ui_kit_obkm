@@ -26,6 +26,7 @@ I prefer to start designing with safe area
 Use spacer and expanded as preference to hard coded height"
 
 ## Continue from
-screen three, improve the transition, check flutter card carousel
+screen 3, improve the transition, check flutter card carousel
+screen 5, improve carousel indicator
 
 
