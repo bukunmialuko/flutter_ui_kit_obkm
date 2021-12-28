@@ -248,21 +248,18 @@ class _Page4State extends State<Page4> {
                                   ],
                                 ),
                               ),
-                              Container(
-                                color: Colors.yellow,
-                                child: Text(
-                                  "Album name",
-                                  style: GoogleFonts.workSans(
-                                    textStyle: TextStyle(
-                                      fontSize: 12.sp,
-                                      color: Colors.black,
-                                      fontStyle: FontStyle.normal,
-                                      fontWeight: FontWeight.w400,
-                                      height: 1,
-                                    ),
+                              Text(
+                                "Album name",
+                                style: GoogleFonts.workSans(
+                                  textStyle: TextStyle(
+                                    fontSize: 12.sp,
+                                    color: Colors.black,
+                                    fontStyle: FontStyle.normal,
+                                    fontWeight: FontWeight.w400,
+                                    height: 1,
                                   ),
-                                  textAlign: TextAlign.start,
                                 ),
+                                textAlign: TextAlign.start,
                               ),
                             ],
                           );
