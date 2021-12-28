@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_ui_kit_obkm/res/asset_images.dart';
@@ -82,7 +83,35 @@ class _Page5State extends State<Page5> {
                     height: 170.h,
                     color: AppColors.grey,
                     child: Stack(
-                      children: [],
+                      children: [
+                        PageView.builder(
+                          itemCount: 4,
+                          itemBuilder: (c, i) {
+                            return Container(
+                              width: 343.w,
+                              height: 170.h,
+                              color: i % 2 == 0 ? Colors.blue : Colors.yellow,
+                            );
+                          },
+                        ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            Center(
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: List.generate(
+                                  3,
+                                  (index) => buildDot(index: index),
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 11.h,
+                            )
+                          ],
+                        )
+                      ],
                     ),
                   ),
                 ),
@@ -253,6 +282,25 @@ class _Page5State extends State<Page5> {
             ),
           ),
         ),
+      ),
+    );
+  }
+
+  var kAnimationDuration = const Duration(milliseconds: 200);
+  var kPrimaryColor = Colors.black;
+
+  int currentPage = 0;
+  String? swipeDirection;
+
+  AnimatedContainer buildDot({int? index}) {
+    return AnimatedContainer(
+      duration: kAnimationDuration,
+      margin: const EdgeInsets.only(right: 5),
+      height: 6,
+      width: currentPage == index ? 6 : 6,
+      decoration: BoxDecoration(
+        color: currentPage == index ? kPrimaryColor : Colors.white,
+        borderRadius: BorderRadius.circular(3),
       ),
     );
   }
