@@ -15,7 +15,7 @@ A Simple UI Kit.
 
 ## 📸 ScreenShots
 
-<img src="art/screenshots/page_1.png" width="100"/> 
+<img src="art/screenshots/page_1.png" width="200"/> 
 <!-- <img src="art/screenshots/page_1.png" width="100"/>
 <img src="art/screenshots/page_1.png" width="100"/>
 <img src="art/screenshots/page_1.png" width="100"/>
