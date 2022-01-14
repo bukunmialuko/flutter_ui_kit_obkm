@@ -26,6 +26,7 @@ A Simple UI Kit.
 ## 🤓 Design Credit
 
 **Oscar Sun**
+https://www.oscarsun.design
 
 ## 🤓 Author
 
