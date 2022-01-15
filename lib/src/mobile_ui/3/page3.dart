@@ -18,7 +18,7 @@ class _Page3State extends State<Page3> {
   final PageController _controller =
       PageController(initialPage: initialPage, viewportFraction: 0.8);
 
-  double currentPageValue = 3;
+  double currentPageValue = 0;
 
   @override
   void initState() {
@@ -62,7 +62,7 @@ class _Page3State extends State<Page3> {
                   SizedBox(height: 30.h),
                   Center(
                     child: Text(
-                      "${currentPageValue.toInt()} of $maximumPage",
+                      "${currentPageValue.toInt() + 1} of $maximumPage",
                       style: GoogleFonts.workSans(
                         textStyle: TextStyle(
                           fontSize: 14.sp,
@@ -77,6 +77,7 @@ class _Page3State extends State<Page3> {
                     ),
                   ),
                   SizedBox(height: 11.h),
+                  // Todo: Page 3, improve widget scaling on swipe
                   SizedBox(
                     height: 340.h,
                     child: PageView.builder(
@@ -84,7 +85,7 @@ class _Page3State extends State<Page3> {
                       physics: const BouncingScrollPhysics(
                           parent: AlwaysScrollableScrollPhysics()),
                       itemBuilder: (context, position) {
-                        if (position == currentPageValue.floor()) {
+                        if (position == 0 && currentPageValue == 0) {
                           return Container(
                             margin: EdgeInsets.symmetric(horizontal: 8.w),
                             child: ClipRRect(
@@ -92,7 +93,19 @@ class _Page3State extends State<Page3> {
                               child: Container(
                                 width: 267.r,
                                 height: 340.h,
-                                color: const Color(0xffD0D0D0),
+                                color: const Color(0xffA8A8A8),
+                              ),
+                            ),
+                          );
+                        } else if (position == currentPageValue.floor()) {
+                          return Container(
+                            margin: EdgeInsets.symmetric(horizontal: 8.w),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(24.r),
+                              child: Container(
+                                width: 267.r,
+                                height: 340.h,
+                                color: const Color(0xffA8A8A8),
                               ),
                             ),
                           );
@@ -104,7 +117,7 @@ class _Page3State extends State<Page3> {
                               child: Container(
                                 width: 267.r,
                                 height: 340.h,
-                                color: Colors.blue,
+                                color: const Color(0xffAD0D0D0),
                               ),
                             ),
                           );
@@ -116,7 +129,7 @@ class _Page3State extends State<Page3> {
                               child: Container(
                                 width: 267.r,
                                 height: 340.h,
-                                color: Colors.red,
+                                color: const Color(0xffAD0D0D0),
                               ),
                             ),
                           );
@@ -273,20 +286,20 @@ class _Page3State extends State<Page3> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Container(
-                                width: 16.h,
-                                height: 16.h,
-                                color: Colors.greenAccent,
+                              SizedBox(
+                                width: 16.r,
+                                height: 16.r,
+                                child: const Icon(Icons.shuffle),
                               ),
-                              Container(
-                                width: 16.h,
-                                height: 16.h,
-                                color: Colors.greenAccent,
+                              SizedBox(
+                                width: 16.r,
+                                height: 16.r,
+                                child: const Icon(Icons.music_note),
                               ),
-                              Container(
-                                width: 16.h,
-                                height: 16.h,
-                                color: Colors.greenAccent,
+                              SizedBox(
+                                width: 16.r,
+                                height: 16.r,
+                                child: const Icon(Icons.playlist_play_sharp),
                               ),
                             ],
                           ),
