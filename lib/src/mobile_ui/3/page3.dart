@@ -77,6 +77,7 @@ class _Page3State extends State<Page3> {
                     ),
                   ),
                   SizedBox(height: 11.h),
+                  // Todo: Page 3, improve widget scaling on swipe
                   SizedBox(
                     height: 340.h,
                     child: PageView.builder(
@@ -273,20 +274,20 @@ class _Page3State extends State<Page3> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Container(
-                                width: 16.h,
-                                height: 16.h,
-                                color: Colors.greenAccent,
+                              SizedBox(
+                                width: 16.r,
+                                height: 16.r,
+                                child: const Icon(Icons.shuffle),
                               ),
-                              Container(
-                                width: 16.h,
-                                height: 16.h,
-                                color: Colors.greenAccent,
+                              SizedBox(
+                                width: 16.r,
+                                height: 16.r,
+                                child: const Icon(Icons.music_note),
                               ),
-                              Container(
-                                width: 16.h,
-                                height: 16.h,
-                                color: Colors.greenAccent,
+                              SizedBox(
+                                width: 16.r,
+                                height: 16.r,
+                                child: const Icon(Icons.playlist_play_sharp),
                               ),
                             ],
                           ),
