@@ -21,75 +21,78 @@ class _Page4State extends State<Page4> {
   Widget build(BuildContext context) {
     return Scaffold(
       // backgroundColor: Colors.black,
-      body: SafeArea(
-        child: Column(
-          mainAxisSize: MainAxisSize.max,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Container(
-              width: 390.w,
-
-              /// Had to adjust this
-              height: 340.h - MediaQuery.of(context).padding.top,
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(AssetResources.LADY_PG4),
-                  fit: BoxFit.cover,
-                ),
-              ),
-              child: Stack(
-                children: [
-                  // SizedBox(height: 16.h),
-                  Row(
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.only(left: 27.w, top: 16.h),
-                        child: SvgPicture.asset(
-                          AssetResources.BACK,
-                          height: 48.r,
-                          width: 48.r,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                      const Spacer(),
-                      Padding(
-                        padding: EdgeInsets.only(right: 24.w),
-                        child: SvgPicture.asset(
-                          AssetResources.MENU,
-                          height: 48.r,
-                          width: 48.r,
-                          fit: BoxFit.fill,
-                        ),
-                      ),
-                    ],
-                  ),
-                  Positioned(
-                    bottom: 0,
-                    child: Container(
-                      height: 30.h,
-                      width: 390.w,
-                      decoration: BoxDecoration(
-                        color: Colors.black.withOpacity(0.5),
-                        borderRadius: BorderRadius.only(
-                          topRight: Radius.circular(36.r),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    right: 24.w,
-                    bottom: 13.h,
-                    child: SvgPicture.asset(
-                      AssetResources.PLAY,
-                      height: 48.r,
-                      width: 48.r,
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                ],
+      body: Column(
+        mainAxisSize: MainAxisSize.max,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Container(
+            /// Had to adjust this
+            height: 340.h + MediaQuery.of(context).viewPadding.top,
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage(AssetResources.LADY_PG4),
+                fit: BoxFit.cover,
               ),
             ),
-            Expanded(
+            child: Stack(
+              children: [
+                // SizedBox(height: 16.h),
+                Row(
+                  children: [
+                    Container(
+                      padding: EdgeInsets.only(left: 27.w, top: 16.h),
+                      margin: EdgeInsets.only(
+                          top: MediaQuery.of(context).viewPadding.top),
+                      child: SvgPicture.asset(
+                        AssetResources.BACK,
+                        height: 48.r,
+                        width: 48.r,
+                        fit: BoxFit.fill,
+                      ),
+                    ),
+                    const Spacer(),
+                    Container(
+                      padding: EdgeInsets.only(right: 24.w),
+                      margin: EdgeInsets.only(
+                          top: MediaQuery.of(context).viewPadding.top),
+                      child: SvgPicture.asset(
+                        AssetResources.MENU,
+                        height: 48.r,
+                        width: 48.r,
+                        fit: BoxFit.fill,
+                      ),
+                    ),
+                  ],
+                ),
+                Positioned(
+                  bottom: 0,
+                  child: Container(
+                    height: 30.h,
+                    width: 390.w,
+                    decoration: BoxDecoration(
+                      color: Colors.black.withOpacity(0.5),
+                      borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(36.r),
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  right: 24.w,
+                  bottom: 13.h,
+                  child: SvgPicture.asset(
+                    AssetResources.PLAY,
+                    height: 48.r,
+                    width: 48.r,
+                    fit: BoxFit.fill,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Expanded(
+            child: Container(
+              color: const Color(0xff161616),
               child: SingleChildScrollView(
                 physics: const BouncingScrollPhysics(
                     parent: AlwaysScrollableScrollPhysics()),
@@ -107,7 +110,7 @@ class _Page4State extends State<Page4> {
                               style: GoogleFonts.workSans(
                                 textStyle: TextStyle(
                                   fontSize: 14.sp,
-                                  color: Colors.black,
+                                  color: Colors.white,
                                   fontStyle: FontStyle.normal,
                                   fontWeight: FontWeight.w400,
                                 ),
@@ -118,7 +121,7 @@ class _Page4State extends State<Page4> {
                               style: GoogleFonts.workSans(
                                 textStyle: TextStyle(
                                   fontSize: 24.sp,
-                                  color: Colors.black,
+                                  color: Colors.white,
                                   fontStyle: FontStyle.normal,
                                   fontWeight: FontWeight.w600,
                                 ),
@@ -134,7 +137,7 @@ class _Page4State extends State<Page4> {
                               style: GoogleFonts.workSans(
                                 textStyle: TextStyle(
                                   fontSize: 14.sp,
-                                  color: Colors.black,
+                                  color: Colors.white,
                                   fontStyle: FontStyle.normal,
                                   fontWeight: FontWeight.w400,
                                 ),
@@ -145,7 +148,7 @@ class _Page4State extends State<Page4> {
                               style: GoogleFonts.workSans(
                                 textStyle: TextStyle(
                                   fontSize: 24.sp,
-                                  color: Colors.black,
+                                  color: Colors.white,
                                   fontStyle: FontStyle.normal,
                                   fontWeight: FontWeight.w600,
                                 ),
@@ -161,7 +164,7 @@ class _Page4State extends State<Page4> {
                               style: GoogleFonts.workSans(
                                 textStyle: TextStyle(
                                   fontSize: 14.sp,
-                                  color: Colors.black,
+                                  color: Colors.white,
                                   fontStyle: FontStyle.normal,
                                   fontWeight: FontWeight.w400,
                                 ),
@@ -172,7 +175,7 @@ class _Page4State extends State<Page4> {
                               style: GoogleFonts.workSans(
                                 textStyle: TextStyle(
                                   fontSize: 24.sp,
-                                  color: Colors.black,
+                                  color: Colors.white,
                                   fontStyle: FontStyle.normal,
                                   fontWeight: FontWeight.w600,
                                 ),
@@ -192,7 +195,7 @@ class _Page4State extends State<Page4> {
                         style: GoogleFonts.workSans(
                           textStyle: TextStyle(
                             fontSize: 20.sp,
-                            color: Colors.black,
+                            color: Colors.white,
                             fontStyle: FontStyle.normal,
                             fontWeight: FontWeight.w600,
                           ),
@@ -257,7 +260,7 @@ class _Page4State extends State<Page4> {
                                   style: GoogleFonts.workSans(
                                     textStyle: TextStyle(
                                       fontSize: 12.sp,
-                                      color: Colors.black,
+                                      color: Colors.white,
                                       fontStyle: FontStyle.normal,
                                       fontWeight: FontWeight.w400,
                                       height: 1,
@@ -284,7 +287,7 @@ class _Page4State extends State<Page4> {
                         style: GoogleFonts.workSans(
                           textStyle: TextStyle(
                             fontSize: 20.sp,
-                            color: Colors.black,
+                            color: Colors.white,
                             fontStyle: FontStyle.normal,
                             fontWeight: FontWeight.w600,
                           ),
@@ -305,7 +308,7 @@ class _Page4State extends State<Page4> {
                             child: Container(
                               width: 342.w,
                               height: 100.h,
-                              color: const Color(0xffC4C4C4),
+                              color: const Color(0xff525252),
                               padding: EdgeInsets.only(left: 11.w),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -318,7 +321,7 @@ class _Page4State extends State<Page4> {
                                         width: 80.h,
                                         height: 80.h,
                                         // margin: EdgeInsets.only(right: 14.w),
-                                        color: const Color(0xff525252),
+                                        color: const Color(0xffD0D0D0),
                                       ),
                                     ),
                                   ),
@@ -408,8 +411,8 @@ class _Page4State extends State<Page4> {
                 ),
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
