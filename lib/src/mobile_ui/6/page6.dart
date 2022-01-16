@@ -7,6 +7,8 @@ import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
 import 'package:flutter_ui_kit_obkm/src/res/styles.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'widgets/bottom_sheet.dart';
+
 class Page6 extends StatefulWidget {
   const Page6({Key? key}) : super(key: key);
 
@@ -171,6 +173,11 @@ class _Page6State extends State<Page6> {
                     ),
                   ),
                 ],
+              ),
+            ),
+            const Expanded(
+              child: BottomSheetWidget(
+                data: ["", "", "", "", "", ""],
               ),
             )
           ],
