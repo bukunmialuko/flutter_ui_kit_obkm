@@ -84,7 +84,6 @@ class BottomSheetWidget extends StatelessWidget {
                             child: Container(
                               width: 58.h,
                               height: 58.h,
-                              // margin: EdgeInsets.only(right: 14.w),
                               color: const Color(0xff262626),
                             ),
                           ),
