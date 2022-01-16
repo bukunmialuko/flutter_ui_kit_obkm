@@ -16,10 +16,10 @@ A Simple UI Kit.
 ## 📸 ScreenShots
 
 <p align="center">
-<img src="art/screenshots/page_1.png" alt="page 1" width="200px" hspace="10"/>
-<img src="art/screenshots/page_2.png" alt="page 2" width="200px" hspace="10"/>
-<img src="art/screenshots/page_3.png" alt="page 3" width="200px" hspace="10"/>
-<img src="art/screenshots/page_4.png" alt="page 4" width="200px" hspace="10"/>
+<img src="art/screenshots/page_1.png" alt="page 1" width="200px" hspace="2"/>
+<img src="art/screenshots/page_2.png" alt="page 2" width="200px" hspace="2"/>
+<img src="art/screenshots/page_3.png" alt="page 3" width="200px" hspace="2"/>
+<img src="art/screenshots/page_4.png" alt="page 4" width="200px" hspace="2"/>
  
 </p>
 
