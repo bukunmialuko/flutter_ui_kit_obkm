@@ -50,10 +50,10 @@ class _Page5State extends State<Page5> {
                       ),
                     ),
                     Text(
-                      "Popular",
+                      "Therapist",
                       style: GoogleFonts.workSans(
                         textStyle: TextStyle(
-                          fontSize: 20.sp,
+                          fontSize: 16.sp,
                           color: Colors.black,
                           fontStyle: FontStyle.normal,
                           fontWeight: FontWeight.w600,
