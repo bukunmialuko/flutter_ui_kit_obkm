@@ -20,7 +20,7 @@ A Simple UI Kit.
 <img src="art/screenshots/page_2.png" alt="page 2" width="200px" hspace="2"/>
 <img src="art/screenshots/page_3.png" alt="page 3" width="200px" hspace="2"/>
 <img src="art/screenshots/page_4.png" alt="page 4" width="200px" hspace="2"/>
- 
+<img src="art/screenshots/page_5.png" alt="page 5" width="200px" hspace="2"/> 
 </p>
 
 <br />
