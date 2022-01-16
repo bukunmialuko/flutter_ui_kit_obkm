@@ -73,6 +73,7 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     - assets/svg/
+    - assets/svg/page_6/
     - assets/png/
 
   # An image asset can refer to one or more resolution-specific "variants", see

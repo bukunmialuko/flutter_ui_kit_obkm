@@ -14,6 +14,8 @@ class Page5 extends StatefulWidget {
 }
 
 class _Page5State extends State<Page5> {
+  int currentPage = 0;
+
   @override
   void initState() {
     super.initState();
@@ -42,16 +44,16 @@ class _Page5State extends State<Page5> {
                         padding: EdgeInsets.zero,
                         onPressed: () {},
                         icon: const Icon(
-                          Icons.add_circle,
+                          Icons.chevron_left,
                           color: Colors.black,
                         ),
                       ),
                     ),
                     Text(
-                      "Popular",
+                      "Therapist",
                       style: GoogleFonts.workSans(
                         textStyle: TextStyle(
-                          fontSize: 20.sp,
+                          fontSize: 16.sp,
                           color: Colors.black,
                           fontStyle: FontStyle.normal,
                           fontWeight: FontWeight.w600,
@@ -78,7 +80,7 @@ class _Page5State extends State<Page5> {
                 SizedBox(height: 37.h),
                 ClipRRect(
                   borderRadius: BorderRadius.circular(16.r),
-                  child: Container(
+                  child: SizedBox(
                     width: 343.w,
                     height: 170.h,
                     // color: AppColors.grey,
@@ -88,11 +90,17 @@ class _Page5State extends State<Page5> {
                           itemCount: 4,
                           physics: const BouncingScrollPhysics(
                               parent: AlwaysScrollableScrollPhysics()),
+                          onPageChanged: (index) {
+                            setState(() {
+                              currentPage = index;
+                              print("index: ${index}");
+                            });
+                          },
                           itemBuilder: (c, i) {
                             return Container(
                               width: 343.w,
                               height: 170.h,
-                              color: i % 2 == 0 ? Colors.blue : Colors.yellow,
+                              color: const Color(0xffA8A8A8),
                             );
                           },
                         ),
@@ -103,8 +111,8 @@ class _Page5State extends State<Page5> {
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: List.generate(
-                                  3,
-                                  (index) => buildDot(index: index),
+                                  4,
+                                  (index) => buildDot(index == currentPage),
                                 ),
                               ),
                             ),
@@ -168,7 +176,7 @@ class _Page5State extends State<Page5> {
                                 width: 125.h,
                                 height: 125.h,
                                 // margin: EdgeInsets.only(right: 14.w),
-                                color: const Color(0xff525252),
+                                color: const Color(0xffD0D0D0),
                               ),
                             ),
                           ),
@@ -291,18 +299,17 @@ class _Page5State extends State<Page5> {
   var kAnimationDuration = const Duration(milliseconds: 200);
   var kPrimaryColor = Colors.black;
 
-  int currentPage = 0;
-  String? swipeDirection;
+  // String? swipeDirection;
 
-  AnimatedContainer buildDot({int? index}) {
+  AnimatedContainer buildDot(bool isCurrent) {
     return AnimatedContainer(
       duration: kAnimationDuration,
       margin: const EdgeInsets.only(right: 5),
-      height: 6,
-      width: currentPage == index ? 6 : 6,
+      height: 8.r,
+      width: 8.r,
       decoration: BoxDecoration(
-        color: currentPage == index ? kPrimaryColor : Colors.white,
-        borderRadius: BorderRadius.circular(3),
+        shape: BoxShape.circle,
+        color: isCurrent ? const Color(0xff525252) : const Color(0xffC4C4C4),
       ),
     );
   }
