@@ -4,8 +4,11 @@ import 'package:flutter_ui_kit_obkm/res/asset_images.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class BottomSheetWidget extends StatelessWidget {
+  final ScrollController scrollController;
   final List<dynamic> data;
-  const BottomSheetWidget({Key? key, required this.data}) : super(key: key);
+  const BottomSheetWidget(
+      {Key? key, required this.data, required this.scrollController})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -64,6 +67,7 @@ class BottomSheetWidget extends StatelessWidget {
           ),
           Expanded(
             child: ListView.separated(
+                controller: scrollController,
                 physics: const BouncingScrollPhysics(
                     parent: AlwaysScrollableScrollPhysics()),
                 itemBuilder: (c, i) {
