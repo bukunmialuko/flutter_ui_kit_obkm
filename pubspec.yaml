@@ -75,6 +75,7 @@ flutter:
     - assets/svg/
     - assets/svg/page_6/
     - assets/svg/page_7/
+    - assets/png/page_8/
     - assets/png/
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -20,310 +20,315 @@ class _Page7State extends State<Page7> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Padding(
-              padding: EdgeInsets.only(
-                  left: 24.w, right: 24.w, top: 18.h, bottom: 18.h),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Container(
-                    width: 60.r,
-                    height: 60.r,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(45.r),
-                      color: AppColors.grey,
-                    ),
-                  ),
-                  SizedBox(width: 10.w),
-                  Text(
-                    "John Doe",
-                    style: GoogleFonts.workSans(
-                      textStyle: TextStyle(
-                        fontSize: 16.sp,
-                        color: Colors.black,
-                        fontStyle: FontStyle.normal,
-                        fontWeight: FontWeight.w600,
+        child: SingleChildScrollView(
+          physics: const BouncingScrollPhysics(
+              parent: AlwaysScrollableScrollPhysics()),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: EdgeInsets.only(
+                    left: 24.w, right: 24.w, top: 18.h, bottom: 18.h),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Container(
+                      width: 60.r,
+                      height: 60.r,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(45.r),
+                        color: AppColors.grey,
                       ),
                     ),
-                  ),
-                  const Spacer(),
-                  SvgPicture.asset(
-                    AssetResources.PG7_NOTIFICATION,
-                    height: 36.r,
-                    width: 36.r,
-                    fit: BoxFit.fill,
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(left: 24.w, right: 24.w),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    "Find your place to stay",
-                    style: GoogleFonts.workSans(
-                      textStyle: TextStyle(
-                        fontSize: 24.sp,
-                        color: Colors.black,
-                        fontStyle: FontStyle.normal,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 10.h),
-                  TextFormField(
-                    readOnly: true, //false
-                    autofocus: false,
-                    // style: ,
-                    decoration: InputDecoration(
-                      prefixIcon: Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8.w),
-                        child: const Icon(Icons.search, color: Colors.black),
-                      ),
-                      prefixIconConstraints:
-                          BoxConstraints(maxHeight: 20.w, maxWidth: 35.w),
-                      hintText: "Search...",
-                      // hintStyle: textFieldPlaceholderTextStyle(context),
-                      isDense: true,
-                      filled: true,
-                      fillColor: AppColors.grey,
-                      focusedBorder: AppStyles.focusedTransparentBorder,
-                      disabledBorder: AppStyles.focusedTransparentBorder,
-                      enabledBorder: AppStyles.focusedTransparentBorder,
-                      errorBorder: AppStyles.focusedTransparentBorder,
-                      focusedErrorBorder: AppStyles.focusedTransparentBorder,
-                      errorStyle: errorTextStyle(context),
-                    ),
-                    textInputAction: TextInputAction.next,
-                    keyboardType: TextInputType.text,
-                    onSaved: (val) {},
-                    onEditingComplete: () {},
-                    onChanged: (val) {},
-                    // validator: (val) {},
-                    onTap: () {},
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(height: 45.h),
-            Padding(
-              padding: EdgeInsets.only(left: 24.w, right: 24.w),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        "Categories",
-                        style: GoogleFonts.workSans(
-                          textStyle: TextStyle(
-                            fontSize: 20.sp,
-                            color: Colors.black,
-                            fontStyle: FontStyle.normal,
-                            fontWeight: FontWeight.w600,
-                          ),
+                    SizedBox(width: 10.w),
+                    Text(
+                      "John Doe",
+                      style: GoogleFonts.workSans(
+                        textStyle: TextStyle(
+                          fontSize: 16.sp,
+                          color: Colors.black,
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.w600,
                         ),
                       ),
-                      Text(
-                        "See all",
-                        style: GoogleFonts.workSans(
-                          textStyle: TextStyle(
-                            fontSize: 14.sp,
-                            color: Colors.black,
-                            fontStyle: FontStyle.normal,
-                            fontWeight: FontWeight.w600,
-                          ),
+                    ),
+                    const Spacer(),
+                    SvgPicture.asset(
+                      AssetResources.PG7_NOTIFICATION,
+                      height: 36.r,
+                      width: 36.r,
+                      fit: BoxFit.fill,
+                    ),
+                  ],
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(left: 24.w, right: 24.w),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Find your place to stay",
+                      style: GoogleFonts.workSans(
+                        textStyle: TextStyle(
+                          fontSize: 24.sp,
+                          color: Colors.black,
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.w600,
                         ),
                       ),
-                    ],
-                  ),
-                  SizedBox(height: 30.h),
-                  SizedBox(
-                    height: 140.h,
-                    child: ListView.separated(
-                      physics: const BouncingScrollPhysics(
-                          parent: AlwaysScrollableScrollPhysics()),
-                      scrollDirection: Axis.horizontal,
-                      itemCount: categories.length,
-                      itemBuilder: (c, i) {
-                        return Column(
-                          children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(8.r),
-                              child: Container(
-                                width: 109.w,
-                                height: 140.h,
-                                color: AppColors.grey,
-                                child: Stack(
-                                  children: [
-                                    Align(
-                                      alignment: Alignment.bottomCenter,
-                                      child: Container(
-                                        height: 39.h,
-                                        color: const Color(0xff525252),
-                                        child: Center(
-                                          child: Text(
-                                            categories[i],
-                                            maxLines: 2,
-                                            style: GoogleFonts.workSans(
-                                              textStyle: TextStyle(
-                                                fontSize: 14.sp,
-                                                color: Colors.white,
-                                                fontStyle: FontStyle.normal,
-                                                fontWeight: FontWeight.w400,
+                    ),
+                    SizedBox(height: 10.h),
+                    TextFormField(
+                      readOnly: true, //false
+                      autofocus: false,
+                      // style: ,
+                      decoration: InputDecoration(
+                        prefixIcon: Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 8.w),
+                          child: const Icon(Icons.search, color: Colors.black),
+                        ),
+                        prefixIconConstraints:
+                            BoxConstraints(maxHeight: 20.w, maxWidth: 35.w),
+                        hintText: "Search...",
+                        // hintStyle: textFieldPlaceholderTextStyle(context),
+                        isDense: true,
+                        filled: true,
+                        fillColor: AppColors.grey,
+                        focusedBorder: AppStyles.focusedTransparentBorder,
+                        disabledBorder: AppStyles.focusedTransparentBorder,
+                        enabledBorder: AppStyles.focusedTransparentBorder,
+                        errorBorder: AppStyles.focusedTransparentBorder,
+                        focusedErrorBorder: AppStyles.focusedTransparentBorder,
+                        errorStyle: errorTextStyle(context),
+                      ),
+                      textInputAction: TextInputAction.next,
+                      keyboardType: TextInputType.text,
+                      onSaved: (val) {},
+                      onEditingComplete: () {},
+                      onChanged: (val) {},
+                      // validator: (val) {},
+                      onTap: () {},
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(height: 45.h),
+              Padding(
+                padding: EdgeInsets.only(left: 24.w, right: 24.w),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Categories",
+                          style: GoogleFonts.workSans(
+                            textStyle: TextStyle(
+                              fontSize: 20.sp,
+                              color: Colors.black,
+                              fontStyle: FontStyle.normal,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          "See all",
+                          style: GoogleFonts.workSans(
+                            textStyle: TextStyle(
+                              fontSize: 14.sp,
+                              color: Colors.black,
+                              fontStyle: FontStyle.normal,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 30.h),
+                    SizedBox(
+                      height: 140.h,
+                      child: ListView.separated(
+                        physics: const BouncingScrollPhysics(
+                            parent: AlwaysScrollableScrollPhysics()),
+                        scrollDirection: Axis.horizontal,
+                        itemCount: categories.length,
+                        itemBuilder: (c, i) {
+                          return Column(
+                            children: [
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(8.r),
+                                child: Container(
+                                  width: 109.w,
+                                  height: 140.h,
+                                  color: AppColors.grey,
+                                  child: Stack(
+                                    children: [
+                                      Align(
+                                        alignment: Alignment.bottomCenter,
+                                        child: Container(
+                                          height: 39.h,
+                                          color: const Color(0xff525252),
+                                          child: Center(
+                                            child: Text(
+                                              categories[i],
+                                              maxLines: 2,
+                                              style: GoogleFonts.workSans(
+                                                textStyle: TextStyle(
+                                                  fontSize: 14.sp,
+                                                  color: Colors.white,
+                                                  fontStyle: FontStyle.normal,
+                                                  fontWeight: FontWeight.w400,
+                                                ),
                                               ),
                                             ),
                                           ),
                                         ),
                                       ),
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
-                        );
-                      },
-                      separatorBuilder: (BuildContext context, int index) {
-                        return SizedBox(
-                          width: 17.w,
-                        );
-                      },
+                            ],
+                          );
+                        },
+                        separatorBuilder: (BuildContext context, int index) {
+                          return SizedBox(
+                            width: 17.w,
+                          );
+                        },
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-            SizedBox(height: 52.h),
-            Padding(
-              padding: EdgeInsets.only(left: 24.w, right: 24.w),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        "Popular",
-                        style: GoogleFonts.workSans(
-                          textStyle: TextStyle(
-                            fontSize: 20.sp,
-                            color: Colors.black,
-                            fontStyle: FontStyle.normal,
-                            fontWeight: FontWeight.w600,
+              SizedBox(height: 52.h),
+              Padding(
+                padding: EdgeInsets.only(left: 24.w, right: 24.w),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "Popular",
+                          style: GoogleFonts.workSans(
+                            textStyle: TextStyle(
+                              fontSize: 20.sp,
+                              color: Colors.black,
+                              fontStyle: FontStyle.normal,
+                              fontWeight: FontWeight.w600,
+                            ),
                           ),
                         ),
-                      ),
-                      Text(
-                        "See all",
-                        style: GoogleFonts.workSans(
-                          textStyle: TextStyle(
-                            fontSize: 14.sp,
-                            color: Colors.black,
-                            fontStyle: FontStyle.normal,
-                            fontWeight: FontWeight.w600,
+                        Text(
+                          "See all",
+                          style: GoogleFonts.workSans(
+                            textStyle: TextStyle(
+                              fontSize: 14.sp,
+                              color: Colors.black,
+                              fontStyle: FontStyle.normal,
+                              fontWeight: FontWeight.w600,
+                            ),
                           ),
                         ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 17.h),
-                  SizedBox(
-                    height: 165.h,
-                    child: ListView.separated(
-                      physics: const BouncingScrollPhysics(
-                          parent: AlwaysScrollableScrollPhysics()),
-                      scrollDirection: Axis.horizontal,
-                      itemCount: 4,
-                      itemBuilder: (c, i) {
-                        return Column(
-                          children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(8.r),
-                              child: Container(
-                                width: 244.w,
-                                height: 165.h,
-                                color: AppColors.grey,
-                                child: Stack(
-                                  children: [
-                                    Align(
-                                      alignment: Alignment.bottomLeft,
-                                      child: Container(
-                                        padding: EdgeInsets.only(
-                                            left: 15.w, bottom: 12.w),
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.min,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              "Tai Po Beach",
-                                              maxLines: 1,
-                                              style: GoogleFonts.workSans(
-                                                textStyle: TextStyle(
-                                                  fontSize: 16.sp,
-                                                  color: Colors.black,
-                                                  fontStyle: FontStyle.normal,
-                                                  fontWeight: FontWeight.w600,
+                      ],
+                    ),
+                    SizedBox(height: 17.h),
+                    SizedBox(
+                      height: 165.h,
+                      child: ListView.separated(
+                        physics: const BouncingScrollPhysics(
+                            parent: AlwaysScrollableScrollPhysics()),
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 4,
+                        itemBuilder: (c, i) {
+                          return Column(
+                            children: [
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(8.r),
+                                child: Container(
+                                  width: 244.w,
+                                  height: 165.h,
+                                  color: AppColors.grey,
+                                  child: Stack(
+                                    children: [
+                                      Align(
+                                        alignment: Alignment.bottomLeft,
+                                        child: Container(
+                                          padding: EdgeInsets.only(
+                                              left: 15.w, bottom: 12.w),
+                                          child: Column(
+                                            mainAxisSize: MainAxisSize.min,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                "Tai Po Beach",
+                                                maxLines: 1,
+                                                style: GoogleFonts.workSans(
+                                                  textStyle: TextStyle(
+                                                    fontSize: 16.sp,
+                                                    color: Colors.black,
+                                                    fontStyle: FontStyle.normal,
+                                                    fontWeight: FontWeight.w600,
+                                                  ),
                                                 ),
                                               ),
-                                            ),
-                                            Row(
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.center,
-                                              children: [
-                                                const Icon(Icons.edit_location),
-                                                SizedBox(width: 4.w),
+                                              Row(
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.center,
+                                                children: [
+                                                  const Icon(
+                                                      Icons.edit_location),
+                                                  SizedBox(width: 4.w),
 
-                                                /// Todo : This should be tested for overflow
-                                                Text(
-                                                  "Kam Ling, Hong Kong",
-                                                  maxLines: 1,
-                                                  style: GoogleFonts.workSans(
-                                                    textStyle: TextStyle(
-                                                      fontSize: 10.sp,
-                                                      color: Colors.black,
-                                                      fontStyle:
-                                                          FontStyle.normal,
-                                                      fontWeight:
-                                                          FontWeight.w400,
+                                                  /// Todo : This should be tested for overflow
+                                                  Text(
+                                                    "Kam Ling, Hong Kong",
+                                                    maxLines: 1,
+                                                    style: GoogleFonts.workSans(
+                                                      textStyle: TextStyle(
+                                                        fontSize: 10.sp,
+                                                        color: Colors.black,
+                                                        fontStyle:
+                                                            FontStyle.normal,
+                                                        fontWeight:
+                                                            FontWeight.w400,
+                                                      ),
                                                     ),
-                                                  ),
-                                                )
-                                              ],
-                                            )
-                                          ],
+                                                  )
+                                                ],
+                                              )
+                                            ],
+                                          ),
                                         ),
                                       ),
-                                    ),
-                                  ],
+                                    ],
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
-                        );
-                      },
-                      separatorBuilder: (BuildContext context, int index) {
-                        return SizedBox(
-                          width: 42.w,
-                        );
-                      },
+                            ],
+                          );
+                        },
+                        separatorBuilder: (BuildContext context, int index) {
+                          return SizedBox(
+                            width: 42.w,
+                          );
+                        },
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: Container(

@@ -18,4 +18,7 @@ class AssetResources {
       "assets/svg/page_7/local_convenience_store.svg";
   static const PG7_LOCATION_CITY = "assets/svg/page_7/location_city.svg";
   static const PG7_NOTIFICATION = "assets/svg/page_7/notification.svg";
+
+  static const PG8_CARD1 = "assets/png/page_8/card_1.png";
+  static const PG8_CARD2 = "assets/png/page_8/card_2.png";
 }
