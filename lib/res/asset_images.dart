@@ -11,4 +11,11 @@ class AssetResources {
   static const PG6_DEBUG = "assets/svg/page_6/debug.svg";
   static const PG6_MOTION_PHOTOS_PAUSE =
       "assets/svg/page_6/motion_photos_pause.svg";
+
+  static const PG7_CONTROL_CAMERA = "assets/svg/page_7/control_camera.svg";
+  static const PG7_HOME = "assets/svg/page_7/home.svg";
+  static const PG7_LOCAL_CONVEINET_STORE =
+      "assets/svg/page_7/local_convenience_store.svg";
+  static const PG7_LOCATION_CITY = "assets/svg/page_7/location_city.svg";
+  static const PG7_NOTIFICATION = "assets/svg/page_7/notification.svg";
 }

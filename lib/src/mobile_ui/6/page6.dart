@@ -37,7 +37,8 @@ class _Page6State extends State<Page6> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Padding(
-                padding: EdgeInsets.only(top: 39.h, bottom: 25.h, left: 24.w, right: 25.w),
+                padding: EdgeInsets.only(
+                    top: 39.h, bottom: 25.h, left: 24.w, right: 25.w),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -70,7 +71,8 @@ class _Page6State extends State<Page6> {
                         ),
                       ],
                     ),
-                    IconButton(onPressed: () {}, icon: const Icon(Icons.notifications))
+                    IconButton(
+                        onPressed: () {}, icon: const Icon(Icons.notifications))
                   ],
                 ),
               ),
@@ -85,7 +87,8 @@ class _Page6State extends State<Page6> {
                       padding: EdgeInsets.symmetric(horizontal: 8.w),
                       child: const Icon(Icons.search, color: Colors.black),
                     ),
-                    prefixIconConstraints: BoxConstraints(maxHeight: 20.w, maxWidth: 35.w),
+                    prefixIconConstraints:
+                        BoxConstraints(maxHeight: 20.w, maxWidth: 35.w),
                     hintText: "Search...",
                     // hintStyle: textFieldPlaceholderTextStyle(context),
                     isDense: true,
@@ -128,8 +131,8 @@ class _Page6State extends State<Page6> {
                     SizedBox(
                       height: 74.h,
                       child: ListView.separated(
-                        physics:
-                            const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
+                        physics: const BouncingScrollPhysics(
+                            parent: AlwaysScrollableScrollPhysics()),
                         scrollDirection: Axis.horizontal,
                         itemCount: moods.length,
                         itemBuilder: (c, i) {
@@ -191,12 +194,15 @@ class _Page6State extends State<Page6> {
       )),
       bottomNavigationBar: Container(
         height: 90.h,
-        color: const Color(0xffE0E0E0),
+        decoration: BoxDecoration(
+            color: Colors.white,
+            border: Border.all(color: const Color(0xffE0E0E0))),
         child: Center(
           child: Padding(
             padding: EdgeInsets.only(left: 54.w, right: 54.w),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 SvgPicture.asset(
                   AssetResources.PG6_MOTION_PHOTOS_PAUSE,

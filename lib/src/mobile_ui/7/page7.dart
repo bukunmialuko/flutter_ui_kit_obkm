@@ -14,47 +14,71 @@ class Page7 extends StatefulWidget {
 }
 
 class _Page7State extends State<Page7> {
+  List<String> categories = ["House", "Hotels", "Apartment"];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: EdgeInsets.only(top: 18.h, left: 18.h, right: 18.h, bottom: 18.h),
+              padding: EdgeInsets.only(
+                  left: 24.w, right: 24.w, top: 18.h, bottom: 18.h),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Container(width: 18.h, height: 18.h),
-                  Text("data"),
-                  Spacer(),
+                  Container(
+                    width: 60.r,
+                    height: 60.r,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(45.r),
+                      color: AppColors.grey,
+                    ),
+                  ),
+                  SizedBox(width: 10.w),
+                  Text(
+                    "John Doe",
+                    style: GoogleFonts.workSans(
+                      textStyle: TextStyle(
+                        fontSize: 16.sp,
+                        color: Colors.black,
+                        fontStyle: FontStyle.normal,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                  const Spacer(),
                   SvgPicture.asset(
-                    AssetResources.PG6_MOTION_PHOTOS_PAUSE,
-                    height: 24.r,
-                    width: 24.r,
+                    AssetResources.PG7_NOTIFICATION,
+                    height: 36.r,
+                    width: 36.r,
                     fit: BoxFit.fill,
                   ),
                 ],
               ),
             ),
-            Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(
-                  "data",
-                  style: GoogleFonts.workSans(
-                    textStyle: TextStyle(
-                      fontSize: 14.sp,
-                      color: Colors.black,
-                      fontStyle: FontStyle.normal,
-                      fontWeight: FontWeight.w600,
+            Padding(
+              padding: EdgeInsets.only(left: 24.w, right: 24.w),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Find your place to stay",
+                    style: GoogleFonts.workSans(
+                      textStyle: TextStyle(
+                        fontSize: 24.sp,
+                        color: Colors.black,
+                        fontStyle: FontStyle.normal,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                   ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(left: 24.w, right: 25.w, bottom: 31.h),
-                  child: TextFormField(
+                  SizedBox(height: 10.h),
+                  TextFormField(
                     readOnly: true, //false
                     autofocus: false,
                     // style: ,
@@ -63,7 +87,8 @@ class _Page7State extends State<Page7> {
                         padding: EdgeInsets.symmetric(horizontal: 8.w),
                         child: const Icon(Icons.search, color: Colors.black),
                       ),
-                      prefixIconConstraints: BoxConstraints(maxHeight: 20.w, maxWidth: 35.w),
+                      prefixIconConstraints:
+                          BoxConstraints(maxHeight: 20.w, maxWidth: 35.w),
                       hintText: "Search...",
                       // hintStyle: textFieldPlaceholderTextStyle(context),
                       isDense: true,
@@ -84,177 +109,277 @@ class _Page7State extends State<Page7> {
                     // validator: (val) {},
                     onTap: () {},
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-            SizedBox(height: 14.h),
-            Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Row(
-                  children: [
-                    Text(
-                      "data",
-                      style: GoogleFonts.workSans(
-                        textStyle: TextStyle(
-                          fontSize: 14.sp,
-                          color: Colors.black,
-                          fontStyle: FontStyle.normal,
-                          fontWeight: FontWeight.w600,
+            SizedBox(height: 45.h),
+            Padding(
+              padding: EdgeInsets.only(left: 24.w, right: 24.w),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Categories",
+                        style: GoogleFonts.workSans(
+                          textStyle: TextStyle(
+                            fontSize: 20.sp,
+                            color: Colors.black,
+                            fontStyle: FontStyle.normal,
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
                       ),
-                    ),
-                    Text(
-                      "data",
-                      style: GoogleFonts.workSans(
-                        textStyle: TextStyle(
-                          fontSize: 14.sp,
-                          color: Colors.black,
-                          fontStyle: FontStyle.normal,
-                          fontWeight: FontWeight.w600,
+                      Text(
+                        "See all",
+                        style: GoogleFonts.workSans(
+                          textStyle: TextStyle(
+                            fontSize: 14.sp,
+                            color: Colors.black,
+                            fontStyle: FontStyle.normal,
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
                       ),
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: 74.h,
-                  child: ListView.separated(
-                    physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
-                    scrollDirection: Axis.horizontal,
-                    itemCount: 4,
-                    itemBuilder: (c, i) {
-                      return Column(
-                        children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(8.r),
-                            child: Container(
-                              width: 100.h,
-                              height: 100.h,
-                              color: AppColors.grey,
-                              child: Stack(
-                                children: [
-                                  Container(
-                                    height: 50.h,
-                                    color: Colors.black.withOpacity(0.2),
-                                  ),
-                                  Positioned(child: Text("data"))
-                                ],
+                    ],
+                  ),
+                  SizedBox(height: 30.h),
+                  SizedBox(
+                    height: 140.h,
+                    child: ListView.separated(
+                      physics: const BouncingScrollPhysics(
+                          parent: AlwaysScrollableScrollPhysics()),
+                      scrollDirection: Axis.horizontal,
+                      itemCount: categories.length,
+                      itemBuilder: (c, i) {
+                        return Column(
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(8.r),
+                              child: Container(
+                                width: 109.w,
+                                height: 140.h,
+                                color: AppColors.grey,
+                                child: Stack(
+                                  children: [
+                                    Align(
+                                      alignment: Alignment.bottomCenter,
+                                      child: Container(
+                                        height: 39.h,
+                                        color: const Color(0xff525252),
+                                        child: Center(
+                                          child: Text(
+                                            categories[i],
+                                            maxLines: 2,
+                                            style: GoogleFonts.workSans(
+                                              textStyle: TextStyle(
+                                                fontSize: 14.sp,
+                                                color: Colors.white,
+                                                fontStyle: FontStyle.normal,
+                                                fontWeight: FontWeight.w400,
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
-                          ),
-                        ],
-                      );
-                    },
-                    separatorBuilder: (BuildContext context, int index) {
-                      return SizedBox(
-                        width: 42.w,
-                      );
-                    },
+                          ],
+                        );
+                      },
+                      separatorBuilder: (BuildContext context, int index) {
+                        return SizedBox(
+                          width: 17.w,
+                        );
+                      },
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-            SizedBox(height: 14.h),
-            Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Row(
-                  children: [
-                    Text(
-                      "data",
-                      style: GoogleFonts.workSans(
-                        textStyle: TextStyle(
-                          fontSize: 14.sp,
-                          color: Colors.black,
-                          fontStyle: FontStyle.normal,
-                          fontWeight: FontWeight.w600,
+            SizedBox(height: 52.h),
+            Padding(
+              padding: EdgeInsets.only(left: 24.w, right: 24.w),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Popular",
+                        style: GoogleFonts.workSans(
+                          textStyle: TextStyle(
+                            fontSize: 20.sp,
+                            color: Colors.black,
+                            fontStyle: FontStyle.normal,
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
                       ),
-                    ),
-                    Text(
-                      "data",
-                      style: GoogleFonts.workSans(
-                        textStyle: TextStyle(
-                          fontSize: 14.sp,
-                          color: Colors.black,
-                          fontStyle: FontStyle.normal,
-                          fontWeight: FontWeight.w600,
+                      Text(
+                        "See all",
+                        style: GoogleFonts.workSans(
+                          textStyle: TextStyle(
+                            fontSize: 14.sp,
+                            color: Colors.black,
+                            fontStyle: FontStyle.normal,
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
                       ),
-                    ),
-                  ],
-                ),
-                SizedBox(
-                  height: 74.h,
-                  child: ListView.separated(
-                    physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
-                    scrollDirection: Axis.horizontal,
-                    itemCount: 4,
-                    itemBuilder: (c, i) {
-                      return Column(
-                        children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(8.r),
-                            child: Container(
-                              width: 100.h,
-                              height: 100.h,
-                              color: AppColors.grey,
-                              child: Stack(
-                                children: [
-                                  Container(
-                                    height: 50.h,
-                                    color: Colors.black.withOpacity(0.2),
-                                  ),
-                                  Positioned(child: Text("data"))
-                                ],
+                    ],
+                  ),
+                  SizedBox(height: 17.h),
+                  SizedBox(
+                    height: 165.h,
+                    child: ListView.separated(
+                      physics: const BouncingScrollPhysics(
+                          parent: AlwaysScrollableScrollPhysics()),
+                      scrollDirection: Axis.horizontal,
+                      itemCount: 4,
+                      itemBuilder: (c, i) {
+                        return Column(
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(8.r),
+                              child: Container(
+                                width: 244.w,
+                                height: 165.h,
+                                color: AppColors.grey,
+                                child: Stack(
+                                  children: [
+                                    Align(
+                                      alignment: Alignment.bottomLeft,
+                                      child: Container(
+                                        padding: EdgeInsets.only(
+                                            left: 15.w, bottom: 12.w),
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.min,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              "Tai Po Beach",
+                                              maxLines: 1,
+                                              style: GoogleFonts.workSans(
+                                                textStyle: TextStyle(
+                                                  fontSize: 16.sp,
+                                                  color: Colors.black,
+                                                  fontStyle: FontStyle.normal,
+                                                  fontWeight: FontWeight.w600,
+                                                ),
+                                              ),
+                                            ),
+                                            Row(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.center,
+                                              children: [
+                                                const Icon(Icons.edit_location),
+                                                SizedBox(width: 4.w),
+
+                                                /// Todo : This should be tested for overflow
+                                                Text(
+                                                  "Kam Ling, Hong Kong",
+                                                  maxLines: 1,
+                                                  style: GoogleFonts.workSans(
+                                                    textStyle: TextStyle(
+                                                      fontSize: 10.sp,
+                                                      color: Colors.black,
+                                                      fontStyle:
+                                                          FontStyle.normal,
+                                                      fontWeight:
+                                                          FontWeight.w400,
+                                                    ),
+                                                  ),
+                                                )
+                                              ],
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
-                          ),
-                        ],
-                      );
-                    },
-                    separatorBuilder: (BuildContext context, int index) {
-                      return SizedBox(
-                        width: 42.w,
-                      );
-                    },
+                          ],
+                        );
+                      },
+                      separatorBuilder: (BuildContext context, int index) {
+                        return SizedBox(
+                          width: 42.w,
+                        );
+                      },
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ],
         ),
       ),
       bottomNavigationBar: Container(
         height: 90.h,
-        color: const Color(0xffE0E0E0),
+        // color: Colors.white,
+        decoration: BoxDecoration(
+            color: Colors.white,
+            border: Border.all(color: const Color(0xffE0E0E0))),
         child: Center(
           child: Padding(
-            padding: EdgeInsets.only(left: 54.w, right: 54.w),
+            padding: EdgeInsets.only(left: 40.w, right: 51.w),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    SvgPicture.asset(
+                      AssetResources.PG7_HOME,
+                      height: 24.r,
+                      width: 24.r,
+                      fit: BoxFit.fill,
+                    ),
+                    SizedBox(
+                      width: 4.w,
+                    ),
+                    Text(
+                      "Home",
+                      maxLines: 1,
+                      style: GoogleFonts.workSans(
+                        textStyle: TextStyle(
+                          fontSize: 14.sp,
+                          color: Colors.black,
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    )
+                  ],
+                ),
                 SvgPicture.asset(
-                  AssetResources.PG6_MOTION_PHOTOS_PAUSE,
+                  AssetResources.PG7_CONTROL_CAMERA,
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
                 ),
                 SvgPicture.asset(
-                  AssetResources.PG6_CAST_CONNECTED,
+                  AssetResources.PG7_LOCATION_CITY,
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
                 ),
                 SvgPicture.asset(
-                  AssetResources.PG6_DEBUG,
-                  height: 24.r,
-                  width: 24.r,
-                  fit: BoxFit.fill,
-                ),
-                SvgPicture.asset(
-                  AssetResources.PG6_CONTACT,
+                  AssetResources.PG7_LOCAL_CONVEINET_STORE,
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
