@@ -131,7 +131,7 @@ class _Page8State extends State<Page8> {
                                               color: Colors.black
                                                   .withOpacity(0.25),
                                               spreadRadius: 0,
-                                              blurRadius: 6.r,
+                                              blurRadius: 8,
                                               offset: const Offset(0,
                                                   4), // changes position of shadow
                                             ),
