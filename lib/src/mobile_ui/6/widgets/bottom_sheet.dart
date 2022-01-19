@@ -6,8 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 class BottomSheetWidget extends StatelessWidget {
   final ScrollController scrollController;
   final List<dynamic> data;
-  const BottomSheetWidget(
-      {Key? key, required this.data, required this.scrollController})
+  const BottomSheetWidget({Key? key, required this.data, required this.scrollController})
       : super(key: key);
 
   @override
@@ -28,48 +27,47 @@ class BottomSheetWidget extends StatelessWidget {
           ),
         ],
       ),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Container(
-                width: 50.w,
-                height: 4.h,
-                decoration: BoxDecoration(
-                    color: const Color(0xff262626),
-                    borderRadius: BorderRadius.circular(50.r)),
-                margin: EdgeInsets.only(top: 21.h),
-              ),
-              Padding(
-                padding: EdgeInsets.only(
-                    left: 24.w, right: 24.w, bottom: 25.h, top: 25.h),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(
-                      "Exercises",
-                      style: GoogleFonts.workSans(
-                        textStyle: TextStyle(
-                          fontSize: 14.sp,
-                          color: Colors.black,
-                          fontStyle: FontStyle.normal,
-                          fontWeight: FontWeight.w600,
+      child: SingleChildScrollView(
+        controller: scrollController,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Container(
+                  width: 50.w,
+                  height: 4.h,
+                  decoration: BoxDecoration(
+                      color: const Color(0xff262626), borderRadius: BorderRadius.circular(50.r)),
+                  margin: EdgeInsets.only(top: 21.h),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(left: 24.w, right: 24.w, bottom: 25.h, top: 25.h),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "Exercises",
+                        style: GoogleFonts.workSans(
+                          textStyle: TextStyle(
+                            fontSize: 14.sp,
+                            color: Colors.black,
+                            fontStyle: FontStyle.normal,
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
                       ),
-                    ),
-                  ],
-                ),
-              )
-            ],
-          ),
-          Expanded(
-            child: ListView.separated(
+                    ],
+                  ),
+                )
+              ],
+            ),
+            ListView.separated(
+                shrinkWrap: true,
                 controller: scrollController,
-                physics: const BouncingScrollPhysics(
-                    parent: AlwaysScrollableScrollPhysics()),
+                physics: const NeverScrollableScrollPhysics(),
                 itemBuilder: (c, i) {
                   return Container(
                     height: 92.h,
@@ -105,8 +103,7 @@ class BottomSheetWidget extends StatelessWidget {
                                   ),
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Flexible(
                                         child: Text(
@@ -150,9 +147,9 @@ class BottomSheetWidget extends StatelessWidget {
                     height: 18.h,
                   );
                 },
-                itemCount: data.length),
-          )
-        ],
+                itemCount: data.length)
+          ],
+        ),
       ),
     );
   }
