@@ -6,7 +6,8 @@ import 'package:google_fonts/google_fonts.dart';
 class BottomSheetWidget extends StatelessWidget {
   final ScrollController scrollController;
   final List<dynamic> data;
-  const BottomSheetWidget({Key? key, required this.data, required this.scrollController})
+  const BottomSheetWidget(
+      {Key? key, required this.data, required this.scrollController})
       : super(key: key);
 
   @override
@@ -29,6 +30,8 @@ class BottomSheetWidget extends StatelessWidget {
       ),
       child: SingleChildScrollView(
         controller: scrollController,
+        physics: const BouncingScrollPhysics(
+            parent: AlwaysScrollableScrollPhysics()),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -40,11 +43,13 @@ class BottomSheetWidget extends StatelessWidget {
                   width: 50.w,
                   height: 4.h,
                   decoration: BoxDecoration(
-                      color: const Color(0xff262626), borderRadius: BorderRadius.circular(50.r)),
+                      color: const Color(0xff262626),
+                      borderRadius: BorderRadius.circular(50.r)),
                   margin: EdgeInsets.only(top: 21.h),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(left: 24.w, right: 24.w, bottom: 25.h, top: 25.h),
+                  padding: EdgeInsets.only(
+                      left: 24.w, right: 24.w, bottom: 25.h, top: 25.h),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -103,7 +108,8 @@ class BottomSheetWidget extends StatelessWidget {
                                   ),
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
                                       Flexible(
                                         child: Text(
