@@ -15,7 +15,11 @@ class Page8 extends StatefulWidget {
 
 class _Page8State extends State<Page8> {
   List<String> cards = [AssetResources.PG8_CARD1, AssetResources.PG8_CARD2];
-
+  List<Page8Model> models = [
+    Page8Model("30.12", "Subscription"),
+    Page8Model("70.00", "Grocery"),
+    Page8Model("170.00", "Education")
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,8 +28,7 @@ class _Page8State extends State<Page8> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Padding(
-              padding: EdgeInsets.only(
-                  left: 24.h, right: 24.h, top: 20.h, bottom: 25.h),
+              padding: EdgeInsets.only(left: 24.h, right: 24.h, top: 20.h, bottom: 25.h),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -128,19 +131,18 @@ class _Page8State extends State<Page8> {
                                           ),
                                           boxShadow: [
                                             BoxShadow(
-                                              color: Colors.black
-                                                  .withOpacity(0.25),
+                                              color: Colors.black.withOpacity(0.25),
                                               spreadRadius: 0,
                                               blurRadius: 8,
-                                              offset: const Offset(0,
-                                                  4), // changes position of shadow
+                                              offset:
+                                                  const Offset(0, 4), // changes position of shadow
                                             ),
                                           ],
                                         ),
                                         child: const Text("Add a card"),
                                         margin: EdgeInsets.only(top: 16.w),
-                                        padding: EdgeInsets.symmetric(
-                                            horizontal: 16.w, vertical: 8.h),
+                                        padding:
+                                            EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
                                       ),
                                     )
                                   ],
@@ -177,15 +179,13 @@ class _Page8State extends State<Page8> {
                                     decoration: BoxDecoration(
                                       // color: Colors.black,
                                       image: DecorationImage(
-                                          image: AssetImage(cards[i - 1]),
-                                          fit: BoxFit.cover),
+                                          image: AssetImage(cards[i - 1]), fit: BoxFit.cover),
                                     ),
                                   ),
                                 ),
                               );
                             },
-                            separatorBuilder:
-                                (BuildContext context, int index) {
+                            separatorBuilder: (BuildContext context, int index) {
                               if (index == 0) {
                                 return SizedBox(
                                   width: 31.w,
@@ -214,12 +214,10 @@ class _Page8State extends State<Page8> {
                             ),
                             boxShadow: [
                               BoxShadow(
-                                color:
-                                    const Color(0xffC4C4C4).withOpacity(0.25),
+                                color: const Color(0xffC4C4C4).withOpacity(0.25),
                                 spreadRadius: 0,
                                 blurRadius: 8,
-                                offset: const Offset(
-                                    0, -4), // changes position of shadow
+                                offset: const Offset(0, -4), // changes position of shadow
                               ),
                             ],
                           ),
@@ -239,25 +237,20 @@ class _Page8State extends State<Page8> {
                                       height: 4.h,
                                       decoration: BoxDecoration(
                                           color: const Color(0xff262626),
-                                          borderRadius:
-                                              BorderRadius.circular(50.r)),
+                                          borderRadius: BorderRadius.circular(50.r)),
                                       margin: EdgeInsets.only(top: 21.h),
                                     ),
                                     Padding(
                                       padding: EdgeInsets.only(
-                                          left: 24.w,
-                                          right: 24.w,
-                                          bottom: 25.h,
-                                          top: 25.h),
+                                          left: 24.w, right: 24.w, bottom: 25.h, top: 25.h),
                                       child: Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceBetween,
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                         children: [
                                           Text(
-                                            "Exercises",
+                                            "Recent transaction",
                                             style: GoogleFonts.workSans(
                                               textStyle: TextStyle(
-                                                fontSize: 14.sp,
+                                                fontSize: 20.sp,
                                                 color: Colors.black,
                                                 fontStyle: FontStyle.normal,
                                                 fontWeight: FontWeight.w600,
@@ -270,121 +263,91 @@ class _Page8State extends State<Page8> {
                                   ],
                                 ),
                                 ListView.separated(
-                                    shrinkWrap: true,
-                                    controller: scrollController,
-                                    physics:
-                                        const NeverScrollableScrollPhysics(),
-                                    itemBuilder: (c, i) {
-                                      return Container(
-                                        height: 92.h,
-                                        margin: EdgeInsets.only(
-                                            left: 24.w, right: 24.w),
-                                        padding: EdgeInsets.only(
-                                            left: 18.w, right: 18.w),
-                                        decoration: BoxDecoration(
-                                            border: Border.all(
-                                                color: const Color(0xff262626)),
-                                            borderRadius:
-                                                BorderRadius.circular(8.r)),
+                                  shrinkWrap: true,
+                                  controller: scrollController,
+                                  physics: const NeverScrollableScrollPhysics(),
+                                  itemBuilder: (c, i) {
+                                    return Padding(
+                                      padding: EdgeInsets.only(
+                                        left: 24.w,
+                                        right: 23.w,
+                                      ),
+                                      child: Center(
                                         child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          // crossAxisAlignment: CrossAxisAlignment.start,
+                                          mainAxisAlignment: MainAxisAlignment.start,
+                                          crossAxisAlignment: CrossAxisAlignment.center,
                                           children: [
-                                            Center(
-                                              child: ClipRRect(
-                                                borderRadius:
-                                                    BorderRadius.circular(8.r),
-                                                child: Container(
-                                                  width: 58.h,
-                                                  height: 58.h,
-                                                  color:
-                                                      const Color(0xff262626),
-                                                ),
+                                            ClipRRect(
+                                              borderRadius: BorderRadius.circular(8.r),
+                                              child: Container(
+                                                width: 64.r,
+                                                height: 64.r,
+                                                color: AppColors.grey,
+                                              ),
+                                            ),
+                                            SizedBox(width: 30.w),
+                                            Expanded(
+                                              flex: 3,
+                                              child: Column(
+                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                children: [
+                                                  Text("Transaction #${i + 1}"),
+                                                  Text(
+                                                    "\$ ${models[i].price}",
+                                                    style: GoogleFonts.workSans(
+                                                      textStyle: TextStyle(
+                                                        fontSize: 28.sp,
+                                                        color: Colors.black,
+                                                        fontStyle: FontStyle.normal,
+                                                        fontWeight: FontWeight.w400,
+                                                      ),
+                                                    ),
+                                                  )
+                                                ],
                                               ),
                                             ),
                                             Expanded(
-                                              child: Row(
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.start,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceBetween,
-                                                children: [
-                                                  Expanded(
-                                                    child: Padding(
-                                                      padding:
-                                                          EdgeInsets.symmetric(
-                                                        horizontal: 16.w,
-                                                        vertical: 10.h,
+                                                flex: 2,
+                                                child: Row(
+                                                  mainAxisAlignment: MainAxisAlignment.start,
+                                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                                  children: [
+                                                    Container(
+                                                      decoration: BoxDecoration(
+                                                        color: const Color(0xff262626),
+                                                        borderRadius: BorderRadius.all(
+                                                          Radius.circular(48.r),
+                                                        ),
                                                       ),
-                                                      child: Column(
-                                                        mainAxisAlignment:
-                                                            MainAxisAlignment
-                                                                .start,
-                                                        crossAxisAlignment:
-                                                            CrossAxisAlignment
-                                                                .start,
-                                                        children: [
-                                                          Flexible(
-                                                            child: Text(
-                                                              "Excercise #${i + 1}",
-                                                              style: GoogleFonts
-                                                                  .workSans(
-                                                                textStyle:
-                                                                    TextStyle(
-                                                                  fontSize:
-                                                                      16.sp,
-                                                                  fontStyle:
-                                                                      FontStyle
-                                                                          .normal,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w600,
-                                                                ),
-                                                              ),
-                                                              maxLines: 3,
-                                                              overflow:
-                                                                  TextOverflow
-                                                                      .ellipsis,
-                                                            ),
+                                                      child: Text(
+                                                        models[i].buttonText,
+                                                        style: GoogleFonts.workSans(
+                                                          textStyle: TextStyle(
+                                                            fontSize: 10.sp,
+                                                            color: Colors.white,
+                                                            fontStyle: FontStyle.normal,
+                                                            fontWeight: FontWeight.w400,
                                                           ),
-                                                          Text(
-                                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                                                            style: GoogleFonts
-                                                                .workSans(
-                                                              textStyle:
-                                                                  TextStyle(
-                                                                fontSize: 12.sp,
-                                                                fontStyle:
-                                                                    FontStyle
-                                                                        .normal,
-                                                                fontWeight:
-                                                                    FontWeight
-                                                                        .w400,
-                                                              ),
-                                                            ),
-                                                            maxLines: 1,
-                                                            overflow:
-                                                                TextOverflow
-                                                                    .ellipsis,
-                                                          ),
-                                                        ],
+                                                        ),
                                                       ),
+                                                      margin: EdgeInsets.only(top: 16.w),
+                                                      padding: EdgeInsets.symmetric(
+                                                          horizontal: 16.w, vertical: 8.h),
                                                     ),
-                                                  ),
-                                                ],
-                                              ),
-                                            )
+                                                  ],
+                                                )),
                                           ],
                                         ),
-                                      );
-                                    },
-                                    separatorBuilder: (c, i) {
-                                      return SizedBox(
-                                        height: 18.h,
-                                      );
-                                    },
-                                    itemCount: 4)
+                                      ),
+                                    );
+                                  },
+                                  separatorBuilder: (c, i) {
+                                    return SizedBox(
+                                      height: 18.h,
+                                    );
+                                  },
+                                  itemCount: models.length,
+                                )
                               ],
                             ),
                           ),
@@ -398,4 +361,11 @@ class _Page8State extends State<Page8> {
       ),
     );
   }
+}
+
+class Page8Model {
+  final String price;
+  final String buttonText;
+
+  Page8Model(this.price, this.buttonText);
 }
