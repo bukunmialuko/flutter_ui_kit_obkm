@@ -28,7 +28,7 @@ class _Page6State extends State<Page6> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xffF4F4F4),
+      backgroundColor: const Color(0xffE5E5E5),
       body: SafeArea(
           child: Stack(
         fit: StackFit.expand,
