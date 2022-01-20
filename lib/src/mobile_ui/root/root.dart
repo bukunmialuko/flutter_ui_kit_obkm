@@ -8,6 +8,6 @@ class RootWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Page8();
+    return const Page6();
   }
 }
