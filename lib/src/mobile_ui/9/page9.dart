@@ -98,9 +98,16 @@ class _Page9State extends State<Page9> {
                                   ),
                                 ],
                               ),
-                              child: const Text(
+                              child: Text(
                                 "All",
-                                style: TextStyle(color: Colors.white),
+                                style: GoogleFonts.workSans(
+                                  textStyle: TextStyle(
+                                    fontSize: 10.sp,
+                                    color: Colors.white,
+                                    fontStyle: FontStyle.normal,
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ),
                               ),
                               margin: EdgeInsets.only(left: 14.w, top: 14.h, bottom: 14.h),
                               padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
@@ -126,7 +133,17 @@ class _Page9State extends State<Page9> {
                                 ),
                               ],
                             ),
-                            child: Text("Category #$i"),
+                            child: Text(
+                              "Category #$i",
+                              style: GoogleFonts.workSans(
+                                textStyle: TextStyle(
+                                  fontSize: 10.sp,
+                                  color: Colors.black,
+                                  fontStyle: FontStyle.normal,
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                            ),
                             margin: EdgeInsets.only(left: 14.w, top: 14.h, bottom: 14.h),
                             padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
                           ),

@@ -25,6 +25,7 @@ A Simple UI Kit.
 <img src="art/screenshots/page_7.png" alt="page 7" width="200px" hspace="2"/> 
 <img src="art/screenshots/page_8.png" alt="page 8" width="200px" hspace="2"/> 
 <img src="art/screenshots/page_9.png" alt="page 9" width="200px" hspace="2"/> 
+<img src="art/screenshots/page_10.png" alt="page 10" width="200px" hspace="2"/> 
 
 </p>
 

@@ -26,4 +26,12 @@ class AssetResources {
   static const PG9_EYE_TUBE = "assets/svg/9/eye_tube.svg";
   static const PG9_NOTIFICATIONS = "assets/svg/9/notifications.svg";
   static const PG9_SEARCH = "assets/svg/9/search.svg";
+
+  ///10
+  static const PG10_01 = "assets/png/10/01.png";
+  static const PG10_02 = "assets/png/10/02.png";
+  static const PG10_03 = "assets/png/10/03.png";
+  static const PG10_04 = "assets/png/10/04.png";
+  static const PG10_05 = "assets/png/10/05.png";
+  static const PG10_06 = "assets/png/10/06.png";
 }
