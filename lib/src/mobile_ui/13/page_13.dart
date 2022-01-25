@@ -28,50 +28,54 @@ class _Page13State extends State<Page13> {
                     height: 486.h,
                     fit: BoxFit.cover,
                   ),
-                  Positioned(
-                    top: 36.h,
-                    left: 24.w,
-                    right: 24.w,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: const Color(0xFFF4F4F4),
-                        borderRadius: BorderRadius.circular(24.r),
-                        boxShadow: [
-                          BoxShadow(
-                            offset: const Offset(0, 1),
-                            blurRadius: 4,
-                            color: Colors.black.withOpacity(.25),
-                          ),
-                        ],
-                      ),
-                      child: TextField(
-                        style: TextStyle(
-                          fontSize: 14.sp,
-                          fontWeight: FontWeight.w400,
-                          color: const Color(0xFF525252),
+                  Padding(
+                    padding:
+                        EdgeInsets.only(top: 20.h, left: 24.h, right: 24.h),
+                    child: SafeArea(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: const Color(0xFFF4F4F4),
+                          borderRadius: BorderRadius.circular(24.r),
+                          boxShadow: [
+                            BoxShadow(
+                              offset: const Offset(0, 1),
+                              blurRadius: 4,
+                              color: Colors.black.withOpacity(.25),
+                            ),
+                          ],
                         ),
-                        decoration: InputDecoration(
-                          prefixIcon:
-                              const Icon(Icons.search, color: Color(0xFF161616)),
-                          contentPadding: EdgeInsets.symmetric(
-                              horizontal: 20.w, vertical: 16.h),
-                          hintText: 'Search a country, location...',
-                          hintStyle: TextStyle(
+                        child: TextField(
+                          style: TextStyle(
                             fontSize: 14.sp,
                             fontWeight: FontWeight.w400,
                             color: const Color(0xFF525252),
                           ),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(24.r),
-                            borderSide: const BorderSide(color: Colors.transparent),
-                          ),
-                          enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(24.r),
-                            borderSide: const BorderSide(color: Colors.transparent),
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(24.r),
-                            borderSide: const BorderSide(color: Colors.transparent),
+                          decoration: InputDecoration(
+                            prefixIcon: const Icon(Icons.search,
+                                color: Color(0xFF161616)),
+                            contentPadding: EdgeInsets.symmetric(
+                                horizontal: 20.w, vertical: 16.h),
+                            hintText: 'Search a country, location...',
+                            hintStyle: TextStyle(
+                              fontSize: 14.sp,
+                              fontWeight: FontWeight.w400,
+                              color: const Color(0xFF525252),
+                            ),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(24.r),
+                              borderSide:
+                                  const BorderSide(color: Colors.transparent),
+                            ),
+                            enabledBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(24.r),
+                              borderSide:
+                                  const BorderSide(color: Colors.transparent),
+                            ),
+                            focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(24.r),
+                              borderSide:
+                                  const BorderSide(color: Colors.transparent),
+                            ),
                           ),
                         ),
                       ),
@@ -101,7 +105,10 @@ class _Page13State extends State<Page13> {
                       const Icon(Icons.location_on, color: Color(0xFF161616)),
                     ],
                   ),
-                  Divider(height: 18.h, color: const Color(0xFFD0D0D0), thickness: 1),
+                  Divider(
+                      height: 18.h,
+                      color: const Color(0xFFD0D0D0),
+                      thickness: 1),
                   SizedBox(height: 25.h),
                   Text(
                     'Discover Seattle',
