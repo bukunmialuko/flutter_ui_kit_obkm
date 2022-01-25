@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:flutter_ui_kit_obkm/res/asset_images.dart';
-import 'package:flutter_ui_kit_obkm/src/mobile_ui/6/widgets/bottom_sheet.dart';
 import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 

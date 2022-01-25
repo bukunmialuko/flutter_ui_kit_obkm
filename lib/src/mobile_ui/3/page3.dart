@@ -117,7 +117,7 @@ class _Page3State extends State<Page3> {
                               child: Container(
                                 width: 267.r,
                                 height: 340.h,
-                                color: const Color(0xffAD0D0D0),
+                                color: const Color(0xffAD0D0D),
                               ),
                             ),
                           );
@@ -129,7 +129,7 @@ class _Page3State extends State<Page3> {
                               child: Container(
                                 width: 267.r,
                                 height: 340.h,
-                                color: const Color(0xffAD0D0D0),
+                                color: const Color(0xffAD0D0D),
                               ),
                             ),
                           );

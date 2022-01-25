@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 class AssetResources {
   static const PAUSE = "assets/svg/pause.svg";
   static const PLAY = "assets/svg/play.svg";
@@ -9,11 +11,13 @@ class AssetResources {
   static const PG6_CAST_CONNECTED = "assets/svg/page_6/cast_connected.svg";
   static const PG6_CONTACT = "assets/svg/page_6/contact.svg";
   static const PG6_DEBUG = "assets/svg/page_6/debug.svg";
-  static const PG6_MOTION_PHOTOS_PAUSE = "assets/svg/page_6/motion_photos_pause.svg";
+  static const PG6_MOTION_PHOTOS_PAUSE =
+      "assets/svg/page_6/motion_photos_pause.svg";
 
   static const PG7_CONTROL_CAMERA = "assets/svg/page_7/control_camera.svg";
   static const PG7_HOME = "assets/svg/page_7/home.svg";
-  static const PG7_LOCAL_CONVEINET_STORE = "assets/svg/page_7/local_convenience_store.svg";
+  static const PG7_LOCAL_CONVEINET_STORE =
+      "assets/svg/page_7/local_convenience_store.svg";
   static const PG7_LOCATION_CITY = "assets/svg/page_7/location_city.svg";
   static const PG7_NOTIFICATION = "assets/svg/page_7/notification.svg";
 
@@ -34,4 +38,17 @@ class AssetResources {
   static const PG10_04 = "assets/png/10/04.png";
   static const PG10_05 = "assets/png/10/05.png";
   static const PG10_06 = "assets/png/10/06.png";
+
+  static const PG12_AIR_CONDITIONER = "assets/svg/page_12/air-conditioner.svg";
+  static const PG12_FAN = "assets/svg/page_12/fan.svg";
+  static const PG12_FRIDGE = "assets/svg/page_12/fridge.svg";
+  static const PG12_LIGHT = "assets/svg/page_12/light.svg";
+  static const PG12_SOFA = "assets/svg/page_12/sofa.svg";
+  static const PG13_BACKGROUND = "assets/png/page_13/background.png";
+  static const PG13_IMAGE1 = "assets/png/page_13/image1.png";
+  static const PG13_IMAGE2 = "assets/png/page_13/image2.png";
+  static const PG13_IMAGE3 = "assets/png/page_13/image3.png";
+
+  static const PG14_MASTERCARD = "assets/svg/page_14/mastercard.svg";
+  static const PG14_FINGER_PRINT = "assets/svg/page_14/finger-print.svg";
 }

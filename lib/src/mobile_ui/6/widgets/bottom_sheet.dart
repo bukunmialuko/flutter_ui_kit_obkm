@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_ui_kit_obkm/res/asset_images.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class BottomSheetWidget extends StatelessWidget {

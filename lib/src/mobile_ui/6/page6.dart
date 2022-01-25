@@ -183,7 +183,7 @@ class _Page6State extends State<Page6> {
               maxChildSize: 0.8,
               builder: (c, controller) {
                 return BottomSheetWidget(
-                  data: ["", "", "", "", "", ""],
+                  data: const ["", "", "", "", "", ""],
                   scrollController: controller,
                 );
               })

@@ -41,6 +41,7 @@ dependencies:
   google_fonts: ^2.1.0
   get_it: ^7.2.0
   flutter_bloc: ^8.0.0
+  table_calendar: ^3.0.3
 
 
 dev_dependencies:
@@ -74,11 +75,14 @@ flutter:
   assets:
     - assets/png/
     - assets/png/page_8/
+    - assets/png/page_13/
     - assets/png/10/
     - assets/svg/
     - assets/svg/page_6/
     - assets/svg/page_7/
     - assets/svg/page_8/
+    - assets/svg/page_12/
+    - assets/svg/page_14/
     - assets/svg/9/
 
 
