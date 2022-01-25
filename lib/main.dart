@@ -3,11 +3,15 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/14/page_14.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/root/root.dart';
+import 'package:get_it/get_it.dart';
 
 import 'generated/l10n.dart';
-// import 'src/mobile_ui/root/root.dart';
+import 'src/di/service_locator.dart';
+import 'src/navigation/navigation_service.dart';
+import 'src/navigation/routes.dart';
 
-void main() {
+void main() async {
+  await ServiceLocator().setUp();
   runApp(const App());
 }
 
