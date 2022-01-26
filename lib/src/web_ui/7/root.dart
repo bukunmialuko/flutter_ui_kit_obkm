@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Page7 extends StatelessWidget {
-  const Page7({Key? key}) : super(key: key);
+class WebPage7 extends StatelessWidget {
+  const WebPage7({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -10,9 +11,11 @@ class Page7 extends StatelessWidget {
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              width: 640,
+              height: 1024.h,
+              width: MediaQuery.of(context).size.width / 2,
               decoration: BoxDecoration(
                 color: Colors.grey,
                 image: DecorationImage(
@@ -37,16 +40,17 @@ class Page7 extends StatelessWidget {
               ),
             ),
             Container(
-              width: 640,
+              width: MediaQuery.of(context).size.width / 2,
+              height: 1024.h,
               color: Colors.white,
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.only(top: 60.0),
+                  Container(
+                    padding:
+                        EdgeInsets.only(top: 74.h, left: 98.w, right: 118.w),
                     child: SizedBox(
-                      width: 500,
-                      // color: Colors.blue,
+                      width: 504.w,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: const [
@@ -84,66 +88,83 @@ class Page7 extends StatelessWidget {
                       ),
                     ),
                   ),
+                  SizedBox(height: 312.h),
                   SizedBox(
-                    width: 450,
+                    width: 503.w,
                     child: Column(
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                            text: 'ANTI ',
+                            style: TextStyle(
+                              fontSize: 72,
+                              fontFamily: GoogleFonts.gfsDidot().fontFamily,
+                            ),
+                            children: const <TextSpan>[
+                              TextSpan(
+                                text: 'DESIGN',
+                                style: TextStyle(
+                                  fontSize: 72,
+                                  fontFamily: 'Proxima Nova',
+                                  fontWeight: FontWeight.w100,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          height: 36.h,
+                        ),
+                        Text(
+                          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero in mauris est condimentum suscipit. Viverra tincidunt amet aliquet massa rhoncus egestas eget id turpis. Augue nunc. ',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 18.sp,
+                            fontFamily: 'Proxima Nova',
+                            fontWeight: FontWeight.w400,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(height: 299.h),
+                  Container(
+                    width: 468.w,
+                    height: 58.h,
+                    color: Color(0xFFD5DACC),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Row(
                           children: [
                             Text(
-                              'ANTI',
+                              'This website uses cookies. ',
                               style: TextStyle(
-                                fontSize: 72,
-                                fontFamily: GoogleFonts.gfsDidot().fontFamily,
+                                fontSize: 18.sp,
+                                fontFamily: 'Proxima Nova',
                               ),
                             ),
-                            SizedBox(
-                              width: 16,
-                            ),
                             Text(
-                              'DESIGN',
+                              'Learn more',
                               style: TextStyle(
-                                fontSize: 72,
+                                fontSize: 18.sp,
                                 fontFamily: 'Proxima Nova',
-                                fontWeight: FontWeight.w100,
+                                decoration: TextDecoration.underline,
                               ),
                             ),
                           ],
                         ),
                         SizedBox(
-                          height: 35,
+                          width: 60.w,
                         ),
                         Text(
-                          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero in mauris est condimentum suscipit. Viverra tincidunt amet aliquet massa rhoncus egestas eget id turpis. Augue nunc. ',
-                          textAlign: TextAlign.center,
+                          'ACCEPT',
+                          style: TextStyle(
+                            fontSize: 18.sp,
+                            fontFamily: 'Proxima Nova',
+                          ),
                         ),
                       ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 20.0),
-                    child: Container(
-                      width: 450,
-                      height: 40,
-                      color: Color(0xFFD5DACC),
-                      padding: EdgeInsets.symmetric(horizontal: 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: const [
-                              Text('This website uses cookies. '),
-                              Text(
-                                'Learn more',
-                                style: TextStyle(
-                                  decoration: TextDecoration.underline,
-                                ),
-                              ),
-                            ],
-                          ),
-                          Text('ACCEPT'),
-                        ],
-                      ),
                     ),
                   ),
                 ],
