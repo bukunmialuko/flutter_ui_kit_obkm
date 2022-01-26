@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_ui_kit_obkm/src/res/font_family.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class WebPage7 extends StatelessWidget {
@@ -32,7 +33,7 @@ class WebPage7 extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 72,
                         color: Color(0xFF8B8B8B),
-                        fontFamily: 'Abolition',
+                        fontFamily: FontFamily.abolition,
                       ),
                     ),
                   ),
@@ -105,7 +106,7 @@ class WebPage7 extends StatelessWidget {
                                 text: 'DESIGN',
                                 style: TextStyle(
                                   fontSize: 72,
-                                  fontFamily: 'Proxima Nova',
+                                  fontFamily: FontFamily.proximaNova,
                                   fontWeight: FontWeight.w100,
                                 ),
                               ),
@@ -120,7 +121,7 @@ class WebPage7 extends StatelessWidget {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 18.sp,
-                            fontFamily: 'Proxima Nova',
+                            fontFamily: FontFamily.proximaNova,
                             fontWeight: FontWeight.w400,
                           ),
                         ),
@@ -141,14 +142,14 @@ class WebPage7 extends StatelessWidget {
                               'This website uses cookies. ',
                               style: TextStyle(
                                 fontSize: 18.sp,
-                                fontFamily: 'Proxima Nova',
+                                fontFamily: FontFamily.proximaNova,
                               ),
                             ),
                             Text(
                               'Learn more',
                               style: TextStyle(
                                 fontSize: 18.sp,
-                                fontFamily: 'Proxima Nova',
+                                fontFamily: FontFamily.proximaNova,
                                 decoration: TextDecoration.underline,
                               ),
                             ),
@@ -161,7 +162,7 @@ class WebPage7 extends StatelessWidget {
                           'ACCEPT',
                           style: TextStyle(
                             fontSize: 18.sp,
-                            fontFamily: 'Proxima Nova',
+                            fontFamily: FontFamily.proximaNova,
                           ),
                         ),
                       ],
