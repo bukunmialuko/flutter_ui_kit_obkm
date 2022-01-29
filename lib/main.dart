@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/14/page_14.dart';
+import 'package:flutter_ui_kit_obkm/src/mobile_ui/15/page_15.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/root/root.dart';
 import 'package:get_it/get_it.dart';
 
@@ -36,7 +37,7 @@ class App extends StatelessWidget {
         // navigatorKey: GetIt.I.get<NavigationService>().navigatorKey,
         // initialRoute: RootRoutes.initial,
         // onGenerateRoute: routes,
-        home: const RootWidget(),
+        home: Page15(),
       ),
     );
   }
