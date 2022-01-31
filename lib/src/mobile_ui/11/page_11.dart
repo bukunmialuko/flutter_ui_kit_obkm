@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:flutter_ui_kit_obkm/res/asset_images.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 class Page11 extends StatefulWidget {
@@ -116,22 +118,11 @@ class _Page11State extends State<Page11> {
             Positioned(
               right: 0,
               top: 0,
-              child: Container(
+              child: SvgPicture.asset(
+                Assets.PG11_01,
                 height: 21.37.r,
                 width: 21.37.r,
-                decoration: BoxDecoration(
-                  color: Color(0xffFF832B),
-                  borderRadius: BorderRadius.circular(8.r),
-                ),
-              ),
-            ),
-            Positioned(
-              right: 0.r,
-              top: 7.r,
-              child: RotationTransition(
-                turns: AlwaysStoppedAnimation(45 / 360),
-                child: Container(
-                    height: 17.37.r, width: 30.7.r, color: Color(0xFFF4F4F4)),
+                fit: BoxFit.fill,
               ),
             ),
           ],
