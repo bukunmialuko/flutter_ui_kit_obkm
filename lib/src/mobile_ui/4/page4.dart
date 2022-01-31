@@ -30,7 +30,7 @@ class _Page4State extends State<Page4> {
             height: 340.h + MediaQuery.of(context).viewPadding.top,
             decoration: const BoxDecoration(
               image: DecorationImage(
-                image: AssetImage(AssetResources.LADY_PG4),
+                image: AssetImage(Assets.LADY_PG4),
                 fit: BoxFit.cover,
               ),
             ),
@@ -44,7 +44,7 @@ class _Page4State extends State<Page4> {
                       margin: EdgeInsets.only(
                           top: MediaQuery.of(context).viewPadding.top),
                       child: SvgPicture.asset(
-                        AssetResources.BACK,
+                        Assets.BACK,
                         height: 48.r,
                         width: 48.r,
                         fit: BoxFit.fill,
@@ -56,7 +56,7 @@ class _Page4State extends State<Page4> {
                       margin: EdgeInsets.only(
                           top: MediaQuery.of(context).viewPadding.top),
                       child: SvgPicture.asset(
-                        AssetResources.MENU,
+                        Assets.MENU,
                         height: 48.r,
                         width: 48.r,
                         fit: BoxFit.fill,
@@ -81,7 +81,7 @@ class _Page4State extends State<Page4> {
                   right: 24.w,
                   bottom: 13.h,
                   child: SvgPicture.asset(
-                    AssetResources.PLAY,
+                    Assets.PLAY,
                     height: 48.r,
                     width: 48.r,
                     fit: BoxFit.fill,
@@ -246,7 +246,7 @@ class _Page4State extends State<Page4> {
                                         bottom: 0,
                                         right: 0,
                                         child: SvgPicture.asset(
-                                          AssetResources.PLAY,
+                                          Assets.PLAY,
                                           height: 24.h,
                                           width: 24.h,
                                           fit: BoxFit.fill,
@@ -388,7 +388,7 @@ class _Page4State extends State<Page4> {
                                             horizontal: 8.w,
                                           ),
                                           child: SvgPicture.asset(
-                                            AssetResources.MORE,
+                                            Assets.MORE,
                                             height: 24.w,
                                             width: 24.w,
                                             fit: BoxFit.fill,

@@ -23,7 +23,7 @@ class _Page13State extends State<Page13> {
               child: Stack(
                 children: [
                   Image.asset(
-                    AssetResources.PG13_BACKGROUND,
+                    Assets.PG13_BACKGROUND,
                     width: 390.w,
                     height: 486.h,
                     fit: BoxFit.cover,
@@ -135,17 +135,17 @@ class _Page13State extends State<Page13> {
                     children: [
                       Padding(
                         padding: EdgeInsets.only(right: 18.w),
-                        child: Image.asset(AssetResources.PG13_IMAGE1,
+                        child: Image.asset(Assets.PG13_IMAGE1,
                             width: 70.w, height: 70.h),
                       ),
                       Padding(
                         padding: EdgeInsets.only(right: 18.w),
-                        child: Image.asset(AssetResources.PG13_IMAGE2,
+                        child: Image.asset(Assets.PG13_IMAGE2,
                             width: 70.w, height: 70.h),
                       ),
                       Padding(
                         padding: EdgeInsets.only(right: 18.w),
-                        child: Image.asset(AssetResources.PG13_IMAGE3,
+                        child: Image.asset(Assets.PG13_IMAGE3,
                             width: 70.w, height: 70.h),
                       ),
                       const Expanded(child: SizedBox()),

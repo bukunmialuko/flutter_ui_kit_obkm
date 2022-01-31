@@ -12,7 +12,7 @@ class Page8 extends StatefulWidget {
 }
 
 class _Page8State extends State<Page8> {
-  List<String> cards = [AssetResources.PG8_CARD1, AssetResources.PG8_CARD2];
+  List<String> cards = [Assets.PG8_CARD1, Assets.PG8_CARD2];
   List<Page8Model> models = [
     Page8Model("30.12", "Subscription"),
     Page8Model("70.00", "Grocery"),

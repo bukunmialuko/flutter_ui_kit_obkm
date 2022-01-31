@@ -241,7 +241,7 @@ class _Page3State extends State<Page3> {
                                   ),
                                 ),
                                 SvgPicture.asset(
-                                  AssetResources.PAUSE,
+                                  Assets.PAUSE,
                                   height: 45.67.r,
                                   width: 45.67.r,
                                   fit: BoxFit.fill,

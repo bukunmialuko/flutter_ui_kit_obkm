@@ -55,7 +55,7 @@ class _Page7State extends State<Page7> {
                     ),
                     const Spacer(),
                     SvgPicture.asset(
-                      AssetResources.PG7_NOTIFICATION,
+                      Assets.PG7_NOTIFICATION,
                       height: 36.r,
                       width: 36.r,
                       fit: BoxFit.fill,
@@ -349,7 +349,7 @@ class _Page7State extends State<Page7> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     SvgPicture.asset(
-                      AssetResources.PG7_HOME,
+                      Assets.PG7_HOME,
                       height: 24.r,
                       width: 24.r,
                       fit: BoxFit.fill,
@@ -372,19 +372,19 @@ class _Page7State extends State<Page7> {
                   ],
                 ),
                 SvgPicture.asset(
-                  AssetResources.PG7_CONTROL_CAMERA,
+                  Assets.PG7_CONTROL_CAMERA,
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
                 ),
                 SvgPicture.asset(
-                  AssetResources.PG7_LOCATION_CITY,
+                  Assets.PG7_LOCATION_CITY,
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
                 ),
                 SvgPicture.asset(
-                  AssetResources.PG7_LOCAL_CONVEINET_STORE,
+                  Assets.PG7_LOCAL_CONVEINET_STORE,
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,

@@ -55,59 +55,86 @@ class _Page11State extends State<Page11> {
 
   Widget _scheduleItem() => Container(
         margin: EdgeInsets.symmetric(horizontal: 23.w),
-        decoration: BoxDecoration(
-          color: const Color(0xFFF4F4F4),
-          // color: Colors.red,
-          borderRadius: BorderRadius.circular(8.r),
-          boxShadow: [
-            BoxShadow(
-              offset: const Offset(0, 2),
-              blurRadius: 8,
-              color: Colors.black.withOpacity(.25),
-            )
-          ],
-        ),
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 15.h),
-          child: Row(
-            children: [
-              CircleAvatar(
-                radius: 30.w,
-                backgroundColor: const Color(0xFFC4C4C4),
-              ),
-              SizedBox(width: 15.w),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'John Doe',
-                    style: TextStyle(
-                      fontSize: 14.sp,
-                      fontWeight: FontWeight.w600,
-                      color: const Color(0xFF262626),
-                    ),
-                  ),
-                  Text(
-                    '@thecindydoe',
-                    style: TextStyle(
-                      fontSize: 12.sp,
-                      fontWeight: FontWeight.w400,
-                      color: const Color(0xFF262626),
-                    ),
-                  ),
+        child: Stack(
+          children: [
+            Container(
+              decoration: BoxDecoration(
+                color: const Color(0xFFF4F4F4),
+                // color: Colors.red,
+                borderRadius: BorderRadius.circular(8.r),
+                boxShadow: [
+                  BoxShadow(
+                    offset: const Offset(0, 2),
+                    blurRadius: 8,
+                    color: Colors.black.withOpacity(.25),
+                  )
                 ],
               ),
-              SizedBox(width: 31.w),
-              Text(
-                'Jun. 15th @ 8:30AM',
-                style: TextStyle(
-                  fontSize: 12.sp,
-                  fontWeight: FontWeight.w600,
-                  color: const Color(0xFF262626),
+              child: Padding(
+                padding: EdgeInsets.only(left: 14.w, top: 15.h, bottom: 15.h),
+                child: Row(
+                  children: [
+                    CircleAvatar(
+                      radius: 30.w,
+                      backgroundColor: const Color(0xFFC4C4C4),
+                    ),
+                    SizedBox(width: 15.w),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'John Doe',
+                          style: TextStyle(
+                            fontSize: 14.sp,
+                            fontWeight: FontWeight.w600,
+                            color: const Color(0xFF262626),
+                          ),
+                        ),
+                        Text(
+                          '@thecindydoe',
+                          style: TextStyle(
+                            fontSize: 12.sp,
+                            fontWeight: FontWeight.w400,
+                            color: const Color(0xFF262626),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(width: 31.w),
+                    Text(
+                      'Jun. 15th @ 8:30AM',
+                      style: TextStyle(
+                        fontSize: 12.sp,
+                        fontWeight: FontWeight.w600,
+                        color: const Color(0xFF262626),
+                      ),
+                    ),
+                  ],
                 ),
               ),
-            ],
-          ),
+            ),
+            Positioned(
+              right: 0,
+              top: 0,
+              child: Container(
+                height: 21.37.r,
+                width: 21.37.r,
+                decoration: BoxDecoration(
+                  color: Color(0xffFF832B),
+                  borderRadius: BorderRadius.circular(8.r),
+                ),
+              ),
+            ),
+            Positioned(
+              right: 0.r,
+              top: 7.r,
+              child: RotationTransition(
+                turns: AlwaysStoppedAnimation(45 / 360),
+                child: Container(
+                    height: 17.37.r, width: 30.7.r, color: Color(0xFFF4F4F4)),
+              ),
+            ),
+          ],
         ),
       );
 

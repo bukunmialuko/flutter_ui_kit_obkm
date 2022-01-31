@@ -23,7 +23,7 @@ class _Page14State extends State<Page14> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(height: 40.h),
-                SvgPicture.asset(AssetResources.PG14_MASTERCARD),
+                SvgPicture.asset(Assets.PG14_MASTERCARD),
                 SizedBox(height: 62.h),
                 Text(
                   'Hi there, welcome!',
@@ -47,7 +47,8 @@ class _Page14State extends State<Page14> {
                 ),
                 _textField(
                   hintText: 'Your full name',
-                  prefixIcon: const Icon(Icons.person, color: Color(0xFFA8A8A8)),
+                  prefixIcon:
+                      const Icon(Icons.person, color: Color(0xFFA8A8A8)),
                 ),
                 SizedBox(height: 14.h),
                 _textField(
@@ -74,8 +75,7 @@ class _Page14State extends State<Page14> {
                         ),
                       ),
                       child: Center(
-                        child:
-                            SvgPicture.asset(AssetResources.PG14_FINGER_PRINT),
+                        child: SvgPicture.asset(Assets.PG14_FINGER_PRINT),
                       ),
                     ),
                   ],
@@ -105,7 +105,9 @@ class _Page14State extends State<Page14> {
           style: TextStyle(
             fontSize: 16.sp,
             fontWeight: FontWeight.w600,
-            color: isTransparent ? const Color(0xFF0043CE) : const Color(0xFFF4F4F4),
+            color: isTransparent
+                ? const Color(0xFF0043CE)
+                : const Color(0xFFF4F4F4),
           ),
         ),
       );

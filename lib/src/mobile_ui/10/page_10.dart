@@ -13,12 +13,12 @@ class Page10 extends StatefulWidget {
 
 class _Page10State extends State<Page10> {
   List<String> images = [
-    AssetResources.PG10_01,
-    AssetResources.PG10_02,
-    AssetResources.PG10_03,
-    AssetResources.PG10_04,
-    AssetResources.PG10_05,
-    AssetResources.PG10_06
+    Assets.PG10_01,
+    Assets.PG10_02,
+    Assets.PG10_03,
+    Assets.PG10_04,
+    Assets.PG10_05,
+    Assets.PG10_06
   ];
   @override
   Widget build(BuildContext context) {

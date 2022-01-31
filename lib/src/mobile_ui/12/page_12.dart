@@ -43,7 +43,8 @@ class _Page12State extends State<Page12> {
                     ),
                   ),
                 ),
-                Divider(height: 32.h, color: const Color(0xFFD0D0D0), thickness: 1),
+                Divider(
+                    height: 32.h, color: const Color(0xFFD0D0D0), thickness: 1),
                 _titleWidget('Family Members Access'),
                 Padding(
                   padding: EdgeInsets.symmetric(vertical: 24.h),
@@ -91,7 +92,8 @@ class _Page12State extends State<Page12> {
                     ),
                   ),
                 ),
-                Divider(height: 60.h, color: const Color(0xFFD0D0D0), thickness: 1),
+                Divider(
+                    height: 60.h, color: const Color(0xFFD0D0D0), thickness: 1),
                 _titleWidget('Devices in living room'),
                 SizedBox(height: 19.h),
                 Wrap(
@@ -99,19 +101,18 @@ class _Page12State extends State<Page12> {
                   runSpacing: 17.h,
                   children: [
                     _livingRoomItem(
-                        name: 'Lights', iconPath: AssetResources.PG12_LIGHT),
+                        name: 'Lights', iconPath: Assets.PG12_LIGHT),
+                    _livingRoomItem(name: 'Sofa', iconPath: Assets.PG12_SOFA),
                     _livingRoomItem(
-                        name: 'Sofa', iconPath: AssetResources.PG12_SOFA),
-                    _livingRoomItem(
-                        name: 'Fridge', iconPath: AssetResources.PG12_FRIDGE),
+                        name: 'Fridge', iconPath: Assets.PG12_FRIDGE),
                     _livingRoomItem(
                       name: 'Fridge',
-                      iconPath: AssetResources.PG12_FAN,
+                      iconPath: Assets.PG12_FAN,
                       available: false,
                     ),
                     _livingRoomItem(
                       name: 'Fridge',
-                      iconPath: AssetResources.PG12_AIR_CONDITIONER,
+                      iconPath: Assets.PG12_AIR_CONDITIONER,
                       warning: true,
                     ),
                   ],
@@ -151,8 +152,9 @@ class _Page12State extends State<Page12> {
                 alignment: Alignment.topRight,
                 child: CircleAvatar(
                   radius: 5.w,
-                  backgroundColor:
-                      warning ? const Color(0xFFF1C21B) : const Color(0xFF24A148),
+                  backgroundColor: warning
+                      ? const Color(0xFFF1C21B)
+                      : const Color(0xFF24A148),
                 ),
               ),
               SvgPicture.asset(iconPath),

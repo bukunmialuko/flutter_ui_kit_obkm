@@ -29,26 +29,26 @@ class _Page9State extends State<Page9> {
                 Padding(
                   padding: EdgeInsets.only(right: 54.w),
                   child: SvgPicture.asset(
-                    AssetResources.PG9_EYE_TUBE,
+                    Assets.PG9_EYE_TUBE,
                     height: 48.r,
                     width: 120.r,
                     fit: BoxFit.fill,
                   ),
                 ),
                 SvgPicture.asset(
-                  AssetResources.PG9_ADD_TO_HOME,
+                  Assets.PG9_ADD_TO_HOME,
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
                 ),
                 SvgPicture.asset(
-                  AssetResources.PG9_NOTIFICATIONS,
+                  Assets.PG9_NOTIFICATIONS,
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
                 ),
                 SvgPicture.asset(
-                  AssetResources.PG9_SEARCH,
+                  Assets.PG9_SEARCH,
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
@@ -303,7 +303,7 @@ class _Page9State extends State<Page9> {
                                               crossAxisAlignment: CrossAxisAlignment.center,
                                               children: [
                                                 SvgPicture.asset(
-                                                  AssetResources.PG9_ELLIPSE,
+                                                  Assets.PG9_ELLIPSE,
                                                   height: 48.r,
                                                   width: 48.r,
                                                   fit: BoxFit.fill,

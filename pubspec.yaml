@@ -74,16 +74,17 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     - assets/png/
-    - assets/png/page_8/
-    - assets/png/page_13/
+    - assets/png/8/
+    - assets/png/13/
     - assets/png/10/
     - assets/svg/
-    - assets/svg/page_6/
-    - assets/svg/page_7/
-    - assets/svg/page_8/
-    - assets/svg/page_12/
-    - assets/svg/page_14/
+    - assets/svg/6/
+    - assets/svg/7/
+    - assets/svg/8/
     - assets/svg/9/
+    - assets/svg/11/
+    - assets/svg/12/
+    - assets/svg/14/
 
 
 
