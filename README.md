@@ -13,6 +13,19 @@ A Simple UI Kit.
 
 <br />
 
+## build apk
+flutter build apk
+
+<br />
+
+## 📸 Banner
+
+<p align="center">
+<img src="art/banner/banner.png" alt="splash.png" hspace="2"/>
+</p>
+
+<br />
+
 ## 📸 ScreenShots
 
 <p align="center">
@@ -48,3 +61,8 @@ A Simple UI Kit.
 Leave a 🌟
 
 Follow for update. 😃
+
+
+## Development version :hammer:
+- [APK (direct download)](https://github.com/bukunmialuko/flutter_ui_kit_obkm/releases/download/v1.0.0/app-release.apk)
+
