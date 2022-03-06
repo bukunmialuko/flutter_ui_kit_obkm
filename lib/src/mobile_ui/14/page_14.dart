@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_ui_kit_obkm/res/asset_images.dart';
+import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
+import 'package:get_it/get_it.dart';
 
 class Page14 extends StatefulWidget {
   const Page14({Key? key}) : super(key: key);
@@ -93,7 +95,9 @@ class _Page14State extends State<Page14> {
 
   Widget _button({required String text, bool isTransparent = false}) =>
       ElevatedButton(
-        onPressed: () {},
+        onPressed: () {
+          GetIt.I.get<NavigationService>().back();
+        },
         style: ElevatedButton.styleFrom(
           primary: isTransparent ? Colors.transparent : const Color(0xFF0043CE),
           elevation: 0,

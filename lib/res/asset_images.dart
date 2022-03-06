@@ -57,4 +57,9 @@ class Assets {
   ///14
   static const PG14_MASTERCARD = "assets/svg/14/mastercard.svg";
   static const PG14_FINGER_PRINT = "assets/svg/14/finger-print.svg";
+
+  ///18
+  static const PG18_FACEBOOK = "assets/svg/18/facebook.svg";
+  static const PG18_INSTAGRAM = "assets/svg/18/instagram.svg";
+  static const PG18_TWITTER = "assets/svg/18/twitter.svg";
 }

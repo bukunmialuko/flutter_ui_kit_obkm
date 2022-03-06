@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_ui_kit_obkm/res/asset_images.dart';
+import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
+import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page18 extends StatelessWidget {
@@ -32,7 +35,11 @@ class Page18 extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SvgPicture.asset('assets/svg/eyetubee.svg'),
+                GestureDetector(
+                    onTap: () {
+                      GetIt.I.get<NavigationService>().back();
+                    },
+                    child: SvgPicture.asset('assets/svg/eyetubee.svg')),
                 SizedBox(
                   height: 15.h,
                 ),
@@ -98,18 +105,35 @@ class Page18 extends StatelessWidget {
                 SizedBox(
                   height: 20.h,
                 ),
-                Row(
-                  children: [
-                    Icon(Icons.facebook_rounded),
-                    SizedBox(
-                      width: 10.w,
-                    ),
-                    Icon(Icons.facebook_rounded),
-                    SizedBox(
-                      width: 10.w,
-                    ),
-                    Icon(Icons.facebook_rounded),
-                  ],
+                GestureDetector(
+                  onTap: () {
+                    GetIt.I.get<NavigationService>().back();
+                  },
+                  child: Row(
+                    children: [
+                      SvgPicture.asset(
+                        Assets.PG18_FACEBOOK,
+                        height: 22.r,
+                        width: 22.r,
+                      ),
+                      SizedBox(
+                        width: 10.w,
+                      ),
+                      SvgPicture.asset(
+                        Assets.PG18_INSTAGRAM,
+                        height: 22.r,
+                        width: 22.r,
+                      ),
+                      SizedBox(
+                        width: 10.w,
+                      ),
+                      SvgPicture.asset(
+                        Assets.PG18_TWITTER,
+                        height: 22.r,
+                        width: 22.r,
+                      ),
+                    ],
+                  ),
                 )
               ],
             ),

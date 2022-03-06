@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
+import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page17 extends StatefulWidget {
@@ -51,7 +53,9 @@ class _Page17State extends State<Page17> {
             ),
           ),
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              GetIt.I.get<NavigationService>().back();
+            },
             style: ElevatedButton.styleFrom(
               primary: const Color(0xFF161616),
               elevation: 0,

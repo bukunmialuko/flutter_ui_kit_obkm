@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_ui_kit_obkm/res/asset_images.dart';
+import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
+import 'package:get_it/get_it.dart';
 
 class Page12 extends StatefulWidget {
   const Page12({Key? key}) : super(key: key);
@@ -183,7 +185,11 @@ class _Page12State extends State<Page12> {
               color: Colors.black,
             ),
           ),
-          const Icon(Icons.add_circle, color: Colors.black),
+          GestureDetector(
+              onTap: () {
+                GetIt.I.get<NavigationService>().back();
+              },
+              child: const Icon(Icons.add_circle, color: Colors.black)),
         ],
       );
 }

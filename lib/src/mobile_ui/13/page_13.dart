@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_kit_obkm/res/asset_images.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_ui_kit_obkm/res/asset_images.dart';
+import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
+import 'package:get_it/get_it.dart';
 
 class Page13 extends StatefulWidget {
   const Page13({Key? key}) : super(key: key);
@@ -149,20 +151,25 @@ class _Page13State extends State<Page13> {
                             width: 70.w, height: 70.h),
                       ),
                       const Expanded(child: SizedBox()),
-                      Container(
-                        width: 48.w,
-                        height: 48.w,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(4.r),
-                          border: Border.all(color: const Color(0xFF262626)),
-                        ),
-                        child: Center(
-                          child: Text(
-                            '31',
-                            style: TextStyle(
-                              fontSize: 16.sp,
-                              color: Colors.black,
-                              fontWeight: FontWeight.w600,
+                      GestureDetector(
+                        onTap: () {
+                          GetIt.I.get<NavigationService>().back();
+                        },
+                        child: Container(
+                          width: 48.w,
+                          height: 48.w,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(4.r),
+                            border: Border.all(color: const Color(0xFF262626)),
+                          ),
+                          child: Center(
+                            child: Text(
+                              '31',
+                              style: TextStyle(
+                                fontSize: 16.sp,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w600,
+                              ),
                             ),
                           ),
                         ),

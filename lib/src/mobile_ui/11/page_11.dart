@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_ui_kit_obkm/res/asset_images.dart';
+import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
+import 'package:get_it/get_it.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 class Page11 extends StatefulWidget {
@@ -55,77 +57,82 @@ class _Page11State extends State<Page11> {
     );
   }
 
-  Widget _scheduleItem() => Container(
-        margin: EdgeInsets.symmetric(horizontal: 23.w),
-        child: Stack(
-          children: [
-            Container(
-              decoration: BoxDecoration(
-                color: const Color(0xFFF4F4F4),
-                // color: Colors.red,
-                borderRadius: BorderRadius.circular(8.r),
-                boxShadow: [
-                  BoxShadow(
-                    offset: const Offset(0, 2),
-                    blurRadius: 8,
-                    color: Colors.black.withOpacity(.25),
-                  )
-                ],
-              ),
-              child: Padding(
-                padding: EdgeInsets.only(left: 14.w, top: 15.h, bottom: 15.h),
-                child: Row(
-                  children: [
-                    CircleAvatar(
-                      radius: 30.w,
-                      backgroundColor: const Color(0xFFC4C4C4),
-                    ),
-                    SizedBox(width: 15.w),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'John Doe',
-                          style: TextStyle(
-                            fontSize: 14.sp,
-                            fontWeight: FontWeight.w600,
-                            color: const Color(0xFF262626),
-                          ),
-                        ),
-                        Text(
-                          '@thecindydoe',
-                          style: TextStyle(
-                            fontSize: 12.sp,
-                            fontWeight: FontWeight.w400,
-                            color: const Color(0xFF262626),
-                          ),
-                        ),
-                      ],
-                    ),
-                    SizedBox(width: 31.w),
-                    Text(
-                      'Jun. 15th @ 8:30AM',
-                      style: TextStyle(
-                        fontSize: 12.sp,
-                        fontWeight: FontWeight.w600,
-                        color: const Color(0xFF262626),
-                      ),
-                    ),
+  Widget _scheduleItem() => GestureDetector(
+        onTap: () {
+          GetIt.I.get<NavigationService>().back();
+        },
+        child: Container(
+          margin: EdgeInsets.symmetric(horizontal: 23.w),
+          child: Stack(
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  color: const Color(0xFFF4F4F4),
+                  // color: Colors.red,
+                  borderRadius: BorderRadius.circular(8.r),
+                  boxShadow: [
+                    BoxShadow(
+                      offset: const Offset(0, 2),
+                      blurRadius: 8,
+                      color: Colors.black.withOpacity(.25),
+                    )
                   ],
                 ),
+                child: Padding(
+                  padding: EdgeInsets.only(left: 14.w, top: 15.h, bottom: 15.h),
+                  child: Row(
+                    children: [
+                      CircleAvatar(
+                        radius: 30.w,
+                        backgroundColor: const Color(0xFFC4C4C4),
+                      ),
+                      SizedBox(width: 15.w),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'John Doe',
+                            style: TextStyle(
+                              fontSize: 14.sp,
+                              fontWeight: FontWeight.w600,
+                              color: const Color(0xFF262626),
+                            ),
+                          ),
+                          Text(
+                            '@thecindydoe',
+                            style: TextStyle(
+                              fontSize: 12.sp,
+                              fontWeight: FontWeight.w400,
+                              color: const Color(0xFF262626),
+                            ),
+                          ),
+                        ],
+                      ),
+                      SizedBox(width: 31.w),
+                      Text(
+                        'Jun. 15th @ 8:30AM',
+                        style: TextStyle(
+                          fontSize: 12.sp,
+                          fontWeight: FontWeight.w600,
+                          color: const Color(0xFF262626),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ),
-            ),
-            Positioned(
-              right: 0,
-              top: 0,
-              child: SvgPicture.asset(
-                Assets.PG11_01,
-                height: 21.37.r,
-                width: 21.37.r,
-                fit: BoxFit.fill,
+              Positioned(
+                right: 0,
+                top: 0,
+                child: SvgPicture.asset(
+                  Assets.PG11_01,
+                  height: 21.37.r,
+                  width: 21.37.r,
+                  fit: BoxFit.fill,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       );
 

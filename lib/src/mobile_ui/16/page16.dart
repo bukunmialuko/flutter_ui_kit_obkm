@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
+import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page16 extends StatelessWidget {
@@ -63,7 +65,28 @@ class Page16 extends StatelessWidget {
                       VerificationTextField(),
                     ],
                   ),
-                )
+                ),
+                SizedBox(height: 41.h),
+                Text(
+                  'Didn’t receive the code?',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 14.sp,
+                    fontWeight: FontWeight.w400,
+                    fontFamily: GoogleFonts.workSans().fontFamily,
+                  ),
+                ),
+                SizedBox(height: 12.h),
+                Text(
+                  '+1 206-312-9956',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 14.sp,
+                    fontWeight: FontWeight.w600,
+                    decoration: TextDecoration.underline,
+                    fontFamily: GoogleFonts.workSans().fontFamily,
+                  ),
+                ),
               ],
             ),
           ),
@@ -74,7 +97,9 @@ class Page16 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    GetIt.I.get<NavigationService>().back();
+                  },
                   style: ElevatedButton.styleFrom(
                     primary: const Color(0xFF161616),
                     elevation: 0,
@@ -124,10 +149,13 @@ class VerificationTextField extends StatelessWidget {
       ),
       child: TextField(
         textAlign: TextAlign.center,
+        maxLength: 1,
         style: TextStyle(
           fontSize: 28.sp,
         ),
-        decoration: InputDecoration(),
+        decoration: InputDecoration(
+          counterText: "",
+        ),
       ),
     );
   }
