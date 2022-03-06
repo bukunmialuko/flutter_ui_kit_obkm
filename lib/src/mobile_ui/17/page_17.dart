@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page17 extends StatefulWidget {
+  const Page17({Key? key}) : super(key: key);
+
   @override
   _Page17State createState() => _Page17State();
 }
