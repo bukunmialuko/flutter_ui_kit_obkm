@@ -66,6 +66,16 @@ flutter build apk
 
 <br />
 
+## 🤓 Contributors
+
+**Olusegun Michael**
+(https://www.linkedin.com/in/michaelolusegun)
+
+**Bamidele Michael**
+(https://www.linkedin.com/in/mbamidele)
+
+<br />
+
 ## 😃 Show some love ❤️😍😍
 
 Leave a 🌟
