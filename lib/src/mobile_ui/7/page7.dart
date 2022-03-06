@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_ui_kit_obkm/res/asset_images.dart';
+import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
 import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
 import 'package:flutter_ui_kit_obkm/src/res/styles.dart';
+import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page7 extends StatefulWidget {
@@ -27,18 +29,22 @@ class _Page7State extends State<Page7> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsets.only(
-                    left: 24.w, right: 24.w, top: 18.h, bottom: 18.h),
+                padding: EdgeInsets.only(left: 24.w, top: 18.h, bottom: 18.h),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Container(
-                      width: 60.r,
-                      height: 60.r,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(45.r),
-                        color: AppColors.grey,
+                    GestureDetector(
+                      onTap: () {
+                        GetIt.I.get<NavigationService>().back();
+                      },
+                      child: Container(
+                        width: 60.r,
+                        height: 60.r,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(45.r),
+                          color: AppColors.grey,
+                        ),
                       ),
                     ),
                     SizedBox(width: 10.w),
@@ -54,11 +60,19 @@ class _Page7State extends State<Page7> {
                       ),
                     ),
                     const Spacer(),
-                    SvgPicture.asset(
-                      Assets.PG7_NOTIFICATION,
-                      height: 36.r,
-                      width: 36.r,
-                      fit: BoxFit.fill,
+                    GestureDetector(
+                      onTap: () {
+                        GetIt.I.get<NavigationService>().back();
+                      },
+                      child: Padding(
+                        padding: EdgeInsets.only(right: 24.w),
+                        child: SvgPicture.asset(
+                          Assets.PG7_NOTIFICATION,
+                          height: 36.r,
+                          width: 36.r,
+                          fit: BoxFit.fill,
+                        ),
+                      ),
                     ),
                   ],
                 ),
@@ -110,7 +124,9 @@ class _Page7State extends State<Page7> {
                       onEditingComplete: () {},
                       onChanged: (val) {},
                       // validator: (val) {},
-                      onTap: () {},
+                      onTap: () {
+                        GetIt.I.get<NavigationService>().back();
+                      },
                     ),
                   ],
                 ),
@@ -150,60 +166,61 @@ class _Page7State extends State<Page7> {
                       ],
                     ),
                     SizedBox(height: 30.h),
-                    SizedBox(
-                      height: 140.h,
-                      child: ListView.separated(
-                        physics: const BouncingScrollPhysics(
-                            parent: AlwaysScrollableScrollPhysics()),
-                        scrollDirection: Axis.horizontal,
-                        itemCount: categories.length,
-                        itemBuilder: (c, i) {
-                          return Column(
-                            children: [
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(8.r),
-                                child: Container(
-                                  width: 109.w,
-                                  height: 140.h,
-                                  color: AppColors.grey,
-                                  child: Stack(
-                                    children: [
-                                      Align(
-                                        alignment: Alignment.bottomCenter,
-                                        child: Container(
-                                          height: 39.h,
-                                          color: const Color(0xff525252),
-                                          child: Center(
-                                            child: Text(
-                                              categories[i],
-                                              maxLines: 2,
-                                              style: GoogleFonts.workSans(
-                                                textStyle: TextStyle(
-                                                  fontSize: 14.sp,
-                                                  color: Colors.white,
-                                                  fontStyle: FontStyle.normal,
-                                                  fontWeight: FontWeight.w400,
-                                                ),
-                                              ),
-                                            ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 140.h,
+                child: ListView.separated(
+                  padding: EdgeInsets.only(left: 24.w),
+                  physics: const BouncingScrollPhysics(
+                      parent: AlwaysScrollableScrollPhysics()),
+                  scrollDirection: Axis.horizontal,
+                  itemCount: categories.length,
+                  itemBuilder: (c, i) {
+                    return Column(
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(8.r),
+                          child: Container(
+                            width: 109.w,
+                            height: 140.h,
+                            color: AppColors.grey,
+                            child: Stack(
+                              children: [
+                                Align(
+                                  alignment: Alignment.bottomCenter,
+                                  child: Container(
+                                    height: 39.h,
+                                    color: const Color(0xff525252),
+                                    child: Center(
+                                      child: Text(
+                                        categories[i],
+                                        maxLines: 2,
+                                        style: GoogleFonts.workSans(
+                                          textStyle: TextStyle(
+                                            fontSize: 14.sp,
+                                            color: Colors.white,
+                                            fontStyle: FontStyle.normal,
+                                            fontWeight: FontWeight.w400,
                                           ),
                                         ),
                                       ),
-                                    ],
+                                    ),
                                   ),
                                 ),
-                              ),
-                            ],
-                          );
-                        },
-                        separatorBuilder: (BuildContext context, int index) {
-                          return SizedBox(
-                            width: 17.w,
-                          );
-                        },
-                      ),
-                    ),
-                  ],
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    );
+                  },
+                  separatorBuilder: (BuildContext context, int index) {
+                    return SizedBox(
+                      width: 17.w,
+                    );
+                  },
                 ),
               ),
               SizedBox(height: 52.h),
@@ -241,90 +258,88 @@ class _Page7State extends State<Page7> {
                       ],
                     ),
                     SizedBox(height: 17.h),
-                    SizedBox(
-                      height: 165.h,
-                      child: ListView.separated(
-                        physics: const BouncingScrollPhysics(
-                            parent: AlwaysScrollableScrollPhysics()),
-                        scrollDirection: Axis.horizontal,
-                        itemCount: 4,
-                        itemBuilder: (c, i) {
-                          return Column(
-                            children: [
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(8.r),
-                                child: Container(
-                                  width: 244.w,
-                                  height: 165.h,
-                                  color: AppColors.grey,
-                                  child: Stack(
-                                    children: [
-                                      Align(
-                                        alignment: Alignment.bottomLeft,
-                                        child: Container(
-                                          padding: EdgeInsets.only(
-                                              left: 15.w, bottom: 12.w),
-                                          child: Column(
-                                            mainAxisSize: MainAxisSize.min,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Text(
-                                                "Tai Po Beach",
-                                                maxLines: 1,
-                                                style: GoogleFonts.workSans(
-                                                  textStyle: TextStyle(
-                                                    fontSize: 16.sp,
-                                                    color: Colors.black,
-                                                    fontStyle: FontStyle.normal,
-                                                    fontWeight: FontWeight.w600,
-                                                  ),
-                                                ),
-                                              ),
-                                              Row(
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.center,
-                                                children: [
-                                                  const Icon(
-                                                      Icons.edit_location),
-                                                  SizedBox(width: 4.w),
-
-                                                  /// Todo : This should be tested for overflow
-                                                  Text(
-                                                    "Kam Ling, Hong Kong",
-                                                    maxLines: 1,
-                                                    style: GoogleFonts.workSans(
-                                                      textStyle: TextStyle(
-                                                        fontSize: 10.sp,
-                                                        color: Colors.black,
-                                                        fontStyle:
-                                                            FontStyle.normal,
-                                                        fontWeight:
-                                                            FontWeight.w400,
-                                                      ),
-                                                    ),
-                                                  )
-                                                ],
-                                              )
-                                            ],
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 165.h,
+                child: ListView.separated(
+                  padding: EdgeInsets.only(left: 24.w),
+                  physics: const BouncingScrollPhysics(
+                      parent: AlwaysScrollableScrollPhysics()),
+                  scrollDirection: Axis.horizontal,
+                  itemCount: 4,
+                  itemBuilder: (c, i) {
+                    return Column(
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(8.r),
+                          child: Container(
+                            width: 244.w,
+                            height: 165.h,
+                            color: AppColors.grey,
+                            child: Stack(
+                              children: [
+                                Align(
+                                  alignment: Alignment.bottomLeft,
+                                  child: Container(
+                                    padding: EdgeInsets.only(
+                                        left: 15.w, bottom: 12.w),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.min,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Tai Po Beach",
+                                          maxLines: 1,
+                                          style: GoogleFonts.workSans(
+                                            textStyle: TextStyle(
+                                              fontSize: 16.sp,
+                                              color: Colors.black,
+                                              fontStyle: FontStyle.normal,
+                                              fontWeight: FontWeight.w600,
+                                            ),
                                           ),
                                         ),
-                                      ),
-                                    ],
+                                        Row(
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          children: [
+                                            const Icon(Icons.edit_location),
+                                            SizedBox(width: 4.w),
+
+                                            /// Todo : This should be tested for overflow
+                                            Text(
+                                              "Kam Ling, Hong Kong",
+                                              maxLines: 1,
+                                              style: GoogleFonts.workSans(
+                                                textStyle: TextStyle(
+                                                  fontSize: 10.sp,
+                                                  color: Colors.black,
+                                                  fontStyle: FontStyle.normal,
+                                                  fontWeight: FontWeight.w400,
+                                                ),
+                                              ),
+                                            )
+                                          ],
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 ),
-                              ),
-                            ],
-                          );
-                        },
-                        separatorBuilder: (BuildContext context, int index) {
-                          return SizedBox(
-                            width: 42.w,
-                          );
-                        },
-                      ),
-                    ),
-                  ],
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    );
+                  },
+                  separatorBuilder: (BuildContext context, int index) {
+                    return SizedBox(
+                      width: 42.w,
+                    );
+                  },
                 ),
               ),
             ],

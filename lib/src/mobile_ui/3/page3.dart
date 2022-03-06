@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_ui_kit_obkm/res/asset_images.dart';
+import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
+import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page3 extends StatefulWidget {
@@ -233,7 +235,9 @@ class _Page3State extends State<Page3> {
                                     visualDensity:
                                         VisualDensity.adaptivePlatformDensity,
                                     padding: EdgeInsets.zero,
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      GetIt.I.get<NavigationService>().back();
+                                    },
                                     icon: const Icon(
                                       Icons.fast_rewind_rounded,
                                       color: Colors.black,
@@ -253,7 +257,9 @@ class _Page3State extends State<Page3> {
                                     visualDensity:
                                         VisualDensity.adaptivePlatformDensity,
                                     padding: EdgeInsets.zero,
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      GetIt.I.get<NavigationService>().back();
+                                    },
                                     icon: const Icon(
                                       Icons.fast_forward_rounded,
                                       color: Colors.black,

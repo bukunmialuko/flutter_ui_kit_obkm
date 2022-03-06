@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
 import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
 import 'package:flutter_ui_kit_obkm/src/res/styles.dart';
+import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page2 extends StatelessWidget {
@@ -47,7 +49,9 @@ class Page2 extends StatelessWidget {
                       child: IconButton(
                         visualDensity: VisualDensity.adaptivePlatformDensity,
                         padding: EdgeInsets.zero,
-                        onPressed: () {},
+                        onPressed: () {
+                          GetIt.I.get<NavigationService>().back();
+                        },
                         icon: const Icon(
                           Icons.arrow_back_ios,
                           color: Colors.black,

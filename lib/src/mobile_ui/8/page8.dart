@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/res/asset_images.dart';
+import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
 import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
+import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page8 extends StatefulWidget {
@@ -26,7 +28,8 @@ class _Page8State extends State<Page8> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Padding(
-              padding: EdgeInsets.only(left: 24.h, right: 24.h, top: 20.h, bottom: 25.h),
+              padding: EdgeInsets.only(
+                  left: 24.h, right: 24.h, top: 20.h, bottom: 25.h),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -69,12 +72,17 @@ class _Page8State extends State<Page8> {
                       )
                     ],
                   ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(8.r),
-                    child: Container(
-                      width: 48.r,
-                      height: 48.r,
-                      color: AppColors.grey,
+                  GestureDetector(
+                    onTap: () {
+                      GetIt.I.get<NavigationService>().back();
+                    },
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(8.r),
+                      child: Container(
+                        width: 48.r,
+                        height: 48.r,
+                        color: AppColors.grey,
+                      ),
                     ),
                   )
                 ],
@@ -129,18 +137,19 @@ class _Page8State extends State<Page8> {
                                           ),
                                           boxShadow: [
                                             BoxShadow(
-                                              color: Colors.black.withOpacity(0.25),
+                                              color: Colors.black
+                                                  .withOpacity(0.25),
                                               spreadRadius: 0,
                                               blurRadius: 8,
-                                              offset:
-                                                  const Offset(0, 4), // changes position of shadow
+                                              offset: const Offset(0,
+                                                  4), // changes position of shadow
                                             ),
                                           ],
                                         ),
                                         child: const Text("Add a card"),
                                         margin: EdgeInsets.only(top: 16.w),
-                                        padding:
-                                            EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
+                                        padding: EdgeInsets.symmetric(
+                                            horizontal: 16.w, vertical: 8.h),
                                       ),
                                     )
                                   ],
@@ -177,13 +186,15 @@ class _Page8State extends State<Page8> {
                                     decoration: BoxDecoration(
                                       // color: Colors.black,
                                       image: DecorationImage(
-                                          image: AssetImage(cards[i - 1]), fit: BoxFit.cover),
+                                          image: AssetImage(cards[i - 1]),
+                                          fit: BoxFit.cover),
                                     ),
                                   ),
                                 ),
                               );
                             },
-                            separatorBuilder: (BuildContext context, int index) {
+                            separatorBuilder:
+                                (BuildContext context, int index) {
                               if (index == 0) {
                                 return SizedBox(
                                   width: 31.w,
@@ -212,10 +223,12 @@ class _Page8State extends State<Page8> {
                             ),
                             boxShadow: [
                               BoxShadow(
-                                color: const Color(0xffC4C4C4).withOpacity(0.25),
+                                color:
+                                    const Color(0xffC4C4C4).withOpacity(0.25),
                                 spreadRadius: 0,
                                 blurRadius: 8,
-                                offset: const Offset(0, -4), // changes position of shadow
+                                offset: const Offset(
+                                    0, -4), // changes position of shadow
                               ),
                             ],
                           ),
@@ -235,14 +248,19 @@ class _Page8State extends State<Page8> {
                                       height: 4.h,
                                       decoration: BoxDecoration(
                                           color: const Color(0xff262626),
-                                          borderRadius: BorderRadius.circular(50.r)),
+                                          borderRadius:
+                                              BorderRadius.circular(50.r)),
                                       margin: EdgeInsets.only(top: 21.h),
                                     ),
                                     Padding(
                                       padding: EdgeInsets.only(
-                                          left: 24.w, right: 24.w, bottom: 25.h, top: 25.h),
+                                          left: 24.w,
+                                          right: 24.w,
+                                          bottom: 25.h,
+                                          top: 25.h),
                                       child: Row(
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
                                         children: [
                                           Text(
                                             "Recent transaction",
@@ -272,11 +290,14 @@ class _Page8State extends State<Page8> {
                                       ),
                                       child: Center(
                                         child: Row(
-                                          mainAxisAlignment: MainAxisAlignment.start,
-                                          crossAxisAlignment: CrossAxisAlignment.center,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
                                           children: [
                                             ClipRRect(
-                                              borderRadius: BorderRadius.circular(8.r),
+                                              borderRadius:
+                                                  BorderRadius.circular(8.r),
                                               child: Container(
                                                 width: 64.r,
                                                 height: 64.r,
@@ -287,7 +308,8 @@ class _Page8State extends State<Page8> {
                                             Expanded(
                                               flex: 3,
                                               child: Column(
-                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
                                                 children: [
                                                   Text("Transaction #${i + 1}"),
                                                   Text(
@@ -296,8 +318,10 @@ class _Page8State extends State<Page8> {
                                                       textStyle: TextStyle(
                                                         fontSize: 28.sp,
                                                         color: Colors.black,
-                                                        fontStyle: FontStyle.normal,
-                                                        fontWeight: FontWeight.w400,
+                                                        fontStyle:
+                                                            FontStyle.normal,
+                                                        fontWeight:
+                                                            FontWeight.w400,
                                                       ),
                                                     ),
                                                   )
@@ -307,30 +331,40 @@ class _Page8State extends State<Page8> {
                                             Expanded(
                                                 flex: 2,
                                                 child: Row(
-                                                  mainAxisAlignment: MainAxisAlignment.start,
-                                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.start,
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.center,
                                                   children: [
                                                     Container(
                                                       decoration: BoxDecoration(
-                                                        color: const Color(0xff262626),
-                                                        borderRadius: BorderRadius.all(
+                                                        color: const Color(
+                                                            0xff262626),
+                                                        borderRadius:
+                                                            BorderRadius.all(
                                                           Radius.circular(48.r),
                                                         ),
                                                       ),
                                                       child: Text(
                                                         models[i].buttonText,
-                                                        style: GoogleFonts.workSans(
+                                                        style: GoogleFonts
+                                                            .workSans(
                                                           textStyle: TextStyle(
                                                             fontSize: 10.sp,
                                                             color: Colors.white,
-                                                            fontStyle: FontStyle.normal,
-                                                            fontWeight: FontWeight.w400,
+                                                            fontStyle: FontStyle
+                                                                .normal,
+                                                            fontWeight:
+                                                                FontWeight.w400,
                                                           ),
                                                         ),
                                                       ),
-                                                      margin: EdgeInsets.only(top: 16.w),
-                                                      padding: EdgeInsets.symmetric(
-                                                          horizontal: 16.w, vertical: 8.h),
+                                                      margin: EdgeInsets.only(
+                                                          top: 16.w),
+                                                      padding:
+                                                          EdgeInsets.symmetric(
+                                                              horizontal: 16.w,
+                                                              vertical: 8.h),
                                                     ),
                                                   ],
                                                 )),

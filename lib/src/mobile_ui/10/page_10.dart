@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/res/asset_images.dart';
+import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
 import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
+import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page10 extends StatefulWidget {
@@ -46,13 +48,18 @@ class _Page10State extends State<Page10> {
                       ),
                     ),
                   ),
-                  Container(
-                    width: 96.r,
-                    height: 96.r,
-                    margin: EdgeInsets.only(top: 35.h, bottom: 19.h),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(96.r),
-                      color: AppColors.grey,
+                  GestureDetector(
+                    onTap: () {
+                      GetIt.I.get<NavigationService>().back();
+                    },
+                    child: Container(
+                      width: 96.r,
+                      height: 96.r,
+                      margin: EdgeInsets.only(top: 35.h, bottom: 19.h),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(96.r),
+                        color: AppColors.grey,
+                      ),
                     ),
                   ),
                   Text(

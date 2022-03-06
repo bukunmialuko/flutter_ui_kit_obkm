@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_ui_kit_obkm/res/asset_images.dart';
+import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
+import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page4 extends StatefulWidget {
@@ -39,15 +41,20 @@ class _Page4State extends State<Page4> {
                 // SizedBox(height: 16.h),
                 Row(
                   children: [
-                    Container(
-                      padding: EdgeInsets.only(left: 27.w, top: 16.h),
-                      margin: EdgeInsets.only(
-                          top: MediaQuery.of(context).viewPadding.top),
-                      child: SvgPicture.asset(
-                        Assets.BACK,
-                        height: 48.r,
-                        width: 48.r,
-                        fit: BoxFit.fill,
+                    GestureDetector(
+                      onTap: () {
+                        GetIt.I.get<NavigationService>().back();
+                      },
+                      child: Container(
+                        padding: EdgeInsets.only(left: 27.w, top: 16.h),
+                        margin: EdgeInsets.only(
+                            top: MediaQuery.of(context).viewPadding.top),
+                        child: SvgPicture.asset(
+                          Assets.BACK,
+                          height: 48.r,
+                          width: 48.r,
+                          fit: BoxFit.fill,
+                        ),
                       ),
                     ),
                     const Spacer(),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
+import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page5 extends StatefulWidget {
@@ -39,7 +41,9 @@ class _Page5State extends State<Page5> {
                       child: IconButton(
                         visualDensity: VisualDensity.adaptivePlatformDensity,
                         padding: EdgeInsets.zero,
-                        onPressed: () {},
+                        onPressed: () {
+                          GetIt.I.get<NavigationService>().back();
+                        },
                         icon: const Icon(
                           Icons.chevron_left,
                           color: Colors.black,
