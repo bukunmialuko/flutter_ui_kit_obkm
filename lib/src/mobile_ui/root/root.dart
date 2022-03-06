@@ -13,7 +13,7 @@ class RootWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Flutter UiKit"),
+        title: Text("Flutter Ui Kit"),
         elevation: 0,
       ),
       body: Padding(

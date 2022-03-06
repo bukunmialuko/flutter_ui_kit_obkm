@@ -16,8 +16,6 @@ A Simple UI Kit.
 ## build apk
 flutter build apk
 
-<br />
-
 ## 📸 Banner
 
 <p align="center">
@@ -29,6 +27,7 @@ flutter build apk
 ## 📸 ScreenShots
 
 <p align="center">
+<img src="art/screenshots/root.png" alt="page 1" width="200px" hspace="2"/>
 <img src="art/screenshots/page_1.png" alt="page 1" width="200px" hspace="2"/>
 <img src="art/screenshots/page_2.png" alt="page 2" width="200px" hspace="2"/>
 <img src="art/screenshots/page_3.png" alt="page 3" width="200px" hspace="2"/>
