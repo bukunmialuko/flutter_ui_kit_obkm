@@ -77,6 +77,7 @@ flutter:
     - assets/png/8/
     - assets/png/13/
     - assets/png/10/
+    - assets/png/19/
     - assets/svg/
     - assets/svg/6/
     - assets/svg/7/
@@ -86,6 +87,7 @@ flutter:
     - assets/svg/12/
     - assets/svg/14/
     - assets/svg/18/
+    - assets/svg/19/
 
 
 
