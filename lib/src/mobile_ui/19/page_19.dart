@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get_it/get_it.dart';
 
+import '../../../res/asset_images.dart';
 import '../../navigation/navigation_service.dart';
 
 class Page19 extends StatelessWidget {
@@ -233,6 +234,47 @@ class Page19 extends StatelessWidget {
               ),
             )
           ],
+        ),
+      ),
+      bottomNavigationBar: Container(
+        height: 90.h,
+        decoration: BoxDecoration(
+            color: Colors.white,
+            border: Border.all(color: const Color(0xffE0E0E0))),
+        child: Center(
+          child: Padding(
+            padding: EdgeInsets.only(left: 54.w, right: 54.w),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                SvgPicture.asset(
+                  Assets.PG6_MOTION_PHOTOS_PAUSE,
+                  height: 24.r,
+                  width: 24.r,
+                  fit: BoxFit.fill,
+                ),
+                SvgPicture.asset(
+                  Assets.PG6_CAST_CONNECTED,
+                  height: 24.r,
+                  width: 24.r,
+                  fit: BoxFit.fill,
+                ),
+                SvgPicture.asset(
+                  Assets.PG6_DEBUG,
+                  height: 24.r,
+                  width: 24.r,
+                  fit: BoxFit.fill,
+                ),
+                SvgPicture.asset(
+                  Assets.PG6_CONTACT,
+                  height: 24.r,
+                  width: 24.r,
+                  fit: BoxFit.fill,
+                ),
+              ],
+            ),
+          ),
         ),
       ),
     );
