@@ -24,5 +24,5 @@ class MobileRoutes {
   static const pg20 = "/20/";
 
   /// 21 - 40
-
+  static const pg21 = "/21/";
 }
