@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/21/model/pg_21_model.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:intl/intl.dart';
 
 class Pg21ListItem extends StatelessWidget {
   final int index;
@@ -14,7 +15,7 @@ class Pg21ListItem extends StatelessWidget {
     return Row(
       children: [
         Text(
-          '$index',
+          NumberFormat("00").format(index),
           style: GoogleFonts.workSans(
             textStyle: TextStyle(
               fontSize: 16.sp,
