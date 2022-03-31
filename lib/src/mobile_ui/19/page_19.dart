@@ -167,7 +167,7 @@ class Page19 extends StatelessWidget {
             ),
             SizedBox(height: 20.h),
             Container(
-              height: 265,
+              height: 270.h,
               color: Colors.white,
               child: ListView.separated(
                 itemCount: 2,
@@ -270,6 +270,7 @@ class TicketCard extends StatelessWidget {
                   ],
                 ),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(20.0),
