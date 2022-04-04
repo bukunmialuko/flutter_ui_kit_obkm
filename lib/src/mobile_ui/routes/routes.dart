@@ -28,4 +28,7 @@ class MobileRoutes {
   static const pg33 = "/33/";
   static const pg32 = "/32/";
   static const pg34 = "/34/";
+
+  /// 41 - 60
+  static const pg52 = "/52/";
 }
