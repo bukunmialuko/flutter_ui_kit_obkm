@@ -23,6 +23,7 @@ import 'package:flutter_ui_kit_obkm/src/mobile_ui/9/page9.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/routes/routes.dart';
 
 import '../mobile_ui/21/page_21.dart';
+import '../mobile_ui/34/page_34.dart';
 import 'fade_route.dart';
 
 var routes = (RouteSettings settings) {
@@ -112,6 +113,11 @@ var routes = (RouteSettings settings) {
     case MobileRoutes.pg21:
       return FadeRoute(
         page: const Page21(),
+      );
+
+    case MobileRoutes.pg34:
+      return FadeRoute(
+        page: const Page34(),
       );
   }
 };
