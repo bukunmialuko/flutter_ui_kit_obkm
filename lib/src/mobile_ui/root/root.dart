@@ -185,6 +185,15 @@ class RootWidget extends StatelessWidget {
                     .to(routeName: MobileRoutes.pg21);
               },
             ),
+
+            PageButtonWidget(
+              page: 33,
+              onPressed: () {
+                GetIt.I
+                    .get<NavigationService>()
+                    .to(routeName: MobileRoutes.pg33);
+              },
+            ),
           ],
         ),
       ),
