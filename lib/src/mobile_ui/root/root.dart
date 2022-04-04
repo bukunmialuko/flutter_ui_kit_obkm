@@ -22,6 +22,8 @@ class RootWidget extends StatelessWidget {
           spacing: 18.w,
           runSpacing: 18.h,
           children: [
+            /// 1 - 20
+
             PageButtonWidget(
               page: 1,
               onPressed: () {
@@ -179,7 +181,11 @@ class RootWidget extends StatelessWidget {
               onPressed: () {
                 GetIt.I
                     .get<NavigationService>()
-                    .to(routeName: MobileRoutes.pg20);},),
+                    .to(routeName: MobileRoutes.pg20);
+              },
+            ),
+
+            /// 21 - 40
 
             PageButtonWidget(
               page: 21,
@@ -191,18 +197,20 @@ class RootWidget extends StatelessWidget {
             ),
 
             PageButtonWidget(
+              page: 32,
+              onPressed: () {
+                GetIt.I
+                    .get<NavigationService>()
+                    .to(routeName: MobileRoutes.pg33);
+              },
+            ),
+
+            PageButtonWidget(
               page: 33,
               onPressed: () {
                 GetIt.I
                     .get<NavigationService>()
                     .to(routeName: MobileRoutes.pg33);
-
-              page: 32,
-              onPressed: () {
-                GetIt.I
-                    .get<NavigationService>()
-                    .to(routeName: MobileRoutes.pg32);
-
               },
             ),
 
