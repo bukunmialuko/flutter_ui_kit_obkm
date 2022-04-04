@@ -52,6 +52,7 @@ flutter build apk
 <img src="art/screenshots/page_32.png" alt="page 32" width="200px" hspace="2"/>
 <img src="art/screenshots/page_33.png" alt="page 33" width="200px" hspace="2"/>
 <img src="art/screenshots/page_34.png" alt="page 34" width="200px" hspace="2"/>
+<img src="art/screenshots/page_51.png" alt="page 51" width="200px" hspace="2"/>
 <img src="art/screenshots/page_52.png" alt="page 52" width="200px" hspace="2"/>
 
 <br />
