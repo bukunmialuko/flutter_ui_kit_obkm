@@ -186,7 +186,6 @@ class RootWidget extends StatelessWidget {
               },
             ),
 
-
             PageButtonWidget(
               page: 32,
               onPressed: () {
