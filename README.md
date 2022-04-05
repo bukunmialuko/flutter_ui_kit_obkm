@@ -53,13 +53,19 @@ flutter build apk
 | ------------- | ------------- | ------------- | ------------- |
 | <img src="art/screenshots/page_21.png" width="200"/> |  |  |  |
 
+| Page 25  | Page 26 | Page 27 | Page 28 |
+| ------------- | ------------- | ------------- | ------------- |
+| <img src="art/screenshots/page_25.png" width="200"/> |  | <img src="art/screenshots/page_27.png" width="200"/> |  |
 
-<img src="art/screenshots/page_21.png" alt="page 21" width="200px" hspace="2"/>
-<img src="art/screenshots/page_25.png" alt="page 25" width="200px" hspace="2"/>
-<img src="art/screenshots/page_27.png" alt="page 27" width="200px" hspace="2"/>
-<img src="art/screenshots/page_32.png" alt="page 32" width="200px" hspace="2"/>
-<img src="art/screenshots/page_33.png" alt="page 33" width="200px" hspace="2"/>
-<img src="art/screenshots/page_34.png" alt="page 34" width="200px" hspace="2"/>
+| Page 29  | Page 30 | Page 31 | Page 32 |
+| ------------- | ------------- | ------------- | ------------- |
+|  | | | <img src="art/screenshots/page_32.png" width="200"/> |
+
+| Page 33  | Page 34 | Page 35 | Page 36 |
+| ------------- | ------------- | ------------- | ------------- |
+| <img src="art/screenshots/page_33.png" width="200"/> | <img src="art/screenshots/page_34.png" width="200"/> | |  |
+
+
 <img src="art/screenshots/page_51.png" alt="page 51" width="200px" hspace="2"/>
 <img src="art/screenshots/page_52.png" alt="page 52" width="200px" hspace="2"/>
 
