@@ -7,14 +7,14 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../../res/asset_images.dart';
 import '../../navigation/navigation_service.dart';
 
-class Page25 extends StatefulWidget {
-  const Page25({Key? key}) : super(key: key);
+class Page24 extends StatefulWidget {
+  const Page24({Key? key}) : super(key: key);
 
   @override
-  State<Page25> createState() => _Page25State();
+  State<Page24> createState() => _Page24State();
 }
 
-class _Page25State extends State<Page25> {
+class _Page24State extends State<Page24> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -35,19 +35,19 @@ class _Page25State extends State<Page25> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'My goals',
+                          'Daily',
                           style: TextStyle(
-                            fontSize: 28.sp,
-                            fontWeight: FontWeight.w600,
+                            fontSize: 24.sp,
                             fontFamily: GoogleFonts.workSans().fontFamily,
                           ),
                         ),
                         Row(
                           children: [
                             Text(
-                              'June 2021',
+                              'Workout',
                               style: TextStyle(
-                                fontSize: 18.sp,
+                                fontSize: 24.sp,
+                                fontWeight: FontWeight.w600,
                                 fontFamily: GoogleFonts.workSans().fontFamily,
                               ),
                             ),
@@ -56,6 +56,15 @@ class _Page25State extends State<Page25> {
                               icon: Icon(CupertinoIcons.chevron_down),
                             ),
                           ],
+                        ),
+                        SizedBox(height: 40.h),
+                        Text(
+                          'Categories',
+                          style: TextStyle(
+                            fontSize: 20.sp,
+                            fontWeight: FontWeight.w300,
+                            fontFamily: GoogleFonts.workSans().fontFamily,
+                          ),
                         ),
                       ],
                     ),
@@ -75,9 +84,7 @@ class _Page25State extends State<Page25> {
                   ],
                 ),
               ),
-              SizedBox(
-                height: 13.h,
-              ),
+              SizedBox(height: 20.h),
               Container(
                 height: 80.h,
                 width: size.width,
@@ -96,17 +103,26 @@ class _Page25State extends State<Page25> {
                           return SizedBox(width: 10);
                         },
                         itemBuilder: (context, index) {
-                          return CircleAvatar(
-                            radius: 30.r,
-                            backgroundColor: Colors.grey,
-                            child: CircleAvatar(
-                              radius: 29.r,
-                              backgroundColor: Colors.white,
-                              child: Center(
-                                child: Text(
-                                  '${index + 20}',
-                                  style: TextStyle(color: Colors.black),
+                          return Container(
+                            height: 75.h,
+                            width: 75.h,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              // border: Border.all(),
+                              shape: BoxShape.circle,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey.withOpacity(0.5),
+                                  spreadRadius: 1,
+                                  blurRadius: 2,
+                                  offset: Offset(0, 0),
                                 ),
+                              ],
+                            ),
+                            child: Center(
+                              child: Icon(
+                                Icons.sports_basketball_outlined,
+                                size: 30,
                               ),
                             ),
                           );
@@ -117,22 +133,131 @@ class _Page25State extends State<Page25> {
                   ),
                 ),
               ),
-              SizedBox(
-                height: 20.h,
+              SizedBox(height: 30.h),
+              Container(
+                width: size.width,
+                height: 145.h,
+                padding: EdgeInsets.all(30.w),
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Running session',
+                      style: TextStyle(
+                        fontSize: 24.sp,
+                        fontFamily: GoogleFonts.workSans().fontFamily,
+                      ),
+                    ),
+                    Container(
+                      height: 32.h,
+                      width: 115,
+                      padding: EdgeInsets.symmetric(horizontal: 10),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Icon(
+                            Icons.play_arrow_rounded,
+                            color: Color(0xFF525252),
+                          ),
+                          SizedBox(width: 10),
+                          Text(
+                            '30 min',
+                            style: TextStyle(
+                              fontSize: 16.sp,
+                              fontWeight: FontWeight.w600,
+                              color: Color(0xFF525252),
+                              fontFamily: GoogleFonts.workSans().fontFamily,
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
-              SizedBox(width: 20.w),
-              ListView.separated(
-                itemCount: 5,
-                shrinkWrap: true,
-                physics: NeverScrollableScrollPhysics(),
-                separatorBuilder: (context, index) {
-                  return SizedBox(height: 20.h);
-                },
-                itemBuilder: (context, index) {
-                  return GoalCard(
-                    goalNumber: index + 1,
-                  );
-                },
+              SizedBox(height: 35.h),
+              Padding(
+                padding: const EdgeInsets.only(left: 20.0),
+                child: Text(
+                  'Join groups',
+                  style: TextStyle(
+                    fontSize: 20.sp,
+                    fontWeight: FontWeight.w300,
+                    fontFamily: GoogleFonts.workSans().fontFamily,
+                  ),
+                ),
+              ),
+              SizedBox(height: 10.h),
+              Container(
+                width: size.width,
+                height: 230,
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      SizedBox(width: 20),
+                      ListView.separated(
+                        itemCount: 5,
+                        shrinkWrap: true,
+                        scrollDirection: Axis.horizontal,
+                        physics: NeverScrollableScrollPhysics(),
+                        separatorBuilder: (context, index) {
+                          return SizedBox(width: 20.h);
+                        },
+                        itemBuilder: (context, index) {
+                          return Container(
+                            // height: 240.h,
+                            width: 244.h,
+                            decoration: BoxDecoration(
+                              // color: Colors.green,
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Container(
+                                  width: 244.w,
+                                  height: 160.h,
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey,
+                                    borderRadius: BorderRadius.circular(16),
+                                  ),
+                                ),
+                                SizedBox(height: 10.h),
+                                Text(
+                                  '8 am - 9 am',
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                                SizedBox(height: 5.h),
+                                Text(
+                                  'Running session with Cindy',
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          );
+                        },
+                      ),
+                      SizedBox(width: 20),
+                    ],
+                  ),
+                ),
               ),
               SizedBox(width: 20.w),
             ],
@@ -142,8 +267,11 @@ class _Page25State extends State<Page25> {
       bottomNavigationBar: Container(
         height: 90.h,
         decoration: BoxDecoration(
-            color: Colors.white,
-            border: Border.all(color: const Color(0xffE0E0E0))),
+          color: Colors.white,
+          border: Border.all(
+            color: const Color(0xffE0E0E0),
+          ),
+        ),
         child: Center(
           child: Padding(
             padding: EdgeInsets.only(left: 54.w, right: 54.w),
@@ -269,7 +397,7 @@ class GoalCard extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Icon(Icons.more_vert),
-              Icon(Icons.more_vert, color: Colors.transparent),
+              Icon(Icons.more_vert),
             ],
           )
         ],
