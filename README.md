@@ -26,30 +26,23 @@ flutter build apk
 
 ## 📸 ScreenShots
 
+<p align="center">
+<img src="art/screenshots/root.png" alt="page 11" width="200px" hspace="2"/> 
 
-| Root  | Page 1 | Page 2 | Page 3 |
+| Page 1  | Page 2 | Page 3 | Page 4 |
 | ------------- | ------------- | ------------- | ------------- |
 | <img src="art/screenshots/root.png" width="200"/> | <img src="art/screenshots/page_1.png" width="200"/> | <img src="art/screenshots/page_2.png" width="200"/> | <img src="art/screenshots/page_2.png" width="200"/> |
 
-| Page 4  | Page 5 | Page 6 | Page 7 |
+| Page 5  | Page 6 | Page 7 | Page 8 |
 | ------------- | ------------- | ------------- | ------------- |
-| <img src="art/screenshots/page_4.png" width="200"/> | <img src="art/screenshots/page_5.png" width="200"/> | <img src="art/screenshots/page_6.png" width="200"/> | <img src="art/screenshots/page_7.png" width="200"/> |
+| <img src="art/screenshots/page_5.png" width="200"/> | <img src="art/screenshots/page_6.png" width="200"/> | <img src="art/screenshots/page_7.png" width="200"/> | <img src="art/screenshots/page_8.png" width="200"/> |
+
+| Page 9  | Page 10 | Page 11 | Page 12 |
+| ------------- | ------------- | ------------- | ------------- |
+| <img src="art/screenshots/page_8.png" width="200"/> | <img src="art/screenshots/page_10.png" width="200"/> | <img src="art/screenshots/page_11.png" width="200"/> | <img src="art/screenshots/page_12.png" width="200"/> |
 
 
 
-
-<p align="center">
-<img src="art/screenshots/root.png" alt="page 1" width="200px" hspace="2"/>
-<img src="art/screenshots/page_1.png" alt="page 1" width="200px" hspace="2"/>
-<img src="art/screenshots/page_2.png" alt="page 2" width="200px" hspace="2"/>
-<img src="art/screenshots/page_3.png" alt="page 3" width="200px" hspace="2"/>
-<img src="art/screenshots/page_4.png" alt="page 4" width="200px" hspace="2"/>
-<img src="art/screenshots/page_5.png" alt="page 5" width="200px" hspace="2"/> 
-<img src="art/screenshots/page_6.png" alt="page 6" width="200px" hspace="2"/> 
-<img src="art/screenshots/page_7.png" alt="page 7" width="200px" hspace="2"/> 
-<img src="art/screenshots/page_8.png" alt="page 8" width="200px" hspace="2"/> 
-<img src="art/screenshots/page_9.png" alt="page 9" width="200px" hspace="2"/> 
-<img src="art/screenshots/page_10.png" alt="page 10" width="200px" hspace="2"/> 
 <img src="art/screenshots/page_11.png" alt="page 11" width="200px" hspace="2"/> 
 <img src="art/screenshots/page_12.png" alt="page 12" width="200px" hspace="2"/> 
 <img src="art/screenshots/page_13.png" alt="page 13" width="200px" hspace="2"/> 
