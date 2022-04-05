@@ -31,7 +31,7 @@ flutter build apk
 
 | Page 1  | Page 2 | Page 3 | Page 4 |
 | ------------- | ------------- | ------------- | ------------- |
-| <img src="art/screenshots/root.png" width="200"/> | <img src="art/screenshots/page_1.png" width="200"/> | <img src="art/screenshots/page_2.png" width="200"/> | <img src="art/screenshots/page_2.png" width="200"/> |
+| <img src="art/screenshots/page_1.png" width="200"/> | <img src="art/screenshots/page_2.png" width="200"/> | <img src="art/screenshots/page_3.png" width="200"/> | <img src="art/screenshots/page_4.png" width="200"/> |
 
 | Page 5  | Page 6 | Page 7 | Page 8 |
 | ------------- | ------------- | ------------- | ------------- |
@@ -41,18 +41,15 @@ flutter build apk
 | ------------- | ------------- | ------------- | ------------- |
 | <img src="art/screenshots/page_8.png" width="200"/> | <img src="art/screenshots/page_10.png" width="200"/> | <img src="art/screenshots/page_11.png" width="200"/> | <img src="art/screenshots/page_12.png" width="200"/> |
 
+| Page 13  | Page 14 | Page 15 | Page 16 |
+| ------------- | ------------- | ------------- | ------------- |
+| <img src="art/screenshots/page_13.png" width="200"/> | <img src="art/screenshots/page_14.png" width="200"/> | <img src="art/screenshots/page_15.png" width="200"/> | <img src="art/screenshots/page_16.png" width="200"/> |
+
+| Page 17  | Page 18 | Page 19 | Page 20 |
+| ------------- | ------------- | ------------- | ------------- |
+| <img src="art/screenshots/page_17.png" width="200"/> | <img src="art/screenshots/page_18.png" width="200"/> | <img src="art/screenshots/page_19.png" width="200"/> | <img src="art/screenshots/page_20.png" width="200"/> |
 
 
-<img src="art/screenshots/page_11.png" alt="page 11" width="200px" hspace="2"/> 
-<img src="art/screenshots/page_12.png" alt="page 12" width="200px" hspace="2"/> 
-<img src="art/screenshots/page_13.png" alt="page 13" width="200px" hspace="2"/> 
-<img src="art/screenshots/page_14.png" alt="page 14" width="200px" hspace="2"/> 
-<img src="art/screenshots/page_15.png" alt="page 15" width="200px" hspace="2"/> 
-<img src="art/screenshots/page_16.png" alt="page 16" width="200px" hspace="2"/> 
-<img src="art/screenshots/page_17.png" alt="page 17" width="200px" hspace="2"/> 
-<img src="art/screenshots/page_18.png" alt="page 18" width="200px" hspace="2"/>
-<img src="art/screenshots/page_19.png" alt="page 19" width="200px" hspace="2"/>
-<img src="art/screenshots/page_20.png" alt="page 20" width="200px" hspace="2"/>
 <img src="art/screenshots/page_21.png" alt="page 21" width="200px" hspace="2"/>
 <img src="art/screenshots/page_25.png" alt="page 25" width="200px" hspace="2"/>
 <img src="art/screenshots/page_27.png" alt="page 27" width="200px" hspace="2"/>
