@@ -84,6 +84,7 @@ flutter build apk
 
 <br />
 | Web Page 7 |
+| ------------- |
 | <img src="art/screenshots/web_page_7.png" alt="Web page 7"/> |
 
 </p>
