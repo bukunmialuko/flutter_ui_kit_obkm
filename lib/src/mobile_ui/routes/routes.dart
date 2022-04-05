@@ -26,6 +26,11 @@ class MobileRoutes {
   /// 21 - 40
   static const pg21 = "/21/";
   static const pg27 = "/27/";
+  static const pg33 = "/33/";
   static const pg32 = "/32/";
   static const pg34 = "/34/";
+
+  /// 41 - 60
+  static const pg51 = "/51/";
+  static const pg52 = "/52/";
 }

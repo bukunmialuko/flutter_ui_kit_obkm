@@ -26,7 +26,10 @@ import '../mobile_ui/20/page_20.dart';
 import '../mobile_ui/21/page_21.dart';
 import '../mobile_ui/27/page_27.dart';
 import '../mobile_ui/32/page_32.dart';
+import '../mobile_ui/33/page_33.dart';
 import '../mobile_ui/34/page_34.dart';
+import '../mobile_ui/51/page_51.dart';
+import '../mobile_ui/52/page_52.dart';
 import 'fade_route.dart';
 
 var routes = (RouteSettings settings) {
@@ -125,6 +128,11 @@ var routes = (RouteSettings settings) {
     case MobileRoutes.pg27:
       return FadeRoute(
         page: const Page27(),
+        );
+      
+    case MobileRoutes.pg33:
+      return FadeRoute(
+        page: const Page33(),
       );
 
     case MobileRoutes.pg32:
@@ -135,6 +143,16 @@ var routes = (RouteSettings settings) {
     case MobileRoutes.pg34:
       return FadeRoute(
         page: const Page34(),
+      );
+
+    /// Mobile 41 - 60
+    case MobileRoutes.pg51:
+      return FadeRoute(
+        page: const Page51(),
+      );
+    case MobileRoutes.pg52:
+      return FadeRoute(
+        page: const Page52(),
       );
   }
 };
