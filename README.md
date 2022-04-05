@@ -27,11 +27,10 @@ flutter build apk
 ## 📸 ScreenShots
 
 
-| Page 1  | Page 2 | Page 3 |
-| ------------- | ------------- | ------------- |
+| Page 1  | Page 2 |
+| ------------- | ------------- |
 | <img src="art/screenshots/root.png" alt="page 1" width="200px" hspace="2"/> 
 | <img src="art/screenshots/page_1.png" alt="page 1" width="200px" hspace="2"/>
-| <img src="art/screenshots/page_2.png" alt="page 2" width="200px" hspace="2"/>
 
 
 
