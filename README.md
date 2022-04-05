@@ -49,6 +49,10 @@ flutter build apk
 | ------------- | ------------- | ------------- | ------------- |
 | <img src="art/screenshots/page_17.png" width="200"/> | <img src="art/screenshots/page_18.png" width="200"/> | <img src="art/screenshots/page_19.png" width="200"/> | <img src="art/screenshots/page_20.png" width="200"/> |
 
+| Page 21  | Page 22 | Page 23 | Page 24 |
+| ------------- | ------------- | ------------- | ------------- |
+| <img src="art/screenshots/page_21.png" width="200"/> |  |  |  |
+
 
 <img src="art/screenshots/page_21.png" alt="page 21" width="200px" hspace="2"/>
 <img src="art/screenshots/page_25.png" alt="page 25" width="200px" hspace="2"/>
