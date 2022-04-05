@@ -65,9 +65,22 @@ flutter build apk
 | ------------- | ------------- | ------------- | ------------- |
 | <img src="art/screenshots/page_33.png" width="200"/> | <img src="art/screenshots/page_34.png" width="200"/> | |  |
 
+| Page 37  | Page 38 | Page 39 | Page 40 |
+| ------------- | ------------- | ------------- | ------------- |
+|  | | | |
 
-<img src="art/screenshots/page_51.png" alt="page 51" width="200px" hspace="2"/>
-<img src="art/screenshots/page_52.png" alt="page 52" width="200px" hspace="2"/>
+| Page 41  | Page 42 | Page 43 | Page 44 |
+| ------------- | ------------- | ------------- | ------------- |
+|  | | | |
+
+| Page 45  | Page 46 | Page 47 | Page 48 |
+| ------------- | ------------- | ------------- | ------------- |
+|  | | | |
+
+| Page 49  | Page 50 | Page 51 | Page 52 |
+| ------------- | ------------- | ------------- | ------------- |
+|  | | <img src="art/screenshots/page_51.png" width="200"/> | <img src="art/screenshots/page_52.png" width="200"/> |
+
 
 <br />
 <img src="art/screenshots/web_page_7.png" alt="Web page 7"/> 
