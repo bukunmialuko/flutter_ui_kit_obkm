@@ -75,7 +75,7 @@ flutter build apk
 
 | Page 45  | Page 46 | Page 47 | Page 48 |
 | ------------- | ------------- | ------------- | ------------- |
-| <img src="art/screenshots/page_45.png" width="200"/>  | | | |
+| <img src="art/screenshots/page_45.png" width="200"/> | | | |
 
 | Page 49  | Page 50 | Page 51 | Page 52 |
 | ------------- | ------------- | ------------- | ------------- |
