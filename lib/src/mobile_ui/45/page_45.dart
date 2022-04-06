@@ -23,7 +23,7 @@ class _Page45State extends State<Page45> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                height: 42.h,
+                height: 32.h,
               ),
               Text(
                 "Europe",
