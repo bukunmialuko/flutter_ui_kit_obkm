@@ -26,6 +26,7 @@ import '../mobile_ui/20/page_20.dart';
 import '../mobile_ui/21/page_21.dart';
 import '../mobile_ui/24/page_24.dart';
 import '../mobile_ui/25/page_25.dart';
+import '../mobile_ui/26/page26.dart';
 import '../mobile_ui/27/page_27.dart';
 import '../mobile_ui/32/page_32.dart';
 import '../mobile_ui/33/page_33.dart';
@@ -138,6 +139,11 @@ var routes = (RouteSettings settings) {
     case MobileRoutes.pg25:
       return FadeRoute(
         page: const Page25(),
+      );
+
+    case MobileRoutes.pg26:
+      return FadeRoute(
+        page: const Page26(),
       );
 
     case MobileRoutes.pg27:
