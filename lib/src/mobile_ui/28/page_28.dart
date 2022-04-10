@@ -373,9 +373,8 @@ class _Page28State extends State<Page28> {
         ),
         child: Center(
           child: Padding(
-            padding: EdgeInsets.only(left: 54.w, right: 54.w),
+            padding: EdgeInsets.only(left: 33.w, right: 34.w),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 SvgPicture.asset(
@@ -384,17 +383,24 @@ class _Page28State extends State<Page28> {
                   width: 24.r,
                   fit: BoxFit.fill,
                 ),
+                SizedBox(
+                  width: 41.w,
+                ),
                 SvgPicture.asset(
                   Assets.PG6_CAST_CONNECTED,
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
                 ),
+                Spacer(),
                 SvgPicture.asset(
                   Assets.PG6_DEBUG,
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
+                ),
+                SizedBox(
+                  width: 41.w,
                 ),
                 SvgPicture.asset(
                   Assets.PG6_CONTACT,
