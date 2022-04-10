@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
+
 import '../../../res/asset_images.dart';
 import '../../navigation/navigation_service.dart';
 
@@ -25,6 +26,9 @@ class _Page24State extends State<Page24> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              SizedBox(
+                height: 24.h,
+              ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),
                 child: Row(
@@ -73,8 +77,8 @@ class _Page24State extends State<Page24> {
                         GetIt.I.get<NavigationService>().back();
                       },
                       child: Container(
-                        height: 40.h,
-                        width: 40.h,
+                        height: 40.w,
+                        width: 40.w,
                         decoration: BoxDecoration(
                           color: Colors.grey,
                           borderRadius: BorderRadius.circular(10),
@@ -86,7 +90,7 @@ class _Page24State extends State<Page24> {
               ),
               SizedBox(height: 20.h),
               Container(
-                height: 80.h,
+                height: 80.w,
                 width: size.width,
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,

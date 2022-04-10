@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get_it/get_it.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../../res/asset_images.dart';
 import '../../navigation/navigation_service.dart';
@@ -24,6 +25,9 @@ class _Page27State extends State<Page27> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              SizedBox(
+                height: 39.h,
+              ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),
                 child: Row(
@@ -34,6 +38,7 @@ class _Page27State extends State<Page27> {
                       style: TextStyle(
                         fontSize: 28.sp,
                         fontWeight: FontWeight.w600,
+                        fontFamily: GoogleFonts.workSans().fontFamily,
                       ),
                     ),
                     GestureDetector(
@@ -41,8 +46,8 @@ class _Page27State extends State<Page27> {
                         GetIt.I.get<NavigationService>().back();
                       },
                       child: Container(
-                        height: 40.h,
-                        width: 40.h,
+                        height: 40.w,
+                        width: 40.w,
                         decoration: BoxDecoration(
                           color: Colors.grey,
                           borderRadius: BorderRadius.circular(10),
@@ -74,6 +79,7 @@ class _Page27State extends State<Page27> {
                       style: TextStyle(
                         fontSize: 16.sp,
                         fontWeight: FontWeight.w600,
+                        fontFamily: GoogleFonts.workSans().fontFamily,
                       ),
                     ),
                     Icon(Icons.arrow_drop_down),
@@ -188,7 +194,7 @@ class WorkoutCard extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           Container(
-            height: 85.h,
+            // height: 85.h,
             width: double.infinity,
             padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
             decoration: BoxDecoration(
@@ -208,6 +214,7 @@ class WorkoutCard extends StatelessWidget {
                     fontSize: 16.sp,
                     color: Colors.white,
                     fontWeight: FontWeight.w600,
+                    fontFamily: GoogleFonts.workSans().fontFamily,
                   ),
                 ),
                 Text(
@@ -215,6 +222,7 @@ class WorkoutCard extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 14.sp,
                     color: Colors.white,
+                    fontFamily: GoogleFonts.workSans().fontFamily,
                   ),
                 ),
               ],

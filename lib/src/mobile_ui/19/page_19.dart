@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get_it/get_it.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../../res/asset_images.dart';
 import '../../navigation/navigation_service.dart';
@@ -16,224 +17,242 @@ class Page19 extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
-        child: Column(
-          children: [
-            Container(
-              // height: 50.h,
-              padding: EdgeInsets.symmetric(horizontal: 20),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('Good morning,'),
-                      Text(
-                        'John Doe',
-                        style: TextStyle(
-                          fontSize: 20.sp,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ],
-                  ),
-                  InkWell(
-                    onTap: () {
-                      GetIt.I.get<NavigationService>().back();
-                    },
-                    child: Container(
-                      width: 40.h,
-                      height: 40.h,
-                      decoration: BoxDecoration(
-                        color: Colors.grey,
-                        borderRadius: BorderRadius.circular(5),
-                      ),
-                    ),
-                  )
-                ],
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              SizedBox(
+                height: 22.h,
               ),
-            ),
-            SizedBox(height: 20.h),
-            Container(
-              width: size.width,
-              height: 50.h,
-              padding: EdgeInsets.symmetric(horizontal: 20),
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              decoration: BoxDecoration(
-                color: Color(0xFFF4F4F4),
-                borderRadius: BorderRadius.circular(30),
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 0.5,
-                    blurRadius: 5,
-                    offset: const Offset(0, 0),
-                  ),
-                ],
-              ),
-              child: Center(
+              Container(
+                // height: 50.h,
+                padding: EdgeInsets.symmetric(horizontal: 20),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Icon(Icons.search),
-                    SizedBox(width: 10),
-                    Text('Search...'),
-                    SizedBox(width: 10.w),
-                  ],
-                ),
-              ),
-            ),
-            SizedBox(height: 20.h),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    'Upcoming flights',
-                    style: TextStyle(
-                      fontSize: 20.sp,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                  Text(
-                    'view all',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      decoration: TextDecoration.underline,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(height: 20.h),
-            Container(
-              height: 160,
-              child: ListView.separated(
-                itemCount: 2,
-                shrinkWrap: true,
-                scrollDirection: Axis.horizontal,
-                padding: EdgeInsets.symmetric(horizontal: 10),
-                separatorBuilder: (context, index) {
-                  return SizedBox(width: 5);
-                },
-                itemBuilder: (context, index) {
-                  return TicketCard();
-                },
-              ),
-            ),
-            SizedBox(height: 20.h),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Icon(
-                            Icons.location_on,
-                            color: Colors.grey,
-                            size: 20,
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Good morning,',
+                          style: TextStyle(
+                            fontFamily: GoogleFonts.workSans().fontFamily,
                           ),
-                          Text(
-                            'Chai wan, Hong Kong',
-                            style: TextStyle(
-                              color: Colors.grey,
-                            ),
-                          ),
-                        ],
-                      ),
-                      // SizedBox(height: 5.h),
-                      Text(
-                        'Hotels near you',
-                        style: TextStyle(
-                          fontSize: 20.sp,
-                          fontWeight: FontWeight.w600,
                         ),
-                      ),
-                    ],
-                  ),
-                  Text(
-                    'view all',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      decoration: TextDecoration.underline,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(height: 20.h),
-            Container(
-              height: 270.h,
-              color: Colors.white,
-              child: ListView.separated(
-                itemCount: 2,
-                shrinkWrap: true,
-                scrollDirection: Axis.horizontal,
-                padding: EdgeInsets.symmetric(horizontal: 10),
-                separatorBuilder: (context, index) {
-                  return SizedBox(width: 10);
-                },
-                itemBuilder: (context, index) {
-                  return Container(
-                    width: 220.w,
-                    height: 250.h,
-                    padding: EdgeInsets.all(10),
-                    margin: EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      color: Color(0xFFE6E6E6),
-                      borderRadius: BorderRadius.circular(16),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey,
-                          spreadRadius: 0.5,
-                          blurRadius: 5,
-                          offset: const Offset(0, 0),
+                        SizedBox(
+                          height: 4.h,
+                        ),
+                        Text(
+                          'John Doe',
+                          style: TextStyle(
+                            fontSize: 20.sp,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: GoogleFonts.workSans().fontFamily,
+                          ),
                         ),
                       ],
                     ),
-                    child: Column(
+                    InkWell(
+                      onTap: () {
+                        GetIt.I.get<NavigationService>().back();
+                      },
+                      child: Container(
+                        width: 40.w,
+                        height: 40.w,
+                        decoration: BoxDecoration(
+                          color: Colors.grey,
+                          borderRadius: BorderRadius.circular(5),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(height: 20.h),
+              Container(
+                width: size.width,
+                height: 50.h,
+                padding: EdgeInsets.symmetric(horizontal: 20),
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                decoration: BoxDecoration(
+                  color: Color(0xFFF4F4F4),
+                  borderRadius: BorderRadius.circular(30),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.5),
+                      spreadRadius: 0.5,
+                      blurRadius: 5,
+                      offset: const Offset(0, 0),
+                    ),
+                  ],
+                ),
+                child: Center(
+                  child: Row(
+                    children: [
+                      Icon(Icons.search),
+                      SizedBox(width: 10),
+                      Text('Search...'),
+                      SizedBox(width: 10.w),
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(height: 20.h),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Upcoming flights',
+                      style: TextStyle(
+                        fontSize: 20.sp,
+                        fontWeight: FontWeight.w600,
+                        fontFamily: GoogleFonts.workSans().fontFamily,
+                      ),
+                    ),
+                    Text(
+                      'view all',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.underline,
+                        fontFamily: GoogleFonts.workSans().fontFamily,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(height: 20.h),
+              Container(
+                height: 160,
+                child: ListView.separated(
+                  itemCount: 2,
+                  shrinkWrap: true,
+                  scrollDirection: Axis.horizontal,
+                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  separatorBuilder: (context, index) {
+                    return SizedBox(width: 5);
+                  },
+                  itemBuilder: (context, index) {
+                    return TicketCard();
+                  },
+                ),
+              ),
+              SizedBox(height: 20.h),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Container(
-                          width: 200.w,
-                          height: 160.h,
-                          padding: EdgeInsets.all(10),
-                          decoration: BoxDecoration(
-                            // color: Color(0xFFE6E6E6),
-                            color: Colors.green,
-                            borderRadius: BorderRadius.circular(16),
-                            image: DecorationImage(
-                              image: AssetImage('assets/png/lady_pg4.png'),
-                              fit: BoxFit.cover,
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.location_on,
+                              color: Colors.grey,
+                              size: 20,
                             ),
-                          ),
+                            Text(
+                              'Chai wan, Hong Kong',
+                              style: TextStyle(
+                                color: Colors.grey,
+                              ),
+                            ),
+                          ],
                         ),
-                        SizedBox(height: 5.h),
-                        Text('The Four Seasons'),
+                        // SizedBox(height: 5.h),
                         Text(
-                          'Hong Kong',
-                          style: TextStyle(fontSize: 10),
-                        ),
-                        SizedBox(height: 10.h),
-                        Text(
-                          '\$279/night',
+                          'Hotels near you',
                           style: TextStyle(
-                            fontSize: 16,
+                            fontSize: 20.sp,
                             fontWeight: FontWeight.w600,
                           ),
                         ),
                       ],
                     ),
-                  );
-                },
+                    Text(
+                      'view all',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.underline,
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            )
-          ],
+              SizedBox(height: 20.h),
+              Container(
+                height: 270.h,
+                color: Colors.white,
+                child: ListView.separated(
+                  itemCount: 2,
+                  shrinkWrap: true,
+                  scrollDirection: Axis.horizontal,
+                  padding: EdgeInsets.symmetric(horizontal: 10.w),
+                  separatorBuilder: (context, index) {
+                    return SizedBox(width: 10);
+                  },
+                  itemBuilder: (context, index) {
+                    return Container(
+                      width: 220.w,
+                      height: 250.h,
+                      padding: EdgeInsets.all(10),
+                      margin: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: Color(0xFFE6E6E6),
+                        borderRadius: BorderRadius.circular(16),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey,
+                            spreadRadius: 0.5,
+                            blurRadius: 5,
+                            offset: const Offset(0, 0),
+                          ),
+                        ],
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Expanded(
+                            child: Container(
+                              width: 198.w,
+                              height: 160.h,
+                              padding: EdgeInsets.all(10),
+                              decoration: BoxDecoration(
+                                // color: Color(0xFFE6E6E6),
+                                color: Colors.green,
+                                borderRadius: BorderRadius.circular(16),
+                                image: DecorationImage(
+                                  image: AssetImage('assets/png/lady_pg4.png'),
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(height: 5.h),
+                          Text('The Four Seasons'),
+                          Text(
+                            'Hong Kong',
+                            style: TextStyle(fontSize: 10),
+                          ),
+                          SizedBox(height: 10.h),
+                          Text(
+                            '\$279/night',
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ],
+                      ),
+                    );
+                  },
+                ),
+              )
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: Container(

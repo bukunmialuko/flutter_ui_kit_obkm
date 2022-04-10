@@ -232,7 +232,7 @@ class RootWidget extends StatelessWidget {
               onPressed: () {
                 GetIt.I
                     .get<NavigationService>()
-                    .to(routeName: MobileRoutes.pg33);
+                    .to(routeName: MobileRoutes.pg32);
               },
             ),
 

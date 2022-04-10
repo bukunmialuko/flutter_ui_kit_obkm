@@ -29,12 +29,13 @@ class _Page33State extends State<Page33> {
                   ),
                   Positioned(
                     right: 121.w,
+                    bottom: 0,
                     child: Container(
                       width: 150.w,
                       height: 150.w,
-                      margin: EdgeInsets.only(
-                        top: 99.h,
-                      ),
+                      // margin: EdgeInsets.only(
+                      //   top: 99.h,
+                      // ),
                       decoration: BoxDecoration(
                         color: Color(0xff525252),
                         borderRadius: BorderRadius.circular(150.w),

@@ -15,6 +15,9 @@ class Page20 extends StatelessWidget {
         bottom: false,
         child: Column(
           children: [
+            SizedBox(
+              height: 13.h,
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
               child: Column(
@@ -92,18 +95,20 @@ class Page20 extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 20),
-                    ListView.separated(
-                      shrinkWrap: true,
-                      itemCount: 5,
-                      padding: EdgeInsets.symmetric(horizontal: 20),
-                      separatorBuilder: (context, index) {
-                        return SizedBox(height: 10);
-                      },
-                      itemBuilder: (context, index) {
-                        return SongTile(
-                          isPlaying: index == 2 ? true : false,
-                        );
-                      },
+                    Expanded(
+                      child: ListView.separated(
+                        shrinkWrap: true,
+                        itemCount: 20,
+                        padding: EdgeInsets.symmetric(horizontal: 20),
+                        separatorBuilder: (context, index) {
+                          return SizedBox(height: 10);
+                        },
+                        itemBuilder: (context, index) {
+                          return SongTile(
+                            isPlaying: index == 2 ? true : false,
+                          );
+                        },
+                      ),
                     ),
                   ],
                 ),

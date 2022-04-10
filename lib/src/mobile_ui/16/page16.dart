@@ -12,9 +12,13 @@ class Page16 extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
 
     return Scaffold(
+      resizeToAvoidBottomInset: true,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
+          SizedBox(
+            height: 104.h,
+          ),
           Container(
             margin: const EdgeInsets.symmetric(horizontal: 40),
             child: Column(
@@ -46,7 +50,7 @@ class Page16 extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 70,
+                  height: 70.h,
                 ),
                 Container(
                   height: 70.h,
@@ -90,9 +94,10 @@ class Page16 extends StatelessWidget {
               ],
             ),
           ),
-          Container(
+          Spacer(),
+          SizedBox(
             // color: Colors.blue,
-            height: size.height / 3.5,
+            height: 103.h,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
@@ -107,7 +112,7 @@ class Page16 extends StatelessWidget {
                     fixedSize: Size(325.w, 50.h),
                   ),
                   child: Text(
-                    'Continue',
+                    'Send code',
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
@@ -117,6 +122,9 @@ class Page16 extends StatelessWidget {
                 ),
               ],
             ),
+          ),
+          SizedBox(
+            height: 88.h,
           ),
         ],
       ),

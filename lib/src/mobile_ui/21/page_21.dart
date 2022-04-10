@@ -21,143 +21,152 @@ class _Page21State extends State<Page21> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.only(left: 27.w, right: 27.w, top: 8.h),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  GestureDetector(
-                    onTap: () {
-                      GetIt.I.get<NavigationService>().back();
-                    },
-                    child: SvgPicture.asset(
-                      "assets/svg/21/back.svg",
-                      height: 48.r,
-                      width: 48.r,
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                  GestureDetector(
-                    onTap: () {
-                      GetIt.I.get<NavigationService>().back();
-                    },
-                    child: SvgPicture.asset(
-                      "assets/svg/21/more.svg",
-                      height: 48.r,
-                      width: 48.r,
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 13.h,
-              ),
-              Text(
-                "Artists",
-                style: GoogleFonts.workSans(
-                  textStyle: TextStyle(
-                    fontSize: 28.sp,
-                    color: Colors.black,
-                    fontStyle: FontStyle.normal,
-                    fontWeight: FontWeight.w600,
-                    height: 1.28,
-                  ),
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: EdgeInsets.only(left: 27.w, right: 27.w, top: 8.h),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(
+                  height: 12.h,
                 ),
-              ),
-              SizedBox(
-                height: 16.h,
-              ),
-              Container(
-                width: 342.w,
-                height: 190.h,
-                decoration: BoxDecoration(
-                  color: Color(0xffD0D0D0),
-                  borderRadius: BorderRadius.circular(16.r),
-                ),
-              ),
-              SizedBox(
-                height: 27.h,
-              ),
-              Text(
-                "John Doe",
-                style: GoogleFonts.workSans(
-                  textStyle: TextStyle(
-                    fontSize: 28.sp,
-                    color: Colors.black,
-                    fontStyle: FontStyle.normal,
-                    fontWeight: FontWeight.w400,
-                    height: 1.28,
-                  ),
-                ),
-              ),
-              Text(
-                "4.5k followers",
-                style: GoogleFonts.workSans(
-                  textStyle: TextStyle(
-                    fontSize: 14.sp,
-                    color: Color(0xffA8A8A8),
-                    fontStyle: FontStyle.normal,
-                    fontWeight: FontWeight.w400,
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 21.h,
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  GetIt.I.get<NavigationService>().back();
-                },
-                style: ElevatedButton.styleFrom(
-                  primary: const Color(0xFF161616),
-                  elevation: 0,
-                  shadowColor: Colors.transparent,
-                  fixedSize: Size(342, 48),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
-                      'Shuffle play',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                        color: Colors.white,
+                    GestureDetector(
+                      onTap: () {
+                        GetIt.I.get<NavigationService>().back();
+                      },
+                      child: SvgPicture.asset(
+                        "assets/svg/21/back.svg",
+                        height: 48.r,
+                        width: 48.r,
+                        fit: BoxFit.fill,
                       ),
                     ),
-                    SizedBox(
-                      width: 10.w,
-                    ),
-                    SvgPicture.asset(
-                      "assets/svg/21/shuffle.svg",
-                      height: 24.r,
-                      width: 24.r,
-                      fit: BoxFit.fill,
+                    GestureDetector(
+                      onTap: () {
+                        GetIt.I.get<NavigationService>().back();
+                      },
+                      child: SvgPicture.asset(
+                        "assets/svg/21/more.svg",
+                        height: 48.r,
+                        width: 48.r,
+                        fit: BoxFit.fill,
+                      ),
                     ),
                   ],
                 ),
-              ),
-              ListView.separated(
-                shrinkWrap: true,
-                padding: EdgeInsets.only(top: 45.h),
-                itemCount: Pg21ModelItems.loadItems(context).length,
-                itemBuilder: (c, i) {
-                  return Pg21ListItem(
-                    index: i + 1,
-                    model: Pg21ModelItems.loadItems(context)[i],
-                  );
-                },
-                separatorBuilder: (BuildContext context, int index) {
-                  return SizedBox(
-                    height: 21.h,
-                  );
-                },
-              ),
-            ],
+                SizedBox(
+                  height: 13.h,
+                ),
+                Text(
+                  "Artists",
+                  style: GoogleFonts.workSans(
+                    textStyle: TextStyle(
+                      fontSize: 28.sp,
+                      color: Colors.black,
+                      fontStyle: FontStyle.normal,
+                      fontWeight: FontWeight.w600,
+                      height: 1.28,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 16.h,
+                ),
+                Container(
+                  width: 342.w,
+                  height: 190.h,
+                  decoration: BoxDecoration(
+                    color: Color(0xffD0D0D0),
+                    borderRadius: BorderRadius.circular(16.r),
+                  ),
+                ),
+                SizedBox(
+                  height: 27.h,
+                ),
+                Text(
+                  "John Doe",
+                  style: GoogleFonts.workSans(
+                    textStyle: TextStyle(
+                      fontSize: 28.sp,
+                      color: Colors.black,
+                      fontStyle: FontStyle.normal,
+                      fontWeight: FontWeight.w400,
+                      height: 1.28,
+                    ),
+                  ),
+                ),
+                Text(
+                  "4.5k followers",
+                  style: GoogleFonts.workSans(
+                    textStyle: TextStyle(
+                      fontSize: 14.sp,
+                      color: Color(0xffA8A8A8),
+                      fontStyle: FontStyle.normal,
+                      fontWeight: FontWeight.w400,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 21.h,
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    GetIt.I.get<NavigationService>().back();
+                  },
+                  style: ElevatedButton.styleFrom(
+                    primary: const Color(0xFF161616),
+                    elevation: 0,
+                    shadowColor: Colors.transparent,
+                    fixedSize: Size(342, 48),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'Shuffle play',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.white,
+                        ),
+                      ),
+                      SizedBox(
+                        width: 10.w,
+                      ),
+                      SvgPicture.asset(
+                        "assets/svg/21/shuffle.svg",
+                        height: 24.r,
+                        width: 24.r,
+                        fit: BoxFit.fill,
+                      ),
+                    ],
+                  ),
+                ),
+                ListView.separated(
+                  shrinkWrap: true,
+                  padding: EdgeInsets.only(top: 45.h),
+                  physics: NeverScrollableScrollPhysics(),
+                  itemCount: Pg21ModelItems.loadItems(context).length,
+                  itemBuilder: (c, i) {
+                    return Pg21ListItem(
+                      index: i + 1,
+                      model: Pg21ModelItems.loadItems(context)[i],
+                    );
+                  },
+                  separatorBuilder: (BuildContext context, int index) {
+                    return SizedBox(
+                      height: 21.h,
+                    );
+                  },
+                ),
+                SizedBox(
+                  height: 40.h,
+                )
+              ],
+            ),
           ),
         ),
       ),
@@ -182,7 +191,8 @@ class _Page21State extends State<Page21> {
         ),
       ),
       bottomNavigationBar: ClipRRect(
-        borderRadius: BorderRadius.circular(16.r),
+        borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(16.r), topRight: Radius.circular(16.r)),
         child: BottomAppBar(
           shape: CircularNotchedRectangle(),
           color: Color(0xffD0D0D0),
