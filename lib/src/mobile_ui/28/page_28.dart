@@ -423,6 +423,14 @@ class _Page28State extends State<Page28> {
 
           color: Color(0xffD0D0D0),
           borderRadius: BorderRadius.circular(76.w),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.6),
+              spreadRadius: 3,
+              blurRadius: 1,
+              offset: const Offset(0, 0),
+            ),
+          ],
         ),
         child: Center(
           child: SvgPicture.asset(
