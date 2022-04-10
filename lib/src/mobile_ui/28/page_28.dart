@@ -407,6 +407,26 @@ class _Page28State extends State<Page28> {
           ),
         ),
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      extendBody: true,
+      floatingActionButton: Container(
+        width: 76.w,
+        height: 76.w,
+        decoration: BoxDecoration(
+          // color: Colors.blue,
+
+          color: Color(0xffD0D0D0),
+          borderRadius: BorderRadius.circular(76.w),
+        ),
+        child: Center(
+          child: SvgPicture.asset(
+            "assets/svg/21/pause_circle_outline.svg",
+            height: 56.w,
+            width: 56.w,
+            fit: BoxFit.fill,
+          ),
+        ),
+      ),
     );
   }
 }
