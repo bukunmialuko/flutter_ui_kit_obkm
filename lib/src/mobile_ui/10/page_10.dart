@@ -58,7 +58,7 @@ class _Page10State extends State<Page10> {
                       margin: EdgeInsets.only(top: 35.h, bottom: 19.h),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(96.r),
-                        color: AppColors.grey,
+                        color: AppColors.greyC4,
                       ),
                     ),
                   ),

@@ -7,7 +7,7 @@ import 'dimensions.dart';
 class AppStyles {
   static var addressBorder = OutlineInputBorder(
     borderRadius: BorderRadius.circular(Dimensions.radius),
-    borderSide: const BorderSide(color: AppColors.grey),
+    borderSide: const BorderSide(color: AppColors.greyC4),
   );
   static var underLineBorder = const UnderlineInputBorder(
     borderSide: BorderSide(color: Colors.white),

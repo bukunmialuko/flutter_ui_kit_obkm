@@ -77,7 +77,7 @@ class _Page42State extends State<Page42> {
                                 width: 72.w,
                                 height: 72.w,
                                 decoration: BoxDecoration(
-                                  color: AppColors.grey,
+                                  color: AppColors.greyC4,
                                   borderRadius: BorderRadius.circular(72.w),
                                 ),
                               ),
@@ -139,7 +139,7 @@ class _Page42State extends State<Page42> {
                                 width: 159.w,
                                 height: 159.h,
                                 decoration: BoxDecoration(
-                                  color: AppColors.grey,
+                                  color: AppColors.greyC4,
                                 ),
                               ),
                               SizedBox(
@@ -233,7 +233,7 @@ class _Page42State extends State<Page42> {
                               width: 159.w,
                               height: 159.h,
                               decoration: BoxDecoration(
-                                color: AppColors.grey,
+                                color: AppColors.greyC4,
                               ),
                             ),
                             SizedBox(
@@ -307,7 +307,7 @@ class _Page42State extends State<Page42> {
             Container(
               width: 87.w,
               height: 87.w,
-              color: AppColors.grey,
+              color: AppColors.greyC4,
               margin: EdgeInsets.only(right: 18.w),
             ),
             Expanded(

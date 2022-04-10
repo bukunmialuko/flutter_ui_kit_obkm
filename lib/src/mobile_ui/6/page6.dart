@@ -98,7 +98,7 @@ class _Page6State extends State<Page6> {
                     // hintStyle: textFieldPlaceholderTextStyle(context),
                     isDense: true,
                     filled: true,
-                    fillColor: AppColors.grey,
+                    fillColor: AppColors.greyC4,
                     focusedBorder: AppStyles.focusedTransparentBorder,
                     disabledBorder: AppStyles.focusedTransparentBorder,
                     enabledBorder: AppStyles.focusedTransparentBorder,
@@ -150,7 +150,7 @@ class _Page6State extends State<Page6> {
                                 child: Container(
                                   width: 50.h,
                                   height: 50.h,
-                                  color: AppColors.grey,
+                                  color: AppColors.greyC4,
                                   child: Center(
                                     child: Text(
                                       moods[i].emoji,

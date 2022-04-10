@@ -81,7 +81,7 @@ class _Page8State extends State<Page8> {
                       child: Container(
                         width: 48.r,
                         height: 48.r,
-                        color: AppColors.grey,
+                        color: AppColors.greyC4,
                       ),
                     ),
                   )
@@ -301,7 +301,7 @@ class _Page8State extends State<Page8> {
                                               child: Container(
                                                 width: 64.r,
                                                 height: 64.r,
-                                                color: AppColors.grey,
+                                                color: AppColors.greyC4,
                                               ),
                                             ),
                                             SizedBox(width: 30.w),

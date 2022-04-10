@@ -65,7 +65,7 @@ class _Page9State extends State<Page9> {
                     height: 24.r,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(24.r),
-                      color: AppColors.grey,
+                      color: AppColors.greyC4,
                     ),
                   ),
                 ],
@@ -194,7 +194,7 @@ class _Page9State extends State<Page9> {
                             margin: EdgeInsets.only(right: 12.w),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(24.r),
-                              color: AppColors.grey,
+                              color: AppColors.greyC4,
                             ),
                           ),
                           Expanded(
@@ -302,7 +302,7 @@ class _Page9State extends State<Page9> {
                                   child: Container(
                                     width: 140.w,
                                     height: 200.h,
-                                    color: AppColors.grey,
+                                    color: AppColors.greyC4,
                                     child: Stack(
                                       fit: StackFit.expand,
                                       children: [
@@ -388,7 +388,7 @@ class _Page9State extends State<Page9> {
                             margin: EdgeInsets.only(right: 12.w),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(24.r),
-                              color: AppColors.grey,
+                              color: AppColors.greyC4,
                             ),
                           ),
                           Expanded(

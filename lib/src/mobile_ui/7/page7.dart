@@ -43,7 +43,7 @@ class _Page7State extends State<Page7> {
                         height: 60.r,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(45.r),
-                          color: AppColors.grey,
+                          color: AppColors.greyC4,
                         ),
                       ),
                     ),
@@ -110,7 +110,7 @@ class _Page7State extends State<Page7> {
                         // hintStyle: textFieldPlaceholderTextStyle(context),
                         isDense: true,
                         filled: true,
-                        fillColor: AppColors.grey,
+                        fillColor: AppColors.greyC4,
                         focusedBorder: AppStyles.focusedTransparentBorder,
                         disabledBorder: AppStyles.focusedTransparentBorder,
                         enabledBorder: AppStyles.focusedTransparentBorder,
@@ -185,7 +185,7 @@ class _Page7State extends State<Page7> {
                           child: Container(
                             width: 109.w,
                             height: 140.h,
-                            color: AppColors.grey,
+                            color: AppColors.greyC4,
                             child: Stack(
                               children: [
                                 Align(
@@ -277,7 +277,7 @@ class _Page7State extends State<Page7> {
                           child: Container(
                             width: 244.w,
                             height: 165.h,
-                            color: AppColors.grey,
+                            color: AppColors.greyC4,
                             child: Stack(
                               children: [
                                 Align(

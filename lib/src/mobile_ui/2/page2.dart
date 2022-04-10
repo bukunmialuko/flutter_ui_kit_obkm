@@ -82,7 +82,7 @@ class Page2 extends StatelessWidget {
                       // hintStyle: textFieldPlaceholderTextStyle(context),
                       isDense: true,
                       filled: true,
-                      fillColor: AppColors.grey,
+                      fillColor: AppColors.greyC4,
                       focusedBorder: AppStyles.focusedTransparentBorder,
                       disabledBorder: AppStyles.focusedTransparentBorder,
                       enabledBorder: AppStyles.focusedTransparentBorder,
@@ -122,7 +122,7 @@ class Page2 extends StatelessWidget {
                         height: 45.r,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(45.r),
-                          color: AppColors.grey,
+                          color: AppColors.greyC4,
                         ),
                         child: SizedBox(
                           width: 24.r,
@@ -145,7 +145,7 @@ class Page2 extends StatelessWidget {
                         height: 45.r,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(45.r),
-                          color: AppColors.grey,
+                          color: AppColors.greyC4,
                         ),
                         child: SizedBox(
                           width: 24.r,
@@ -214,7 +214,7 @@ class Page2 extends StatelessWidget {
                       height: 50.h,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(50.r),
-                        color: AppColors.grey,
+                        color: AppColors.greyC4,
                       ),
                       child: Row(
                         children: [
@@ -230,7 +230,7 @@ class Page2 extends StatelessWidget {
                                 // hintStyle: textFieldPlaceholderTextStyle(context),
                                 isDense: true,
                                 filled: true,
-                                fillColor: AppColors.grey,
+                                fillColor: AppColors.greyC4,
                                 focusedBorder:
                                     AppStyles.focusedTransparentBorder,
                                 disabledBorder:

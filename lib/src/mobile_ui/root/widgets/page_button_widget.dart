@@ -19,7 +19,7 @@ class PageButtonWidget extends StatelessWidget {
       child: Container(
         height: 56.r,
         width: 56.r,
-        color: AppColors.grey,
+        color: AppColors.greyC4,
         child: Center(
           child: Text(
             "$page",
