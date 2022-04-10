@@ -30,25 +30,24 @@ dependencies:
   flutter:
     sdk: flutter
 
-  cupertino_icons: ^1.0.2
+  cupertino_icons: ^1.0.4
 
   flutter_localizations:
     sdk: flutter
 
   intl: ^0.17.0
-  flutter_screenutil: ^5.0.0+2
-  flutter_svg: ^0.22.0
-  google_fonts: ^2.1.0
+  flutter_screenutil: ^5.3.1
+  flutter_svg: ^1.0.3
+  google_fonts: ^2.3.1
   get_it: ^7.2.0
-  flutter_bloc: ^8.0.0
-  table_calendar: ^3.0.3
+  flutter_bloc: ^8.0.1
+  table_calendar: ^3.0.5
 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  json_serializable: ^6.1.1
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

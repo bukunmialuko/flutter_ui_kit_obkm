@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../../navigation/navigation_service.dart';
 
 class Page44 extends StatefulWidget {
   const Page44({Key? key}) : super(key: key);
@@ -25,29 +28,34 @@ class _Page44State extends State<Page44> {
               Center(
                 child: RotatedBox(
                   quarterTurns: 3,
-                  child: Row(
-                    children: [
-                      Text(
-                        'LOREM ',
-                        style: GoogleFonts.roboto(
-                          textStyle: TextStyle(
-                            fontSize: 90.sp,
-                            color: Colors.black,
-                            fontWeight: FontWeight.w100,
+                  child: GestureDetector(
+                    onTap: () {
+                      GetIt.I.get<NavigationService>().back();
+                    },
+                    child: Row(
+                      children: [
+                        Text(
+                          'LOREM ',
+                          style: GoogleFonts.roboto(
+                            textStyle: TextStyle(
+                              fontSize: 90.sp,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w100,
+                            ),
                           ),
                         ),
-                      ),
-                      Text(
-                        'IPSUM ',
-                        style: GoogleFonts.roboto(
-                          textStyle: TextStyle(
-                            fontSize: 90.sp,
-                            color: Colors.black,
-                            fontWeight: FontWeight.w400,
+                        Text(
+                          'IPSUM ',
+                          style: GoogleFonts.roboto(
+                            textStyle: TextStyle(
+                              fontSize: 90.sp,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w400,
+                            ),
                           ),
-                        ),
-                      )
-                    ],
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ),

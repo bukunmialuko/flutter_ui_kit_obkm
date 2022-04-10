@@ -2,7 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
+import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../../navigation/navigation_service.dart';
 
 class Page34 extends StatefulWidget {
   const Page34({Key? key}) : super(key: key);
@@ -168,23 +171,28 @@ class _Page34State extends State<Page34> {
                         ],
                       ),
                     ),
-                    Container(
-                      height: 30.h,
-                      width: 89.w,
-                      decoration: BoxDecoration(
-                        color: AppColors.black,
-                        borderRadius: BorderRadius.circular(15.r),
-                      ),
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 0),
-                        child: Center(
-                          child: Text(
-                            "FOLLOW",
-                            style: GoogleFonts.workSans(
-                              textStyle: TextStyle(
-                                fontSize: 12.sp,
-                                color: AppColors.white,
-                                fontWeight: FontWeight.w600,
+                    GestureDetector(
+                      onTap: () {
+                        GetIt.I.get<NavigationService>().back();
+                      },
+                      child: Container(
+                        height: 30.h,
+                        width: 89.w,
+                        decoration: BoxDecoration(
+                          color: AppColors.black,
+                          borderRadius: BorderRadius.circular(15.r),
+                        ),
+                        child: Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 0),
+                          child: Center(
+                            child: Text(
+                              "FOLLOW",
+                              style: GoogleFonts.workSans(
+                                textStyle: TextStyle(
+                                  fontSize: 12.sp,
+                                  color: AppColors.white,
+                                  fontWeight: FontWeight.w600,
+                                ),
                               ),
                             ),
                           ),

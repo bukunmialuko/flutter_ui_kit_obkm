@@ -3,7 +3,10 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../../navigation/navigation_service.dart';
 
 class Page52 extends StatefulWidget {
   const Page52({Key? key}) : super(key: key);
@@ -157,38 +160,43 @@ class _Page52State extends State<Page52> {
                         SizedBox(height: 16.h),
                         Align(
                           alignment: Alignment.centerRight,
-                          child: Container(
-                            width: 90.w,
-                            height: 30.h,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(
-                                30.h,
+                          child: GestureDetector(
+                            onTap: () {
+                              GetIt.I.get<NavigationService>().back();
+                            },
+                            child: Container(
+                              width: 90.w,
+                              height: 30.h,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(
+                                  30.h,
+                                ),
                               ),
-                            ),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Text(
-                                  "Follow",
-                                  style: GoogleFonts.workSans(
-                                    textStyle: TextStyle(
-                                      fontSize: 14.sp,
-                                      color: Colors.black,
-                                      fontStyle: FontStyle.normal,
-                                      fontWeight: FontWeight.w600,
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    "Follow",
+                                    style: GoogleFonts.workSans(
+                                      textStyle: TextStyle(
+                                        fontSize: 14.sp,
+                                        color: Colors.black,
+                                        fontStyle: FontStyle.normal,
+                                        fontWeight: FontWeight.w600,
+                                      ),
                                     ),
                                   ),
-                                ),
-                                SizedBox(
-                                  width: 4.w,
-                                ),
-                                SvgPicture.asset(
-                                  "assets/svg/52/add_circle.svg",
-                                  width: 24.w,
-                                  height: 24.w,
-                                ),
-                              ],
+                                  SizedBox(
+                                    width: 4.w,
+                                  ),
+                                  SvgPicture.asset(
+                                    "assets/svg/52/add_circle.svg",
+                                    width: 24.w,
+                                    height: 24.w,
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         )

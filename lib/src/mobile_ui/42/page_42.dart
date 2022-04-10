@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
+import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../../navigation/navigation_service.dart';
 
 class Page42 extends StatefulWidget {
   const Page42({Key? key}) : super(key: key);
@@ -60,35 +63,40 @@ class _Page42State extends State<Page42> {
                   child: Row(
                     children: List.generate(
                       12,
-                      (index) => Container(
-                        margin: EdgeInsets.only(right: 16.w),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Container(
-                              width: 72.w,
-                              height: 72.w,
-                              decoration: BoxDecoration(
-                                color: AppColors.grey,
-                                borderRadius: BorderRadius.circular(72.w),
-                              ),
-                            ),
-                            SizedBox(
-                              height: 12.h,
-                            ),
-                            Text(
-                              "Artist name",
-                              style: GoogleFonts.workSans(
-                                textStyle: TextStyle(
-                                  fontSize: 10.sp,
-                                  color: Colors.black,
-                                  fontStyle: FontStyle.normal,
-                                  fontWeight: FontWeight.w600,
+                      (index) => GestureDetector(
+                        onTap: () {
+                          GetIt.I.get<NavigationService>().back();
+                        },
+                        child: Container(
+                          margin: EdgeInsets.only(right: 16.w),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: 72.w,
+                                height: 72.w,
+                                decoration: BoxDecoration(
+                                  color: AppColors.grey,
+                                  borderRadius: BorderRadius.circular(72.w),
                                 ),
                               ),
-                            ),
-                          ],
+                              SizedBox(
+                                height: 12.h,
+                              ),
+                              Text(
+                                "Artist name",
+                                style: GoogleFonts.workSans(
+                                  textStyle: TextStyle(
+                                    fontSize: 10.sp,
+                                    color: Colors.black,
+                                    fontStyle: FontStyle.normal,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -116,72 +124,77 @@ class _Page42State extends State<Page42> {
                   child: Row(
                     children: List.generate(
                       12,
-                      (index) => Container(
-                        width: 159.w,
-                        margin: EdgeInsets.only(right: 16.w),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Container(
-                              width: 159.w,
-                              height: 159.h,
-                              decoration: BoxDecoration(
-                                color: AppColors.grey,
+                      (index) => GestureDetector(
+                        onTap: () {
+                          GetIt.I.get<NavigationService>().back();
+                        },
+                        child: Container(
+                          width: 159.w,
+                          margin: EdgeInsets.only(right: 16.w),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Container(
+                                width: 159.w,
+                                height: 159.h,
+                                decoration: BoxDecoration(
+                                  color: AppColors.grey,
+                                ),
                               ),
-                            ),
-                            SizedBox(
-                              height: 12.h,
-                            ),
-                            Row(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Expanded(
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.min,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        "Album name",
-                                        style: GoogleFonts.workSans(
-                                          textStyle: TextStyle(
-                                            fontSize: 16.sp,
-                                            color: Colors.black,
-                                            fontStyle: FontStyle.normal,
-                                            fontWeight: FontWeight.w400,
+                              SizedBox(
+                                height: 12.h,
+                              ),
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Expanded(
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.min,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Album name",
+                                          style: GoogleFonts.workSans(
+                                            textStyle: TextStyle(
+                                              fontSize: 16.sp,
+                                              color: Colors.black,
+                                              fontStyle: FontStyle.normal,
+                                              fontWeight: FontWeight.w400,
+                                            ),
                                           ),
                                         ),
-                                      ),
-                                      SizedBox(
-                                        height: 12.h,
-                                      ),
-                                      Text(
-                                        "Artist name",
-                                        style: GoogleFonts.workSans(
-                                          textStyle: TextStyle(
-                                            fontSize: 10.sp,
-                                            color: Colors.black,
-                                            fontStyle: FontStyle.normal,
-                                            fontWeight: FontWeight.w600,
+                                        SizedBox(
+                                          height: 12.h,
+                                        ),
+                                        Text(
+                                          "Artist name",
+                                          style: GoogleFonts.workSans(
+                                            textStyle: TextStyle(
+                                              fontSize: 10.sp,
+                                              color: Colors.black,
+                                              fontStyle: FontStyle.normal,
+                                              fontWeight: FontWeight.w600,
+                                            ),
                                           ),
                                         ),
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsets.only(left: 4.w),
-                                        child: SvgPicture.asset(
-                                          "assets/svg/bookmark_border.svg",
-                                          height: 24.r,
-                                          width: 24.r,
-                                          fit: BoxFit.fill,
-                                        ),
-                                      ),
-                                    ],
+                                      ],
+                                    ),
                                   ),
-                                )
-                              ],
-                            )
-                          ],
+                                  Padding(
+                                    padding: EdgeInsets.only(left: 4.w),
+                                    child: SvgPicture.asset(
+                                      "assets/svg/bookmark_border.svg",
+                                      height: 24.r,
+                                      width: 24.r,
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                ],
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -353,16 +366,21 @@ class _Page42State extends State<Page42> {
                 ),
               ),
             ),
-            Padding(
-              padding: EdgeInsets.only(
-                left: 4.w,
-              ),
-              child: SvgPicture.asset(
-                "assets/svg/pause.svg",
-                height: 40.r,
-                width: 40.r,
-                fit: BoxFit.fill,
-                color: Colors.white,
+            GestureDetector(
+              onTap: () {
+                GetIt.I.get<NavigationService>().back();
+              },
+              child: Padding(
+                padding: EdgeInsets.only(
+                  left: 4.w,
+                ),
+                child: SvgPicture.asset(
+                  "assets/svg/pause.svg",
+                  height: 40.r,
+                  width: 40.r,
+                  fit: BoxFit.fill,
+                  color: Colors.white,
+                ),
               ),
             ),
           ],

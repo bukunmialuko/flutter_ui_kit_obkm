@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../../navigation/navigation_service.dart';
 
 class Page33 extends StatefulWidget {
   const Page33({Key? key}) : super(key: key);
@@ -75,44 +78,54 @@ class _Page33State extends State<Page33> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Container(
-                  width: 90.w,
-                  height: 30.h,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(30.h),
-                    border: Border.all(color: Colors.black, width: 1.w),
-                  ),
-                  child: Center(
-                    child: Text(
-                      "ADD FRIEND",
-                      style: GoogleFonts.workSans(
-                        textStyle: TextStyle(
-                          fontSize: 12.sp,
-                          color: Colors.black,
-                          fontStyle: FontStyle.normal,
-                          fontWeight: FontWeight.w600,
+                GestureDetector(
+                  onTap: () {
+                    GetIt.I.get<NavigationService>().back();
+                  },
+                  child: Container(
+                    width: 90.w,
+                    height: 30.h,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30.h),
+                      border: Border.all(color: Colors.black, width: 1.w),
+                    ),
+                    child: Center(
+                      child: Text(
+                        "ADD FRIEND",
+                        style: GoogleFonts.workSans(
+                          textStyle: TextStyle(
+                            fontSize: 12.sp,
+                            color: Colors.black,
+                            fontStyle: FontStyle.normal,
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
                       ),
                     ),
                   ),
                 ),
                 SizedBox(width: 8.w),
-                Container(
-                  width: 90.w,
-                  height: 30.h,
-                  decoration: BoxDecoration(
-                    color: Color(0xff262626),
-                    borderRadius: BorderRadius.circular(30.h),
-                  ),
-                  child: Center(
-                    child: Text(
-                      "FOLLOW",
-                      style: GoogleFonts.workSans(
-                        textStyle: TextStyle(
-                          fontSize: 12.sp,
-                          color: Colors.white,
-                          fontStyle: FontStyle.normal,
-                          fontWeight: FontWeight.w600,
+                GestureDetector(
+                  onTap: () {
+                    GetIt.I.get<NavigationService>().back();
+                  },
+                  child: Container(
+                    width: 90.w,
+                    height: 30.h,
+                    decoration: BoxDecoration(
+                      color: Color(0xff262626),
+                      borderRadius: BorderRadius.circular(30.h),
+                    ),
+                    child: Center(
+                      child: Text(
+                        "FOLLOW",
+                        style: GoogleFonts.workSans(
+                          textStyle: TextStyle(
+                            fontSize: 12.sp,
+                            color: Colors.white,
+                            fontStyle: FontStyle.normal,
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
                       ),
                     ),

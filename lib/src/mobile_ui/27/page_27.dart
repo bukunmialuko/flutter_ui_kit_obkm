@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get_it/get_it.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 import '../../../res/asset_images.dart';
 import '../../navigation/navigation_service.dart';
 
@@ -102,7 +102,12 @@ class _Page27State extends State<Page27> {
                           return SizedBox(width: 20.w);
                         },
                         itemBuilder: (context, index) {
-                          return WorkoutCard();
+                          return GestureDetector(
+                            onTap: () {
+                              GetIt.I.get<NavigationService>().back();
+                            },
+                            child: WorkoutCard(),
+                          );
                         },
                       ),
                       SizedBox(width: 20.w),

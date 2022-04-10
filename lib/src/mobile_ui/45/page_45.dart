@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../../navigation/navigation_service.dart';
 
 class Page45 extends StatefulWidget {
   const Page45({Key? key}) : super(key: key);
@@ -72,13 +75,18 @@ class _Page45State extends State<Page45> {
               SizedBox(
                 height: 39.h,
               ),
-              SizedBox(
-                height: 254.h,
-                width: double.infinity,
-                // color: Colors.green,
-                child: Image.asset(
-                  'assets/png/45/europe.png',
-                  fit: BoxFit.contain,
+              GestureDetector(
+                onTap: () {
+                  GetIt.I.get<NavigationService>().back();
+                },
+                child: SizedBox(
+                  height: 254.h,
+                  width: double.infinity,
+                  // color: Colors.green,
+                  child: Image.asset(
+                    'assets/png/45/europe.png',
+                    fit: BoxFit.contain,
+                  ),
                 ),
               ),
               SizedBox(
