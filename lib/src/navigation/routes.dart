@@ -16,6 +16,7 @@ import 'package:flutter_ui_kit_obkm/src/mobile_ui/2/page2.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/28/page_28.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/3/page3.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/4/page4.dart';
+import 'package:flutter_ui_kit_obkm/src/mobile_ui/49/page_49.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/5/page5.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/6/page6.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/7/page7.dart';
@@ -184,6 +185,10 @@ var routes = (RouteSettings settings) {
     case MobileRoutes.pg45:
       return FadeRoute(
         page: const Page45(),
+      );
+    case MobileRoutes.pg49:
+      return FadeRoute(
+        page: const Page49(),
       );
     case MobileRoutes.pg51:
       return FadeRoute(
