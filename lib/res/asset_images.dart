@@ -1,6 +1,14 @@
 // ignore_for_file: constant_identifier_names
 
 class Assets {
+  static const ADD = 'assets/png/29/add.png';
+  static const SUSHI = 'assets/png/29/sushi.png';
+  static const DELIVERY = 'assets/png/29/delivery.png';
+  static const FRIES = 'assets/png/29/fries.png';
+  static const CHINESE = 'assets/png/29/chinese.png';
+  static const FOOD = 'assets/png/29/food.png';
+  static const FOOD2 = 'assets/png/29/food2.png';
+  static const MORE_VERT = 'assets/png/29/more.png';
   static const PAUSE = "assets/svg/pause.svg";
   static const PLAY = "assets/svg/play.svg";
   static const MENU = "assets/svg/menu.svg";
