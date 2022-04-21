@@ -1,8 +1,0 @@
-{
-  "@@locale": "fr_FR",
-  "title": "Bonjour",
-  "@title": {
-    "type": "text",
-    "placeholders": {}
-  }
-}

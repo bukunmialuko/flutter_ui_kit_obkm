@@ -4,8 +4,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../../res/asset_images.dart';
 import '../../navigation/navigation_service.dart';
+import '../../res/assets.dart';
 
 class Page19 extends StatelessWidget {
   const Page19({Key? key}) : super(key: key);

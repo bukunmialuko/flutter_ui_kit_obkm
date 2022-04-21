@@ -32,10 +32,6 @@ dependencies:
 
   cupertino_icons: ^1.0.4
 
-  flutter_localizations:
-    sdk: flutter
-
-  intl: ^0.17.0
   flutter_screenutil: ^5.3.1
   flutter_svg: ^1.0.3
   google_fonts: ^2.3.1
@@ -67,7 +63,6 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
-  generate: true
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
@@ -102,8 +97,6 @@ flutter:
 
 
 
-
-
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
@@ -123,19 +116,3 @@ flutter:
     - family: Proxima Nova
       fonts:
        - asset: fonts/Proxima-Nova.otf
-#         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/custom-fonts/#from-packages
-
-
-flutter_intl:
-  arb_dir: lib/l10n
-#  class_name: Translations
-  main_locale: en_US
-  enabled: true

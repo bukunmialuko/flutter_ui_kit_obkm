@@ -6,8 +6,8 @@ class Assets {
   static const DELIVERY = 'assets/png/29/delivery.png';
   static const FRIES = 'assets/png/29/fries.png';
   static const CHINESE = 'assets/png/29/chinese.png';
-  static const FOOD = 'assets/png/29/food.png';
-  static const FOOD2 = 'assets/png/29/food2.png';
+  static const FOOD = 'assets/png/29/food.jpeg';
+  static const FOOD2 = 'assets/png/29/food2.jpeg';
   static const MORE_VERT = 'assets/png/29/more.png';
   static const PAUSE = "assets/svg/pause.svg";
   static const PLAY = "assets/svg/play.svg";

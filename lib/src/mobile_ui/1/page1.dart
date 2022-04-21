@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_ui_kit_obkm/generated/l10n.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
 import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
 import 'package:flutter_ui_kit_obkm/src/res/styles.dart';
@@ -40,7 +39,7 @@ class Page1 extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        S.current.contacts,
+                        "Contacts",
                         style: GoogleFonts.workSans(
                           textStyle: TextStyle(
                             fontSize: 24.sp,
@@ -101,7 +100,7 @@ class Page1 extends StatelessWidget {
                   ),
                   SizedBox(height: 30.h),
                   Text(
-                    S.current.lastContacted,
+                    "Last Contacted",
                     style: GoogleFonts.workSans(
                       textStyle: TextStyle(
                         fontSize: 14.sp,
@@ -246,7 +245,7 @@ class Page1 extends StatelessWidget {
                                 ),
                                 SizedBox(height: 3.h),
                                 Text(
-                                  S.current.loremIpsum,
+                                  "Lorem Ipsum",
                                   style: GoogleFonts.workSans(
                                     textStyle: TextStyle(
                                       fontSize: 14.sp,

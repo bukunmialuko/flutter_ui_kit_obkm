@@ -5,8 +5,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../../res/asset_images.dart';
 import '../../navigation/navigation_service.dart';
+import '../../res/assets.dart';
 
 class Page24 extends StatefulWidget {
   const Page24({Key? key}) : super(key: key);
