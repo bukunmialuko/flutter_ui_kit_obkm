@@ -42,6 +42,7 @@ dependencies:
   get_it: ^7.2.0
   flutter_bloc: ^8.0.1
   table_calendar: ^3.0.5
+  http: ^0.13.4
 
 
 dev_dependencies:
