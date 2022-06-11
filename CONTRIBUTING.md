@@ -13,13 +13,13 @@ We gladly accept contributions via GitHub pull requests.
    or 
    feature/W5
 
-M -> Implies that you are working on a mobile screen
+M: Implies that you are working on a mobile screen
 
-W -> Implies that you are working on a web screen
+W: Implies that you are working on a web screen
 
-5 -> Implies that you are working on page 5
+5: Implies that you are working on page 5
 
-20 -> Implies that you are working on page 20
+20: Implies that you are working on page 20
 
 Branch categories : [feature, bugfix, chore]
 
