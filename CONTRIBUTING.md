@@ -23,6 +23,7 @@ W: Implies that you are working on a web screen
 
 Branch categories : [feature, bugfix, chore]
 
+
 4. Once a screen is implemented, 
    - Create a Draft PR with title e.g "Mobile Screen 20" or "Web Screen 20". 
    - Take a screenshot of your work, and rename the picture according in the screen name format name 
