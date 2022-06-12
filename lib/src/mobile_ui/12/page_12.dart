@@ -17,6 +17,18 @@ class _Page12State extends State<Page12> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFFCFCFC),
+      appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: const Color(0xFFFCFCFC),
+        title: Text(
+          'SMART ROOM',
+          style: TextStyle(
+            fontWeight: FontWeight.w900,
+            color: Colors.black,
+          ),
+        ),
+        elevation: 0.0,
+      ),
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.fromLTRB(23.w, 30.h, 23.w, 0),
@@ -61,6 +73,9 @@ class _Page12State extends State<Page12> {
                           CircleAvatar(
                             radius: 31.w,
                             backgroundColor: const Color(0xFFC4C4C4),
+                            backgroundImage: NetworkImage(
+                              'https://source.unsplash.com/random/education',
+                            ),
                           ),
                           Positioned(
                             right: 2.w,
