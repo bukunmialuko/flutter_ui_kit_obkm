@@ -174,22 +174,25 @@ class _Page29State extends State<Page29> {
       bottomNavigationBar: _bottomNavBar(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       extendBody: true,
-      floatingActionButton: Container(
-        width: 76.w,
-        height: 76.w,
-        decoration: BoxDecoration(
-          color: Color(0xffF4F4F4).withOpacity(1.0),
-          borderRadius: BorderRadius.circular(76.w),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.white.withOpacity(1.0),
-              spreadRadius: 2,
-              blurRadius: 1,
-              offset: const Offset(1, 1),
-            ),
-          ],
+      floatingActionButton: InkWell(
+        onTap: () => Navigator.pop(context),
+        child: Container(
+          width: 76.w,
+          height: 76.w,
+          decoration: BoxDecoration(
+            color: Color(0xffF4F4F4).withOpacity(1.0),
+            borderRadius: BorderRadius.circular(76.w),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.white.withOpacity(1.0),
+                spreadRadius: 2,
+                blurRadius: 1,
+                offset: const Offset(1, 1),
+              ),
+            ],
+          ),
+          child: Center(child: Icon(Icons.add)),
         ),
-        child: Center(child: Icon(Icons.add)),
       ),
     );
   }

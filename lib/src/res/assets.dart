@@ -3,6 +3,7 @@
 class Assets {
   static const ADD = 'assets/png/29/add.png';
   static const SUSHI = 'assets/png/29/sushi.png';
+  static const BANANA = 'assets/png/30/banana.png';
   static const DELIVERY = 'assets/png/29/delivery.png';
   static const FRIES = 'assets/png/29/fries.png';
   static const CHINESE = 'assets/png/29/chinese.png';
