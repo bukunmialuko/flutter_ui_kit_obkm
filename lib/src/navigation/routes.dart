@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_function_declarations_over_variables
-
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/1/page1.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/10/page_10.dart';
@@ -13,6 +11,7 @@ import 'package:flutter_ui_kit_obkm/src/mobile_ui/17/page_17.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/18/page_18.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/19/page_19.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/2/page2.dart';
+import 'package:flutter_ui_kit_obkm/src/mobile_ui/22/page_22.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/28/page_28.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/29/page_29.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/3/page3.dart';
@@ -135,6 +134,11 @@ var routes = (RouteSettings settings) {
         page: const Page21(),
       );
 
+    case MobileRoutes.pg22:
+      return FadeRoute(
+        page: const Page22(),
+      );
+
     case MobileRoutes.pg24:
       return FadeRoute(
         page: const Page24(),
@@ -208,6 +212,15 @@ var routes = (RouteSettings settings) {
     case MobileRoutes.pg52:
       return FadeRoute(
         page: const Page52(),
+      );
+
+    default:
+      return FadeRoute(
+        page: Scaffold(
+          body: Center(
+            child: Text("404: Page Not Found"),
+          ),
+        ),
       );
   }
 };

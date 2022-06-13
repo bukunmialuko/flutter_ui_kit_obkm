@@ -13,7 +13,10 @@ A Simple UI Kit.
 
 <br />
 
-## build apk
+## Contributing
+[To contribute, read short guidelines](https://github.com/bukunmialuko/flutter_ui_kit_obkm/blob/main/CONTRIBUTING.md)
+
+## Build apk
 flutter build apk
 
 ## 📸 Banner
@@ -121,5 +124,3 @@ Follow for update. 😃
 
 ## Development version :hammer:
 - [APK (direct download)](https://github.com/bukunmialuko/flutter_ui_kit_obkm/releases/download/v1.0.1/app-release.apk)
-
-
