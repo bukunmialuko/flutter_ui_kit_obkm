@@ -98,21 +98,6 @@ Web Page 7
 **Oscar Sun**
 (https://www.oscarsun.design)
 
-## 🤓 Author
-
-**Bukunmi Aluko**
-(https://www.linkedin.com/in/bukunmi-aluko)
-
-<br />
-
-## 🤓 Contributors
-
-**Olusegun Michael**
-(https://www.linkedin.com/in/michaelolusegun)
-
-**Bamidele Michael**
-(https://www.linkedin.com/in/mbamidele)
-
 <br />
 
 ## 😃 Show some love ❤️😍😍
@@ -120,7 +105,6 @@ Web Page 7
 Leave a 🌟
 
 Follow for update. 😃
-
 
 ## Development version :hammer:
 - [APK (direct download)](https://github.com/bukunmialuko/flutter_ui_kit_obkm/releases/download/v1.0.1/app-release.apk)
