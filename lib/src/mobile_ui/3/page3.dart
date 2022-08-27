@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:flutter_ui_kit_obkm/src/res/assets.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
+import 'package:flutter_ui_kit_obkm/src/res/assets.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -17,8 +17,7 @@ class _Page3State extends State<Page3> {
   static int initialPage = 0;
   int maximumPage = 321;
 
-  final PageController _controller =
-      PageController(initialPage: initialPage, viewportFraction: 0.8);
+  final PageController _controller = PageController(initialPage: initialPage, viewportFraction: 0.8);
 
   double currentPageValue = 0;
 
@@ -84,8 +83,7 @@ class _Page3State extends State<Page3> {
                     height: 340.h,
                     child: PageView.builder(
                       controller: _controller,
-                      physics: const BouncingScrollPhysics(
-                          parent: AlwaysScrollableScrollPhysics()),
+                      physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
                       itemBuilder: (context, position) {
                         if (position == 0 && currentPageValue == 0) {
                           return Container(
@@ -191,17 +189,13 @@ class _Page3State extends State<Page3> {
                             height: 6.h,
                             width: 342.w,
                             decoration: BoxDecoration(
-                                color: const Color(0xFFC4C4C4),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(50.r))),
+                                color: const Color(0xFFC4C4C4), borderRadius: BorderRadius.all(Radius.circular(50.r))),
                           ),
                           Container(
                             height: 6.h,
                             width: 100.w,
                             decoration: BoxDecoration(
-                                color: const Color(0xff525252),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(50.r))),
+                                color: const Color(0xff525252), borderRadius: BorderRadius.all(Radius.circular(50.r))),
                           ),
                         ],
                       ),
@@ -232,8 +226,7 @@ class _Page3State extends State<Page3> {
                                   width: 24.r,
                                   height: 24.r,
                                   child: IconButton(
-                                    visualDensity:
-                                        VisualDensity.adaptivePlatformDensity,
+                                    visualDensity: VisualDensity.adaptivePlatformDensity,
                                     padding: EdgeInsets.zero,
                                     onPressed: () {
                                       GetIt.I.get<NavigationService>().back();
@@ -254,8 +247,7 @@ class _Page3State extends State<Page3> {
                                   width: 24.r,
                                   height: 24.r,
                                   child: IconButton(
-                                    visualDensity:
-                                        VisualDensity.adaptivePlatformDensity,
+                                    visualDensity: VisualDensity.adaptivePlatformDensity,
                                     padding: EdgeInsets.zero,
                                     onPressed: () {
                                       GetIt.I.get<NavigationService>().back();

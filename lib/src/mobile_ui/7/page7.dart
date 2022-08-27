@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:flutter_ui_kit_obkm/src/res/assets.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
+import 'package:flutter_ui_kit_obkm/src/res/assets.dart';
 import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
 import 'package:flutter_ui_kit_obkm/src/res/styles.dart';
 import 'package:get_it/get_it.dart';
@@ -23,8 +23,7 @@ class _Page7State extends State<Page7> {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          physics: const BouncingScrollPhysics(
-              parent: AlwaysScrollableScrollPhysics()),
+          physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -104,8 +103,7 @@ class _Page7State extends State<Page7> {
                           padding: EdgeInsets.symmetric(horizontal: 8.w),
                           child: const Icon(Icons.search, color: Colors.black),
                         ),
-                        prefixIconConstraints:
-                            BoxConstraints(maxHeight: 20.w, maxWidth: 35.w),
+                        prefixIconConstraints: BoxConstraints(maxHeight: 20.w, maxWidth: 35.w),
                         hintText: "Search...",
                         // hintStyle: textFieldPlaceholderTextStyle(context),
                         isDense: true,
@@ -173,8 +171,7 @@ class _Page7State extends State<Page7> {
                 height: 140.h,
                 child: ListView.separated(
                   padding: EdgeInsets.only(left: 24.w),
-                  physics: const BouncingScrollPhysics(
-                      parent: AlwaysScrollableScrollPhysics()),
+                  physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
                   scrollDirection: Axis.horizontal,
                   itemCount: categories.length,
                   itemBuilder: (c, i) {
@@ -265,8 +262,7 @@ class _Page7State extends State<Page7> {
                 height: 165.h,
                 child: ListView.separated(
                   padding: EdgeInsets.only(left: 24.w),
-                  physics: const BouncingScrollPhysics(
-                      parent: AlwaysScrollableScrollPhysics()),
+                  physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
                   scrollDirection: Axis.horizontal,
                   itemCount: 4,
                   itemBuilder: (c, i) {
@@ -283,12 +279,10 @@ class _Page7State extends State<Page7> {
                                 Align(
                                   alignment: Alignment.bottomLeft,
                                   child: Container(
-                                    padding: EdgeInsets.only(
-                                        left: 15.w, bottom: 12.w),
+                                    padding: EdgeInsets.only(left: 15.w, bottom: 12.w),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.min,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text(
                                           "Tai Po Beach",
@@ -303,8 +297,7 @@ class _Page7State extends State<Page7> {
                                           ),
                                         ),
                                         Row(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.center,
+                                          crossAxisAlignment: CrossAxisAlignment.center,
                                           children: [
                                             const Icon(Icons.edit_location),
                                             SizedBox(width: 4.w),
@@ -349,9 +342,7 @@ class _Page7State extends State<Page7> {
       bottomNavigationBar: Container(
         height: 90.h,
         // color: Colors.white,
-        decoration: BoxDecoration(
-            color: Colors.white,
-            border: Border.all(color: const Color(0xffE0E0E0))),
+        decoration: BoxDecoration(color: Colors.white, border: Border.all(color: const Color(0xffE0E0E0))),
         child: Center(
           child: Padding(
             padding: EdgeInsets.only(left: 40.w, right: 51.w),

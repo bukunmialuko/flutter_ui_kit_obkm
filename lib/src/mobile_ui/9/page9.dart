@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:flutter_ui_kit_obkm/src/res/assets.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
+import 'package:flutter_ui_kit_obkm/src/res/assets.dart';
 import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -27,8 +27,7 @@ class _Page9State extends State<Page9> {
               GetIt.I.get<NavigationService>().back();
             },
             child: Padding(
-              padding: EdgeInsets.only(
-                  left: 24.w, right: 24.w, top: 20.h, bottom: 14.h),
+              padding: EdgeInsets.only(left: 24.w, right: 24.w, top: 20.h, bottom: 14.h),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -79,14 +78,12 @@ class _Page9State extends State<Page9> {
           Expanded(
             child: ListView(
               padding: EdgeInsets.zero,
-              physics: const BouncingScrollPhysics(
-                  parent: AlwaysScrollableScrollPhysics()),
+              physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
               children: [
                 SizedBox(
                   height: 62.h,
                   child: ListView.separated(
-                    physics: const BouncingScrollPhysics(
-                        parent: AlwaysScrollableScrollPhysics()),
+                    physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
                     scrollDirection: Axis.horizontal,
                     itemCount: 7,
                     itemBuilder: (c, i) {
@@ -104,8 +101,7 @@ class _Page9State extends State<Page9> {
                                     color: Colors.black.withOpacity(0.25),
                                     spreadRadius: 0,
                                     blurRadius: 8,
-                                    offset: const Offset(
-                                        0, 1), // changes position of shadow
+                                    offset: const Offset(0, 1), // changes position of shadow
                                   ),
                                 ],
                               ),
@@ -120,10 +116,8 @@ class _Page9State extends State<Page9> {
                                   ),
                                 ),
                               ),
-                              margin: EdgeInsets.only(
-                                  left: 14.w, top: 14.h, bottom: 14.h),
-                              padding: EdgeInsets.symmetric(
-                                  horizontal: 16.w, vertical: 8.h),
+                              margin: EdgeInsets.only(left: 14.w, top: 14.h, bottom: 14.h),
+                              padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
                             ),
                           ],
                         );
@@ -142,8 +136,7 @@ class _Page9State extends State<Page9> {
                                   color: Colors.black.withOpacity(0.25),
                                   spreadRadius: 0,
                                   blurRadius: 8,
-                                  offset: const Offset(
-                                      0, 1), // changes position of shadow
+                                  offset: const Offset(0, 1), // changes position of shadow
                                 ),
                               ],
                             ),
@@ -158,10 +151,8 @@ class _Page9State extends State<Page9> {
                                 ),
                               ),
                             ),
-                            margin: EdgeInsets.only(
-                                left: 14.w, top: 14.h, bottom: 14.h),
-                            padding: EdgeInsets.symmetric(
-                                horizontal: 16.w, vertical: 8.h),
+                            margin: EdgeInsets.only(left: 14.w, top: 14.h, bottom: 14.h),
+                            padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
                           ),
                         ],
                       );
@@ -183,8 +174,7 @@ class _Page9State extends State<Page9> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
-                          left: 24.w, right: 17.w, top: 20.h, bottom: 35.h),
+                      padding: EdgeInsets.only(left: 24.w, right: 17.w, top: 20.h, bottom: 35.h),
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -290,8 +280,7 @@ class _Page9State extends State<Page9> {
                       SizedBox(
                         height: 200.h,
                         child: ListView.separated(
-                          physics: const BouncingScrollPhysics(
-                              parent: AlwaysScrollableScrollPhysics()),
+                          physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
                           scrollDirection: Axis.horizontal,
                           itemCount: 7,
                           itemBuilder: (c, i) {
@@ -314,12 +303,10 @@ class _Page9State extends State<Page9> {
                                         Align(
                                           alignment: Alignment.bottomCenter,
                                           child: Container(
-                                            padding:
-                                                EdgeInsets.only(bottom: 12.w),
+                                            padding: EdgeInsets.only(bottom: 12.w),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.min,
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.center,
+                                              crossAxisAlignment: CrossAxisAlignment.center,
                                               children: [
                                                 SvgPicture.asset(
                                                   Assets.PG9_ELLIPSE,
@@ -335,10 +322,8 @@ class _Page9State extends State<Page9> {
                                                     textStyle: TextStyle(
                                                       fontSize: 12.sp,
                                                       color: Colors.black,
-                                                      fontStyle:
-                                                          FontStyle.normal,
-                                                      fontWeight:
-                                                          FontWeight.w400,
+                                                      fontStyle: FontStyle.normal,
+                                                      fontWeight: FontWeight.w400,
                                                     ),
                                                   ),
                                                 ),
@@ -377,8 +362,7 @@ class _Page9State extends State<Page9> {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(
-                          left: 24.w, right: 17.w, top: 20.h, bottom: 35.h),
+                      padding: EdgeInsets.only(left: 24.w, right: 17.w, top: 20.h, bottom: 35.h),
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [

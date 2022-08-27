@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_ui_kit_obkm/src/res/assets.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
+import 'package:flutter_ui_kit_obkm/src/res/assets.dart';
 import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -31,8 +31,7 @@ class _Page10State extends State<Page10> {
           // crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Padding(
-              padding: EdgeInsets.only(
-                  left: 53.w, right: 56.w, top: 35.h, bottom: 57.h),
+              padding: EdgeInsets.only(left: 53.w, right: 56.w, top: 35.h, bottom: 57.h),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -175,8 +174,7 @@ class _Page10State extends State<Page10> {
                     children: [
                       TextButton(
                         child: Padding(
-                          padding: EdgeInsets.symmetric(
-                              horizontal: 8.w, vertical: 6.h),
+                          padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 6.h),
                           child: Text(
                             'Follow',
                             style: GoogleFonts.workSans(
@@ -197,8 +195,7 @@ class _Page10State extends State<Page10> {
                       ),
                       TextButton(
                         child: Padding(
-                          padding: EdgeInsets.symmetric(
-                              horizontal: 8.w, vertical: 6.h),
+                          padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 6.h),
                           child: Text(
                             'Message',
                             style: GoogleFonts.workSans(

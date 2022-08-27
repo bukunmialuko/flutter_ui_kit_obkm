@@ -4,11 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
-	<key>CFBundleLocalizations</key>
-    <array>
-        <string>en_US</string>
-        <string>fr_FR</string>
-    </array>
+	<key>CFBundleDisplayName</key>
+	<string>Flutter Ui Kit Obkm</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

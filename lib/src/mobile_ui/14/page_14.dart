@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:flutter_ui_kit_obkm/src/res/assets.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
+import 'package:flutter_ui_kit_obkm/src/res/assets.dart';
 import 'package:get_it/get_it.dart';
 
 class Page14 extends StatefulWidget {
@@ -49,8 +49,7 @@ class _Page14State extends State<Page14> {
                 ),
                 _textField(
                   hintText: 'Your full name',
-                  prefixIcon:
-                      const Icon(Icons.person, color: Color(0xFFA8A8A8)),
+                  prefixIcon: const Icon(Icons.person, color: Color(0xFFA8A8A8)),
                 ),
                 SizedBox(height: 14.h),
                 _textField(
@@ -63,8 +62,7 @@ class _Page14State extends State<Page14> {
                     Expanded(
                       child: _textField(
                         hintText: '*******',
-                        prefixIcon:
-                            const Icon(Icons.vpn_key, color: Color(0xFFA8A8A8)),
+                        prefixIcon: const Icon(Icons.vpn_key, color: Color(0xFFA8A8A8)),
                       ),
                     ),
                     SizedBox(width: 10.w),
@@ -93,8 +91,7 @@ class _Page14State extends State<Page14> {
     );
   }
 
-  Widget _button({required String text, bool isTransparent = false}) =>
-      ElevatedButton(
+  Widget _button({required String text, bool isTransparent = false}) => ElevatedButton(
         onPressed: () {
           GetIt.I.get<NavigationService>().back();
         },
@@ -109,15 +106,12 @@ class _Page14State extends State<Page14> {
           style: TextStyle(
             fontSize: 16.sp,
             fontWeight: FontWeight.w600,
-            color: isTransparent
-                ? const Color(0xFF0043CE)
-                : const Color(0xFFF4F4F4),
+            color: isTransparent ? const Color(0xFF0043CE) : const Color(0xFFF4F4F4),
           ),
         ),
       );
 
-  Widget _textField({required String hintText, required Widget prefixIcon}) =>
-      TextField(
+  Widget _textField({required String hintText, required Widget prefixIcon}) => TextField(
         decoration: InputDecoration(
           hintText: hintText,
           hintStyle: TextStyle(
@@ -126,14 +120,10 @@ class _Page14State extends State<Page14> {
             color: const Color(0xFFA8A8A8),
           ),
           prefixIcon: prefixIcon,
-          contentPadding:
-              EdgeInsets.symmetric(horizontal: 17.w, vertical: 22.h),
-          border: const OutlineInputBorder(
-              borderSide: BorderSide(color: Color(0xFFD0D0D0))),
-          focusedBorder: const OutlineInputBorder(
-              borderSide: BorderSide(color: Color(0xFFD0D0D0))),
-          enabledBorder: const OutlineInputBorder(
-              borderSide: BorderSide(color: Color(0xFFD0D0D0))),
+          contentPadding: EdgeInsets.symmetric(horizontal: 17.w, vertical: 22.h),
+          border: const OutlineInputBorder(borderSide: BorderSide(color: Color(0xFFD0D0D0))),
+          focusedBorder: const OutlineInputBorder(borderSide: BorderSide(color: Color(0xFFD0D0D0))),
+          enabledBorder: const OutlineInputBorder(borderSide: BorderSide(color: Color(0xFFD0D0D0))),
         ),
       );
 }
