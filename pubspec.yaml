@@ -112,8 +112,8 @@ flutter:
   fonts:
     - family: Abolition
       fonts:
-       - asset: fonts/Abolition-Regular.ttf
+       - asset: assets/fonts/Abolition-Regular.ttf
 
     - family: Proxima Nova
       fonts:
-       - asset: fonts/Proxima-Nova.otf
+       - asset: assets/fonts/Proxima-Nova.otf
