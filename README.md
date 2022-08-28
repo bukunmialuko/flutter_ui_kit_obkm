@@ -182,7 +182,7 @@ flutter build apk
 |  | | | |
 
 | Page 173  | Page 174 | Page 175 | Page 176 |
-| ------------- | ------------- | ------------- | ------------- |
+| ------------- | ------------- | <img src="art/screenshots/page_175.png" width="200"/> | ------------- |
 |  | | | |
 
 | Page 177  | Page 178 | Page 179 | Page 180 |

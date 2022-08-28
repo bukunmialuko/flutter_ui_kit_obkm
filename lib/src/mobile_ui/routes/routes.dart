@@ -45,4 +45,17 @@ class MobileRoutes {
   static const pg49 = "/49/";
   static const pg51 = "/51/";
   static const pg52 = "/52/";
+
+  /// 61 - 80
+
+  /// 81 - 100
+
+  /// 111 - 120
+
+  /// 121 - 140
+
+  /// 141 - 160
+
+  /// 161 - 180
+  static const pg175 = "/175/";
 }
