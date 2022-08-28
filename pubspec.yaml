@@ -94,8 +94,8 @@ flutter:
     - assets/png/52/
     - assets/png/30/
     - assets/svg/52/
+    - assets/png/175/
     - assets/svg/175/
-
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
