@@ -6,6 +6,13 @@ import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+class $AssetsColorGen {
+  const $AssetsColorGen();
+
+  /// File path: assets/color/colors.xml
+  String get colors => 'assets/color/colors.xml';
+}
+
 class $AssetsPngGen {
   const $AssetsPngGen();
 
@@ -41,15 +48,6 @@ class $AssetsPngGen {
 class $AssetsSvgGen {
   const $AssetsSvgGen();
 
-  /// File path: assets/svg/back.svg
-  SvgGenImage get back => const SvgGenImage('assets/svg/back.svg');
-
-  /// File path: assets/svg/bookmark_border.svg
-  SvgGenImage get bookmarkBorder => const SvgGenImage('assets/svg/bookmark_border.svg');
-
-  /// File path: assets/svg/eyetubee.svg
-  SvgGenImage get eyetubee => const SvgGenImage('assets/svg/eyetubee.svg');
-
   $AssetsSvgM11Gen get m11 => const $AssetsSvgM11Gen();
   $AssetsSvgM12Gen get m12 => const $AssetsSvgM12Gen();
   $AssetsSvgM14Gen get m14 => const $AssetsSvgM14Gen();
@@ -58,25 +56,15 @@ class $AssetsSvgGen {
   $AssetsSvgM19Gen get m19 => const $AssetsSvgM19Gen();
   $AssetsSvgM21Gen get m21 => const $AssetsSvgM21Gen();
   $AssetsSvgM22Gen get m22 => const $AssetsSvgM22Gen();
+  $AssetsSvgM3Gen get m3 => const $AssetsSvgM3Gen();
   $AssetsSvgM32Gen get m32 => const $AssetsSvgM32Gen();
+  $AssetsSvgM4Gen get m4 => const $AssetsSvgM4Gen();
   $AssetsSvgM51Gen get m51 => const $AssetsSvgM51Gen();
   $AssetsSvgM52Gen get m52 => const $AssetsSvgM52Gen();
   $AssetsSvgM6Gen get m6 => const $AssetsSvgM6Gen();
   $AssetsSvgM7Gen get m7 => const $AssetsSvgM7Gen();
   $AssetsSvgM8Gen get m8 => const $AssetsSvgM8Gen();
   $AssetsSvgM9Gen get m9 => const $AssetsSvgM9Gen();
-
-  /// File path: assets/svg/menu.svg
-  SvgGenImage get menu => const SvgGenImage('assets/svg/menu.svg');
-
-  /// File path: assets/svg/more.svg
-  SvgGenImage get more => const SvgGenImage('assets/svg/more.svg');
-
-  /// File path: assets/svg/pause.svg
-  SvgGenImage get pause => const SvgGenImage('assets/svg/pause.svg');
-
-  /// File path: assets/svg/play.svg
-  SvgGenImage get play => const SvgGenImage('assets/svg/play.svg');
 }
 
 class $AssetsPngM10Gen {
@@ -336,6 +324,13 @@ class $AssetsSvgM22Gen {
   SvgGenImage get supervisorAccount => const SvgGenImage('assets/svg/m22/supervisor_account.svg');
 }
 
+class $AssetsSvgM3Gen {
+  const $AssetsSvgM3Gen();
+
+  /// File path: assets/svg/m3/pause.svg
+  SvgGenImage get pause => const SvgGenImage('assets/svg/m3/pause.svg');
+}
+
 class $AssetsSvgM32Gen {
   const $AssetsSvgM32Gen();
 
@@ -344,6 +339,22 @@ class $AssetsSvgM32Gen {
 
   /// File path: assets/svg/m32/settings.svg
   SvgGenImage get settings => const SvgGenImage('assets/svg/m32/settings.svg');
+}
+
+class $AssetsSvgM4Gen {
+  const $AssetsSvgM4Gen();
+
+  /// File path: assets/svg/m4/back.svg
+  SvgGenImage get back => const SvgGenImage('assets/svg/m4/back.svg');
+
+  /// File path: assets/svg/m4/menu.svg
+  SvgGenImage get menu => const SvgGenImage('assets/svg/m4/menu.svg');
+
+  /// File path: assets/svg/m4/more.svg
+  SvgGenImage get more => const SvgGenImage('assets/svg/m4/more.svg');
+
+  /// File path: assets/svg/m4/play.svg
+  SvgGenImage get play => const SvgGenImage('assets/svg/m4/play.svg');
 }
 
 class $AssetsSvgM51Gen {
@@ -442,6 +453,7 @@ class $AssetsSvgM9Gen {
 class Assets {
   Assets._();
 
+  static const $AssetsColorGen color = $AssetsColorGen();
   static const $AssetsPngGen png = $AssetsPngGen();
   static const $AssetsSvgGen svg = $AssetsSvgGen();
 }

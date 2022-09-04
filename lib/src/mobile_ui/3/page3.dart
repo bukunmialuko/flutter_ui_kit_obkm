@@ -236,7 +236,7 @@ class _Page3State extends State<Page3> {
                                     ),
                                   ),
                                 ),
-                                Assets.svg.pause.svg(
+                                Assets.svg.m3.pause.svg(
                                   height: 45.67.r,
                                   width: 45.67.r,
                                   fit: BoxFit.fill,

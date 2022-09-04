@@ -50,13 +50,15 @@ dev_dependencies:
 
 
 flutter_gen:
-  output: lib/gen/ # Optional (default: lib/gen/)
-  line_length: 80 # Optional (default: 80)
+  output: lib/gen/
+  line_length: 80
 
-  # Optional
   integrations:
     flutter_svg: true
 
+  colors:
+    inputs:
+      - assets/color/colors.xml
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -82,6 +84,8 @@ flutter:
 
     # SVGs
     - assets/svg/
+    - assets/svg/m3/
+    - assets/svg/m4/
     - assets/svg/m6/
     - assets/svg/m7/
     - assets/svg/m8/
@@ -102,6 +106,8 @@ flutter:
     - assets/png/m175/
     - assets/svg/m175/
 
+    # Colors
+    - assets/color/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

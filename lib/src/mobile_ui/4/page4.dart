@@ -58,7 +58,7 @@ class _Page4State extends State<Page4> {
                     Container(
                       padding: EdgeInsets.only(right: 24.w),
                       margin: EdgeInsets.only(top: MediaQuery.of(context).viewPadding.top),
-                      child: Assets.svg.menu.svg(
+                      child: Assets.svg.m4.menu.svg(
                         height: 48.r,
                         width: 48.r,
                         fit: BoxFit.fill,
@@ -82,7 +82,7 @@ class _Page4State extends State<Page4> {
                 Positioned(
                   right: 24.w,
                   bottom: 13.h,
-                  child: Assets.svg.play.svg(
+                  child: Assets.svg.m4.play.svg(
                     height: 48.r,
                     width: 48.r,
                     fit: BoxFit.fill,
@@ -243,7 +243,7 @@ class _Page4State extends State<Page4> {
                                       Positioned(
                                         bottom: 0,
                                         right: 0,
-                                        child: Assets.svg.play.svg(
+                                        child: Assets.svg.m4.play.svg(
                                           height: 48.r,
                                           width: 48.r,
                                           fit: BoxFit.fill,
@@ -373,7 +373,7 @@ class _Page4State extends State<Page4> {
                                           padding: EdgeInsets.symmetric(
                                             horizontal: 8.w,
                                           ),
-                                          child: Assets.svg.more.svg(
+                                          child: Assets.svg.m4.more.svg(
                                             height: 48.r,
                                             width: 48.r,
                                             fit: BoxFit.fill,
