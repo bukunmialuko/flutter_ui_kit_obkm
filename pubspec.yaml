@@ -44,13 +44,18 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
   flutter_lints: ^2.0.1
+  build_runner:
+  flutter_gen_runner:
+
+
+flutter_gen:
+  output: lib/gen/ # Optional (default: lib/gen/)
+  line_length: 80 # Optional (default: 80)
+
+  # Optional
+  integrations:
+    flutter_svg: true
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -62,40 +67,40 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
-  # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+
   assets:
+    # PNGs
     - assets/png/
-    - assets/png/8/
-    - assets/png/13/
-    - assets/png/10/
-    - assets/png/19/
-    - assets/png/26/
-    - assets/png/27/
-    - assets/png/28/
-    - assets/png/29/
+    - assets/png/m8/
+    - assets/png/m13/
+    - assets/png/m10/
+    - assets/png/m19/
+    - assets/png/m26/
+    - assets/png/m27/
+    - assets/png/m28/
+    - assets/png/m29/
+
+    # SVGs
     - assets/svg/
-    - assets/svg/6/
-    - assets/svg/7/
-    - assets/svg/8/
-    - assets/svg/9/
-    - assets/svg/11/
-    - assets/svg/12/
-    - assets/svg/14/
-    - assets/svg/18/
-    - assets/svg/19/
-    - assets/svg/21/
-    - assets/svg/22/
-    - assets/svg/32/
-    - assets/png/45/
-    - assets/svg/51/
-    - assets/png/52/
-    - assets/png/30/
-    - assets/svg/52/
-    - assets/png/175/
-    - assets/svg/175/
+    - assets/svg/m6/
+    - assets/svg/m7/
+    - assets/svg/m8/
+    - assets/svg/m9/
+    - assets/svg/m11/
+    - assets/svg/m12/
+    - assets/svg/m14/
+    - assets/svg/m18/
+    - assets/svg/m19/
+    - assets/svg/m21/
+    - assets/svg/m22/
+    - assets/svg/m32/
+    - assets/png/m45/
+    - assets/svg/m51/
+    - assets/png/m52/
+    - assets/png/m30/
+    - assets/svg/m52/
+    - assets/png/m175/
+    - assets/svg/m175/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
