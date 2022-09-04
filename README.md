@@ -13,6 +13,12 @@ A Simple UI Kit.
 
 <br />
 
+## ✨ Code Generation
+
+Flutter gen : ```flutter packages pub run build_runner build```
+
+
+
 ## Contributing
 [To contribute, read short guidelines](https://github.com/bukunmialuko/flutter_ui_kit_obkm/blob/main/CONTRIBUTING.md)
 

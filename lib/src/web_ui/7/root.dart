@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_ui_kit_obkm/src/res/font_family.dart';
+import 'package:flutter_ui_kit_obkm/gen/fonts.gen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class WebPage7 extends StatelessWidget {
@@ -48,8 +48,7 @@ class WebPage7 extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    padding:
-                        EdgeInsets.only(top: 74.h, left: 98.w, right: 118.w),
+                    padding: EdgeInsets.only(top: 74.h, left: 98.w, right: 118.w),
                     child: SizedBox(
                       width: 504.w,
                       child: Row(

@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:flutter_ui_kit_obkm/src/res/font_family.dart';
+import 'package:flutter_ui_kit_obkm/gen/fonts.gen.dart';
 
 const _page175List = ["assets/png/175/002.png", "assets/png/175/003.png", "assets/png/175/004.png"];
 
