@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
-import 'package:flutter_ui_kit_obkm/src/res/assets.dart';
 import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -15,13 +15,14 @@ class Page10 extends StatefulWidget {
 
 class _Page10State extends State<Page10> {
   List<String> images = [
-    Assets.PG10_01,
-    Assets.PG10_02,
-    Assets.PG10_03,
-    Assets.PG10_04,
-    Assets.PG10_05,
-    Assets.PG10_06
+    Assets.png.m10.img1.path,
+    Assets.png.m10.img2.path,
+    Assets.png.m10.img3.path,
+    Assets.png.m10.img4.path,
+    Assets.png.m10.img5.path,
+    Assets.png.m10.img6.path,
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -173,6 +174,11 @@ class _Page10State extends State<Page10> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       TextButton(
+                        style: TextButton.styleFrom(
+                          primary: Colors.white,
+                          backgroundColor: const Color(0xffD0D0D0),
+                        ),
+                        onPressed: () {},
                         child: Padding(
                           padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 6.h),
                           child: Text(
@@ -187,13 +193,13 @@ class _Page10State extends State<Page10> {
                             ),
                           ),
                         ),
+                      ),
+                      TextButton(
                         style: TextButton.styleFrom(
                           primary: Colors.white,
                           backgroundColor: const Color(0xffD0D0D0),
                         ),
                         onPressed: () {},
-                      ),
-                      TextButton(
                         child: Padding(
                           padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 6.h),
                           child: Text(
@@ -208,11 +214,6 @@ class _Page10State extends State<Page10> {
                             ),
                           ),
                         ),
-                        style: TextButton.styleFrom(
-                          primary: Colors.white,
-                          backgroundColor: const Color(0xffD0D0D0),
-                        ),
-                        onPressed: () {},
                       )
                     ],
                   ),

@@ -1,8 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:flutter_ui_kit_obkm/src/res/assets.dart';
+import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 
 class Page29 extends StatefulWidget {
   const Page29({Key? key}) : super(key: key);
@@ -15,8 +14,7 @@ class _Page29State extends State<Page29> {
   final categoryArraylist = [
     Categories(
       category: 'Sushi',
-      icon: Image.asset(
-        Assets.SUSHI,
+      icon: Assets.png.m29.sushi.image(
         height: 30.r,
         width: 30.r,
         fit: BoxFit.fitWidth,
@@ -24,8 +22,7 @@ class _Page29State extends State<Page29> {
     ),
     Categories(
       category: 'Fries',
-      icon: Image.asset(
-        Assets.FRIES,
+      icon: Assets.png.m29.fries.image(
         height: 30.r,
         width: 30.r,
         fit: BoxFit.fitWidth,
@@ -33,8 +30,7 @@ class _Page29State extends State<Page29> {
     ),
     Categories(
       category: 'Chinese',
-      icon: Image.asset(
-        Assets.CHINESE,
+      icon: Assets.png.m29.chinese.image(
         height: 30.r,
         width: 30.r,
         fit: BoxFit.fitWidth,
@@ -59,8 +55,7 @@ class _Page29State extends State<Page29> {
               SizedBox(height: 5.0.h),
               Text(
                 'Hungry today?',
-                style:
-                    TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0.sp),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0.sp),
               ),
               SizedBox(height: 20.0.h),
               //search and filter widgets
@@ -83,27 +78,24 @@ class _Page29State extends State<Page29> {
               SizedBox(height: 20.0.h),
               Text(
                 'Open restaurants',
-                style:
-                    TextStyle(fontWeight: FontWeight.bold, fontSize: 17.0.sp),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17.0.sp),
               ),
               SizedBox(height: 20.0.h),
               _buildFoodImage(),
               SizedBox(height: 10.0.h),
               Text(
                 'John Doe\'s vegan place',
-                style:
-                    TextStyle(fontWeight: FontWeight.w600, fontSize: 17.0.sp),
+                style: TextStyle(fontWeight: FontWeight.w600, fontSize: 17.0.sp),
               ),
               SizedBox(height: 5.0.h),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Image.asset(
-                    Assets.DELIVERY,
+                  Assets.png.m29.delivery.image(
                     height: 30.r,
                     width: 30.r,
-                    fit: BoxFit.fitWidth,
+                    fit: BoxFit.cover,
                   ),
                   SizedBox(width: 10.0),
                   Padding(
@@ -160,8 +152,7 @@ class _Page29State extends State<Page29> {
               SizedBox(height: 20.0.h),
               ClipRRect(
                 borderRadius: BorderRadius.circular(10.0),
-                child: Image.asset(
-                  Assets.FOOD2,
+                child: Assets.png.m29.food2Jpeg.image(
                   height: 200.0.h,
                   width: MediaQuery.of(context).size.width,
                   fit: BoxFit.cover,
@@ -209,9 +200,7 @@ class _Page29State extends State<Page29> {
             child: Container(
               height: 30.0.h,
               width: 150.0.w,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10.0),
-                  color: Color(0xffD0D0D0)),
+              decoration: BoxDecoration(borderRadius: BorderRadius.circular(10.0), color: Color(0xffD0D0D0)),
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10.0),
                 child: Row(
@@ -293,8 +282,7 @@ class _Page29State extends State<Page29> {
       borderRadius: BorderRadius.circular(10.0),
       child: Stack(
         children: [
-          Image.asset(
-            Assets.FOOD,
+          Assets.png.m29.foodPng.image(
             height: 200.0.h,
             width: MediaQuery.of(context).size.width,
             fit: BoxFit.cover,
@@ -380,33 +368,29 @@ class _Page29State extends State<Page29> {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image.asset(
-                Assets.ADD,
+              Assets.svg.m6.motionPhotosPause.svg(
                 height: 24.r,
                 width: 24.r,
-                fit: BoxFit.fitWidth,
+                fit: BoxFit.fill,
               ),
               SizedBox(
                 width: 41.w,
               ),
-              SvgPicture.asset(
-                Assets.PG6_CAST_CONNECTED,
+              Assets.svg.m6.castConnected.svg(
                 height: 24.r,
                 width: 24.r,
                 fit: BoxFit.fill,
               ),
               Spacer(),
-              Image.asset(
-                Assets.MORE_VERT,
+              Assets.svg.m6.debug.svg(
                 height: 24.r,
                 width: 24.r,
-                fit: BoxFit.fitWidth,
+                fit: BoxFit.fill,
               ),
               SizedBox(
                 width: 41.w,
               ),
-              SvgPicture.asset(
-                Assets.PG6_CONTACT,
+              Assets.svg.m6.contact.svg(
                 height: 24.r,
                 width: 24.r,
                 fit: BoxFit.fill,

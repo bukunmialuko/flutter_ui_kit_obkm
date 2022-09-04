@@ -2,7 +2,6 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -88,8 +87,7 @@ class Page49 extends StatelessWidget {
           child: Container(
             width: 343.w,
             height: 120.h,
-            padding: EdgeInsets.only(
-                left: 23.w, right: 30.w, top: 20.h, bottom: 15.h),
+            padding: EdgeInsets.only(left: 23.w, right: 30.w, top: 20.h, bottom: 15.h),
             decoration: BoxDecoration(
               color: Color(0xFFF4F4F4).withOpacity(0.8),
               borderRadius: BorderRadius.circular(32.r),

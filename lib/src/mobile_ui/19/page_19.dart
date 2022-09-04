@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../navigation/navigation_service.dart';
-import '../../res/assets.dart';
 
 class Page19 extends StatelessWidget {
   const Page19({Key? key}) : super(key: key);
@@ -123,7 +123,7 @@ class Page19 extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20.h),
-              Container(
+              SizedBox(
                 height: 160,
                 child: ListView.separated(
                   itemCount: 2,
@@ -257,9 +257,7 @@ class Page19 extends StatelessWidget {
       ),
       bottomNavigationBar: Container(
         height: 90.h,
-        decoration: BoxDecoration(
-            color: Colors.white,
-            border: Border.all(color: const Color(0xffE0E0E0))),
+        decoration: BoxDecoration(color: Colors.white, border: Border.all(color: const Color(0xffE0E0E0))),
         child: Center(
           child: Padding(
             padding: EdgeInsets.only(left: 54.w, right: 54.w),
@@ -267,26 +265,22 @@ class Page19 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SvgPicture.asset(
-                  Assets.PG6_MOTION_PHOTOS_PAUSE,
+                Assets.svg.m6.motionPhotosPause.svg(
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
                 ),
-                SvgPicture.asset(
-                  Assets.PG6_CAST_CONNECTED,
+                Assets.svg.m6.castConnected.svg(
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
                 ),
-                SvgPicture.asset(
-                  Assets.PG6_DEBUG,
+                Assets.svg.m6.debug.svg(
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
                 ),
-                SvgPicture.asset(
-                  Assets.PG6_CONTACT,
+                Assets.svg.m6.contact.svg(
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
@@ -407,7 +401,7 @@ class TicketCard extends StatelessWidget {
         ),
         Positioned(
           top: 65,
-          child: Container(
+          child: SizedBox(
             width: 10,
             height: 10,
           ),

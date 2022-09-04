@@ -1,9 +1,7 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
-import 'package:flutter_ui_kit_obkm/src/res/assets.dart';
 import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
 import 'package:flutter_ui_kit_obkm/src/res/styles.dart';
 import 'package:get_it/get_it.dart';
@@ -39,8 +37,7 @@ class _Page6State extends State<Page6> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Padding(
-                padding: EdgeInsets.only(
-                    top: 39.h, bottom: 25.h, left: 24.w, right: 25.w),
+                padding: EdgeInsets.only(top: 39.h, bottom: 25.h, left: 24.w, right: 25.w),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -92,8 +89,7 @@ class _Page6State extends State<Page6> {
                       padding: EdgeInsets.symmetric(horizontal: 8.w),
                       child: const Icon(Icons.search, color: Colors.black),
                     ),
-                    prefixIconConstraints:
-                        BoxConstraints(maxHeight: 20.w, maxWidth: 35.w),
+                    prefixIconConstraints: BoxConstraints(maxHeight: 20.w, maxWidth: 35.w),
                     hintText: "Search...",
                     // hintStyle: textFieldPlaceholderTextStyle(context),
                     isDense: true,
@@ -138,8 +134,7 @@ class _Page6State extends State<Page6> {
                     SizedBox(
                       height: 74.h,
                       child: ListView.separated(
-                        physics: const BouncingScrollPhysics(
-                            parent: AlwaysScrollableScrollPhysics()),
+                        physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
                         scrollDirection: Axis.horizontal,
                         itemCount: moods.length,
                         itemBuilder: (c, i) {
@@ -201,9 +196,7 @@ class _Page6State extends State<Page6> {
       )),
       bottomNavigationBar: Container(
         height: 90.h,
-        decoration: BoxDecoration(
-            color: Colors.white,
-            border: Border.all(color: const Color(0xffE0E0E0))),
+        decoration: BoxDecoration(color: Colors.white, border: Border.all(color: const Color(0xffE0E0E0))),
         child: Center(
           child: Padding(
             padding: EdgeInsets.only(left: 54.w, right: 54.w),
@@ -211,26 +204,22 @@ class _Page6State extends State<Page6> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SvgPicture.asset(
-                  Assets.PG6_MOTION_PHOTOS_PAUSE,
+                Assets.svg.m6.motionPhotosPause.svg(
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
                 ),
-                SvgPicture.asset(
-                  Assets.PG6_CAST_CONNECTED,
+                Assets.svg.m6.castConnected.svg(
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
                 ),
-                SvgPicture.asset(
-                  Assets.PG6_DEBUG,
+                Assets.svg.m6.debug.svg(
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
                 ),
-                SvgPicture.asset(
-                  Assets.PG6_CONTACT,
+                Assets.svg.m6.contact.svg(
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,

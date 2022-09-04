@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
-import 'package:flutter_ui_kit_obkm/src/res/assets.dart';
 import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
 import 'package:flutter_ui_kit_obkm/src/res/styles.dart';
 import 'package:get_it/get_it.dart';
@@ -65,8 +64,7 @@ class _Page7State extends State<Page7> {
                       },
                       child: Padding(
                         padding: EdgeInsets.only(right: 24.w),
-                        child: SvgPicture.asset(
-                          Assets.PG7_NOTIFICATION,
+                        child: Assets.svg.m7.notification.svg(
                           height: 36.r,
                           width: 36.r,
                           fit: BoxFit.fill,
@@ -95,7 +93,8 @@ class _Page7State extends State<Page7> {
                     ),
                     SizedBox(height: 10.h),
                     TextFormField(
-                      readOnly: true, //false
+                      readOnly: true,
+                      //false
                       autofocus: false,
                       // style: ,
                       decoration: InputDecoration(
@@ -354,8 +353,7 @@ class _Page7State extends State<Page7> {
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    SvgPicture.asset(
-                      Assets.PG7_HOME,
+                    Assets.svg.m7.home.svg(
                       height: 24.r,
                       width: 24.r,
                       fit: BoxFit.fill,
@@ -377,20 +375,17 @@ class _Page7State extends State<Page7> {
                     )
                   ],
                 ),
-                SvgPicture.asset(
-                  Assets.PG7_CONTROL_CAMERA,
+                Assets.svg.m7.controlCamera.svg(
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
                 ),
-                SvgPicture.asset(
-                  Assets.PG7_LOCATION_CITY,
+                Assets.svg.m7.locationCity.svg(
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
                 ),
-                SvgPicture.asset(
-                  Assets.PG7_LOCAL_CONVEINET_STORE,
+                Assets.svg.m7.localConvenienceStore.svg(
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
-import 'package:flutter_ui_kit_obkm/src/res/assets.dart';
 import 'package:get_it/get_it.dart';
 
 class Page13 extends StatefulWidget {
@@ -25,14 +25,13 @@ class _Page13State extends State<Page13> {
               child: Stack(
                 children: [
                   Image.asset(
-                    Assets.PG13_BACKGROUND,
+                    Assets.png.m13.background.path,
                     width: 390.w,
                     height: 486.h,
                     fit: BoxFit.cover,
                   ),
                   Padding(
-                    padding:
-                        EdgeInsets.only(top: 20.h, left: 24.h, right: 24.h),
+                    padding: EdgeInsets.only(top: 20.h, left: 24.h, right: 24.h),
                     child: SafeArea(
                       child: Container(
                         decoration: BoxDecoration(
@@ -53,10 +52,8 @@ class _Page13State extends State<Page13> {
                             color: const Color(0xFF525252),
                           ),
                           decoration: InputDecoration(
-                            prefixIcon: const Icon(Icons.search,
-                                color: Color(0xFF161616)),
-                            contentPadding: EdgeInsets.symmetric(
-                                horizontal: 20.w, vertical: 16.h),
+                            prefixIcon: const Icon(Icons.search, color: Color(0xFF161616)),
+                            contentPadding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 16.h),
                             hintText: 'Search a country, location...',
                             hintStyle: TextStyle(
                               fontSize: 14.sp,
@@ -65,18 +62,15 @@ class _Page13State extends State<Page13> {
                             ),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(24.r),
-                              borderSide:
-                                  const BorderSide(color: Colors.transparent),
+                              borderSide: const BorderSide(color: Colors.transparent),
                             ),
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(24.r),
-                              borderSide:
-                                  const BorderSide(color: Colors.transparent),
+                              borderSide: const BorderSide(color: Colors.transparent),
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(24.r),
-                              borderSide:
-                                  const BorderSide(color: Colors.transparent),
+                              borderSide: const BorderSide(color: Colors.transparent),
                             ),
                           ),
                         ),
@@ -107,10 +101,7 @@ class _Page13State extends State<Page13> {
                       const Icon(Icons.location_on, color: Color(0xFF161616)),
                     ],
                   ),
-                  Divider(
-                      height: 18.h,
-                      color: const Color(0xFFD0D0D0),
-                      thickness: 1),
+                  Divider(height: 18.h, color: const Color(0xFFD0D0D0), thickness: 1),
                   SizedBox(height: 25.h),
                   Text(
                     'Discover Seattle',
@@ -121,8 +112,7 @@ class _Page13State extends State<Page13> {
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsets.only(right: 29.w, bottom: 32.h, top: 4.h),
+                    padding: EdgeInsets.only(right: 29.w, bottom: 32.h, top: 4.h),
                     child: Text(
                       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo quis parturient tristique mauris. Amet urna tortor tortor duis tellus risus.',
                       style: TextStyle(
@@ -137,18 +127,15 @@ class _Page13State extends State<Page13> {
                     children: [
                       Padding(
                         padding: EdgeInsets.only(right: 18.w),
-                        child: Image.asset(Assets.PG13_IMAGE1,
-                            width: 70.w, height: 70.h),
+                        child: Image.asset(Assets.png.m13.image1.path, width: 70.w, height: 70.h),
                       ),
                       Padding(
                         padding: EdgeInsets.only(right: 18.w),
-                        child: Image.asset(Assets.PG13_IMAGE2,
-                            width: 70.w, height: 70.h),
+                        child: Image.asset(Assets.png.m13.image2.path, width: 70.w, height: 70.h),
                       ),
                       Padding(
                         padding: EdgeInsets.only(right: 18.w),
-                        child: Image.asset(Assets.PG13_IMAGE3,
-                            width: 70.w, height: 70.h),
+                        child: Image.asset(Assets.png.m13.image3.path, width: 70.w, height: 70.h),
                       ),
                       const Expanded(child: SizedBox()),
                       GestureDetector(

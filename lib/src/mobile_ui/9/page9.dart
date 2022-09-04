@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
-import 'package:flutter_ui_kit_obkm/src/res/assets.dart';
 import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -32,29 +31,22 @@ class _Page9State extends State<Page9> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Padding(
-                    padding: EdgeInsets.only(right: 54.w),
-                    child: SvgPicture.asset(
-                      Assets.PG9_EYE_TUBE,
-                      height: 48.r,
-                      width: 120.r,
-                      fit: BoxFit.fill,
-                    ),
+                  Assets.svg.m9.eyeTube.svg(
+                    height: 24.r,
+                    width: 120.r,
+                    fit: BoxFit.fill,
                   ),
-                  SvgPicture.asset(
-                    Assets.PG9_ADD_TO_HOME,
+                  Assets.svg.m9.addToHomeScreen.svg(
                     height: 24.r,
                     width: 24.r,
                     fit: BoxFit.fill,
                   ),
-                  SvgPicture.asset(
-                    Assets.PG9_NOTIFICATIONS,
+                  Assets.svg.m9.notifications.svg(
                     height: 24.r,
                     width: 24.r,
                     fit: BoxFit.fill,
                   ),
-                  SvgPicture.asset(
-                    Assets.PG9_SEARCH,
+                  Assets.svg.m9.search.svg(
                     height: 24.r,
                     width: 24.r,
                     fit: BoxFit.fill,
@@ -105,6 +97,8 @@ class _Page9State extends State<Page9> {
                                   ),
                                 ],
                               ),
+                              margin: EdgeInsets.only(left: 14.w, top: 14.h, bottom: 14.h),
+                              padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
                               child: Text(
                                 "All",
                                 style: GoogleFonts.workSans(
@@ -116,8 +110,6 @@ class _Page9State extends State<Page9> {
                                   ),
                                 ),
                               ),
-                              margin: EdgeInsets.only(left: 14.w, top: 14.h, bottom: 14.h),
-                              padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
                             ),
                           ],
                         );
@@ -140,6 +132,8 @@ class _Page9State extends State<Page9> {
                                 ),
                               ],
                             ),
+                            margin: EdgeInsets.only(left: 14.w, top: 14.h, bottom: 14.h),
+                            padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
                             child: Text(
                               "Category #$i",
                               style: GoogleFonts.workSans(
@@ -151,8 +145,6 @@ class _Page9State extends State<Page9> {
                                 ),
                               ),
                             ),
-                            margin: EdgeInsets.only(left: 14.w, top: 14.h, bottom: 14.h),
-                            padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
                           ),
                         ],
                       );
@@ -308,8 +300,7 @@ class _Page9State extends State<Page9> {
                                               mainAxisSize: MainAxisSize.min,
                                               crossAxisAlignment: CrossAxisAlignment.center,
                                               children: [
-                                                SvgPicture.asset(
-                                                  Assets.PG9_ELLIPSE,
+                                                Assets.svg.m9.ellipse.svg(
                                                   height: 48.r,
                                                   width: 48.r,
                                                   fit: BoxFit.fill,

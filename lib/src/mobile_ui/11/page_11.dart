@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
-import 'package:flutter_ui_kit_obkm/src/res/assets.dart';
 import 'package:get_it/get_it.dart';
 import 'package:table_calendar/table_calendar.dart';
 
@@ -124,10 +123,9 @@ class _Page11State extends State<Page11> {
               Positioned(
                 right: 0,
                 top: 0,
-                child: SvgPicture.asset(
-                  Assets.PG11_01,
-                  height: 21.37.r,
-                  width: 21.37.r,
+                child: Assets.svg.m11.subtract.svg(
+                  height: 48.r,
+                  width: 48.r,
                   fit: BoxFit.fill,
                 ),
               ),
@@ -333,8 +331,7 @@ class _Page11State extends State<Page11> {
             value,
             style: TextStyle(
               fontSize: 15.sp,
-              fontWeight:
-                  value == _timeUnit ? FontWeight.w600 : FontWeight.w400,
+              fontWeight: value == _timeUnit ? FontWeight.w600 : FontWeight.w400,
               color: Colors.black,
             ),
           ),

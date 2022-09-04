@@ -2,11 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../navigation/navigation_service.dart';
-import '../../res/assets.dart';
 import '../../res/colors.dart';
 
 class Page28 extends StatefulWidget {
@@ -112,14 +112,12 @@ class _Page28State extends State<Page28> {
                                 ],
                               ),
                               child: Column(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
+                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 children: [
                                   Text(
                                     days[index],
                                     style: TextStyle(
-                                      fontFamily:
-                                          GoogleFonts.workSans().fontFamily,
+                                      fontFamily: GoogleFonts.workSans().fontFamily,
                                     ),
                                   ),
                                   Text(
@@ -127,8 +125,7 @@ class _Page28State extends State<Page28> {
                                     style: TextStyle(
                                       fontSize: 24.sp,
                                       fontWeight: FontWeight.w600,
-                                      fontFamily:
-                                          GoogleFonts.workSans().fontFamily,
+                                      fontFamily: GoogleFonts.workSans().fontFamily,
                                     ),
                                   ),
                                 ],
@@ -264,30 +261,25 @@ class _Page28State extends State<Page28> {
                                   borderRadius: BorderRadius.circular(16),
                                 ),
                                 child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceEvenly,
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   children: [
                                     Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text(
                                           '1200',
                                           style: TextStyle(
                                             fontSize: 20.sp,
                                             fontWeight: FontWeight.w600,
-                                            fontFamily: GoogleFonts.workSans()
-                                                .fontFamily,
+                                            fontFamily: GoogleFonts.workSans().fontFamily,
                                           ),
                                         ),
                                         Text(
                                           'steps',
                                           style: TextStyle(
                                             fontSize: 12.sp,
-                                            fontFamily: GoogleFonts.workSans()
-                                                .fontFamily,
+                                            fontFamily: GoogleFonts.workSans().fontFamily,
                                           ),
                                         ),
                                       ],
@@ -295,8 +287,7 @@ class _Page28State extends State<Page28> {
                                     Container(
                                       width: 50.w,
                                       height: 50.h,
-                                      child:
-                                          Image.asset('assets/png/28/bar.png'),
+                                      child: Image.asset('assets/png/28/bar.png'),
                                     )
                                   ],
                                 ),
@@ -311,30 +302,25 @@ class _Page28State extends State<Page28> {
                                   borderRadius: BorderRadius.circular(16),
                                 ),
                                 child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceEvenly,
+                                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   children: [
                                     Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text(
                                           '520',
                                           style: TextStyle(
                                             fontSize: 20.sp,
                                             fontWeight: FontWeight.w600,
-                                            fontFamily: GoogleFonts.workSans()
-                                                .fontFamily,
+                                            fontFamily: GoogleFonts.workSans().fontFamily,
                                           ),
                                         ),
                                         Text(
                                           'Calories',
                                           style: TextStyle(
                                             fontSize: 12.sp,
-                                            fontFamily: GoogleFonts.workSans()
-                                                .fontFamily,
+                                            fontFamily: GoogleFonts.workSans().fontFamily,
                                           ),
                                         ),
                                       ],
@@ -377,8 +363,7 @@ class _Page28State extends State<Page28> {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SvgPicture.asset(
-                  Assets.PG6_MOTION_PHOTOS_PAUSE,
+                Assets.svg.m6.motionPhotosPause.svg(
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
@@ -386,15 +371,13 @@ class _Page28State extends State<Page28> {
                 SizedBox(
                   width: 41.w,
                 ),
-                SvgPicture.asset(
-                  Assets.PG6_CAST_CONNECTED,
+                Assets.svg.m6.castConnected.svg(
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
                 ),
                 Spacer(),
-                SvgPicture.asset(
-                  Assets.PG6_DEBUG,
+                Assets.svg.m6.debug.svg(
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
@@ -402,8 +385,7 @@ class _Page28State extends State<Page28> {
                 SizedBox(
                   width: 41.w,
                 ),
-                SvgPicture.asset(
-                  Assets.PG6_CONTACT,
+                Assets.svg.m6.contact.svg(
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,

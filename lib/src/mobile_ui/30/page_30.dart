@@ -3,8 +3,7 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:flutter_ui_kit_obkm/src/res/assets.dart';
+import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 
 class Page30 extends StatefulWidget {
   const Page30({Key? key}) : super(key: key);
@@ -81,8 +80,7 @@ class _Page30State extends State<Page30> {
                       bottomRight: Radius.circular(30.0),
                       bottomLeft: Radius.circular(30.0),
                     ),
-                    child: Image.asset(
-                      Assets.FOOD,
+                    child: Assets.png.m29.foodPng.image(
                       height: 300.0.h,
                       width: MediaQuery.of(context).size.width,
                       fit: BoxFit.cover,
@@ -119,8 +117,7 @@ class _Page30State extends State<Page30> {
                           SizedBox(width: 20.0.r),
                           TextButton.icon(
                             onPressed: () {},
-                            icon: Image.asset(
-                              Assets.DELIVERY,
+                            icon: Assets.png.m29.delivery.image(
                               height: 30.r,
                               width: 30.r,
                               fit: BoxFit.fitWidth,
@@ -180,8 +177,7 @@ class _Page30State extends State<Page30> {
                       SizedBox(height: 20.0.h),
                       Text(
                         'Signature Dishes',
-                        style: TextStyle(
-                            fontWeight: FontWeight.w700, fontSize: 16.0),
+                        style: TextStyle(fontWeight: FontWeight.w700, fontSize: 16.0),
                       ),
                       SizedBox(height: 20.0),
                       for (int i = 1; i <= 2; i++)
@@ -204,29 +200,25 @@ class _Page30State extends State<Page30> {
                                   fontSize: 14.0,
                                 ),
                               ),
-                              subtitle: Container(
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    SizedBox(height: 10.0),
-                                    Container(
-                                      child: Text(
-                                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed dictum aliquet sapien. Dui massa purus enim ut cras aliquet.',
-                                        maxLines: null,
-                                      ),
+                              subtitle: Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  SizedBox(height: 10.0),
+                                  Text(
+                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed dictum aliquet sapien. Dui massa purus enim ut cras aliquet.',
+                                    maxLines: null,
+                                  ),
+                                  SizedBox(height: 10.0),
+                                  Text(
+                                    '\$${Random().nextInt(100)}',
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.w900,
+                                      color: Colors.black,
                                     ),
-                                    SizedBox(height: 10.0),
-                                    Text(
-                                      '\$${Random().nextInt(100)}',
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.w900,
-                                        color: Colors.black,
-                                      ),
-                                    ),
-                                    SizedBox(height: 10.0),
-                                  ],
-                                ),
+                                  ),
+                                  SizedBox(height: 10.0),
+                                ],
                               ),
                               trailing: Wrap(
                                 alignment: WrapAlignment.center,
@@ -234,10 +226,10 @@ class _Page30State extends State<Page30> {
                                 children: [
                                   Padding(
                                     padding: const EdgeInsets.only(top: 20.0),
-                                    child: Image.asset(
-                                      Assets.BANANA,
+                                    child: Assets.png.m30.banana.image(
                                       height: 50.0,
                                       width: 50.0,
+                                      fit: BoxFit.fill,
                                     ),
                                   ),
                                 ],
@@ -291,33 +283,29 @@ class _Page30State extends State<Page30> {
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image.asset(
-                Assets.ADD,
+              Assets.svg.m6.motionPhotosPause.svg(
                 height: 24.r,
                 width: 24.r,
-                fit: BoxFit.fitWidth,
+                fit: BoxFit.fill,
               ),
               SizedBox(
                 width: 41.w,
               ),
-              SvgPicture.asset(
-                Assets.PG6_CAST_CONNECTED,
+              Assets.svg.m6.castConnected.svg(
                 height: 24.r,
                 width: 24.r,
                 fit: BoxFit.fill,
               ),
               Spacer(),
-              Image.asset(
-                Assets.MORE_VERT,
+              Assets.svg.m6.debug.svg(
                 height: 24.r,
                 width: 24.r,
-                fit: BoxFit.fitWidth,
+                fit: BoxFit.fill,
               ),
               SizedBox(
                 width: 41.w,
               ),
-              SvgPicture.asset(
-                Assets.PG6_CONTACT,
+              Assets.svg.m6.contact.svg(
                 height: 24.r,
                 width: 24.r,
                 fit: BoxFit.fill,

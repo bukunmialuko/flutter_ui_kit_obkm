@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
-import 'package:flutter_ui_kit_obkm/src/res/assets.dart';
 import 'package:get_it/get_it.dart';
 
 class Page14 extends StatefulWidget {
@@ -25,7 +25,7 @@ class _Page14State extends State<Page14> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(height: 40.h),
-                SvgPicture.asset(Assets.PG14_MASTERCARD),
+                SvgPicture.asset(Assets.svg.m14.mastercard.path),
                 SizedBox(height: 62.h),
                 Text(
                   'Hi there, welcome!',
@@ -75,7 +75,7 @@ class _Page14State extends State<Page14> {
                         ),
                       ),
                       child: Center(
-                        child: SvgPicture.asset(Assets.PG14_FINGER_PRINT),
+                        child: SvgPicture.asset(Assets.svg.m14.fingerPrint.path),
                       ),
                     ),
                   ],

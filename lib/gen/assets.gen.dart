@@ -2,14 +2,9 @@
 /// *****************************************************
 ///  FlutterGen
 /// *****************************************************
-
-// coverage:ignore-file
-// ignore_for_file: type=lint
-// ignore_for_file: directives_ordering,unnecessary_import
-
+import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:flutter/services.dart';
 
 class $AssetsPngGen {
   const $AssetsPngGen();
@@ -50,8 +45,7 @@ class $AssetsSvgGen {
   SvgGenImage get back => const SvgGenImage('assets/svg/back.svg');
 
   /// File path: assets/svg/bookmark_border.svg
-  SvgGenImage get bookmarkBorder =>
-      const SvgGenImage('assets/svg/bookmark_border.svg');
+  SvgGenImage get bookmarkBorder => const SvgGenImage('assets/svg/bookmark_border.svg');
 
   /// File path: assets/svg/eyetubee.svg
   SvgGenImage get eyetubee => const SvgGenImage('assets/svg/eyetubee.svg');
@@ -111,8 +105,7 @@ class $AssetsPngM13Gen {
   const $AssetsPngM13Gen();
 
   /// File path: assets/png/m13/background.png
-  AssetGenImage get background =>
-      const AssetGenImage('assets/png/m13/background.png');
+  AssetGenImage get background => const AssetGenImage('assets/png/m13/background.png');
 
   /// File path: assets/png/m13/image1.png
   AssetGenImage get image1 => const AssetGenImage('assets/png/m13/image1.png');
@@ -178,12 +171,10 @@ class $AssetsPngM29Gen {
   AssetGenImage get add => const AssetGenImage('assets/png/m29/add.png');
 
   /// File path: assets/png/m29/chinese.png
-  AssetGenImage get chinese =>
-      const AssetGenImage('assets/png/m29/chinese.png');
+  AssetGenImage get chinese => const AssetGenImage('assets/png/m29/chinese.png');
 
   /// File path: assets/png/m29/delivery.png
-  AssetGenImage get delivery =>
-      const AssetGenImage('assets/png/m29/delivery.png');
+  AssetGenImage get delivery => const AssetGenImage('assets/png/m29/delivery.png');
 
   /// File path: assets/png/m29/food.jpeg
   AssetGenImage get foodJpeg => const AssetGenImage('assets/png/m29/food.jpeg');
@@ -192,8 +183,7 @@ class $AssetsPngM29Gen {
   AssetGenImage get foodPng => const AssetGenImage('assets/png/m29/food.png');
 
   /// File path: assets/png/m29/food2.jpeg
-  AssetGenImage get food2Jpeg =>
-      const AssetGenImage('assets/png/m29/food2.jpeg');
+  AssetGenImage get food2Jpeg => const AssetGenImage('assets/png/m29/food2.jpeg');
 
   /// File path: assets/png/m29/food2.png
   AssetGenImage get food2Png => const AssetGenImage('assets/png/m29/food2.png');
@@ -250,8 +240,7 @@ class $AssetsSvgM12Gen {
   const $AssetsSvgM12Gen();
 
   /// File path: assets/svg/m12/air-conditioner.svg
-  SvgGenImage get airConditioner =>
-      const SvgGenImage('assets/svg/m12/air-conditioner.svg');
+  SvgGenImage get airConditioner => const SvgGenImage('assets/svg/m12/air-conditioner.svg');
 
   /// File path: assets/svg/m12/fan.svg
   SvgGenImage get fan => const SvgGenImage('assets/svg/m12/fan.svg');
@@ -270,27 +259,23 @@ class $AssetsSvgM14Gen {
   const $AssetsSvgM14Gen();
 
   /// File path: assets/svg/m14/finger-print.svg
-  SvgGenImage get fingerPrint =>
-      const SvgGenImage('assets/svg/m14/finger-print.svg');
+  SvgGenImage get fingerPrint => const SvgGenImage('assets/svg/m14/finger-print.svg');
 
   /// File path: assets/svg/m14/mastercard.svg
-  SvgGenImage get mastercard =>
-      const SvgGenImage('assets/svg/m14/mastercard.svg');
+  SvgGenImage get mastercard => const SvgGenImage('assets/svg/m14/mastercard.svg');
 }
 
 class $AssetsSvgM175Gen {
   const $AssetsSvgM175Gen();
 
   /// File path: assets/svg/m175/keyboard_arrow_left.svg
-  SvgGenImage get keyboardArrowLeft =>
-      const SvgGenImage('assets/svg/m175/keyboard_arrow_left.svg');
+  SvgGenImage get keyboardArrowLeft => const SvgGenImage('assets/svg/m175/keyboard_arrow_left.svg');
 
   /// File path: assets/svg/m175/search.svg
   SvgGenImage get search => const SvgGenImage('assets/svg/m175/search.svg');
 
   /// File path: assets/svg/m175/shopping_bag.svg
-  SvgGenImage get shoppingBag =>
-      const SvgGenImage('assets/svg/m175/shopping_bag.svg');
+  SvgGenImage get shoppingBag => const SvgGenImage('assets/svg/m175/shopping_bag.svg');
 }
 
 class $AssetsSvgM18Gen {
@@ -300,8 +285,7 @@ class $AssetsSvgM18Gen {
   SvgGenImage get facebook => const SvgGenImage('assets/svg/m18/facebook.svg');
 
   /// File path: assets/svg/m18/instagram.svg
-  SvgGenImage get instagram =>
-      const SvgGenImage('assets/svg/m18/instagram.svg');
+  SvgGenImage get instagram => const SvgGenImage('assets/svg/m18/instagram.svg');
 
   /// File path: assets/svg/m18/twitter.svg
   SvgGenImage get twitter => const SvgGenImage('assets/svg/m18/twitter.svg');
@@ -324,8 +308,7 @@ class $AssetsSvgM21Gen {
   SvgGenImage get more => const SvgGenImage('assets/svg/m21/more.svg');
 
   /// File path: assets/svg/m21/pause_circle_outline.svg
-  SvgGenImage get pauseCircleOutline =>
-      const SvgGenImage('assets/svg/m21/pause_circle_outline.svg');
+  SvgGenImage get pauseCircleOutline => const SvgGenImage('assets/svg/m21/pause_circle_outline.svg');
 
   /// File path: assets/svg/m21/shuffle.svg
   SvgGenImage get shuffle => const SvgGenImage('assets/svg/m21/shuffle.svg');
@@ -335,16 +318,13 @@ class $AssetsSvgM22Gen {
   const $AssetsSvgM22Gen();
 
   /// File path: assets/svg/m22/business_center.svg
-  SvgGenImage get businessCenter =>
-      const SvgGenImage('assets/svg/m22/business_center.svg');
+  SvgGenImage get businessCenter => const SvgGenImage('assets/svg/m22/business_center.svg');
 
   /// File path: assets/svg/m22/donut_small.svg
-  SvgGenImage get donutSmall =>
-      const SvgGenImage('assets/svg/m22/donut_small.svg');
+  SvgGenImage get donutSmall => const SvgGenImage('assets/svg/m22/donut_small.svg');
 
   /// File path: assets/svg/m22/download_done.svg
-  SvgGenImage get downloadDone =>
-      const SvgGenImage('assets/svg/m22/download_done.svg');
+  SvgGenImage get downloadDone => const SvgGenImage('assets/svg/m22/download_done.svg');
 
   /// File path: assets/svg/m22/fab.svg
   SvgGenImage get fab => const SvgGenImage('assets/svg/m22/fab.svg');
@@ -353,16 +333,14 @@ class $AssetsSvgM22Gen {
   SvgGenImage get home => const SvgGenImage('assets/svg/m22/home.svg');
 
   /// File path: assets/svg/m22/supervisor_account.svg
-  SvgGenImage get supervisorAccount =>
-      const SvgGenImage('assets/svg/m22/supervisor_account.svg');
+  SvgGenImage get supervisorAccount => const SvgGenImage('assets/svg/m22/supervisor_account.svg');
 }
 
 class $AssetsSvgM32Gen {
   const $AssetsSvgM32Gen();
 
   /// File path: assets/svg/m32/arrow_back.svg
-  SvgGenImage get arrowBack =>
-      const SvgGenImage('assets/svg/m32/arrow_back.svg');
+  SvgGenImage get arrowBack => const SvgGenImage('assets/svg/m32/arrow_back.svg');
 
   /// File path: assets/svg/m32/settings.svg
   SvgGenImage get settings => const SvgGenImage('assets/svg/m32/settings.svg');
@@ -375,27 +353,23 @@ class $AssetsSvgM51Gen {
   SvgGenImage get menuOpen => const SvgGenImage('assets/svg/m51/menu_open.svg');
 
   /// File path: assets/svg/m51/more_horiz.svg
-  SvgGenImage get moreHoriz =>
-      const SvgGenImage('assets/svg/m51/more_horiz.svg');
+  SvgGenImage get moreHoriz => const SvgGenImage('assets/svg/m51/more_horiz.svg');
 }
 
 class $AssetsSvgM52Gen {
   const $AssetsSvgM52Gen();
 
   /// File path: assets/svg/m52/add_circle.svg
-  SvgGenImage get addCircle =>
-      const SvgGenImage('assets/svg/m52/add_circle.svg');
+  SvgGenImage get addCircle => const SvgGenImage('assets/svg/m52/add_circle.svg');
 
   /// File path: assets/svg/m52/comment.svg
   SvgGenImage get comment => const SvgGenImage('assets/svg/m52/comment.svg');
 
   /// File path: assets/svg/m52/more_horiz.svg
-  SvgGenImage get moreHoriz =>
-      const SvgGenImage('assets/svg/m52/more_horiz.svg');
+  SvgGenImage get moreHoriz => const SvgGenImage('assets/svg/m52/more_horiz.svg');
 
   /// File path: assets/svg/m52/online_prediction.svg
-  SvgGenImage get onlinePrediction =>
-      const SvgGenImage('assets/svg/m52/online_prediction.svg');
+  SvgGenImage get onlinePrediction => const SvgGenImage('assets/svg/m52/online_prediction.svg');
 
   /// File path: assets/svg/m52/timer.svg
   SvgGenImage get timer => const SvgGenImage('assets/svg/m52/timer.svg');
@@ -405,8 +379,7 @@ class $AssetsSvgM6Gen {
   const $AssetsSvgM6Gen();
 
   /// File path: assets/svg/m6/cast_connected.svg
-  SvgGenImage get castConnected =>
-      const SvgGenImage('assets/svg/m6/cast_connected.svg');
+  SvgGenImage get castConnected => const SvgGenImage('assets/svg/m6/cast_connected.svg');
 
   /// File path: assets/svg/m6/contact.svg
   SvgGenImage get contact => const SvgGenImage('assets/svg/m6/contact.svg');
@@ -415,31 +388,26 @@ class $AssetsSvgM6Gen {
   SvgGenImage get debug => const SvgGenImage('assets/svg/m6/debug.svg');
 
   /// File path: assets/svg/m6/motion_photos_pause.svg
-  SvgGenImage get motionPhotosPause =>
-      const SvgGenImage('assets/svg/m6/motion_photos_pause.svg');
+  SvgGenImage get motionPhotosPause => const SvgGenImage('assets/svg/m6/motion_photos_pause.svg');
 }
 
 class $AssetsSvgM7Gen {
   const $AssetsSvgM7Gen();
 
   /// File path: assets/svg/m7/control_camera.svg
-  SvgGenImage get controlCamera =>
-      const SvgGenImage('assets/svg/m7/control_camera.svg');
+  SvgGenImage get controlCamera => const SvgGenImage('assets/svg/m7/control_camera.svg');
 
   /// File path: assets/svg/m7/home.svg
   SvgGenImage get home => const SvgGenImage('assets/svg/m7/home.svg');
 
   /// File path: assets/svg/m7/local_convenience_store.svg
-  SvgGenImage get localConvenienceStore =>
-      const SvgGenImage('assets/svg/m7/local_convenience_store.svg');
+  SvgGenImage get localConvenienceStore => const SvgGenImage('assets/svg/m7/local_convenience_store.svg');
 
   /// File path: assets/svg/m7/location_city.svg
-  SvgGenImage get locationCity =>
-      const SvgGenImage('assets/svg/m7/location_city.svg');
+  SvgGenImage get locationCity => const SvgGenImage('assets/svg/m7/location_city.svg');
 
   /// File path: assets/svg/m7/notification.svg
-  SvgGenImage get notification =>
-      const SvgGenImage('assets/svg/m7/notification.svg');
+  SvgGenImage get notification => const SvgGenImage('assets/svg/m7/notification.svg');
 }
 
 class $AssetsSvgM8Gen {
@@ -456,8 +424,7 @@ class $AssetsSvgM9Gen {
   const $AssetsSvgM9Gen();
 
   /// File path: assets/svg/m9/add_to_home_screen.svg
-  SvgGenImage get addToHomeScreen =>
-      const SvgGenImage('assets/svg/m9/add_to_home_screen.svg');
+  SvgGenImage get addToHomeScreen => const SvgGenImage('assets/svg/m9/add_to_home_screen.svg');
 
   /// File path: assets/svg/m9/ellipse.svg
   SvgGenImage get ellipse => const SvgGenImage('assets/svg/m9/ellipse.svg');
@@ -466,8 +433,7 @@ class $AssetsSvgM9Gen {
   SvgGenImage get eyeTube => const SvgGenImage('assets/svg/m9/eye_tube.svg');
 
   /// File path: assets/svg/m9/notifications.svg
-  SvgGenImage get notifications =>
-      const SvgGenImage('assets/svg/m9/notifications.svg');
+  SvgGenImage get notifications => const SvgGenImage('assets/svg/m9/notifications.svg');
 
   /// File path: assets/svg/m9/search.svg
   SvgGenImage get search => const SvgGenImage('assets/svg/m9/search.svg');

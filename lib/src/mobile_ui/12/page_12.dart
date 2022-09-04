@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
-import 'package:flutter_ui_kit_obkm/src/res/assets.dart';
 import 'package:get_it/get_it.dart';
 
 class Page12 extends StatefulWidget {
@@ -57,8 +57,7 @@ class _Page12State extends State<Page12> {
                     ),
                   ),
                 ),
-                Divider(
-                    height: 32.h, color: const Color(0xFFD0D0D0), thickness: 1),
+                Divider(height: 32.h, color: const Color(0xFFD0D0D0), thickness: 1),
                 _titleWidget('Family Members Access'),
                 Padding(
                   padding: EdgeInsets.symmetric(vertical: 24.h),
@@ -109,27 +108,24 @@ class _Page12State extends State<Page12> {
                     ),
                   ),
                 ),
-                Divider(
-                    height: 60.h, color: const Color(0xFFD0D0D0), thickness: 1),
+                Divider(height: 60.h, color: const Color(0xFFD0D0D0), thickness: 1),
                 _titleWidget('Devices in living room'),
                 SizedBox(height: 19.h),
                 Wrap(
                   spacing: 10.w,
                   runSpacing: 17.h,
                   children: [
-                    _livingRoomItem(
-                        name: 'Lights', iconPath: Assets.PG12_LIGHT),
-                    _livingRoomItem(name: 'Sofa', iconPath: Assets.PG12_SOFA),
-                    _livingRoomItem(
-                        name: 'Fridge', iconPath: Assets.PG12_FRIDGE),
+                    _livingRoomItem(name: 'Lights', iconPath: Assets.svg.m12.light.path),
+                    _livingRoomItem(name: 'Sofa', iconPath: Assets.svg.m12.sofa.path),
+                    _livingRoomItem(name: 'Fridge', iconPath: Assets.svg.m12.fridge.path),
                     _livingRoomItem(
                       name: 'Fridge',
-                      iconPath: Assets.PG12_FAN,
+                      iconPath: Assets.svg.m12.fan.path,
                       available: false,
                     ),
                     _livingRoomItem(
                       name: 'Fridge',
-                      iconPath: Assets.PG12_AIR_CONDITIONER,
+                      iconPath: Assets.svg.m12.airConditioner.path,
                       warning: true,
                     ),
                   ],
@@ -143,35 +139,28 @@ class _Page12State extends State<Page12> {
   }
 
   Widget _livingRoomItem(
-          {required String name,
-          required String iconPath,
-          bool available = true,
-          bool warning = false}) =>
+          {required String name, required String iconPath, bool available = true, bool warning = false}) =>
       Opacity(
         opacity: available ? 1 : 0.2,
         child: Container(
           width: 107.w,
           height: 130.h,
           padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 13.h),
-          decoration: BoxDecoration(
-              color: const Color(0xFFF4F4F4),
-              borderRadius: BorderRadius.circular(4.r),
-              boxShadow: [
-                BoxShadow(
-                  offset: const Offset(0, 1),
-                  blurRadius: 4,
-                  color: Colors.black.withOpacity(.25),
-                )
-              ]),
+          decoration:
+              BoxDecoration(color: const Color(0xFFF4F4F4), borderRadius: BorderRadius.circular(4.r), boxShadow: [
+            BoxShadow(
+              offset: const Offset(0, 1),
+              blurRadius: 4,
+              color: Colors.black.withOpacity(.25),
+            )
+          ]),
           child: Column(
             children: [
               Align(
                 alignment: Alignment.topRight,
                 child: CircleAvatar(
                   radius: 5.w,
-                  backgroundColor: warning
-                      ? const Color(0xFFF1C21B)
-                      : const Color(0xFF24A148),
+                  backgroundColor: warning ? const Color(0xFFF1C21B) : const Color(0xFF24A148),
                 ),
               ),
               SvgPicture.asset(iconPath),

@@ -1,12 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../navigation/navigation_service.dart';
-import '../../res/assets.dart';
 
 class Page24 extends StatefulWidget {
   const Page24({Key? key}) : super(key: key);
@@ -283,26 +282,22 @@ class _Page24State extends State<Page24> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SvgPicture.asset(
-                  Assets.PG6_MOTION_PHOTOS_PAUSE,
+                Assets.svg.m6.motionPhotosPause.svg(
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
                 ),
-                SvgPicture.asset(
-                  Assets.PG6_CAST_CONNECTED,
+                Assets.svg.m6.castConnected.svg(
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
                 ),
-                SvgPicture.asset(
-                  Assets.PG6_DEBUG,
+                Assets.svg.m6.debug.svg(
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
                 ),
-                SvgPicture.asset(
-                  Assets.PG6_CONTACT,
+                Assets.svg.m6.contact.svg(
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,

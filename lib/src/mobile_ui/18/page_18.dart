@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
-import 'package:flutter_ui_kit_obkm/src/res/assets.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -111,26 +111,26 @@ class Page18 extends StatelessWidget {
                   },
                   child: Row(
                     children: [
-                      SvgPicture.asset(
-                        Assets.PG18_FACEBOOK,
+                      Assets.svg.m18.facebook.svg(
                         height: 22.r,
                         width: 22.r,
+                        fit: BoxFit.fill,
                       ),
                       SizedBox(
                         width: 10.w,
                       ),
-                      SvgPicture.asset(
-                        Assets.PG18_INSTAGRAM,
+                      Assets.svg.m18.instagram.svg(
                         height: 22.r,
                         width: 22.r,
+                        fit: BoxFit.fill,
                       ),
                       SizedBox(
                         width: 10.w,
                       ),
-                      SvgPicture.asset(
-                        Assets.PG18_TWITTER,
+                      Assets.svg.m18.twitter.svg(
                         height: 22.r,
                         width: 22.r,
+                        fit: BoxFit.fill,
                       ),
                     ],
                   ),

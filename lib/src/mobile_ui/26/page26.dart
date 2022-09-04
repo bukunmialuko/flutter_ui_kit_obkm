@@ -1,12 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../navigation/navigation_service.dart';
-import '../../res/assets.dart';
 
 class Page26 extends StatefulWidget {
   const Page26({Key? key}) : super(key: key);
@@ -130,9 +129,7 @@ class _Page26State extends State<Page26> {
       ),
       bottomNavigationBar: Container(
         height: 90.h,
-        decoration: BoxDecoration(
-            color: Colors.white,
-            border: Border.all(color: const Color(0xffE0E0E0))),
+        decoration: BoxDecoration(color: Colors.white, border: Border.all(color: const Color(0xffE0E0E0))),
         child: Center(
           child: Padding(
             padding: EdgeInsets.only(left: 54.w, right: 54.w),
@@ -140,26 +137,22 @@ class _Page26State extends State<Page26> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SvgPicture.asset(
-                  Assets.PG6_MOTION_PHOTOS_PAUSE,
+                Assets.svg.m6.motionPhotosPause.svg(
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
                 ),
-                SvgPicture.asset(
-                  Assets.PG6_CAST_CONNECTED,
+                Assets.svg.m6.castConnected.svg(
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
                 ),
-                SvgPicture.asset(
-                  Assets.PG6_DEBUG,
+                Assets.svg.m6.debug.svg(
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,
                 ),
-                SvgPicture.asset(
-                  Assets.PG6_CONTACT,
+                Assets.svg.m6.contact.svg(
                   height: 24.r,
                   width: 24.r,
                   fit: BoxFit.fill,

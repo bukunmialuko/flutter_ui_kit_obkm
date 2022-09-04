@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
-import 'package:flutter_ui_kit_obkm/src/res/assets.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -30,9 +29,9 @@ class _Page4State extends State<Page4> {
           Container(
             /// Had to adjust this
             height: 340.h + MediaQuery.of(context).viewPadding.top,
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage(Assets.LADY_PG4),
+                image: AssetImage(Assets.png.ladyPg4.path),
                 fit: BoxFit.cover,
               ),
             ),
@@ -47,10 +46,8 @@ class _Page4State extends State<Page4> {
                       },
                       child: Container(
                         padding: EdgeInsets.only(left: 27.w, top: 16.h),
-                        margin: EdgeInsets.only(
-                            top: MediaQuery.of(context).viewPadding.top),
-                        child: SvgPicture.asset(
-                          Assets.BACK,
+                        margin: EdgeInsets.only(top: MediaQuery.of(context).viewPadding.top),
+                        child: Assets.svg.m6.castConnected.svg(
                           height: 48.r,
                           width: 48.r,
                           fit: BoxFit.fill,
@@ -60,10 +57,8 @@ class _Page4State extends State<Page4> {
                     const Spacer(),
                     Container(
                       padding: EdgeInsets.only(right: 24.w),
-                      margin: EdgeInsets.only(
-                          top: MediaQuery.of(context).viewPadding.top),
-                      child: SvgPicture.asset(
-                        Assets.MENU,
+                      margin: EdgeInsets.only(top: MediaQuery.of(context).viewPadding.top),
+                      child: Assets.svg.menu.svg(
                         height: 48.r,
                         width: 48.r,
                         fit: BoxFit.fill,
@@ -87,8 +82,7 @@ class _Page4State extends State<Page4> {
                 Positioned(
                   right: 24.w,
                   bottom: 13.h,
-                  child: SvgPicture.asset(
-                    Assets.PLAY,
+                  child: Assets.svg.play.svg(
                     height: 48.r,
                     width: 48.r,
                     fit: BoxFit.fill,
@@ -101,8 +95,7 @@ class _Page4State extends State<Page4> {
             child: Container(
               color: const Color(0xff161616),
               child: SingleChildScrollView(
-                physics: const BouncingScrollPhysics(
-                    parent: AlwaysScrollableScrollPhysics()),
+                physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -216,8 +209,7 @@ class _Page4State extends State<Page4> {
                         height: 158.h,
                         child: ListView.separated(
                           padding: EdgeInsets.zero,
-                          physics: const BouncingScrollPhysics(
-                              parent: AlwaysScrollableScrollPhysics()),
+                          physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
                           scrollDirection: Axis.horizontal,
                           itemCount: 7,
                           itemBuilder: (c, i) {
@@ -231,8 +223,7 @@ class _Page4State extends State<Page4> {
                                   child: Stack(
                                     children: [
                                       ClipRRect(
-                                        borderRadius:
-                                            BorderRadius.circular(8.r),
+                                        borderRadius: BorderRadius.circular(8.r),
                                         child: Container(
                                           width: 130.h,
                                           height: 130.h,
@@ -252,10 +243,9 @@ class _Page4State extends State<Page4> {
                                       Positioned(
                                         bottom: 0,
                                         right: 0,
-                                        child: SvgPicture.asset(
-                                          Assets.PLAY,
-                                          height: 24.h,
-                                          width: 24.h,
+                                        child: Assets.svg.play.svg(
+                                          height: 48.r,
+                                          width: 48.r,
                                           fit: BoxFit.fill,
                                         ),
                                       ),
@@ -303,8 +293,7 @@ class _Page4State extends State<Page4> {
                     ),
 
                     Padding(
-                      padding:
-                          EdgeInsets.only(left: 24.w, right: 24.w, top: 16.h),
+                      padding: EdgeInsets.only(left: 24.w, right: 24.w, top: 16.h),
                       child: ListView.separated(
                         shrinkWrap: true,
                         itemCount: 7,
@@ -334,10 +323,8 @@ class _Page4State extends State<Page4> {
                                   ),
                                   Expanded(
                                     child: Row(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         Expanded(
                                           child: Padding(
@@ -346,10 +333,8 @@ class _Page4State extends State<Page4> {
                                               vertical: 10.h,
                                             ),
                                             child: Column(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.start,
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
+                                              mainAxisAlignment: MainAxisAlignment.start,
+                                              crossAxisAlignment: CrossAxisAlignment.start,
                                               children: [
                                                 Flexible(
                                                   child: Text(
@@ -358,15 +343,12 @@ class _Page4State extends State<Page4> {
                                                       textStyle: TextStyle(
                                                         fontSize: 16.sp,
                                                         color: Colors.white,
-                                                        fontStyle:
-                                                            FontStyle.normal,
-                                                        fontWeight:
-                                                            FontWeight.w600,
+                                                        fontStyle: FontStyle.normal,
+                                                        fontWeight: FontWeight.w600,
                                                       ),
                                                     ),
                                                     maxLines: 3,
-                                                    overflow:
-                                                        TextOverflow.ellipsis,
+                                                    overflow: TextOverflow.ellipsis,
                                                   ),
                                                 ),
                                                 Text(
@@ -375,15 +357,12 @@ class _Page4State extends State<Page4> {
                                                     textStyle: TextStyle(
                                                       fontSize: 12.sp,
                                                       color: Colors.white,
-                                                      fontStyle:
-                                                          FontStyle.normal,
-                                                      fontWeight:
-                                                          FontWeight.w400,
+                                                      fontStyle: FontStyle.normal,
+                                                      fontWeight: FontWeight.w400,
                                                     ),
                                                   ),
                                                   maxLines: 1,
-                                                  overflow:
-                                                      TextOverflow.ellipsis,
+                                                  overflow: TextOverflow.ellipsis,
                                                 ),
                                               ],
                                             ),
@@ -394,10 +373,9 @@ class _Page4State extends State<Page4> {
                                           padding: EdgeInsets.symmetric(
                                             horizontal: 8.w,
                                           ),
-                                          child: SvgPicture.asset(
-                                            Assets.MORE,
-                                            height: 24.w,
-                                            width: 24.w,
+                                          child: Assets.svg.more.svg(
+                                            height: 48.r,
+                                            width: 48.r,
                                             fit: BoxFit.fill,
                                           ),
                                         ),
