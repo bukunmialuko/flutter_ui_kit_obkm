@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
+import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -77,7 +77,7 @@ class _Page42State extends State<Page42> {
                                 width: 72.w,
                                 height: 72.w,
                                 decoration: BoxDecoration(
-                                  color: AppColors.greyC4,
+                                  color: ColorName.grayC4,
                                   borderRadius: BorderRadius.circular(72.w),
                                 ),
                               ),
@@ -139,7 +139,7 @@ class _Page42State extends State<Page42> {
                                 width: 159.w,
                                 height: 159.h,
                                 decoration: BoxDecoration(
-                                  color: AppColors.greyC4,
+                                  color: ColorName.grayC4,
                                 ),
                               ),
                               SizedBox(
@@ -151,8 +151,7 @@ class _Page42State extends State<Page42> {
                                   Expanded(
                                     child: Column(
                                       mainAxisSize: MainAxisSize.min,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text(
                                           "Album name",
@@ -233,7 +232,7 @@ class _Page42State extends State<Page42> {
                               width: 159.w,
                               height: 159.h,
                               decoration: BoxDecoration(
-                                color: AppColors.greyC4,
+                                color: ColorName.grayC4,
                               ),
                             ),
                             SizedBox(
@@ -245,8 +244,7 @@ class _Page42State extends State<Page42> {
                                 Expanded(
                                   child: Column(
                                     mainAxisSize: MainAxisSize.min,
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Text(
                                         "Album name",
@@ -307,7 +305,7 @@ class _Page42State extends State<Page42> {
             Container(
               width: 87.w,
               height: 87.w,
-              color: AppColors.greyC4,
+              color: ColorName.grayC4,
               margin: EdgeInsets.only(right: 18.w),
             ),
             Expanded(

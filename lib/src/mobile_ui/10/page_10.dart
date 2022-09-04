@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
+import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
-import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -58,7 +58,7 @@ class _Page10State extends State<Page10> {
                       margin: EdgeInsets.only(top: 35.h, bottom: 19.h),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(96.r),
-                        color: AppColors.greyC4,
+                        color: ColorName.grayC4,
                       ),
                     ),
                   ),

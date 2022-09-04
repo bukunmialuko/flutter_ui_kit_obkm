@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../navigation/navigation_service.dart';
-import '../../res/colors.dart';
 import 'widgets/page_51_list_item.dart';
 
 class Page51 extends StatefulWidget {
@@ -67,7 +67,7 @@ class _Page51State extends State<Page51> {
                 style: GoogleFonts.workSans(
                   textStyle: TextStyle(
                     fontSize: 24.sp,
-                    color: AppColors.black,
+                    color: ColorName.grayC4,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
@@ -80,7 +80,7 @@ class _Page51State extends State<Page51> {
                 style: GoogleFonts.workSans(
                   textStyle: TextStyle(
                     fontSize: 14.sp,
-                    color: AppColors.black,
+                    color: ColorName.grayC4,
                     fontWeight: FontWeight.w400,
                   ),
                 ),
@@ -93,7 +93,7 @@ class _Page51State extends State<Page51> {
                 style: GoogleFonts.workSans(
                   textStyle: TextStyle(
                     fontSize: 24.sp,
-                    color: AppColors.black,
+                    color: ColorName.grayC4,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
@@ -113,7 +113,7 @@ class _Page51State extends State<Page51> {
                         style: GoogleFonts.workSans(
                           textStyle: TextStyle(
                             fontSize: 14.sp,
-                            color: AppColors.black,
+                            color: ColorName.grayC4,
                             fontWeight: FontWeight.w400,
                           ),
                         ),

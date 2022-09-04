@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import '../../../res/colors.dart';
 
 class Page51ListItem extends StatelessWidget {
   const Page51ListItem({Key? key}) : super(key: key);
@@ -27,7 +26,7 @@ class Page51ListItem extends StatelessWidget {
             style: GoogleFonts.workSans(
               textStyle: TextStyle(
                 fontSize: 16.sp,
-                color: AppColors.black,
+                color: ColorName.black,
                 fontWeight: FontWeight.w600,
               ),
             ),
@@ -40,7 +39,7 @@ class Page51ListItem extends StatelessWidget {
             style: GoogleFonts.workSans(
               textStyle: TextStyle(
                 fontSize: 14.sp,
-                color: AppColors.black,
+                color: ColorName.black,
                 fontWeight: FontWeight.w400,
               ),
             ),

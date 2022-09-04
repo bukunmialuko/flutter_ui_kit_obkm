@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
+import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../navigation/navigation_service.dart';
-import '../../res/colors.dart';
 
 class Page28 extends StatefulWidget {
   const Page28({Key? key}) : super(key: key);
@@ -64,7 +64,7 @@ class _Page28State extends State<Page28> {
                         height: 40.h,
                         width: 40.h,
                         decoration: BoxDecoration(
-                          color: AppColors.greyC4,
+                          color: ColorName.grayC4,
                           borderRadius: BorderRadius.circular(10),
                         ),
                       ),
@@ -100,7 +100,7 @@ class _Page28State extends State<Page28> {
                               // width: 75.h,
                               padding: EdgeInsets.symmetric(horizontal: 15),
                               decoration: BoxDecoration(
-                                color: AppColors.greyC4,
+                                color: ColorName.grayC4,
                                 borderRadius: BorderRadius.circular(8.r),
                                 boxShadow: [
                                   BoxShadow(
@@ -206,7 +206,7 @@ class _Page28State extends State<Page28> {
                       flex: 2,
                       child: Container(
                         decoration: BoxDecoration(
-                          color: AppColors.greyC4,
+                          color: ColorName.grayC4,
                           borderRadius: BorderRadius.circular(16),
                         ),
                         child: Column(
@@ -257,7 +257,7 @@ class _Page28State extends State<Page28> {
                               flex: 2,
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: AppColors.greyC4,
+                                  color: ColorName.grayC4,
                                   borderRadius: BorderRadius.circular(16),
                                 ),
                                 child: Row(
@@ -298,7 +298,7 @@ class _Page28State extends State<Page28> {
                               flex: 2,
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: AppColors.greyC4,
+                                  color: ColorName.grayC4,
                                   borderRadius: BorderRadius.circular(16),
                                 ),
                                 child: Row(
@@ -330,7 +330,7 @@ class _Page28State extends State<Page28> {
                                       backgroundColor: Colors.black,
                                       child: CircleAvatar(
                                         radius: 23.r,
-                                        backgroundColor: AppColors.greyC4,
+                                        backgroundColor: ColorName.grayC4,
                                       ),
                                     ),
                                   ],
@@ -490,7 +490,7 @@ class GoalCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: AppColors.greyC4.withOpacity(0.5),
+            color: ColorName.grayC4.withOpacity(0.5),
             spreadRadius: 1,
             blurRadius: 2,
             offset: Offset(0, 0), // changes position of shadow
@@ -502,7 +502,7 @@ class GoalCard extends StatelessWidget {
         children: [
           CircleAvatar(
             radius: 30.r,
-            backgroundColor: AppColors.greyC4,
+            backgroundColor: ColorName.grayC4,
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -523,7 +523,7 @@ class GoalCard extends StatelessWidget {
                     height: 5,
                     width: 100,
                     decoration: BoxDecoration(
-                      color: AppColors.greyC4,
+                      color: ColorName.grayC4,
                       borderRadius: BorderRadius.circular(5),
                     ),
                     child: Row(

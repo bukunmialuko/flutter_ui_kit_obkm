@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
-import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
 import 'package:flutter_ui_kit_obkm/src/res/styles.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -76,13 +76,12 @@ class Page1 extends StatelessWidget {
                         padding: EdgeInsets.symmetric(horizontal: 8.w),
                         child: const Icon(Icons.search, color: Colors.black),
                       ),
-                      prefixIconConstraints:
-                          BoxConstraints(maxHeight: 20.w, maxWidth: 35.w),
+                      prefixIconConstraints: BoxConstraints(maxHeight: 20.w, maxWidth: 35.w),
                       hintText: "Contacts",
                       // hintStyle: textFieldPlaceholderTextStyle(context),
                       isDense: true,
                       filled: true,
-                      fillColor: AppColors.greyC4,
+                      fillColor: ColorName.grayC4,
                       focusedBorder: AppStyles.focusedTransparentBorder,
                       disabledBorder: AppStyles.focusedTransparentBorder,
                       enabledBorder: AppStyles.focusedTransparentBorder,
@@ -115,8 +114,7 @@ class Page1 extends StatelessWidget {
                     height: 60.r,
                     width: 359.w,
                     child: ListView.separated(
-                      physics: const BouncingScrollPhysics(
-                          parent: AlwaysScrollableScrollPhysics()),
+                      physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
                       scrollDirection: Axis.horizontal,
                       itemCount: names.length,
                       itemBuilder: (c, i) {
@@ -134,7 +132,7 @@ class Page1 extends StatelessWidget {
                                   child: Container(
                                     width: 56.r,
                                     height: 56.r,
-                                    color: AppColors.greyC4,
+                                    color: ColorName.grayC4,
                                   ),
                                 ),
                               ),
@@ -184,8 +182,7 @@ class Page1 extends StatelessWidget {
                 ),
                 child: ListView.separated(
                   itemCount: names.length,
-                  physics: const BouncingScrollPhysics(
-                      parent: AlwaysScrollableScrollPhysics()),
+                  physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
                   itemBuilder: (c, i) {
                     return SizedBox(
                       width: 340.w,
@@ -199,7 +196,7 @@ class Page1 extends StatelessWidget {
                               width: 60.r,
                               height: 60.r,
                               // margin: EdgeInsets.only(right: 14.w),
-                              color: AppColors.greyC4,
+                              color: ColorName.grayC4,
                             ),
                           ),
                           SizedBox(width: 14.w),
@@ -211,8 +208,7 @@ class Page1 extends StatelessWidget {
                               children: [
                                 Row(
                                   mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   crossAxisAlignment: CrossAxisAlignment.end,
                                   children: [
                                     Expanded(

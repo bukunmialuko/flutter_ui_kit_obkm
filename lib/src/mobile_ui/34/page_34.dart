@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
+import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -63,7 +63,7 @@ class _Page34State extends State<Page34> {
                               textStyle: TextStyle(
                                 height: 1.25,
                                 fontSize: 16.sp,
-                                color: AppColors.black,
+                                color: ColorName.black,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
@@ -94,7 +94,7 @@ class _Page34State extends State<Page34> {
                               textStyle: TextStyle(
                                 fontSize: 16.sp,
                                 height: 1.25,
-                                color: AppColors.black,
+                                color: ColorName.black,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
@@ -125,7 +125,7 @@ class _Page34State extends State<Page34> {
                               textStyle: TextStyle(
                                 fontSize: 16.sp,
                                 height: 1.25,
-                                color: AppColors.black,
+                                color: ColorName.black,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
@@ -150,7 +150,7 @@ class _Page34State extends State<Page34> {
                             style: GoogleFonts.workSans(
                               textStyle: TextStyle(
                                 fontSize: 24.sp,
-                                color: AppColors.black,
+                                color: ColorName.black,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
@@ -163,7 +163,7 @@ class _Page34State extends State<Page34> {
                             style: GoogleFonts.workSans(
                               textStyle: TextStyle(
                                 fontSize: 12.sp,
-                                color: AppColors.black,
+                                color: ColorName.black,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
@@ -179,7 +179,7 @@ class _Page34State extends State<Page34> {
                         height: 30.h,
                         width: 89.w,
                         decoration: BoxDecoration(
-                          color: AppColors.black,
+                          color: ColorName.black,
                           borderRadius: BorderRadius.circular(15.r),
                         ),
                         child: Padding(
@@ -190,7 +190,7 @@ class _Page34State extends State<Page34> {
                               style: GoogleFonts.workSans(
                                 textStyle: TextStyle(
                                   fontSize: 12.sp,
-                                  color: AppColors.white,
+                                  color: ColorName.white,
                                   fontWeight: FontWeight.w600,
                                 ),
                               ),
@@ -223,7 +223,7 @@ class _Page34State extends State<Page34> {
                     textStyle: TextStyle(
                       fontSize: 14.sp,
                       height: 1.57,
-                      color: AppColors.black,
+                      color: ColorName.black,
                       fontWeight: FontWeight.w400,
                     ),
                   ),

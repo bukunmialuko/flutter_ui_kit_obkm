@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
-import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
 import 'package:flutter_ui_kit_obkm/src/res/styles.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -11,19 +11,12 @@ class Page2 extends StatelessWidget {
 
   static List<MessageModel> messages = [
     MessageModel(
-        text:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie fermentum porttitor diam purus ",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie fermentum porttitor diam purus ",
         isRight: false,
         time: "08:30"),
     MessageModel(
-        text:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie.",
-        isRight: false,
-        time: "08:30"),
-    MessageModel(
-        text: "Lorem ipsum dolor amet, consectetur.",
-        isRight: true,
-        time: "08:30"),
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie.", isRight: false, time: "08:30"),
+    MessageModel(text: "Lorem ipsum dolor amet, consectetur.", isRight: true, time: "08:30"),
     MessageModel(text: "Consectetur", isRight: false, time: "08:30"),
     MessageModel(text: "ipsum .", isRight: true, time: "08:30")
   ];
@@ -73,16 +66,13 @@ class Page2 extends StatelessWidget {
                         ),
                         child: const Icon(Icons.search, color: Colors.black),
                       ),
-                      prefixIconConstraints: BoxConstraints(
-                          minHeight: 24.r,
-                          maxHeight: 24.r,
-                          minWidth: 41.w,
-                          maxWidth: 41.r),
+                      prefixIconConstraints:
+                          BoxConstraints(minHeight: 24.r, maxHeight: 24.r, minWidth: 41.w, maxWidth: 41.r),
                       hintText: "Search conversations",
                       // hintStyle: textFieldPlaceholderTextStyle(context),
                       isDense: true,
                       filled: true,
-                      fillColor: AppColors.greyC4,
+                      fillColor: ColorName.grayC4,
                       focusedBorder: AppStyles.focusedTransparentBorder,
                       disabledBorder: AppStyles.focusedTransparentBorder,
                       enabledBorder: AppStyles.focusedTransparentBorder,
@@ -122,14 +112,13 @@ class Page2 extends StatelessWidget {
                         height: 45.r,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(45.r),
-                          color: AppColors.greyC4,
+                          color: ColorName.grayC4,
                         ),
                         child: SizedBox(
                           width: 24.r,
                           height: 24.r,
                           child: IconButton(
-                            visualDensity:
-                                VisualDensity.adaptivePlatformDensity,
+                            visualDensity: VisualDensity.adaptivePlatformDensity,
                             padding: EdgeInsets.zero,
                             onPressed: () {},
                             icon: const Icon(
@@ -145,14 +134,13 @@ class Page2 extends StatelessWidget {
                         height: 45.r,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(45.r),
-                          color: AppColors.greyC4,
+                          color: ColorName.grayC4,
                         ),
                         child: SizedBox(
                           width: 24.r,
                           height: 24.r,
                           child: IconButton(
-                            visualDensity:
-                                VisualDensity.adaptivePlatformDensity,
+                            visualDensity: VisualDensity.adaptivePlatformDensity,
                             padding: EdgeInsets.zero,
                             onPressed: () {},
                             icon: const Icon(
@@ -191,16 +179,14 @@ class Page2 extends StatelessWidget {
                   children: [
                     Expanded(
                       child: ListView.builder(
-                        physics: const BouncingScrollPhysics(
-                            parent: AlwaysScrollableScrollPhysics()),
+                        physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
                         itemCount: messages.length,
                         itemBuilder: (c, i) {
                           var showProfileBox = true;
                           if (i != 0) {
                             var currentChat = messages[i];
                             var previousChat = messages[i - 1];
-                            showProfileBox =
-                                currentChat.isRight != previousChat.isRight;
+                            showProfileBox = currentChat.isRight != previousChat.isRight;
                           }
                           return _buildChat(
                             chat: messages[i],
@@ -214,7 +200,7 @@ class Page2 extends StatelessWidget {
                       height: 50.h,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(50.r),
-                        color: AppColors.greyC4,
+                        color: ColorName.grayC4,
                       ),
                       child: Row(
                         children: [
@@ -230,16 +216,12 @@ class Page2 extends StatelessWidget {
                                 // hintStyle: textFieldPlaceholderTextStyle(context),
                                 isDense: true,
                                 filled: true,
-                                fillColor: AppColors.greyC4,
-                                focusedBorder:
-                                    AppStyles.focusedTransparentBorder,
-                                disabledBorder:
-                                    AppStyles.focusedTransparentBorder,
-                                enabledBorder:
-                                    AppStyles.focusedTransparentBorder,
+                                fillColor: ColorName.grayC4,
+                                focusedBorder: AppStyles.focusedTransparentBorder,
+                                disabledBorder: AppStyles.focusedTransparentBorder,
+                                enabledBorder: AppStyles.focusedTransparentBorder,
                                 errorBorder: AppStyles.focusedTransparentBorder,
-                                focusedErrorBorder:
-                                    AppStyles.focusedTransparentBorder,
+                                focusedErrorBorder: AppStyles.focusedTransparentBorder,
                                 errorStyle: errorTextStyle(context),
                               ),
                               textInputAction: TextInputAction.next,
@@ -254,8 +236,7 @@ class Page2 extends StatelessWidget {
                           Container(
                             width: 45.r,
                             height: 45.r,
-                            margin: EdgeInsets.symmetric(
-                                horizontal: 2.w, vertical: 2.h),
+                            margin: EdgeInsets.symmetric(horizontal: 2.w, vertical: 2.h),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(45.r),
                               color: const Color(0xffF4F4F4),
@@ -264,8 +245,7 @@ class Page2 extends StatelessWidget {
                               width: 24.r,
                               height: 24.r,
                               child: IconButton(
-                                visualDensity:
-                                    VisualDensity.adaptivePlatformDensity,
+                                visualDensity: VisualDensity.adaptivePlatformDensity,
                                 padding: EdgeInsets.zero,
                                 onPressed: () {},
                                 icon: const Icon(
@@ -356,8 +336,7 @@ class Page2 extends StatelessWidget {
                       children: [
                         Flexible(
                           child: Container(
-                            padding:
-                                EdgeInsets.fromLTRB(18.w, 13.h, 18.w, 12.h),
+                            padding: EdgeInsets.fromLTRB(18.w, 13.h, 18.w, 12.h),
                             decoration: BoxDecoration(
                               color: const Color(0xffD0D0D0),
                               borderRadius: BorderRadius.only(

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
+import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
-import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -56,7 +56,7 @@ class _Page9State extends State<Page9> {
                     height: 24.r,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(24.r),
-                      color: AppColors.greyC4,
+                      color: ColorName.grayC4,
                     ),
                   ),
                 ],
@@ -176,7 +176,7 @@ class _Page9State extends State<Page9> {
                             margin: EdgeInsets.only(right: 12.w),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(24.r),
-                              color: AppColors.greyC4,
+                              color: ColorName.grayC4,
                             ),
                           ),
                           Expanded(
@@ -283,7 +283,7 @@ class _Page9State extends State<Page9> {
                                   child: Container(
                                     width: 140.w,
                                     height: 200.h,
-                                    color: AppColors.greyC4,
+                                    color: ColorName.grayC4,
                                     child: Stack(
                                       fit: StackFit.expand,
                                       children: [
@@ -363,7 +363,7 @@ class _Page9State extends State<Page9> {
                             margin: EdgeInsets.only(right: 12.w),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(24.r),
-                              color: AppColors.greyC4,
+                              color: ColorName.grayC4,
                             ),
                           ),
                           Expanded(

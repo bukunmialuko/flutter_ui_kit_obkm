@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
+import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
-import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
 import 'package:flutter_ui_kit_obkm/src/res/styles.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -41,7 +41,7 @@ class _Page7State extends State<Page7> {
                         height: 60.r,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(45.r),
-                          color: AppColors.greyC4,
+                          color: ColorName.grayC4,
                         ),
                       ),
                     ),
@@ -107,7 +107,7 @@ class _Page7State extends State<Page7> {
                         // hintStyle: textFieldPlaceholderTextStyle(context),
                         isDense: true,
                         filled: true,
-                        fillColor: AppColors.greyC4,
+                        fillColor: ColorName.grayC4,
                         focusedBorder: AppStyles.focusedTransparentBorder,
                         disabledBorder: AppStyles.focusedTransparentBorder,
                         enabledBorder: AppStyles.focusedTransparentBorder,
@@ -181,7 +181,7 @@ class _Page7State extends State<Page7> {
                           child: Container(
                             width: 109.w,
                             height: 140.h,
-                            color: AppColors.greyC4,
+                            color: ColorName.grayC4,
                             child: Stack(
                               children: [
                                 Align(
@@ -272,7 +272,7 @@ class _Page7State extends State<Page7> {
                           child: Container(
                             width: 244.w,
                             height: 165.h,
-                            color: AppColors.greyC4,
+                            color: ColorName.grayC4,
                             child: Stack(
                               children: [
                                 Align(

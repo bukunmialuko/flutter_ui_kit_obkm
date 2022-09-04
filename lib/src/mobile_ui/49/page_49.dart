@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
+import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -137,10 +137,10 @@ class Page49 extends StatelessWidget {
                     CircleAvatar(
                       radius: 25.r,
                       backgroundColor: Color(0xFFA0A9B1),
-                      foregroundColor: AppColors.black,
+                      foregroundColor: ColorName.black,
                       child: Icon(
                         Icons.shopping_cart,
-                        color: AppColors.black,
+                        color: ColorName.black,
                       ),
                     ),
                   ],
