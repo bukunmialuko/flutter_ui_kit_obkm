@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_ui_kit_obkm/src/mobile_ui/157_160/page_156.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/routes/routes.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
 import 'package:get_it/get_it.dart';
@@ -269,6 +270,17 @@ class RootWidget extends StatelessWidget {
 
             PageButtonWidget(
               page: 52,
+              onPressed: () {
+                GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg52);
+              },
+            ),
+
+            _RangeHeader(text: "101 -150"),
+
+            _RangeHeader(text: "151 -160"),
+
+            PageButtonWidget(
+              page: 156,
               onPressed: () {
                 GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg52);
               },
