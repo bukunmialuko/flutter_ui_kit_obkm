@@ -6,6 +6,7 @@ import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/gen/fonts.gen.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
 import 'package:get_it/get_it.dart';
+import 'package:go_router/go_router.dart';
 
 var _page175List = [
   Assets.png.m175.img1.path,
@@ -31,7 +32,7 @@ class Page175 extends StatelessWidget {
           padding: EdgeInsets.only(left: 8.w),
           child: GestureDetector(
             onTap: () {
-              GetIt.I.get<NavigationService>().back();
+              context.pop();
             },
             child: Center(
               child: Assets.svg.m175.keyboardArrowLeft.svg(
@@ -55,7 +56,7 @@ class Page175 extends StatelessWidget {
         actions: [
           GestureDetector(
             onTap: () {
-              GetIt.I.get<NavigationService>().back();
+              context.pop();
             },
             child: Padding(
               padding: EdgeInsets.only(right: 12.w),

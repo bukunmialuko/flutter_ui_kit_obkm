@@ -5,6 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
 import 'package:get_it/get_it.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../navigation/navigation_service.dart';
@@ -34,7 +35,7 @@ class Page49 extends StatelessWidget {
                 children: [
                   IconButton(
                     onPressed: () {
-                      GetIt.I.get<NavigationService>().back();
+                      context.pop();
                     },
                     icon: Icon(Icons.more_vert),
                   ),

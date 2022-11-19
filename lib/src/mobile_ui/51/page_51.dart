@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
 import 'package:get_it/get_it.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../navigation/navigation_service.dart';
@@ -36,7 +37,7 @@ class _Page51State extends State<Page51> {
                   children: [
                     GestureDetector(
                       onTap: () {
-                        GetIt.I.get<NavigationService>().back();
+                        context.pop();
                       },
                       child: Assets.svg.m51.menuOpen.svg(
                         height: 24.r,
@@ -46,7 +47,7 @@ class _Page51State extends State<Page51> {
                     ),
                     GestureDetector(
                       onTap: () {
-                        GetIt.I.get<NavigationService>().back();
+                        context.pop();
                       },
                       child: Assets.svg.m51.moreHoriz.svg(
                         height: 24.r,

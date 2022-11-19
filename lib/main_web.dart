@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import 'src/di/service_locator.dart';
 import 'src/web_ui/7/root.dart';
 
 void main() async {
-  await ServiceLocator().setUp();
   runApp(const App());
 }
 

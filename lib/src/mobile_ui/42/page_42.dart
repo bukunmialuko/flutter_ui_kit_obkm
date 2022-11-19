@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
 import 'package:get_it/get_it.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../navigation/navigation_service.dart';
@@ -66,7 +67,7 @@ class _Page42State extends State<Page42> {
                       12,
                       (index) => GestureDetector(
                         onTap: () {
-                          GetIt.I.get<NavigationService>().back();
+                          context.pop();
                         },
                         child: Container(
                           margin: EdgeInsets.only(right: 16.w),
@@ -127,7 +128,7 @@ class _Page42State extends State<Page42> {
                       12,
                       (index) => GestureDetector(
                         onTap: () {
-                          GetIt.I.get<NavigationService>().back();
+                          context.pop();
                         },
                         child: Container(
                           width: 159.w,
@@ -367,7 +368,7 @@ class _Page42State extends State<Page42> {
             ),
             GestureDetector(
               onTap: () {
-                GetIt.I.get<NavigationService>().back();
+                context.pop();
               },
               child: Padding(
                 padding: EdgeInsets.only(

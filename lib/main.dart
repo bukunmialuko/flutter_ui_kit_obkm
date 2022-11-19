@@ -2,10 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/new_routes.dart';
 
-import 'src/di/service_locator.dart';
-
 void main() async {
-  await ServiceLocator().setUp();
   runApp(const App());
 }
 
