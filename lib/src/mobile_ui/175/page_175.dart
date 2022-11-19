@@ -2,10 +2,17 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/gen/fonts.gen.dart';
+import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
+import 'package:get_it/get_it.dart';
 
-const _page175List = ["assets/png/175/002.png", "assets/png/175/003.png", "assets/png/175/004.png"];
+var _page175List = [
+  Assets.png.m175.img1.path,
+  Assets.png.m175.img2.path,
+  Assets.png.m175.img3.path,
+  Assets.png.m175.img4.path
+];
 
 class Page175 extends StatelessWidget {
   const Page175({Key? key}) : super(key: key);
@@ -22,11 +29,15 @@ class Page175 extends StatelessWidget {
         titleSpacing: 8.w,
         leading: Padding(
           padding: EdgeInsets.only(left: 8.w),
-          child: Center(
-            child: SvgPicture.asset(
-              "assets/svg/175/keyboard_arrow_left.svg",
-              width: 24.w,
-              height: 24.w,
+          child: GestureDetector(
+            onTap: () {
+              GetIt.I.get<NavigationService>().back();
+            },
+            child: Center(
+              child: Assets.svg.m175.keyboardArrowLeft.svg(
+                width: 24.w,
+                height: 24.w,
+              ),
             ),
           ),
         ),
@@ -42,18 +53,21 @@ class Page175 extends StatelessWidget {
           textAlign: TextAlign.center,
         ),
         actions: [
-          Padding(
-            padding: EdgeInsets.only(right: 12.w),
-            child: SvgPicture.asset(
-              "assets/svg/175/search.svg",
-              width: 24.w,
-              height: 24.w,
+          GestureDetector(
+            onTap: () {
+              GetIt.I.get<NavigationService>().back();
+            },
+            child: Padding(
+              padding: EdgeInsets.only(right: 12.w),
+              child: Assets.svg.m175.keyboardArrowLeft.svg(
+                width: 24.w,
+                height: 24.w,
+              ),
             ),
           ),
           Padding(
             padding: EdgeInsets.only(right: 12.w),
-            child: SvgPicture.asset(
-              "assets/svg/175/shopping_bag.svg",
+            child: Assets.svg.m175.shoppingBag.svg(
               width: 24.w,
               height: 24.w,
             ),
@@ -69,7 +83,7 @@ class Page175 extends StatelessWidget {
                 padding: EdgeInsets.only(right: 8.w),
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("assets/png/175/001.png"),
+                    image: Assets.png.m175.img1.image().image,
                     fit: BoxFit.cover,
                   ),
                 ),

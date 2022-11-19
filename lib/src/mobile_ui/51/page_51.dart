@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -38,8 +38,7 @@ class _Page51State extends State<Page51> {
                       onTap: () {
                         GetIt.I.get<NavigationService>().back();
                       },
-                      child: SvgPicture.asset(
-                        "assets/svg/51/menu_open.svg",
+                      child: Assets.svg.m51.menuOpen.svg(
                         height: 24.r,
                         width: 24.r,
                         fit: BoxFit.fill,
@@ -49,8 +48,7 @@ class _Page51State extends State<Page51> {
                       onTap: () {
                         GetIt.I.get<NavigationService>().back();
                       },
-                      child: SvgPicture.asset(
-                        "assets/svg/51/more_horiz.svg",
+                      child: Assets.svg.m51.moreHoriz.svg(
                         height: 24.r,
                         width: 24.r,
                         fit: BoxFit.fill,
@@ -67,7 +65,7 @@ class _Page51State extends State<Page51> {
                 style: GoogleFonts.workSans(
                   textStyle: TextStyle(
                     fontSize: 24.sp,
-                    color: ColorName.grayC4,
+                    color: ColorName.black,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
@@ -80,7 +78,7 @@ class _Page51State extends State<Page51> {
                 style: GoogleFonts.workSans(
                   textStyle: TextStyle(
                     fontSize: 14.sp,
-                    color: ColorName.grayC4,
+                    color: ColorName.black,
                     fontWeight: FontWeight.w400,
                   ),
                 ),
@@ -93,7 +91,7 @@ class _Page51State extends State<Page51> {
                 style: GoogleFonts.workSans(
                   textStyle: TextStyle(
                     fontSize: 24.sp,
-                    color: ColorName.grayC4,
+                    color: ColorName.black,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
@@ -113,7 +111,7 @@ class _Page51State extends State<Page51> {
                         style: GoogleFonts.workSans(
                           textStyle: TextStyle(
                             fontSize: 14.sp,
-                            color: ColorName.grayC4,
+                            color: ColorName.black,
                             fontWeight: FontWeight.w400,
                           ),
                         ),
