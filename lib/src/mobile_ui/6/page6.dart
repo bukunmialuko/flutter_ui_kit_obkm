@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
-import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
 import 'package:flutter_ui_kit_obkm/src/res/styles.dart';
-import 'package:get_it/get_it.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'widgets/bottom_sheet.dart';
@@ -72,7 +71,7 @@ class _Page6State extends State<Page6> {
                     ),
                     IconButton(
                         onPressed: () {
-                          GetIt.I.get<NavigationService>().back();
+                          context.pop();
                         },
                         icon: const Icon(Icons.notifications))
                   ],
@@ -81,7 +80,8 @@ class _Page6State extends State<Page6> {
               Padding(
                 padding: EdgeInsets.only(left: 24.w, right: 25.w, bottom: 31.h),
                 child: TextFormField(
-                  readOnly: true, //false
+                  readOnly: true,
+                  //false
                   autofocus: false,
                   // style: ,
                   decoration: InputDecoration(
@@ -109,7 +109,7 @@ class _Page6State extends State<Page6> {
                   onChanged: (val) {},
                   // validator: (val) {},
                   onTap: () {
-                    GetIt.I.get<NavigationService>().back();
+                    context.pop();
                   },
                 ),
               ),

@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
-import 'package:get_it/get_it.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import '../../navigation/navigation_service.dart';
 
 class Page45 extends StatefulWidget {
   const Page45({Key? key}) : super(key: key);
@@ -78,7 +76,7 @@ class _Page45State extends State<Page45> {
               ),
               GestureDetector(
                 onTap: () {
-                  GetIt.I.get<NavigationService>().back();
+                  context.pop();
                 },
                 child: SizedBox(
                   height: 254.h,

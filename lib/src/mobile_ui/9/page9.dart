@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
-import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
-import 'package:get_it/get_it.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page9 extends StatefulWidget {
@@ -23,7 +22,7 @@ class _Page9State extends State<Page9> {
           SizedBox(height: MediaQuery.of(context).viewPadding.top),
           GestureDetector(
             onTap: () {
-              GetIt.I.get<NavigationService>().back();
+              context.pop();
             },
             child: Padding(
               padding: EdgeInsets.only(left: 24.w, right: 24.w, top: 20.h, bottom: 14.h),

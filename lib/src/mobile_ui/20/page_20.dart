@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get_it/get_it.dart';
-
-import '../../navigation/navigation_service.dart';
+import 'package:go_router/go_router.dart';
 
 class Page20 extends StatelessWidget {
   const Page20({Key? key}) : super(key: key);
@@ -28,7 +26,7 @@ class Page20 extends StatelessWidget {
                     children: [
                       InkWell(
                         onTap: () {
-                          GetIt.I.get<NavigationService>().back();
+                          context.pop();
                         },
                         child: CircleAvatar(
                           radius: 24.r,

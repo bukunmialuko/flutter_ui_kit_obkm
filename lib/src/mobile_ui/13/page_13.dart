@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
-import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
-import 'package:get_it/get_it.dart';
+import 'package:go_router/go_router.dart';
 
 class Page13 extends StatefulWidget {
   const Page13({Key? key}) : super(key: key);
@@ -139,7 +138,7 @@ class _Page13State extends State<Page13> {
                       const Expanded(child: SizedBox()),
                       GestureDetector(
                         onTap: () {
-                          GetIt.I.get<NavigationService>().back();
+                          context.pop();
                         },
                         child: Container(
                           width: 48.w,

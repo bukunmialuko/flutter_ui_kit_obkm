@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
-import 'package:get_it/get_it.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 // Todo: Page needs improvements
@@ -36,7 +35,7 @@ class Page48 extends StatelessWidget {
               ],
             ),
             SizedBox(height: 10.h),
-            GestureDetector(onTap: () => GetIt.I.get<NavigationService>().back(), child: Icon(Icons.arrow_back)),
+            GestureDetector(onTap: () => context.pop(), child: Icon(Icons.arrow_back)),
             SizedBox(height: 5.h),
             Divider(
               thickness: 1,

@@ -2,13 +2,8 @@
 /// *****************************************************
 ///  FlutterGen
 /// *****************************************************
-
-// coverage:ignore-file
-// ignore_for_file: type=lint
-// ignore_for_file: directives_ordering,unnecessary_import
-
-import 'package:flutter/painting.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 
 class ColorName {
   ColorName._();

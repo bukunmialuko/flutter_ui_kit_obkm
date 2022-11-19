@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
-import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
 import 'package:flutter_ui_kit_obkm/src/res/styles.dart';
-import 'package:get_it/get_it.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page1 extends StatelessWidget {
@@ -56,7 +55,7 @@ class Page1 extends StatelessWidget {
                           visualDensity: VisualDensity.adaptivePlatformDensity,
                           padding: EdgeInsets.zero,
                           onPressed: () {
-                            GetIt.I.get<NavigationService>().back();
+                            context.pop();
                           },
                           icon: const Icon(
                             Icons.add_circle,
@@ -68,7 +67,8 @@ class Page1 extends StatelessWidget {
                   ),
                   SizedBox(height: 22.h),
                   TextFormField(
-                    readOnly: true, //false
+                    readOnly: true,
+                    //false
                     autofocus: false,
                     // style: ,
                     decoration: InputDecoration(
