@@ -9,6 +9,7 @@ import 'package:flutter_ui_kit_obkm/src/mobile_ui/15/page_15.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/157_160/page_156.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/16/page16.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/17/page_17.dart';
+import 'package:flutter_ui_kit_obkm/src/mobile_ui/175/page_175.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/18/page_18.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/19/page_19.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/2/page2.dart';
@@ -42,7 +43,6 @@ import '../mobile_ui/45/page_45.dart';
 import '../mobile_ui/48/page_48.dart';
 import '../mobile_ui/51/page_51.dart';
 import '../mobile_ui/52/page_52.dart';
-import 'fade_route.dart';
 
 final GlobalKey<NavigatorState> rootNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'root');
 final GlobalKey<NavigatorState> shellNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'shell');
@@ -50,6 +50,11 @@ final GlobalKey<NavigatorState> shellNavigatorKey = GlobalKey<NavigatorState>(de
 var newRoutesConfig = GoRouter(
   debugLogDiagnostics: true,
   navigatorKey: rootNavigatorKey,
+  errorBuilder: (_, __) => Scaffold(
+    body: Center(
+      child: Text("404: Page Not Found"),
+    ),
+  ),
   routes: <RouteBase>[
     GoRoute(
       path: MobileRoutes.root,
@@ -219,20 +224,12 @@ var newRoutesConfig = GoRouter(
           path: MobileRoutes.pg156,
           builder: (BuildContext context, GoRouterState state) => const Page156To160(),
         ),
+
+        GoRoute(
+          path: MobileRoutes.pg175,
+          builder: (BuildContext context, GoRouterState state) => const Page175(),
+        ),
       ],
     ),
   ],
 );
-
-var routes = (RouteSettings settings) {
-  switch (settings.name) {
-    default:
-      return FadeRoute(
-        page: Scaffold(
-          body: Center(
-            child: Text("404: Page Not Found"),
-          ),
-        ),
-      );
-  }
-};
