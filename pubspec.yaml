@@ -68,11 +68,6 @@ flutter_icons:
     generate: true
     image_path: "assets/logo/logo.png"
 
-#flutter_icons:
-#  android: false
-#  ios: true
-#  image_path: "assets/logo/logo.png"
-#  remove_alpha_ios: true
 
 flutter_gen:
   output: lib/gen/
