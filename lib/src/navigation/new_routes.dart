@@ -9,7 +9,6 @@ import 'package:flutter_ui_kit_obkm/src/mobile_ui/15/page_15.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/157_160/page_156.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/16/page16.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/17/page_17.dart';
-import 'package:flutter_ui_kit_obkm/src/mobile_ui/175/page_175.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/18/page_18.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/19/page_19.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/2/page2.dart';
@@ -133,6 +132,89 @@ var newRoutesConfig = GoRouter(
           path: MobileRoutes.pg20,
           builder: (BuildContext context, GoRouterState state) => const Page20(),
         ),
+
+        /// Mobile 21 - 40
+
+        GoRoute(
+          path: MobileRoutes.pg21,
+          builder: (BuildContext context, GoRouterState state) => const Page21(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg24,
+          builder: (BuildContext context, GoRouterState state) => const Page24(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg25,
+          builder: (BuildContext context, GoRouterState state) => const Page25(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg26,
+          builder: (BuildContext context, GoRouterState state) => const Page26(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg27,
+          builder: (BuildContext context, GoRouterState state) => const Page27(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg28,
+          builder: (BuildContext context, GoRouterState state) => const Page28(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg29,
+          builder: (BuildContext context, GoRouterState state) => const Page29(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg30,
+          builder: (BuildContext context, GoRouterState state) => const Page30(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg32,
+          builder: (BuildContext context, GoRouterState state) => const Page32(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg33,
+          builder: (BuildContext context, GoRouterState state) => const Page33(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg34,
+          builder: (BuildContext context, GoRouterState state) => const Page34(),
+        ),
+
+        /// Mobile 41 - 60
+        GoRoute(
+          path: MobileRoutes.pg42,
+          builder: (BuildContext context, GoRouterState state) => const Page42(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg44,
+          builder: (BuildContext context, GoRouterState state) => const Page44(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg45,
+          builder: (BuildContext context, GoRouterState state) => const Page45(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg48,
+          builder: (BuildContext context, GoRouterState state) => const Page48(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg49,
+          builder: (BuildContext context, GoRouterState state) => const Page49(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg51,
+          builder: (BuildContext context, GoRouterState state) => const Page51(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg52,
+          builder: (BuildContext context, GoRouterState state) => const Page52(),
+        ),
+
+        /// 141 - 160
+        GoRoute(
+          path: MobileRoutes.pg156,
+          builder: (BuildContext context, GoRouterState state) => const Page156To160(),
+        ),
       ],
     ),
   ],
@@ -140,197 +222,6 @@ var newRoutesConfig = GoRouter(
 
 var routes = (RouteSettings settings) {
   switch (settings.name) {
-
-    /// Mobile 1 - 20
-    case MobileRoutes.pg1:
-      return FadeRoute(
-        page: const Page1(),
-      );
-
-    case MobileRoutes.pg2:
-      return FadeRoute(
-        page: const Page2(),
-      );
-
-    case MobileRoutes.pg3:
-      return FadeRoute(
-        page: const Page3(),
-      );
-    case MobileRoutes.pg4:
-      return FadeRoute(
-        page: const Page4(),
-      );
-    case MobileRoutes.pg5:
-      return FadeRoute(
-        page: const Page5(),
-      );
-    case MobileRoutes.pg6:
-      return FadeRoute(
-        page: const Page6(),
-      );
-    case MobileRoutes.pg7:
-      return FadeRoute(
-        page: const Page7(),
-      );
-    case MobileRoutes.pg8:
-      return FadeRoute(
-        page: const Page8(),
-      );
-    case MobileRoutes.pg9:
-      return FadeRoute(
-        page: const Page9(),
-      );
-    case MobileRoutes.pg10:
-      return FadeRoute(
-        page: const Page10(),
-      );
-    case MobileRoutes.pg11:
-      return FadeRoute(
-        page: const Page11(),
-      );
-    case MobileRoutes.pg12:
-      return FadeRoute(
-        page: const Page12(),
-      );
-    case MobileRoutes.pg13:
-      return FadeRoute(
-        page: const Page13(),
-      );
-    case MobileRoutes.pg14:
-      return FadeRoute(
-        page: const Page14(),
-      );
-    case MobileRoutes.pg15:
-      return FadeRoute(
-        page: const Page15(),
-      );
-    case MobileRoutes.pg16:
-      return FadeRoute(
-        page: const Page16(),
-      );
-    case MobileRoutes.pg17:
-      return FadeRoute(
-        page: const Page17(),
-      );
-    case MobileRoutes.pg18:
-      return FadeRoute(
-        page: const Page18(),
-      );
-    case MobileRoutes.pg19:
-      return FadeRoute(
-        page: const Page19(),
-      );
-    case MobileRoutes.pg20:
-      return FadeRoute(
-        page: const Page20(),
-      );
-
-    /// Mobile 21 - 40
-    case MobileRoutes.pg21:
-      return FadeRoute(
-        page: const Page21(),
-      );
-
-    case MobileRoutes.pg24:
-      return FadeRoute(
-        page: const Page24(),
-      );
-
-    case MobileRoutes.pg25:
-      return FadeRoute(
-        page: const Page25(),
-      );
-
-    case MobileRoutes.pg26:
-      return FadeRoute(
-        page: const Page26(),
-      );
-
-    case MobileRoutes.pg27:
-      return FadeRoute(
-        page: const Page27(),
-      );
-
-    case MobileRoutes.pg28:
-      return FadeRoute(
-        page: const Page28(),
-      );
-
-    case MobileRoutes.pg29:
-      return FadeRoute(
-        page: const Page29(),
-      );
-    case MobileRoutes.pg30:
-      return FadeRoute(
-        page: const Page30(),
-      );
-
-    case MobileRoutes.pg33:
-      return FadeRoute(
-        page: const Page33(),
-      );
-
-    case MobileRoutes.pg32:
-      return FadeRoute(
-        page: const Page32(),
-      );
-
-    case MobileRoutes.pg34:
-      return FadeRoute(
-        page: const Page34(),
-      );
-
-    /// Mobile 41 - 60
-    case MobileRoutes.pg42:
-      return FadeRoute(
-        page: const Page42(),
-      );
-    case MobileRoutes.pg44:
-      return FadeRoute(
-        page: const Page44(),
-      );
-    case MobileRoutes.pg45:
-      return FadeRoute(
-        page: const Page45(),
-      );
-    case MobileRoutes.pg48:
-      return FadeRoute(
-        page: const Page48(),
-      );
-    case MobileRoutes.pg49:
-      return FadeRoute(
-        page: const Page49(),
-      );
-    case MobileRoutes.pg51:
-      return FadeRoute(
-        page: const Page51(),
-      );
-    case MobileRoutes.pg52:
-      return FadeRoute(
-        page: const Page52(),
-      );
-
-    /// 61 - 80
-
-    /// 81 - 100
-
-    /// 111 - 120
-
-    /// 121 - 140
-
-    /// 141 - 160
-    case MobileRoutes.pg156:
-      return FadeRoute(
-        page: const Page156To160(),
-      );
-
-    /// 161 - 180
-
-    case MobileRoutes.pg175:
-      return FadeRoute(
-        page: const Page175(),
-      );
-
     default:
       return FadeRoute(
         page: Scaffold(
