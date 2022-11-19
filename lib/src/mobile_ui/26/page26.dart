@@ -81,7 +81,7 @@ class _Page26State extends State<Page26> {
               SizedBox(
                 height: 13.h,
               ),
-              Image.asset('assets/png/26/start.png'),
+              Assets.png.m26.start.image(),
               Padding(
                 padding: const EdgeInsets.only(left: 20.0),
                 child: Text(

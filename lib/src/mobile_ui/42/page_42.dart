@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -372,8 +373,7 @@ class _Page42State extends State<Page42> {
                 padding: EdgeInsets.only(
                   left: 4.w,
                 ),
-                child: SvgPicture.asset(
-                  "assets/svg/pause.svg",
+                child: Assets.svg.m21.pauseCircleOutline.svg(
                   height: 40.r,
                   width: 40.r,
                   fit: BoxFit.fill,

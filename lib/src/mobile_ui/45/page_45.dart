@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -83,10 +84,7 @@ class _Page45State extends State<Page45> {
                   height: 254.h,
                   width: double.infinity,
                   // color: Colors.green,
-                  child: Image.asset(
-                    'assets/png/45/europe.png',
-                    fit: BoxFit.contain,
-                  ),
+                  child: Assets.png.m45.europe.image(),
                 ),
               ),
               SizedBox(

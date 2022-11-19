@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
+import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+// Todo: Page needs improvements
 class Page48 extends StatelessWidget {
   const Page48({Key? key}) : super(key: key);
 
@@ -33,7 +36,7 @@ class Page48 extends StatelessWidget {
               ],
             ),
             SizedBox(height: 10.h),
-            Icon(Icons.arrow_back),
+            GestureDetector(onTap: () => GetIt.I.get<NavigationService>().back(), child: Icon(Icons.arrow_back)),
             SizedBox(height: 5.h),
             Divider(
               thickness: 1,
@@ -77,8 +80,7 @@ class Page48 extends StatelessWidget {
                     children: [
                       Container(
                         height: 50,
-                        padding: EdgeInsets.symmetric(
-                            horizontal: 8.w, vertical: 10.h),
+                        padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 10.h),
                         child: Center(
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -153,8 +155,7 @@ class Page48 extends StatelessWidget {
                     children: [
                       Container(
                         height: 60,
-                        padding: EdgeInsets.only(
-                            left: 8.w, right: 8.w, bottom: 20.h),
+                        padding: EdgeInsets.only(left: 8.w, right: 8.w, bottom: 20.h),
                         child: Center(
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -163,24 +164,26 @@ class Page48 extends StatelessWidget {
                                 onPressed: () {},
                                 icon: Icon(Icons.skip_previous),
                               ),
-                              Container(
-                                // color: Colors.green[100],
-                                width: (size.width / 1.7).w,
-                                child: SliderTheme(
-                                  data: SliderTheme.of(context).copyWith(
-                                    trackHeight: 3.h,
-                                    thumbShape: RoundSliderThumbShape(
-                                      enabledThumbRadius: 5.585.r,
-                                      disabledThumbRadius: 5.585.r,
+                              Expanded(
+                                child: SizedBox(
+                                  // color: Colors.green[100],
+                                  width: (size.width / 1.7).w,
+                                  child: SliderTheme(
+                                    data: SliderTheme.of(context).copyWith(
+                                      trackHeight: 3.h,
+                                      thumbShape: RoundSliderThumbShape(
+                                        enabledThumbRadius: 5.585.r,
+                                        disabledThumbRadius: 5.585.r,
+                                      ),
                                     ),
-                                  ),
-                                  child: Slider(
-                                    value: 2,
-                                    min: 1,
-                                    max: 3,
-                                    activeColor: Color(0xFFDA1E28),
-                                    inactiveColor: Color(0xFFA8A8A8),
-                                    onChanged: (newValue) {},
+                                    child: Slider(
+                                      value: 2,
+                                      min: 1,
+                                      max: 3,
+                                      activeColor: Color(0xFFDA1E28),
+                                      inactiveColor: Color(0xFFA8A8A8),
+                                      onChanged: (newValue) {},
+                                    ),
                                   ),
                                 ),
                               ),

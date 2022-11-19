@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
 import 'package:get_it/get_it.dart';
@@ -241,7 +240,7 @@ class _Page28State extends State<Page28> {
                                 ],
                               ),
                             ),
-                            Image.asset('assets/png/28/graph.png'),
+                            Assets.png.m28.graph.image(),
                           ],
                         ),
                       ),
@@ -284,11 +283,10 @@ class _Page28State extends State<Page28> {
                                         ),
                                       ],
                                     ),
-                                    Container(
+                                    Assets.png.m28.bar.image(
                                       width: 50.w,
                                       height: 50.h,
-                                      child: Image.asset('assets/png/28/bar.png'),
-                                    )
+                                    ),
                                   ],
                                 ),
                               ),
@@ -415,11 +413,9 @@ class _Page28State extends State<Page28> {
           ],
         ),
         child: Center(
-          child: SvgPicture.asset(
-            "assets/svg/21/pause_circle_outline.svg",
+          child: Assets.svg.m21.pauseCircleOutline.svg(
             height: 56.w,
             width: 56.w,
-            fit: BoxFit.fill,
           ),
         ),
       ),

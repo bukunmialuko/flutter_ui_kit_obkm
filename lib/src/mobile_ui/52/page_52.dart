@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -22,7 +22,7 @@ class _Page52State extends State<Page52> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/png/52/model.jpeg"),
+            image: Assets.png.m52.model.image().image,
             fit: BoxFit.cover,
           ),
         ),
@@ -35,8 +35,7 @@ class _Page52State extends State<Page52> {
               Row(
                 children: [
                   Spacer(),
-                  SvgPicture.asset(
-                    "assets/svg/52/more_horiz.svg",
+                  Assets.svg.m52.moreHoriz.svg(
                     width: 24.w,
                     height: 24.w,
                   ),
@@ -56,8 +55,7 @@ class _Page52State extends State<Page52> {
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      SvgPicture.asset(
-                        "assets/svg/52/comment.svg",
+                      Assets.svg.m52.comment.svg(
                         width: 24.w,
                         height: 24.w,
                       ),
@@ -74,8 +72,7 @@ class _Page52State extends State<Page52> {
                         ),
                       ),
                       SizedBox(height: 32.h),
-                      SvgPicture.asset(
-                        "assets/svg/52/online_prediction.svg",
+                      Assets.svg.m52.onlinePrediction.svg(
                         width: 24.w,
                         height: 24.w,
                       ),
@@ -92,8 +89,7 @@ class _Page52State extends State<Page52> {
                         ),
                       ),
                       SizedBox(height: 32.h),
-                      SvgPicture.asset(
-                        "assets/svg/52/timer.svg",
+                      Assets.svg.m52.timer.svg(
                         width: 24.w,
                         height: 24.w,
                       ),
@@ -123,8 +119,7 @@ class _Page52State extends State<Page52> {
                   child: Container(
                     width: 343.w,
                     height: 190.h,
-                    padding: EdgeInsets.only(
-                        left: 23.w, right: 30.w, top: 20.h, bottom: 15.h),
+                    padding: EdgeInsets.only(left: 23.w, right: 30.w, top: 20.h, bottom: 15.h),
                     decoration: BoxDecoration(
                       color: Color(0x66C4C4C4),
                       borderRadius: BorderRadius.circular(32.r),
@@ -190,8 +185,7 @@ class _Page52State extends State<Page52> {
                                   SizedBox(
                                     width: 4.w,
                                   ),
-                                  SvgPicture.asset(
-                                    "assets/svg/52/add_circle.svg",
+                                  Assets.svg.m52.addCircle.svg(
                                     width: 24.w,
                                     height: 24.w,
                                   ),

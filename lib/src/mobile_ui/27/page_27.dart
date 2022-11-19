@@ -88,7 +88,7 @@ class _Page27State extends State<Page27> {
               SizedBox(
                 height: 20.h,
               ),
-              Container(
+              SizedBox(
                 width: size.width,
                 height: size.height / 1.5,
                 // color: Colors.green,
@@ -179,8 +179,8 @@ class WorkoutCard extends StatelessWidget {
         // color: Color(0xffD0D0D0),
         borderRadius: BorderRadius.circular(16.r),
         image: DecorationImage(
-          image: AssetImage('assets/png/27/gym.png'),
-          fit: BoxFit.fill,
+          image: Assets.png.m27.gym.image().image,
+          fit: BoxFit.cover,
         ),
       ),
       child: Column(

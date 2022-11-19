@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -21,7 +22,7 @@ class Page49 extends StatelessWidget {
         height: size.height,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/png/52/model.jpeg'),
+            image: Assets.png.m52.model.image().image,
             fit: BoxFit.fitHeight,
           ),
         ),
