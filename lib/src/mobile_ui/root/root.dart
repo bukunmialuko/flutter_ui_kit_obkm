@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_ui_kit_obkm/src/mobile_ui/157_160/page_156.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/routes/routes.dart';
-import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
-import 'package:get_it/get_it.dart';
+import 'package:go_router/go_router.dart';
 
 import 'widgets/page_button_widget.dart';
 
@@ -29,121 +27,121 @@ class RootWidget extends StatelessWidget {
               PageButtonWidget(
                 page: 1,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg1);
+                  context.push("/${MobileRoutes.pg1}");
                 },
               ),
               PageButtonWidget(
                 page: 2,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg2);
+                  context.push("/${MobileRoutes.pg2}");
                 },
               ),
               PageButtonWidget(
                 page: 3,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg3);
+                  context.push("/${MobileRoutes.pg3}");
                 },
               ),
               PageButtonWidget(
                 page: 4,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg4);
+                  context.push("/${MobileRoutes.pg4}");
                 },
               ),
               PageButtonWidget(
                 page: 5,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg5);
+                  context.push("/${MobileRoutes.pg5}");
                 },
               ),
               PageButtonWidget(
                 page: 6,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg6);
+                  context.push("/${MobileRoutes.pg6}");
                 },
               ),
               PageButtonWidget(
                 page: 7,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg7);
+                  context.push("/${MobileRoutes.pg7}");
                 },
               ),
               PageButtonWidget(
                 page: 8,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg8);
+                  context.push("/${MobileRoutes.pg8}");
                 },
               ),
               PageButtonWidget(
                 page: 9,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg9);
+                  context.push("/${MobileRoutes.pg9}");
                 },
               ),
               PageButtonWidget(
                 page: 10,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg10);
+                  context.push("/${MobileRoutes.pg10}");
                 },
               ),
               PageButtonWidget(
                 page: 11,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg11);
+                  context.push("/${MobileRoutes.pg11}");
                 },
               ),
               PageButtonWidget(
                 page: 12,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg12);
+                  context.push("/${MobileRoutes.pg12}");
                 },
               ),
               PageButtonWidget(
                 page: 13,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg13);
+                  context.push("/${MobileRoutes.pg13}");
                 },
               ),
               PageButtonWidget(
                 page: 14,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg14);
+                  context.push("/${MobileRoutes.pg14}");
                 },
               ),
               PageButtonWidget(
                 page: 15,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg15);
+                  context.push("/${MobileRoutes.pg15}");
                 },
               ),
               PageButtonWidget(
                 page: 16,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg16);
+                  context.push("/${MobileRoutes.pg16}");
                 },
               ),
               PageButtonWidget(
                 page: 17,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg17);
+                  context.push("/${MobileRoutes.pg17}");
                 },
               ),
               PageButtonWidget(
                 page: 18,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg18);
+                  context.push("/${MobileRoutes.pg18}");
                 },
               ),
               PageButtonWidget(
                 page: 19,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg19);
+                  context.push("/${MobileRoutes.pg19}");
                 },
               ),
               PageButtonWidget(
                 page: 20,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg20);
+                  context.push("/${MobileRoutes.pg20}");
                 },
               ),
 
@@ -152,69 +150,69 @@ class RootWidget extends StatelessWidget {
               PageButtonWidget(
                 page: 21,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg21);
+                  context.push("/${MobileRoutes.pg21}");
                 },
               ),
 
               PageButtonWidget(
                 page: 24,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg24);
+                  context.push("/${MobileRoutes.pg24}");
                 },
               ),
               PageButtonWidget(
                 page: 25,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg25);
+                  context.push("/${MobileRoutes.pg25}");
                 },
               ),
               PageButtonWidget(
                 page: 26,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg26);
+                  context.push("/${MobileRoutes.pg26}");
                 },
               ),
               PageButtonWidget(
                 page: 27,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg27);
+                  context.push("/${MobileRoutes.pg27}");
                 },
               ),
               PageButtonWidget(
                 page: 28,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg28);
+                  context.push("/${MobileRoutes.pg28}");
                 },
               ),
               PageButtonWidget(
                 page: 29,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg29);
+                  context.push("/${MobileRoutes.pg29}");
                 },
               ),
               PageButtonWidget(
                 page: 30,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg30);
+                  context.push("/${MobileRoutes.pg30}");
                 },
               ),
               PageButtonWidget(
                 page: 32,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg32);
+                  context.push("/${MobileRoutes.pg32}");
                 },
               ),
 
               PageButtonWidget(
                 page: 33,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg33);
+                  context.push("/${MobileRoutes.pg33}");
                 },
               ),
               PageButtonWidget(
                 page: 34,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg34);
+                  context.push("/${MobileRoutes.pg34}");
                 },
               ),
 
@@ -223,35 +221,35 @@ class RootWidget extends StatelessWidget {
               PageButtonWidget(
                 page: 42,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg42);
+                  context.push("/${MobileRoutes.pg42}");
                 },
               ),
 
               PageButtonWidget(
                 page: 44,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg44);
+                  context.push("/${MobileRoutes.pg44}");
                 },
               ),
 
               PageButtonWidget(
                 page: 45,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg45);
+                  context.push("/${MobileRoutes.pg45}");
                 },
               ),
 
               PageButtonWidget(
                 page: 48,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg48);
+                  context.push("/${MobileRoutes.pg48}");
                 },
               ),
 
               PageButtonWidget(
                 page: 49,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg49);
+                  context.push("/${MobileRoutes.pg49}");
                 },
               ),
 
@@ -260,14 +258,14 @@ class RootWidget extends StatelessWidget {
               PageButtonWidget(
                 page: 51,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg51);
+                  context.push("/${MobileRoutes.pg51}");
                 },
               ),
 
               PageButtonWidget(
                 page: 52,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg52);
+                  context.push("/${MobileRoutes.pg52}");
                 },
               ),
 
@@ -278,14 +276,14 @@ class RootWidget extends StatelessWidget {
               PageButtonWidget(
                 page: 156,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg156);
+                  context.push("/${MobileRoutes.pg156}");
                 },
               ),
 
               PageButtonWidget(
                 page: 175,
                 onPressed: () {
-                  GetIt.I.get<NavigationService>().to(routeName: MobileRoutes.pg175);
+                  context.push("/${MobileRoutes.pg175}");
                 },
               ),
             ],
@@ -298,6 +296,7 @@ class RootWidget extends StatelessWidget {
 
 class _RangeHeader extends StatelessWidget {
   final String text;
+
   const _RangeHeader({Key? key, required this.text}) : super(key: key);
 
   @override
