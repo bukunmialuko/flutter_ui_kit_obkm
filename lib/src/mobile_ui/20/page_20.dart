@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get_it/get_it.dart';
 import 'package:go_router/go_router.dart';
-
-import '../../navigation/navigation_service.dart';
 
 class Page20 extends StatelessWidget {
   const Page20({Key? key}) : super(key: key);

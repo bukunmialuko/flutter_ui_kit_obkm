@@ -68,7 +68,8 @@ class Page1 extends StatelessWidget {
                   ),
                   SizedBox(height: 22.h),
                   TextFormField(
-                    readOnly: true, //false
+                    readOnly: true,
+                    //false
                     autofocus: false,
                     // style: ,
                     decoration: InputDecoration(

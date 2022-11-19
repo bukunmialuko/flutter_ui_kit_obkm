@@ -5,8 +5,8 @@ import 'package:google_fonts/google_fonts.dart';
 class BottomSheetWidget extends StatelessWidget {
   final ScrollController scrollController;
   final List<dynamic> data;
-  const BottomSheetWidget({Key? key, required this.data, required this.scrollController})
-      : super(key: key);
+
+  const BottomSheetWidget({Key? key, required this.data, required this.scrollController}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -39,8 +39,7 @@ class BottomSheetWidget extends StatelessWidget {
                 Container(
                   width: 50.w,
                   height: 4.h,
-                  decoration: BoxDecoration(
-                      color: const Color(0xff262626), borderRadius: BorderRadius.circular(50.r)),
+                  decoration: BoxDecoration(color: const Color(0xff262626), borderRadius: BorderRadius.circular(50.r)),
                   margin: EdgeInsets.only(top: 21.h),
                 ),
                 Padding(
@@ -74,8 +73,7 @@ class BottomSheetWidget extends StatelessWidget {
                     margin: EdgeInsets.only(left: 24.w, right: 24.w),
                     padding: EdgeInsets.only(left: 18.w, right: 18.w),
                     decoration: BoxDecoration(
-                        border: Border.all(color: const Color(0xff262626)),
-                        borderRadius: BorderRadius.circular(8.r)),
+                        border: Border.all(color: const Color(0xff262626)), borderRadius: BorderRadius.circular(8.r)),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       // crossAxisAlignment: CrossAxisAlignment.start,

@@ -7,8 +7,8 @@ import 'package:intl/intl.dart';
 class Pg21ListItem extends StatelessWidget {
   final int index;
   final Pg21Model model;
-  const Pg21ListItem({Key? key, required this.index, required this.model})
-      : super(key: key);
+
+  const Pg21ListItem({Key? key, required this.index, required this.model}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
