@@ -18,7 +18,7 @@ class RootWidget extends StatelessWidget {
         elevation: 0,
       ),
       body: Padding(
-        padding: EdgeInsets.only(top: 8.h, left: 8.w, bottom: 80),
+        padding: EdgeInsets.only(top: 8.h, left: 8.w, right: 8.w, bottom: 80),
         child: SingleChildScrollView(
           child: Wrap(
             spacing: 18.w,
