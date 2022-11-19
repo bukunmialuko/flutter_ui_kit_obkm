@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
 import 'package:get_it/get_it.dart';
@@ -22,7 +21,7 @@ class Page18 extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.purple,
               image: DecorationImage(
-                image: AssetImage('assets/png/thank_you.png'),
+                image: Assets.png.thankYou.image().image,
                 fit: BoxFit.cover,
               ),
             ),
@@ -39,7 +38,7 @@ class Page18 extends StatelessWidget {
                     onTap: () {
                       GetIt.I.get<NavigationService>().back();
                     },
-                    child: SvgPicture.asset('assets/svg/eyetubee.svg')),
+                    child: Assets.svg.m9.eyeTube.svg(width: 129.w)),
                 SizedBox(
                   height: 15.h,
                 ),
@@ -134,7 +133,7 @@ class Page18 extends StatelessWidget {
                       ),
                     ],
                   ),
-                )
+                ),
               ],
             ),
           ),

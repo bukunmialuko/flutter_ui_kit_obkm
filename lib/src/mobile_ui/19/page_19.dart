@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -339,9 +338,7 @@ class TicketCard extends StatelessWidget {
                           ),
                           TicketTile(
                             title: 'LHR',
-                            titleWidget: SvgPicture.asset(
-                              'assets/svg/19/flight.svg',
-                            ),
+                            titleWidget: Assets.svg.m19.flight.svg(),
                             subTitle: '9H 30M',
                             // crossAxisAlignment:
                             //     CrossAxisAlignment.start,

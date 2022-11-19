@@ -1,7 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/21/widgets/pg_21_list_item.dart';
 import 'package:get_it/get_it.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -37,8 +36,7 @@ class _Page21State extends State<Page21> {
                       onTap: () {
                         GetIt.I.get<NavigationService>().back();
                       },
-                      child: SvgPicture.asset(
-                        "assets/svg/21/back.svg",
+                      child: Assets.svg.m21.back.svg(
                         height: 48.r,
                         width: 48.r,
                         fit: BoxFit.fill,
@@ -48,8 +46,7 @@ class _Page21State extends State<Page21> {
                       onTap: () {
                         GetIt.I.get<NavigationService>().back();
                       },
-                      child: SvgPicture.asset(
-                        "assets/svg/21/more.svg",
+                      child: Assets.svg.m21.more.svg(
                         height: 48.r,
                         width: 48.r,
                         fit: BoxFit.fill,
@@ -136,8 +133,7 @@ class _Page21State extends State<Page21> {
                       SizedBox(
                         width: 10.w,
                       ),
-                      SvgPicture.asset(
-                        "assets/svg/21/shuffle.svg",
+                      Assets.svg.m21.shuffle.svg(
                         height: 24.r,
                         width: 24.r,
                         fit: BoxFit.fill,
@@ -182,8 +178,7 @@ class _Page21State extends State<Page21> {
           borderRadius: BorderRadius.circular(76.w),
         ),
         child: Center(
-          child: SvgPicture.asset(
-            "assets/svg/21/pause_circle_outline.svg",
+          child: Assets.svg.m21.pauseCircleOutline.svg(
             height: 56.w,
             width: 56.w,
             fit: BoxFit.fill,
@@ -191,8 +186,7 @@ class _Page21State extends State<Page21> {
         ),
       ),
       bottomNavigationBar: ClipRRect(
-        borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(16.r), topRight: Radius.circular(16.r)),
+        borderRadius: BorderRadius.only(topLeft: Radius.circular(16.r), topRight: Radius.circular(16.r)),
         child: BottomAppBar(
           shape: CircularNotchedRectangle(),
           color: Color(0xffD0D0D0),

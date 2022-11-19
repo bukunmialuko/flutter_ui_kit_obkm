@@ -24,8 +24,7 @@ class _Page13State extends State<Page13> {
               height: 486.h,
               child: Stack(
                 children: [
-                  Image.asset(
-                    Assets.png.m13.background.path,
+                  Assets.png.m13.background.image(
                     width: 390.w,
                     height: 486.h,
                     fit: BoxFit.cover,

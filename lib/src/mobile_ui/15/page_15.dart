@@ -113,7 +113,7 @@ class _Page15State extends State<Page15> {
                     fixedSize: Size(342, 54),
                   ),
                   child: Text(
-                    'Continue',
+                    'Send Code',
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w600,
