@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
 import 'package:get_it/get_it.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page5 extends StatefulWidget {
@@ -25,8 +26,7 @@ class _Page5State extends State<Page5> {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          physics: const BouncingScrollPhysics(
-              parent: AlwaysScrollableScrollPhysics()),
+          physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
           child: Padding(
             padding: EdgeInsets.only(left: 24.w, right: 24.w, bottom: 8.h),
             child: Column(
@@ -42,7 +42,7 @@ class _Page5State extends State<Page5> {
                         visualDensity: VisualDensity.adaptivePlatformDensity,
                         padding: EdgeInsets.zero,
                         onPressed: () {
-                          GetIt.I.get<NavigationService>().back();
+                          context.pop();
                         },
                         icon: const Icon(
                           Icons.chevron_left,
@@ -89,8 +89,7 @@ class _Page5State extends State<Page5> {
                       children: [
                         PageView.builder(
                           itemCount: 4,
-                          physics: const BouncingScrollPhysics(
-                              parent: AlwaysScrollableScrollPhysics()),
+                          physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
                           onPageChanged: (index) {
                             setState(() {
                               currentPage = index;
@@ -194,10 +193,8 @@ class _Page5State extends State<Page5> {
                                       bottom: 10.h,
                                     ),
                                     child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.start,
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Flexible(
                                           child: Text(

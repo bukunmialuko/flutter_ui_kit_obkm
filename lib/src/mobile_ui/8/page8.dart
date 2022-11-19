@@ -4,6 +4,7 @@ import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
 import 'package:get_it/get_it.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page8 extends StatefulWidget {
@@ -74,7 +75,7 @@ class _Page8State extends State<Page8> {
                   ),
                   GestureDetector(
                     onTap: () {
-                      GetIt.I.get<NavigationService>().back();
+                      context.pop();
                     },
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(8.r),

@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
 import 'package:get_it/get_it.dart';
+import 'package:go_router/go_router.dart';
 
 class Page12 extends StatefulWidget {
   const Page12({Key? key}) : super(key: key);
@@ -191,7 +192,7 @@ class _Page12State extends State<Page12> {
           ),
           GestureDetector(
               onTap: () {
-                GetIt.I.get<NavigationService>().back();
+                context.pop();
               },
               child: const Icon(Icons.add_circle, color: Colors.black)),
         ],

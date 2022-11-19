@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:get_it/get_it.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../navigation/navigation_service.dart';
@@ -42,7 +43,7 @@ class _Page27State extends State<Page27> {
                     ),
                     GestureDetector(
                       onTap: () {
-                        GetIt.I.get<NavigationService>().back();
+                        context.pop();
                       },
                       child: Container(
                         height: 40.w,
@@ -109,7 +110,7 @@ class _Page27State extends State<Page27> {
                         itemBuilder: (context, index) {
                           return GestureDetector(
                             onTap: () {
-                              GetIt.I.get<NavigationService>().back();
+                              context.pop();
                             },
                             child: WorkoutCard(),
                           );

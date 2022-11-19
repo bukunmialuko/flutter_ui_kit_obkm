@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/21/widgets/pg_21_list_item.dart';
 import 'package:get_it/get_it.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../navigation/navigation_service.dart';
@@ -34,7 +35,7 @@ class _Page21State extends State<Page21> {
                   children: [
                     GestureDetector(
                       onTap: () {
-                        GetIt.I.get<NavigationService>().back();
+                        context.pop();
                       },
                       child: Assets.svg.m21.back.svg(
                         height: 48.r,
@@ -44,7 +45,7 @@ class _Page21State extends State<Page21> {
                     ),
                     GestureDetector(
                       onTap: () {
-                        GetIt.I.get<NavigationService>().back();
+                        context.pop();
                       },
                       child: Assets.svg.m21.more.svg(
                         height: 48.r,
@@ -111,7 +112,7 @@ class _Page21State extends State<Page21> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    GetIt.I.get<NavigationService>().back();
+                    context.pop();
                   },
                   style: ElevatedButton.styleFrom(
                     primary: const Color(0xFF161616),

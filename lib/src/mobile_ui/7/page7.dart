@@ -5,6 +5,7 @@ import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
 import 'package:flutter_ui_kit_obkm/src/res/styles.dart';
 import 'package:get_it/get_it.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page7 extends StatefulWidget {
@@ -34,7 +35,7 @@ class _Page7State extends State<Page7> {
                   children: [
                     GestureDetector(
                       onTap: () {
-                        GetIt.I.get<NavigationService>().back();
+                        context.pop();
                       },
                       child: Container(
                         width: 60.r,
@@ -60,7 +61,7 @@ class _Page7State extends State<Page7> {
                     const Spacer(),
                     GestureDetector(
                       onTap: () {
-                        GetIt.I.get<NavigationService>().back();
+                        context.pop();
                       },
                       child: Padding(
                         padding: EdgeInsets.only(right: 24.w),
@@ -122,7 +123,7 @@ class _Page7State extends State<Page7> {
                       onChanged: (val) {},
                       // validator: (val) {},
                       onTap: () {
-                        GetIt.I.get<NavigationService>().back();
+                        context.pop();
                       },
                     ),
                   ],

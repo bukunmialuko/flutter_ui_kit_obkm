@@ -44,8 +44,12 @@ import '../mobile_ui/51/page_51.dart';
 import '../mobile_ui/52/page_52.dart';
 import 'fade_route.dart';
 
+final GlobalKey<NavigatorState> rootNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'root');
+final GlobalKey<NavigatorState> shellNavigatorKey = GlobalKey<NavigatorState>(debugLabel: 'shell');
+
 var newRoutesConfig = GoRouter(
   debugLogDiagnostics: true,
+  navigatorKey: rootNavigatorKey,
   routes: <RouteBase>[
     GoRoute(
       path: MobileRoutes.root,

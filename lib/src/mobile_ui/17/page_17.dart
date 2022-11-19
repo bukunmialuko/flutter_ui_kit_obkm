@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/navigation_service.dart';
 import 'package:get_it/get_it.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page17 extends StatefulWidget {
@@ -56,7 +57,7 @@ class _Page17State extends State<Page17> {
             padding: EdgeInsets.symmetric(horizontal: 20.w),
             child: ElevatedButton(
               onPressed: () {
-                GetIt.I.get<NavigationService>().back();
+                context.pop();
               },
               style: ElevatedButton.styleFrom(
                 primary: const Color(0xFF161616),
