@@ -37,11 +37,7 @@ import '../mobile_ui/27/page_27.dart';
 import '../mobile_ui/32/page_32.dart';
 import '../mobile_ui/33/page_33.dart';
 import '../mobile_ui/34/page_34.dart';
-<<<<<<< HEAD
-import '../mobile_ui/36/page_36.dart';
 import '../mobile_ui/37/page_37.dart';
-=======
->>>>>>> parent of f6e1bbd... add 36 mobile
 import '../mobile_ui/42/page_42.dart';
 import '../mobile_ui/44/page_44.dart';
 import '../mobile_ui/45/page_45.dart';
@@ -218,19 +214,11 @@ var newRoutesConfig = GoRouter(
           builder: (BuildContext context, GoRouterState state) =>
               const Page34(),
         ),
-<<<<<<< HEAD
-        GoRoute(
-          path: MobileRoutes.pg36,
-          builder: (BuildContext context, GoRouterState state) =>
-              const Page36(),
-        ),
         GoRoute(
           path: MobileRoutes.pg37,
           builder: (BuildContext context, GoRouterState state) =>
               const Page37(),
         ),
-=======
->>>>>>> parent of f6e1bbd... add 36 mobile
 
         /// Mobile 41 - 60
         GoRoute(
