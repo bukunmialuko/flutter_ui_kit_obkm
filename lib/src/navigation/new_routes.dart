@@ -38,6 +38,7 @@ import '../mobile_ui/32/page_32.dart';
 import '../mobile_ui/33/page_33.dart';
 import '../mobile_ui/34/page_34.dart';
 import '../mobile_ui/37/page_37.dart';
+import '../mobile_ui/36/page_36.dart';
 import '../mobile_ui/42/page_42.dart';
 import '../mobile_ui/44/page_44.dart';
 import '../mobile_ui/45/page_45.dart';
@@ -218,6 +219,10 @@ var newRoutesConfig = GoRouter(
           path: MobileRoutes.pg37,
           builder: (BuildContext context, GoRouterState state) =>
               const Page37(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg36,
+          builder: (BuildContext context, GoRouterState state) => const Page36(),
         ),
 
         /// Mobile 41 - 60
