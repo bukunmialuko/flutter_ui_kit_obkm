@@ -47,9 +47,22 @@ class ScheduleList extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Expanded(
-                            child: Text(Pg23ModelItems.loadItems(context)[index].title),
+                            child: Text(
+                              Pg23ModelItems.loadItems(context)[index].title,
+                              style: TextStyle(
+                                color: Pg23ModelItems.loadItems(context)[index].type == null
+                                    ? Color(0xffA8A8A8)
+                                    : Color(0xff262626),
+                                fontWeight: FontWeight.w500,
+                                fontSize: 12.sp,
+                              ),
+                            ),
                           ),
-                          if (Pg23ModelItems.loadItems(context)[index].type != null) Icon(Icons.more_horiz)
+                          if (Pg23ModelItems.loadItems(context)[index].type != null)
+                            Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 2.0),
+                              child: Icon(Icons.more_horiz),
+                            )
                         ],
                       ),
                     ),
