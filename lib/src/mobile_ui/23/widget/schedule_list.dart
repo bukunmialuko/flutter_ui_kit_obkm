@@ -60,7 +60,7 @@ class ScheduleList extends StatelessWidget {
                           ),
                           if (Pg23ModelItems.loadItems(context)[index].type != null)
                             Padding(
-                              padding: EdgeInsets.symmetric(horizontal: 2.0),
+                              padding: EdgeInsets.only(left: 2.0),
                               child: Icon(Icons.more_horiz),
                             )
                         ],
