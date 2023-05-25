@@ -60,7 +60,7 @@ flutter build apk
 
 | Page 21  | Page 22 | Page 23 | Page 24 |
 | ------------- | ------------- | ------------- | ------------- |
-| <img src="art/screenshots/page_21.png" width="200"/> |  |  | <img src="art/screenshots/page_24.png" width="200"/> |
+| <img src="art/screenshots/page_21.png" width="200"/> |  | <img src="art/screenshots/page_23.png" width="200"/> | <img src="art/screenshots/page_24.png" width="200"/> |
 
 | Page 25  | Page 26 | Page 27 | Page 28 |
 | ------------- | ------------- | ------------- | ------------- |

@@ -155,6 +155,12 @@ class RootWidget extends StatelessWidget {
               ),
 
               PageButtonWidget(
+                page: 23,
+                onPressed: () {
+                  context.push("/${MobileRoutes.pg23}");
+                },
+              ),
+              PageButtonWidget(
                 page: 24,
                 onPressed: () {
                   context.push("/${MobileRoutes.pg24}");
