@@ -8,14 +8,15 @@ class Page3 extends StatefulWidget {
   const Page3({Key? key}) : super(key: key);
 
   @override
-  _Page3State createState() => _Page3State();
+  State<Page3> createState() => _Page3State();
 }
 
 class _Page3State extends State<Page3> {
   static int initialPage = 0;
   int maximumPage = 321;
 
-  final PageController _controller = PageController(initialPage: initialPage, viewportFraction: 0.8);
+  final PageController _controller =
+      PageController(initialPage: initialPage, viewportFraction: 0.8);
 
   double currentPageValue = 0;
 
@@ -178,22 +179,21 @@ class _Page3State extends State<Page3> {
                         ),
                       ),
                       SizedBox(height: 28.h),
-                      // Row(
-                      //   children: [],
-                      // )
                       Stack(
                         children: [
                           Container(
                             height: 6.h,
                             width: 342.w,
                             decoration: BoxDecoration(
-                                color: const Color(0xFFC4C4C4), borderRadius: BorderRadius.all(Radius.circular(50.r))),
+                                color: const Color(0xFFC4C4C4),
+                                borderRadius: BorderRadius.all(Radius.circular(50.r))),
                           ),
                           Container(
                             height: 6.h,
                             width: 100.w,
                             decoration: BoxDecoration(
-                                color: const Color(0xff525252), borderRadius: BorderRadius.all(Radius.circular(50.r))),
+                                color: const Color(0xff525252),
+                                borderRadius: BorderRadius.all(Radius.circular(50.r))),
                           ),
                         ],
                       ),
