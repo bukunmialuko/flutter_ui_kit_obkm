@@ -95,8 +95,7 @@ class _Page15State extends State<Page15> {
               ],
             ),
           ),
-          Container(
-            // color: Colors.blue,
+          SizedBox(
             height: size.height / 3.5,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,

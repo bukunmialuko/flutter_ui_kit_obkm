@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/22/widgets/task_list.dart';
 import 'package:go_router/go_router.dart';
 
@@ -174,14 +173,13 @@ class _Page22State extends State<Page22> {
         width: 76.w,
         height: 76.w,
         decoration: BoxDecoration(
-          color: Color(0xffD0D0D0),
+          color: Color(0xffEAEAEA),
           borderRadius: BorderRadius.circular(76.w),
         ),
         child: Center(
-          child: Assets.svg.m21.pauseCircleOutline.svg(
-            height: 56.w,
-            width: 56.w,
-            fit: BoxFit.fill,
+          child: Icon(
+            Icons.add_circle,
+            color: Colors.black,
           ),
         ),
       ),
@@ -195,20 +193,47 @@ class _Page22State extends State<Page22> {
             data: IconThemeData(color: Theme.of(context).colorScheme.onPrimary),
             child: SizedBox(
               height: 90.h - MediaQuery.of(context).viewPadding.bottom,
+              width: double.infinity,
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
-                  Padding(
-                    padding: EdgeInsets.only(left: 84.w),
+                  Container(
+                    margin: EdgeInsets.only(left: 36.w, right: 36.w),
+                    decoration: BoxDecoration(
+                      border: Border(
+                        top: BorderSide(
+                          color: Colors.black,
+                          width: 3.0,
+                        ),
+                      ),
+                    ),
+                    height: double.infinity,
+                    width: 24.w,
                     child: Icon(
-                      Icons.fast_rewind,
+                      Icons.home,
                       color: Colors.black,
                     ),
                   ),
-                  Padding(
-                    padding: EdgeInsets.only(right: 84.w),
+                  SizedBox(
+                    width: 24.w,
                     child: Icon(
-                      Icons.fast_forward,
+                      Icons.business_center,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Spacer(),
+                  SizedBox(
+                    width: 24.w,
+                    child: Icon(
+                      Icons.pie_chart,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Container(
+                    width: 24.w,
+                    margin: EdgeInsets.only(left: 36.w, right: 36.w),
+                    child: Icon(
+                      Icons.supervisor_account,
                       color: Colors.black,
                     ),
                   ),
