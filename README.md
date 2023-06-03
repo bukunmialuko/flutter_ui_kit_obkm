@@ -17,12 +17,12 @@ A Simple UI Kit.
 
 Flutter gen : ```flutter packages pub run build_runner build```
 
-
-
 ## Contributing
+
 [To contribute, read short guidelines](https://github.com/bukunmialuko/flutter_ui_kit_obkm/blob/main/CONTRIBUTING.md)
 
 ## Build apk
+
 flutter build apk
 
 ## 📸 Banner
@@ -67,8 +67,8 @@ flutter build apk
 | <img src="art/screenshots/page_25.png" width="200"/> | <img src="art/screenshots/page_26.png" width="200"/> | <img src="art/screenshots/page_27.png" width="200"/> | <img src="art/screenshots/page_28.png" width="200"/> |
 
 | Page 29  | Page 30 | Page 31 | Page 32 |
-| ------------- | ------------- | ------------- | ------------- |
-| <img src="art/screenshots/page_29.png" width="200"/> |<img src="art/screenshots/page_30.png" width="200"/> | | <img src="art/screenshots/page_32.png" width="200"/> |
+| ------------- |------------------------------------------------------|------------------------------------------------------| ------------- |
+| <img src="art/screenshots/page_29.png" width="200"/> | <img src="art/screenshots/page_30.png" width="200"/> | <img src="art/screenshots/page_31.png" width="200"/> | <img src="art/screenshots/page_32.png" width="200"/> |
 
 | Page 33  | Page 34 | Page 35 | Page 36 |
 | ------------- | ------------- | ------------- | ------------- |
@@ -187,15 +187,14 @@ flutter build apk
 | ------------- | ------------- | ------------- | ------------- |
 |  | | | |
 
-| Page 173  | Page 174 | Page 175 | Page 176 |
-| ------------- | ------------- | <img src="art/screenshots/page_175.png" width="200"/> | ------------- |
-|  | | | |
+| Page 173 | Page 174 | Page 175 | Page 176 |
+| ------------- | ------------- | <img src="art/screenshots/page_175.png" width="200"/> |
+------------- |
+| | | | |
 
 | Page 177  | Page 178 | Page 179 | Page 180 |
 | ------------- | ------------- | ------------- | ------------- |
 |  | | | |
-
-
 
 <br />
 Web Page 7
@@ -219,4 +218,5 @@ Leave a 🌟
 Follow for update. 😃
 
 ## Development version :hammer:
+
 - [APK (direct download)](https://github.com/bukunmialuko/flutter_ui_kit_obkm/releases/download/v1.0.2/app-release.apk)

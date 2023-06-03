@@ -34,8 +34,9 @@ class MobileRoutes {
   static const pg28 = "pg28";
   static const pg29 = "pg29";
   static const pg30 = "pg30";
-  static const pg33 = "pg33";
+  static const pg31 = "pg31";
   static const pg32 = "pg32";
+  static const pg33 = "pg33";
   static const pg34 = "pg34";
   static const pg37 = "pg37";
   static const pg36 = "pg36";
