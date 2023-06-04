@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
+import 'package:go_router/go_router.dart';
 
 class Page31 extends StatefulWidget {
   const Page31({Key? key}) : super(key: key);
@@ -154,24 +155,29 @@ class _Page31State extends State<Page31> {
       bottomNavigationBar: _bottomNavBar(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       extendBody: true,
-      floatingActionButton: Container(
-        width: 76.w,
-        height: 76.w,
-        decoration: BoxDecoration(
-          color: Color(0xfff4f4f4),
-          borderRadius: BorderRadius.circular(76.w),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(0.25),
-              blurRadius: 8,
-              offset: const Offset(0, 2),
+      floatingActionButton: GestureDetector(
+        onTap: () {
+          context.pop();
+        },
+        child: Container(
+          width: 76.w,
+          height: 76.w,
+          decoration: BoxDecoration(
+            color: Color(0xfff4f4f4),
+            borderRadius: BorderRadius.circular(76.w),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.25),
+                blurRadius: 8,
+                offset: const Offset(0, 2),
+              ),
+            ],
+          ),
+          child: Center(
+            child: Icon(
+              Icons.play_arrow,
+              size: 36.r,
             ),
-          ],
-        ),
-        child: Center(
-          child: Icon(
-            Icons.play_arrow,
-            size: 36.r,
           ),
         ),
       ),
