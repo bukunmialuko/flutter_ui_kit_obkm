@@ -51,6 +51,14 @@ class MobileRoutes {
   static const pg51 = "pg51";
   static const pg52 = "pg52";
 
+  static const pg54 = "pg54";
+  static const pg55 = "pg55";
+  static const pg56 = "pg56";
+  static const pg57 = "pg57";
+  static const pg58 = "pg58";
+  static const pg59 = "pg59";
+  static const pg60 = "pg60";
+
   /// 61 - 80
 
   /// 81 - 100
