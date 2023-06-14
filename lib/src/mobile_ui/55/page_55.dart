@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 
 class Page55 extends StatefulWidget {
   const Page55({super.key});
@@ -46,6 +47,28 @@ class _Page55State extends State<Page55> {
                 ),
                 child: Text(
                   'Show Button Sheet',
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                onPressed: () {
+                  context.pop();
+                },
+                style: ElevatedButton.styleFrom(
+                  primary: const Color(0xFF161616),
+                  elevation: 0,
+                  shadowColor: Colors.transparent,
+                  fixedSize: Size(342, 54),
+                ),
+                child: Text(
+                  'Back',
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
