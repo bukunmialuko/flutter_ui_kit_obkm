@@ -3,7 +3,7 @@ description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -18,7 +18,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.19.6 <3.0.0'
+  sdk: ">=2.19.6 <3.0.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -50,7 +50,6 @@ dev_dependencies:
   flutter_gen_runner:
   flutter_launcher_icons: ^0.13.1
 
-
 flutter_icons:
   android: "launcher_icon"
   ios: true
@@ -59,8 +58,8 @@ flutter_icons:
   web:
     generate: true
     image_path: "path/to/image.png"
-#    background_color: "#hexcode"
-#    theme_color: "#hexcode"
+  #    background_color: "#hexcode"
+  #    theme_color: "#hexcode"
   windows:
     generate: true
     image_path: "assets/logo/logo.png"
@@ -68,7 +67,6 @@ flutter_icons:
   macos:
     generate: true
     image_path: "assets/logo/logo.png"
-
 
 flutter_gen:
   output: lib/gen/
@@ -85,7 +83,6 @@ flutter_gen:
 
 # The following section is specific to Flutter.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -107,6 +104,7 @@ flutter:
     - assets/png/m31/
     - assets/png/m35/
     - assets/png/m37/
+    - assets/png/m43/
     - assets/png/m45/
     - assets/png/m52/
     - assets/png/m57/
@@ -152,8 +150,8 @@ flutter:
   fonts:
     - family: Abolition
       fonts:
-       - asset: assets/fonts/Abolition-Regular.ttf
+        - asset: assets/fonts/Abolition-Regular.ttf
 
     - family: Proxima Nova
       fonts:
-       - asset: assets/fonts/Proxima-Nova.otf
+        - asset: assets/fonts/Proxima-Nova.otf
