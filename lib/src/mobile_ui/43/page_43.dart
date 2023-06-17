@@ -136,7 +136,7 @@ class _CarouselState extends State<Carousel> {
   void initState() {
     super.initState();
     controller = PageController(
-      initialPage: 1,
+      initialPage: 0,
       viewportFraction: 0.85,
     );
     controller.addListener(_scrollListener);
