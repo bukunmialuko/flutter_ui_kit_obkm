@@ -6,7 +6,9 @@ class PageButtonWidget extends StatelessWidget {
   final Function onPressed;
   final int page;
 
-  const PageButtonWidget({Key? key, required this.onPressed, required this.page}) : super(key: key);
+  const PageButtonWidget(
+      {Key? key, required this.onPressed, required this.page})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,8 +17,8 @@ class PageButtonWidget extends StatelessWidget {
         onPressed();
       },
       child: Container(
-        height: 56.r,
-        width: 56.r,
+        height: 56.h,
+        width: 56.w,
         color: ColorName.grayC4,
         child: Center(
           child: Text(

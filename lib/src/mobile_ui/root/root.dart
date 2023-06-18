@@ -16,7 +16,7 @@ class RootWidget extends StatelessWidget {
         elevation: 0,
       ),
       body: Padding(
-        padding: EdgeInsets.only(top: 8.h, left: 8.w, right: 8.w, bottom: 80),
+        padding: EdgeInsets.only(top: 8.h, left: 8.w, right: 8.w, bottom: 20),
         child: SingleChildScrollView(
           child: Wrap(
             spacing: 18.w,
@@ -250,13 +250,43 @@ class RootWidget extends StatelessWidget {
                   context.push("/${MobileRoutes.pg37}");
                 },
               ),
+              PageButtonWidget(
+                page: 38,
+                onPressed: () {
+                  context.push("/${MobileRoutes.pg38}");
+                },
+              ),
+              PageButtonWidget(
+                page: 39,
+                onPressed: () {
+                  context.push("/${MobileRoutes.pg39}");
+                },
+              ),
+              PageButtonWidget(
+                page: 40,
+                onPressed: () {
+                  context.push("/${MobileRoutes.pg40}");
+                },
+              ),
 
               /// 41 - 60
               ///
               PageButtonWidget(
+                page: 41,
+                onPressed: () {
+                  context.push("/${MobileRoutes.pg41}");
+                },
+              ),
+              PageButtonWidget(
                 page: 42,
                 onPressed: () {
                   context.push("/${MobileRoutes.pg42}");
+                },
+              ),
+              PageButtonWidget(
+                page: 43,
+                onPressed: () {
+                  context.push("/${MobileRoutes.pg43}");
                 },
               ),
 
@@ -273,6 +303,18 @@ class RootWidget extends StatelessWidget {
                   context.push("/${MobileRoutes.pg45}");
                 },
               ),
+              PageButtonWidget(
+                page: 46,
+                onPressed: () {
+                  context.push("/${MobileRoutes.pg46}");
+                },
+              ),
+              PageButtonWidget(
+                page: 47,
+                onPressed: () {
+                  context.push("/${MobileRoutes.pg47}");
+                },
+              ),
 
               PageButtonWidget(
                 page: 48,
@@ -285,6 +327,13 @@ class RootWidget extends StatelessWidget {
                 page: 49,
                 onPressed: () {
                   context.push("/${MobileRoutes.pg49}");
+                },
+              ),
+
+              PageButtonWidget(
+                page: 50,
+                onPressed: () {
+                  context.push("/${MobileRoutes.pg50}");
                 },
               ),
 
