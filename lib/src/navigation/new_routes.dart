@@ -37,6 +37,7 @@ import 'package:flutter_ui_kit_obkm/src/mobile_ui/55/page_55.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/56/page_56.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/57/page_57.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/58/page_58.dart';
+import 'package:flutter_ui_kit_obkm/src/mobile_ui/59/page_59.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/6/page6.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/7/page7.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/8/page8.dart';
@@ -372,7 +373,7 @@ var newRoutesConfig = GoRouter(
         GoRoute(
           path: MobileRoutes.pg59,
           builder: (BuildContext context, GoRouterState state) =>
-              const SizedBox(),
+              const Page59(),
         ),
         GoRoute(
           path: MobileRoutes.pg60,
