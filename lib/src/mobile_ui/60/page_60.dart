@@ -180,7 +180,7 @@ class Page60 extends StatelessWidget {
         decoration: ShapeDecoration(
           color: Color(0xFF525252),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(24),
+            borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
           ),
         ),
         child: Row(
