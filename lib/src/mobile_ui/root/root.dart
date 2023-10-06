@@ -392,6 +392,13 @@ class RootWidget extends StatelessWidget {
                   context.push("/${MobileRoutes.pg58}");
                 },
               ),
+              
+              PageButtonWidget(
+                page: 59,
+                onPressed: () {
+                  context.push("/${MobileRoutes.pg59}");
+                },
+              ),
 
               _RangeHeader(text: "101 -150"),
 
