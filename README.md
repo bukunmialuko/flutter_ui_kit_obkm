@@ -94,9 +94,10 @@ flutter build apk
 | ---------------------------------------------------- | ---------------------------------------------------- | ------- | ------- |
 | <img src="art/screenshots/page_53.png" width="200"/> | <img src="art/screenshots/page_54.png" width="200"/> |         |         |
 
+
 | Page 57 | Page 58 | Page 59 | Page 60 |
 | ------- | ------- | ------- | ------- |
-|         |         | <img src="art/screenshots/page_59.png" width="200"/> |         |
+|         |         | <img src="art/screenshots/page_59.png" width="200"/> |<img src="art/screenshots/page_60.png" width="200"/>|
 
 | Page 61 | Page 62 | Page 63 | Page 64 |
 | ------- | ------- | ------- | ------- |
