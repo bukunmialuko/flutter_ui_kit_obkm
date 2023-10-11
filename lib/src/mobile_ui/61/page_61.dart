@@ -39,53 +39,52 @@ class Page61 extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: List.generate(
-                  5,
-                  (index) => Container(
-                    margin: EdgeInsets.only(
-                      left: index == 0 ? 8 : 0,
-                      right: 20,
-                    ),
-                    child: Column(
-                      children: [
-                        Container(
-                          width: 90,
-                          height: 90,
-                          padding: EdgeInsets.all(10.0),
+            SizedBox(
+              height: 110,
+              child: ListView.builder(
+                itemCount: 5,
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) => Container(
+                  margin: EdgeInsets.only(
+                    left: index == 0 ? 8 : 0,
+                    right: 20,
+                  ),
+                  child: Column(
+                    children: [
+                      Container(
+                        width: 90,
+                        height: 90,
+                        padding: EdgeInsets.all(10.0),
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: const Color(0xff525252),
+                            width: 5.0,
+                          ),
+                          shape: BoxShape.circle,
+                        ),
+                        child: Container(
+                          width: 70,
+                          height: 70,
                           decoration: BoxDecoration(
-                            border: Border.all(
-                              color: const Color(0xff525252),
-                              width: 5.0,
-                            ),
+                            color: Color(0xFFC4C4C4),
                             shape: BoxShape.circle,
                           ),
-                          child: Container(
-                            width: 70,
-                            height: 70,
-                            decoration: BoxDecoration(
-                              color: Color(0xFFC4C4C4),
-                              shape: BoxShape.circle,
-                            ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Container(
+                        width: 50,
+                        height: 10,
+                        decoration: ShapeDecoration(
+                          color: Color(0xFFA8A8A8),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(50),
                           ),
                         ),
-                        SizedBox(
-                          height: 8,
-                        ),
-                        Container(
-                          width: 50,
-                          height: 10,
-                          decoration: ShapeDecoration(
-                            color: Color(0xFFA8A8A8),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(50),
-                            ),
-                          ),
-                        )
-                      ],
-                    ),
+                      )
+                    ],
                   ),
                 ),
               ),
