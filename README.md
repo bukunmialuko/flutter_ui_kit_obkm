@@ -98,13 +98,14 @@ flutter build apk
 | ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- |
 | <img src="art/screenshots/page_57.png" width="200"/> | <img src="art/screenshots/page_58.png" width="200"/> | <img src="art/screenshots/page_59.png" width="200"/> | <img src="art/screenshots/page_60.png" width="200"/> |
 
-| Page 61                                              | Page 62                                              | Page 63 | Page 64 |
-| ---------------------------------------------------- | ---------------------------------------------------- | ------- | ------- |
-| <img src="art/screenshots/page_61.png" width="200"/> | <img src="art/screenshots/page_62.png" width="200"/> |         |         |
+| Page 61                                              | Page 62                                              | Page 63                                              | Page 64 |
+| ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- | ------- |
+| <img src="art/screenshots/page_61.png" width="200"/> | <img src="art/screenshots/page_62.png" width="200"/> | <img src="art/screenshots/page_63.png" width="200"/> |         |
 
 | Page 65                                              | Page 66 | Page 67 | Page 68 |
 | ---------------------------------------------------- | ------- | ------- | ------- |
-| <img src="art/screenshots/page_65.png" width="200"/> |         |         |         |
+| <img src="art/screenshots/page_65.png" width="200"/> | <img src="art/screenshots/page_66.png" width="200"/> |         |         |
+
 
 | Page 69 | Page 70 | Page 71 | Page 72 |
 | ------- | ------- | ------- | ------- |
