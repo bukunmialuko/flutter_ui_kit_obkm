@@ -112,11 +112,11 @@ flutter build apk
 
 | Page 73                                              | Page 74                                              | Page 75                                              | Page 76                                              |
 | ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- |
-| <img src="art/screenshots/page_73.png" width="200"/> | <img src="art/screenshots/page_74.png" width="200"/> | <img src="art/screenshots/page_75.png" width="200"/> | <img src="art/screenshots/page_74.png" width="200"/> |
+| <img src="art/screenshots/page_73.png" width="200"/> | <img src="art/screenshots/page_74.png" width="200"/> | <img src="art/screenshots/page_75.png" width="200"/> | <img src="art/screenshots/page_76.png" width="200"/> |
 
-| Page 77 | Page 78 | Page 79 | Page 80 |
-| ------- | ------- | ------- | ------- |
-|         |         |         |         |
+| Page 77                                              | Page 78 | Page 79 | Page 80 |
+| ---------------------------------------------------- | ------- | ------- | ------- |
+| <img src="art/screenshots/page_77.png" width="200"/> |         |         |         |
 
 | Page 91 | Page 92 | Page 93 | Page 94 |
 | ------- | ------- | ------- | ------- |
