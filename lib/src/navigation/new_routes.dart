@@ -420,6 +420,7 @@ var newRoutesConfig = GoRouter(
           builder: (BuildContext context, GoRouterState state) =>
               const Page65(),
         ),
+
         GoRoute(
           path: MobileRoutes.pg66,
           builder: (BuildContext context, GoRouterState state) =>
