@@ -128,6 +128,29 @@ class _Page82State extends State<Page82> with SingleTickerProviderStateMixin {
           ),
         ],
       ),
+      floatingActionButton: SizedBox(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            FloatingActionButton(
+              onPressed: () {},
+              backgroundColor: Colors.white,
+              foregroundColor: Colors.black,
+              shape: OvalBorder(
+                side: BorderSide(width: 2, color: Color(0xFF51AB9F)),
+              ),
+              child: Icon(Icons.edit),
+            ),
+            16.verticalSpace,
+            FloatingActionButton(
+              onPressed: () {},
+              backgroundColor: Color(0xFF51AB9F),
+              foregroundColor: Colors.white,
+              child: Icon(Icons.camera_alt),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
