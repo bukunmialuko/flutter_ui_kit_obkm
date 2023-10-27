@@ -65,6 +65,7 @@ import 'package:flutter_ui_kit_obkm/src/mobile_ui/80/page_80.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/81/page_81.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/82/page_82.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/83/page_83.dart';
+import 'package:flutter_ui_kit_obkm/src/mobile_ui/84/page_84.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/9/page9.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/root/root.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/routes/routes.dart';
@@ -515,6 +516,10 @@ var newRoutesConfig = GoRouter(
         GoRoute(
           path: MobileRoutes.pg83,
           builder: (BuildContext context, GoRouterState state) => Page83(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg84,
+          builder: (BuildContext context, GoRouterState state) => Page84(),
         ),
 
         /// 141 - 160
