@@ -126,7 +126,7 @@ class ReceivedMessage extends StatelessWidget {
               borderRadius: BorderRadius.only(
                 topRight: Radius.circular(18),
                 topLeft: Radius.circular(18),
-                // bottomLeft: Radius.circular(18),
+                bottomLeft: Radius.circular(4),
                 bottomRight: Radius.circular(18),
               ),
             ),
