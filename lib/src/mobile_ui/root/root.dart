@@ -459,6 +459,88 @@ class RootWidget extends StatelessWidget {
                     context.push("/${MobileRoutes.pg70}");
                   }),
 
+              PageButtonWidget(
+                  page: 72,
+                  onPressed: () {
+                    context.push("/${MobileRoutes.pg72}");
+                  }),
+              PageButtonWidget(
+                  page: 73,
+                  onPressed: () {
+                    context.push("/${MobileRoutes.pg73}");
+                  }),
+              PageButtonWidget(
+                  page: 74,
+                  onPressed: () {
+                    context.push("/${MobileRoutes.pg74}");
+                  }),
+              PageButtonWidget(
+                  page: 75,
+                  onPressed: () {
+                    context.push("/${MobileRoutes.pg75}");
+                  }),
+              PageButtonWidget(
+                  page: 76,
+                  onPressed: () {
+                    context.push("/${MobileRoutes.pg76}");
+                  }),
+              PageButtonWidget(
+                  page: 77,
+                  onPressed: () {
+                    context.push("/${MobileRoutes.pg77}");
+                  }),
+              PageButtonWidget(
+                  page: 78,
+                  onPressed: () {
+                    context.push("/${MobileRoutes.pg78}");
+                  }),
+              PageButtonWidget(
+                  page: 79,
+                  onPressed: () {
+                    context.push("/${MobileRoutes.pg79}");
+                  }),
+              PageButtonWidget(
+                  page: 80,
+                  onPressed: () {
+                    context.push("/${MobileRoutes.pg80}");
+                  }),
+              PageButtonWidget(
+                  page: 81,
+                  onPressed: () {
+                    context.push("/${MobileRoutes.pg81}");
+                  }),
+              PageButtonWidget(
+                  page: 82,
+                  onPressed: () {
+                    context.push("/${MobileRoutes.pg82}");
+                  }),
+              PageButtonWidget(
+                  page: 83,
+                  onPressed: () {
+                    context.push("/${MobileRoutes.pg83}");
+                  }),
+              PageButtonWidget(
+                  page: 84,
+                  onPressed: () {
+                    context.push("/${MobileRoutes.pg84}");
+                  }),
+              PageButtonWidget(
+                  page: 85,
+                  onPressed: () {
+                    context.push("/${MobileRoutes.pg85}");
+                  }),
+              PageButtonWidget(
+                  page: 86,
+                  onPressed: () {
+                    context.push("/${MobileRoutes.pg86}");
+                  }),
+              PageButtonWidget(
+                  page: 86,
+                  onPressed: () {
+                    context.push("/${MobileRoutes.pg87}");
+                  }),
+
+
               _RangeHeader(text: "101 -150"),
 
               _RangeHeader(text: "151 -160"),

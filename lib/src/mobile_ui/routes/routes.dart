@@ -79,6 +79,22 @@ class MobileRoutes {
   static const pg68 = "pg68";
   static const pg69 = "pg69";
   static const pg70 = "pg70";
+  static const pg72 = "pg72";
+  static const pg73 = "pg73";
+  static const pg74 = "pg74";
+  static const pg75 = "pg75";
+  static const pg76 = "pg76";
+  static const pg77 = "pg77";
+  static const pg78 = "pg78";
+  static const pg79 = 'pg79';
+  static const pg80 = 'pg80';
+  static const pg81 = 'pg81';
+  static const pg82 = 'pg82';
+  static const pg83 = 'pg83';
+  static const pg84 = 'pg84';
+  static const pg85 = 'pg85';
+  static const pg86 = 'pg86';
+  static const pg87 = 'pg87';
 
 
   /// 81 - 100
