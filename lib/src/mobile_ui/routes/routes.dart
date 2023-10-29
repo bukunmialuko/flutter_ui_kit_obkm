@@ -69,7 +69,6 @@ class MobileRoutes {
   static const pg60 = "pg60";
 
   /// 61 - 80
-  static const pg65 = "pg65";
   static const pg61 = "pg61";
   static const pg62 = "pg62";
   static const pg63 = "pg63";
@@ -85,6 +84,17 @@ class MobileRoutes {
   static const pg75 = "pg75";
   static const pg76 = "pg76";
   static const pg77 = "pg77";
+  static const pg78 = "pg78";
+  static const pg79 = 'pg79';
+  static const pg80 = 'pg80';
+  static const pg81 = 'pg81';
+  static const pg82 = 'pg82';
+  static const pg83 = 'pg83';
+  static const pg84 = 'pg84';
+  static const pg85 = 'pg85';
+  static const pg86 = 'pg86';
+  static const pg87 = 'pg87';
+
 
   /// 81 - 100
 
@@ -97,4 +107,6 @@ class MobileRoutes {
 
   /// 161 - 180
   static const pg175 = "pg175";
+
+
 }
