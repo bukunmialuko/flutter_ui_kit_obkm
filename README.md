@@ -110,21 +110,33 @@ flutter build apk
 | ---------------------------------------------------- | ---------------------------------------------------- | ------- | ---------------------------------------------------- |
 | <img src="art/screenshots/page_69.png" width="200"/> | <img src="art/screenshots/page_70.png" width="200"/> |         | <img src="art/screenshots/page_72.png" width="200"/> |
 
-| Page 73                                              | Page 74 | Page 75 | Page 76 |
-| ---------------------------------------------------- | ------- | ------- | ------- |
-| <img src="art/screenshots/page_73.png" width="200"/> |         |         |         |
+| Page 73                                              | Page 74                                              | Page 75                                              | Page 76                                              |
+| ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- |
+| <img src="art/screenshots/page_73.png" width="200"/> | <img src="art/screenshots/page_74.png" width="200"/> | <img src="art/screenshots/page_75.png" width="200"/> | <img src="art/screenshots/page_76.png" width="200"/> |
 
-| Page 77 | Page 78 | Page 79 | Page 80 |
+| Page 77                                              | Page 78                                              | Page 79                                              | Page 80                                              |
+| ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- |
+| <img src="art/screenshots/page_77.png" width="200"/> | <img src="art/screenshots/page_78.png" width="200"/> | <img src="art/screenshots/page_79.png" width="200"/> | <img src="art/screenshots/page_80.png" width="200"/> |
+
+| Page 81                                              | Page 82                                              | Page 83                                              | Page 84                                              |
+| ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- |
+| <img src="art/screenshots/page_81.png" width="200"/> | <img src="art/screenshots/page_82.png" width="200"/> | <img src="art/screenshots/page_83.png" width="200"/> | <img src="art/screenshots/page_84.png" width="200"/> |
+
+| Page 85                                              | Page 86                                              | Page 87                                              | Page 88 |
+| ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- | ------- |
+| <img src="art/screenshots/page_85.png" width="200"/> | <img src="art/screenshots/page_86.png" width="200"/> | <img src="art/screenshots/page_87.png" width="200"/> |         |
+
+| Page 89 | Page 90 | Page 91 | Page 92 |
 | ------- | ------- | ------- | ------- |
 |         |         |         |         |
 
-| Page 91 | Page 92 | Page 93 | Page 94 |
+| Page 93 | Page 94 | Page 95 | Page 96 |
 | ------- | ------- | ------- | ------- |
 |         |         |         |         |
 
-| Page 95 | Page 96 | Page 97 | Page 98 |
-| ------- | ------- | ------- | ------- |
-|         |         |         |         |
+| Page 97 | Page 98 | Page 99 | Page 100 |
+| ------- | ------- | ------- | -------- |
+|         |         |         |          |
 
 | Page 99 | Page 100 |
 | ------- | -------- |
