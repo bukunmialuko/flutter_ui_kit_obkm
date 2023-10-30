@@ -53,7 +53,23 @@ import 'package:flutter_ui_kit_obkm/src/mobile_ui/69/page_69.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/7/page7.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/70/page_70.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/72/page_72.dart';
+import 'package:flutter_ui_kit_obkm/src/mobile_ui/73/page_73.dart';
+import 'package:flutter_ui_kit_obkm/src/mobile_ui/74/page_74.dart';
+import 'package:flutter_ui_kit_obkm/src/mobile_ui/75/page_75.dart';
+import 'package:flutter_ui_kit_obkm/src/mobile_ui/76/page_76.dart';
+import 'package:flutter_ui_kit_obkm/src/mobile_ui/77/page_77.dart';
+import 'package:flutter_ui_kit_obkm/src/mobile_ui/78/page_78.dart';
+import 'package:flutter_ui_kit_obkm/src/mobile_ui/79/page_79.dart';
+
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/8/page8.dart';
+import 'package:flutter_ui_kit_obkm/src/mobile_ui/80/page_80.dart';
+import 'package:flutter_ui_kit_obkm/src/mobile_ui/81/page_81.dart';
+import 'package:flutter_ui_kit_obkm/src/mobile_ui/82/page_82.dart';
+import 'package:flutter_ui_kit_obkm/src/mobile_ui/83/page_83.dart';
+import 'package:flutter_ui_kit_obkm/src/mobile_ui/84/page_84.dart';
+import 'package:flutter_ui_kit_obkm/src/mobile_ui/85/page_85.dart';
+import 'package:flutter_ui_kit_obkm/src/mobile_ui/86/page_86.dart';
+import 'package:flutter_ui_kit_obkm/src/mobile_ui/87/page_87.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/9/page9.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/root/root.dart';
 import 'package:flutter_ui_kit_obkm/src/mobile_ui/routes/routes.dart';
@@ -450,10 +466,78 @@ var newRoutesConfig = GoRouter(
           builder: (BuildContext context, GoRouterState state) =>
               const Page70(),
         ),
+
         GoRoute(
           path: MobileRoutes.pg72,
           builder: (BuildContext context, GoRouterState state) =>
               const Page72(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg73,
+          builder: (BuildContext context, GoRouterState state) =>
+              const Page73(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg74,
+          builder: (BuildContext context, GoRouterState state) =>
+              const Page74(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg75,
+          builder: (BuildContext context, GoRouterState state) =>
+              const Page75(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg76,
+          builder: (BuildContext context, GoRouterState state) =>
+              const Page76(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg77,
+          builder: (BuildContext context, GoRouterState state) =>
+              const Page77(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg78,
+          builder: (BuildContext context, GoRouterState state) =>
+              const Page78(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg79,
+          builder: (BuildContext context, GoRouterState state) =>
+              const Page79(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg80,
+          builder: (BuildContext context, GoRouterState state) => Page80(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg81,
+          builder: (BuildContext context, GoRouterState state) => Page81(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg82,
+          builder: (BuildContext context, GoRouterState state) => Page82(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg83,
+          builder: (BuildContext context, GoRouterState state) => Page83(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg84,
+          builder: (BuildContext context, GoRouterState state) => Page84(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg85,
+          builder: (BuildContext context, GoRouterState state) => Page85(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg86,
+          builder: (BuildContext context, GoRouterState state) => Page86(),
+        ),
+        GoRoute(
+          path: MobileRoutes.pg87,
+          builder: (BuildContext context, GoRouterState state) => Page87(),
         ),
 
         /// 141 - 160
