@@ -113,6 +113,7 @@ flutter:
     - assets/png/m53/
     - assets/png/m57/
     - assets/png/m64/
+    - assets/png/m89/
 
     # SVGs
     - assets/svg/
