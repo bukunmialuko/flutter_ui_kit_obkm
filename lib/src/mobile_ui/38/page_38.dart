@@ -87,7 +87,7 @@ class Page38 extends StatelessWidget {
                 ),
                 Container(
                   height: 210.h,
-                  color: Color(0xffC4C4C4C4),
+                  color: Color(0xffc4c4c4c4),
                 ),
                 SizedBox(
                   height: 24.h,

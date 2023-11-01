@@ -174,8 +174,7 @@ class _Page10State extends State<Page10> {
                     children: [
                       TextButton(
                         style: TextButton.styleFrom(
-                          primary: Colors.white,
-                          backgroundColor: const Color(0xffD0D0D0),
+                          foregroundColor: Colors.white, backgroundColor: const Color(0xffD0D0D0),
                         ),
                         onPressed: () {},
                         child: Padding(
@@ -195,8 +194,7 @@ class _Page10State extends State<Page10> {
                       ),
                       TextButton(
                         style: TextButton.styleFrom(
-                          primary: Colors.white,
-                          backgroundColor: const Color(0xffD0D0D0),
+                          foregroundColor: Colors.white, backgroundColor: const Color(0xffD0D0D0),
                         ),
                         onPressed: () {},
                         child: Padding(

@@ -79,7 +79,7 @@ class _Page25State extends State<Page25> {
               SizedBox(
                 height: 13.h,
               ),
-              Container(
+              SizedBox(
                 height: 80.h,
                 width: size.width,
                 child: SingleChildScrollView(

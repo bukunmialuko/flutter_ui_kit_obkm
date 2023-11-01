@@ -84,7 +84,7 @@ class NearbyEvent extends StatelessWidget {
 }
 
 class _ListItem extends StatelessWidget {
-  const _ListItem({super.key});
+  const _ListItem();
 
   @override
   Widget build(BuildContext context) {

@@ -86,7 +86,7 @@ class _Page24State extends State<Page24> {
                 ),
               ),
               SizedBox(height: 20.h),
-              Container(
+              SizedBox(
                 height: 80.w,
                 width: size.width,
                 child: SingleChildScrollView(
@@ -199,7 +199,7 @@ class _Page24State extends State<Page24> {
                 ),
               ),
               SizedBox(height: 10.h),
-              Container(
+              SizedBox(
                 width: size.width,
                 height: 230,
                 child: SingleChildScrollView(

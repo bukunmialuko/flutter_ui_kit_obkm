@@ -146,8 +146,7 @@ class _Page22State extends State<Page22> {
                       side: const BorderSide(
                         width: 1,
                         color: Color(0xff000000),
-                      ),
-                      primary: const Color(0xFFFFFFFF),
+                      ), backgroundColor: const Color(0xFFFFFFFF),
                       elevation: 0,
                       shadowColor: Colors.transparent,
                       fixedSize: Size(342, 54),

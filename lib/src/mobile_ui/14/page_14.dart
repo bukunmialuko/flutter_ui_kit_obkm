@@ -95,7 +95,7 @@ class _Page14State extends State<Page14> {
           context.pop();
         },
         style: ElevatedButton.styleFrom(
-          primary: isTransparent ? Colors.transparent : const Color(0xFF0043CE),
+          backgroundColor: isTransparent ? Colors.transparent : const Color(0xFF0043CE),
           elevation: 0,
           shadowColor: Colors.transparent,
           fixedSize: Size(342.w, 64.h),
