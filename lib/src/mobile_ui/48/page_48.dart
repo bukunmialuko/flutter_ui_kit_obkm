@@ -35,7 +35,8 @@ class Page48 extends StatelessWidget {
               ],
             ),
             SizedBox(height: 10.h),
-            GestureDetector(onTap: () => context.pop(), child: Icon(Icons.arrow_back)),
+            GestureDetector(
+                onTap: () => context.pop(), child: Icon(Icons.arrow_back)),
             SizedBox(height: 5.h),
             Divider(
               thickness: 1,
@@ -79,7 +80,8 @@ class Page48 extends StatelessWidget {
                     children: [
                       Container(
                         height: 50,
-                        padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 10.h),
+                        padding: EdgeInsets.symmetric(
+                            horizontal: 8.w, vertical: 10.h),
                         child: Center(
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -134,7 +136,7 @@ class Page48 extends StatelessWidget {
                           ),
                           SizedBox(width: 12.h),
                           Expanded(
-                            child: Container(
+                            child: SizedBox(
                               child: Text(
                                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris, iaculis risus, vitae, blandit. Viverra ut scelerisque sit amet, duis id gravida. Sed habitant enim, in accumsan et. Pellentesque nisl purus bibendum adipiscing ac elementum, at eget. Purus pellentesque urna ante sed pellentesque nibh platea velit nulla. Morbi habitasse massa donec rhoncus, amet quam. Vitae pharetra, feugiat sagittis quis. Massa, at orci, phasellus in consequat gravida id elit. Tellus ipsum ligula lectus pellentesque arcu. At quisque velit tristique egestas dui morbi dui. Sit orci sodales varius lorem ac in eu, orci. Ac suspendisse aenean mauris sed accumsan',
                                 style: TextStyle(
@@ -154,7 +156,8 @@ class Page48 extends StatelessWidget {
                     children: [
                       Container(
                         height: 60,
-                        padding: EdgeInsets.only(left: 8.w, right: 8.w, bottom: 20.h),
+                        padding: EdgeInsets.only(
+                            left: 8.w, right: 8.w, bottom: 20.h),
                         child: Center(
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,

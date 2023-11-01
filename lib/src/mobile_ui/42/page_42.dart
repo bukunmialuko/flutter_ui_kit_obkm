@@ -375,7 +375,7 @@ class _Page42State extends State<Page42> {
                   height: 40.r,
                   width: 40.r,
                   fit: BoxFit.fill,
-                  color: Colors.white,
+                  colorFilter: ColorFilter.mode(Colors.white, BlendMode.srcIn),
                 ),
               ),
             ),
