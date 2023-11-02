@@ -6,7 +6,7 @@ class Page15 extends StatefulWidget {
   const Page15({Key? key}) : super(key: key);
 
   @override
-  _Page15State createState() => _Page15State();
+  State<Page15> createState() => _Page15State();
 }
 
 class _Page15State extends State<Page15> {
@@ -105,7 +105,7 @@ class _Page15State extends State<Page15> {
                     context.pop();
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: const Color(0xFF161616),
+                    backgroundColor: const Color(0xFF161616),
                     elevation: 0,
                     shadowColor: Colors.transparent,
                     fixedSize: Size(342, 54),

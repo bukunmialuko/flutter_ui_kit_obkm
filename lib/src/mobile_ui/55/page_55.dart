@@ -40,7 +40,7 @@ class _Page55State extends State<Page55> {
                   _modalBottomSheetShow(context);
                 },
                 style: ElevatedButton.styleFrom(
-                  primary: const Color(0xFF161616),
+                  backgroundColor: const Color(0xFF161616),
                   elevation: 0,
                   shadowColor: Colors.transparent,
                   fixedSize: Size(342, 54),
@@ -62,7 +62,7 @@ class _Page55State extends State<Page55> {
                   context.pop();
                 },
                 style: ElevatedButton.styleFrom(
-                  primary: const Color(0xFF161616),
+                  backgroundColor: const Color(0xFF161616),
                   elevation: 0,
                   shadowColor: Colors.transparent,
                   fixedSize: Size(342, 54),

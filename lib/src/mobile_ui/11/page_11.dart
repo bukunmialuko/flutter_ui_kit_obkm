@@ -8,7 +8,7 @@ class Page11 extends StatefulWidget {
   const Page11({Key? key}) : super(key: key);
 
   @override
-  _Page11State createState() => _Page11State();
+  State<Page11> createState() => _Page11State();
 }
 
 class _Page11State extends State<Page11> {

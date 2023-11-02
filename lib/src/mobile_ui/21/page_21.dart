@@ -113,7 +113,7 @@ class _Page21State extends State<Page21> {
                     context.pop();
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: const Color(0xFF161616),
+                    backgroundColor: const Color(0xFF161616),
                     elevation: 0,
                     shadowColor: Colors.transparent,
                     fixedSize: Size(342, 48),

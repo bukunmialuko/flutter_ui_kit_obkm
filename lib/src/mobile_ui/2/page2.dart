@@ -267,7 +267,7 @@ class Page2 extends StatelessWidget {
     );
   }
 
-  _buildChat({required MessageModel chat, required bool showProfileBox}) {
+  Container _buildChat({required MessageModel chat, required bool showProfileBox}) {
     return chat.isRight
         ? Container(
             margin: EdgeInsets.only(bottom: 42.h),

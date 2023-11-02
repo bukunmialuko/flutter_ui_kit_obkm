@@ -110,7 +110,7 @@ class _Page29State extends State<Page29> {
                   ),
                 ],
               ),
-              Container(
+              SizedBox(
                 height: 40.0,
                 child: Row(
                   children: [
@@ -188,8 +188,8 @@ class _Page29State extends State<Page29> {
     );
   }
 
-  _buildCategories() {
-    return Container(
+  Widget _buildCategories() {
+    return SizedBox(
       height: 80.0.h,
       child: ListView.builder(
         itemCount: categoryArraylist.length,
@@ -222,7 +222,7 @@ class _Page29State extends State<Page29> {
     );
   }
 
-  _buildSearchAndFilterWidget() {
+  Row _buildSearchAndFilterWidget() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
@@ -277,7 +277,7 @@ class _Page29State extends State<Page29> {
     );
   }
 
-  _buildFoodImage() {
+  ClipRRect _buildFoodImage() {
     return ClipRRect(
       borderRadius: BorderRadius.circular(10.0),
       child: Stack(
@@ -353,7 +353,7 @@ class _Page29State extends State<Page29> {
     );
   }
 
-  _bottomNavBar() {
+  Container _bottomNavBar() {
     return Container(
       height: 90.h,
       decoration: BoxDecoration(

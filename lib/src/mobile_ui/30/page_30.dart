@@ -268,7 +268,7 @@ class _Page30State extends State<Page30> {
     );
   }
 
-  _bottomNavBar() {
+  Container _bottomNavBar() {
     return Container(
       height: 90.h,
       decoration: BoxDecoration(

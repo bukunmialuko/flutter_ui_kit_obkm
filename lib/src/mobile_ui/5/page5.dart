@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -8,7 +7,7 @@ class Page5 extends StatefulWidget {
   const Page5({Key? key}) : super(key: key);
 
   @override
-  _Page5State createState() => _Page5State();
+  State<Page5> createState() => _Page5State();
 }
 
 class _Page5State extends State<Page5> {
@@ -24,7 +23,8 @@ class _Page5State extends State<Page5> {
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
+          physics: const BouncingScrollPhysics(
+              parent: AlwaysScrollableScrollPhysics()),
           child: Padding(
             padding: EdgeInsets.only(left: 24.w, right: 24.w, bottom: 8.h),
             child: Column(
@@ -87,7 +87,8 @@ class _Page5State extends State<Page5> {
                       children: [
                         PageView.builder(
                           itemCount: 4,
-                          physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
+                          physics: const BouncingScrollPhysics(
+                              parent: AlwaysScrollableScrollPhysics()),
                           onPageChanged: (index) {
                             setState(() {
                               currentPage = index;
@@ -191,8 +192,10 @@ class _Page5State extends State<Page5> {
                                       bottom: 10.h,
                                     ),
                                     child: Column(
-                                      mainAxisAlignment: MainAxisAlignment.start,
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.start,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
                                       children: [
                                         Flexible(
                                           child: Text(

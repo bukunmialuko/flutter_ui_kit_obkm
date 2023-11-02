@@ -93,7 +93,7 @@ class _Page26State extends State<Page26> {
               SizedBox(
                 height: 20.h,
               ),
-              Container(
+              SizedBox(
                 height: 180.h,
                 width: size.width,
                 child: SingleChildScrollView(
@@ -195,7 +195,7 @@ class GroupTaskCard extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             SizedBox(height: 5.h),
-            Container(
+            SizedBox(
               width: 100.w,
               child: Stack(
                 children: [

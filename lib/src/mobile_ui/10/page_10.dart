@@ -9,7 +9,7 @@ class Page10 extends StatefulWidget {
   const Page10({Key? key}) : super(key: key);
 
   @override
-  _Page10State createState() => _Page10State();
+  State<Page10> createState() => _Page10State();
 }
 
 class _Page10State extends State<Page10> {
@@ -31,7 +31,8 @@ class _Page10State extends State<Page10> {
           // crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Padding(
-              padding: EdgeInsets.only(left: 53.w, right: 56.w, top: 35.h, bottom: 57.h),
+              padding: EdgeInsets.only(
+                  left: 53.w, right: 56.w, top: 35.h, bottom: 57.h),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -174,12 +175,13 @@ class _Page10State extends State<Page10> {
                     children: [
                       TextButton(
                         style: TextButton.styleFrom(
-                          primary: Colors.white,
+                          foregroundColor: Colors.white,
                           backgroundColor: const Color(0xffD0D0D0),
                         ),
                         onPressed: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 6.h),
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 8.w, vertical: 6.h),
                           child: Text(
                             'Follow',
                             style: GoogleFonts.workSans(
@@ -195,12 +197,13 @@ class _Page10State extends State<Page10> {
                       ),
                       TextButton(
                         style: TextButton.styleFrom(
-                          primary: Colors.white,
+                          foregroundColor: Colors.white,
                           backgroundColor: const Color(0xffD0D0D0),
                         ),
                         onPressed: () {},
                         child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 6.h),
+                          padding: EdgeInsets.symmetric(
+                              horizontal: 8.w, vertical: 6.h),
                           child: Text(
                             'Message',
                             style: GoogleFonts.workSans(
