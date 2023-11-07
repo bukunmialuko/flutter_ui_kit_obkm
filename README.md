@@ -126,13 +126,13 @@ flutter build apk
 | ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- |
 | <img src="art/screenshots/page_85.png" width="200"/> | <img src="art/screenshots/page_86.png" width="200"/> | <img src="art/screenshots/page_87.png" width="200"/> | <img src="art/screenshots/page_88.png" width="200"/> |
 
-| Page 89                                              | Page 90                                              | Page 91 | Page 92 |
-| ---------------------------------------------------- | ---------------------------------------------------- | ------- | ------- |
-| <img src="art/screenshots/page_89.png" width="200"/> | <img src="art/screenshots/page_90.png" width="200"/> |         |         |
+| Page 89                                              | Page 90                                              | Page 91 | Page 92                                              |
+| ---------------------------------------------------- | ---------------------------------------------------- | ------- | ---------------------------------------------------- |
+| <img src="art/screenshots/page_89.png" width="200"/> | <img src="art/screenshots/page_90.png" width="200"/> |         | <img src="art/screenshots/page_92.png" width="200"/> |
 
-| Page 93 | Page 94 | Page 95 | Page 96 |
-| ------- | ------- | ------- | ------- |
-|         |         |         | <img src="art/screenshots/page_96.png" width="200"/> |
+| Page 93                                              | Page 94 | Page 95 | Page 96 |
+| ---------------------------------------------------- | ------- | ------- | ------- |
+| <img src="art/screenshots/page_93.png" width="200"/> |         |         | <img src="art/screenshots/page_96.png" width="200"/> |
 
 | Page 97 | Page 98 | Page 99 | Page 100 |
 | ------- | ------- | ------- | -------- |
