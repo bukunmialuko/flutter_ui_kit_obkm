@@ -98,6 +98,7 @@ class MobileRoutes {
   static const pg88 = 'pg88';
   static const pg90 = 'pg90';
   static const pg89 = 'pg89';
+  static const pg96 = "pg96";
   static const pg95 = "pg95";
   static const pg94 = 'pg94';
   static const pg93 = "pg93";
