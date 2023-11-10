@@ -117,6 +117,9 @@ flutter:
     - assets/png/m99/
     - assets/png/m98/
     - assets/png/m100/
+    - assets/png/m97/
+    - assets/png/m96/
+    - assets/png/m95/
 
     # SVGs
     - assets/svg/

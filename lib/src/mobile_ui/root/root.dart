@@ -556,21 +556,58 @@ class RootWidget extends StatelessWidget {
                   }),
 
               PageButtonWidget(
+                  page: 92,
+                  onPressed: () {
+                    context.push("/${MobileRoutes.pg92}");
+
+                  }),
+              
+              
+              PageButtonWidget(
+                  page: 94,
+                  onPressed: () {
+                    context.push("/${MobileRoutes.pg94}");
+                  }),
+              
+              PageButtonWidget(
                   page: 93,
                   onPressed: () {
                     context.push("/${MobileRoutes.pg93}");
                   }),
 
               PageButtonWidget(
-                  page: 92,
+                  page: 95,
                   onPressed: () {
-                    context.push("/${MobileRoutes.pg92}");
+                    context.push("/${MobileRoutes.pg95}");
                   }),
+              
+              
+              PageButtonWidget(
+                  page: 96,
+                  onPressed: () {
+                    context.push("/${MobileRoutes.pg96}");
+                  }),
+              
+              PageButtonWidget(
+
+                  page: 97,
+                  onPressed: () {
+                    context.push("/${MobileRoutes.pg97}");
+                  }),
+              
+              
               PageButtonWidget(
                   page: 98,
                   onPressed: () {
                     context.push("/${MobileRoutes.pg98}");
                   }),
+              
+              PageButtonWidget(
+                  page: 99,
+                  onPressed: () {
+                    context.push("/${MobileRoutes.pg99}");
+
+              }),
 
               
               PageButtonWidget(
@@ -581,12 +618,9 @@ class RootWidget extends StatelessWidget {
                   }),
 
 
-              PageButtonWidget(
-                  page: 99,
-                  onPressed: () {
-                    context.push("/${MobileRoutes.pg99}");
+              
 
-                  }),
+              
 
               _RangeHeader(text: "101 -150"),
 
