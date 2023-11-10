@@ -134,10 +134,10 @@ flutter build apk
 | ------- | ---------------------------------------------------- | ------- | ------- |
 | <img src="art/screenshots/page_93.png" width="200"/> | <img src="art/screenshots/page_94.png" width="200"/> | <img src="art/screenshots/page_95.png" width="200"/> | <img src="art/screenshots/page_96.png" width="200"/> |
 
-  
-| Page 97 | Page 98 | Page 99 | Page 100 |
-| ------- | ------- | ------- | -------- |
-| <img src="art/screenshots/page_97.png" width="200"/> |         |         |          |
+| Page 97 | Page 98 | Page 99                                              | Page 100                                              |
+| ------- | ------- | ---------------------------------------------------- | ----------------------------------------------------- |
+| <img src="art/screenshots/page_97.png" width="200"/> | <img src="art/screenshots/page_98.png" width="200"/> | <img src="art/screenshots/page_99.png" width="200"/> | <img src="art/screenshots/page_100.png" width="200"/> |
+
 
 | Page 99 | Page 100 |
 | ------- | -------- |
