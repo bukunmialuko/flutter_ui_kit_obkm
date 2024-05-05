@@ -4,15 +4,6 @@ A Simple UI Kit.
 
 <br />
 
-## ✨ Requirements
-
-- Any Operating System (ie. MacOS X, Linux, Windows)
-- Any IDE with Flutter SDK installed (ie. IntelliJ, Android Studio, VSCode etc)
-- A little knowledge of Dart and Flutter
-- A brain to think 🤓🤓
-
-<br />
-
 ## ✨ Code Generation
 
 Flutter gen : `flutter packages pub run build_runner build`
