@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_ui_kit_obkm/src/mobile_ui/35/widgets/date_item.dart';
-import 'package:flutter_ui_kit_obkm/src/mobile_ui/35/widgets/event.dart';
-import 'package:flutter_ui_kit_obkm/src/mobile_ui/35/widgets/nearby_event.dart';
+import 'package:flutter_ui_kit_obkm/src/screens/35/widgets/date_item.dart';
+import 'package:flutter_ui_kit_obkm/src/screens/35/widgets/event.dart';
+import 'package:flutter_ui_kit_obkm/src/screens/35/widgets/nearby_event.dart';
 import 'package:go_router/go_router.dart';
 
 class Page35 extends StatelessWidget {

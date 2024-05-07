@@ -3,7 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
-import 'package:flutter_ui_kit_obkm/src/mobile_ui/40/custom_shape.dart';
+import 'package:flutter_ui_kit_obkm/src/screens/40/custom_shape.dart';
 
 class ChatBubble extends StatelessWidget {
   const ChatBubble({

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
-import 'package:flutter_ui_kit_obkm/src/mobile_ui/37/add_to_cart.dart';
+import 'package:flutter_ui_kit_obkm/src/screens/37/add_to_cart.dart';
 
 class Page37 extends StatelessWidget {
   const Page37({super.key});

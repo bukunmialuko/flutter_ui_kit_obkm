@@ -8,22 +8,7 @@ We gladly accept contributions via GitHub pull requests.
 
 2. [Fork the project:](https://github.com/bukunmialuko/flutter_ui_kit_obkm.git)
 
-3. Create a Branch with the style :
-   feature/M20 
-   or 
-   feature/W5
-
-   - M: Implies that you are working on a mobile screen
-
-   - W: Implies that you are working on a web screen
-
-   - 5: Implies that you are working on page 5
-
-   - 20: Implies that you are working on page 20
-
-    Branch categories : [feature, bugfix, chore]
-
-4. Once a screen is implemented, 
+3. Once a screen is implemented, 
    - Create a Draft PR with title e.g "Mobile Screen 20" or "Web Screen 20". 
    - Take a screenshot of your work, and rename the picture according in the screen name format name 
      e.g:
@@ -34,6 +19,6 @@ We gladly accept contributions via GitHub pull requests.
    - Push one more commit to the Draft PR and move it to review
    - Add reviewers to the PR
    
-5. One of the admins will review and merge your PR
+4. One of the admins will review and merge your PR
 
 Thanks for contributing. ❤️🫡🎖️

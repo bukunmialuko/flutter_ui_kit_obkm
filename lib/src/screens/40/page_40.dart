@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_ui_kit_obkm/src/mobile_ui/40/chat_bubble.dart';
+import 'package:flutter_ui_kit_obkm/src/screens/40/chat_bubble.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page40 extends StatelessWidget {
