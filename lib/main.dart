@@ -1,9 +1,20 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/new_routes.dart';
 
 void main() async {
-  runApp(const App());
+  // runApp(const App());
+  runApp(
+    DevicePreview(
+      enabled: true,
+      tools: [
+        ...DevicePreview.defaultTools,
+        // const CustomPlugin(),
+      ],
+      builder: (context) => const App(),
+    ),
+  );
 }
 
 class App extends StatelessWidget {
