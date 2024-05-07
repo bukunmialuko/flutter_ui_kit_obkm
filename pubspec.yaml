@@ -41,6 +41,7 @@ dependencies:
   go_router: ^5.1.10
   intl: ^0.18.1
   flutter_staggered_grid_view: ^0.7.0
+  device_preview: ^1.1.0
 
 dev_dependencies:
   flutter_test:
