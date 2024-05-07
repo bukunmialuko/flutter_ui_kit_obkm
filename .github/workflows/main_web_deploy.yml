@@ -30,12 +30,12 @@ jobs:
 
       - name: Clean Project, Get Dependencies & Generate Required Code
         run: |
-          cd .scripts/ci/
-          bash ./pub_clean_get_gen.sh
+          cd .scripts/
+          bash ./install.sh
 
       - name: Generate Web Build
         run: |
-          cd .scripts/ci/
+          cd .scripts/
           bash ./web_build.sh
 
       - name: Save Build Folder As Artifact
