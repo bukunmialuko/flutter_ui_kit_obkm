@@ -1,20 +1,22 @@
 # Flutter Ui Kit
 
-A Simple UI Kit.
+A collection of mobile screens.
 
-<br />
+## ✨ Setup
 
-## ✨ Code Generation
-
-Flutter gen : `flutter packages pub run build_runner build`
+Run the `install.sh` script in `.scripts` directory
 
 ## Contributing
 
-[To contribute, read short guidelines](https://github.com/bukunmialuko/flutter_ui_kit_obkm/blob/main/CONTRIBUTING.md)
+- You can add your own UI designs
+- You can code any screen on the figma design
 
-## Build apk
 
-flutter build apk
+## 🤓 Design Credit
+
+**Oscar Sun**
+(https://www.oscarsun.design)
+
 
 ## 📸 Banner
 
@@ -128,28 +130,3 @@ flutter build apk
 | Page 97                                              | Page 98                                              | Page 99                                              | Page 100                                              |
 | ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- | ----------------------------------------------------- |
 | <img src="art/screenshots/page_97.png" width="200"/> | <img src="art/screenshots/page_98.png" width="200"/> | <img src="art/screenshots/page_99.png" width="200"/> | <img src="art/screenshots/page_100.png" width="200"/> |
-
-<br />
-Web Page 7
-<img src="art/screenshots/web_page_7.png" alt="Web page 7"/>
-
-</p>
-
-<br />
-
-## 🤓 Design Credit
-
-**Oscar Sun**
-(https://www.oscarsun.design)
-
-<br />
-
-## 😃 Show some love ❤️😍😍
-
-Leave a 🌟
-
-Follow for update. 😃
-
-## Development version :hammer:
-
-- [APK (direct download)](https://github.com/bukunmialuko/flutter_ui_kit_obkm/releases/download/v1.0.3/app-release.apk)
