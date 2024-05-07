@@ -5,8 +5,8 @@ import 'package:go_router/go_router.dart';
 
 import 'widgets/page_button_widget.dart';
 
-class RootWidget extends StatelessWidget {
-  const RootWidget({Key? key}) : super(key: key);
+class MobileHomePage extends StatelessWidget {
+  const MobileHomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

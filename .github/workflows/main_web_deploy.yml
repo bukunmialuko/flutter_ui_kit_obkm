@@ -1,0 +1,79 @@
+name: Generate Web Build & Deploy To Vercel
+
+on:
+  push:
+    branches: [ main ]
+
+env:
+  flutter_version: '3.19.1'
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+jobs:
+  generate_web_build:
+    name: Generate Web Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Java 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: 17
+          distribution: 'zulu'
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2.5.0
+        with:
+          flutter-version: ${{ env.flutter_version }}
+          channel: 'stable'
+          cache: true
+
+      - name: Clean Project, Get Dependencies & Generate Required Code
+        run: |
+          cd .scripts/ci/
+          bash ./pub_clean_get_gen.sh
+
+      - name: Generate Web Build
+        run: |
+          cd .scripts/ci/
+          bash ./web_build.sh
+
+      - name: Save Build Folder As Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: web_build_folder
+          path: build/web
+
+  deploy_web_build_to_vercel:
+    name: Deploy Web Build To Vercel
+    needs: generate_web_build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create Build Folder
+        run: |
+          mkdir build
+          cd build
+
+      - name: Download Web Build Folder
+        uses: actions/download-artifact@v4
+        with:
+          name: web_build_folder
+          path: build/
+
+      - name: Install Vercel CLI
+        run: |
+          (cd build && npm install --global vercel@latest)
+
+      - name: Pull Vercel Environment Information
+        run: |
+          (cd build && vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }})
+
+      - name: Build Project Artifacts
+        run: |
+          (cd build && vercel build --prod --token=${{ secrets.VERCEL_TOKEN }})
+
+      - name: Deploy Project Artifacts to Vercel
+        run: |
+          (cd build && vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }})
+
