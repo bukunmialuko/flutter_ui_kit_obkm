@@ -1,5 +1,5 @@
 class MobileRoutes {
-  static const root = "/";
+  static const home = "/";
 
   /// 1 - 20
   static const pg1 = "pg1";
