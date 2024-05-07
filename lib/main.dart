@@ -7,10 +7,9 @@ import 'package:flutter_ui_kit_obkm/src/navigation/new_routes.dart';
 void main() async {
   runApp(
     DevicePreview(
-      enabled: !kDebugMode,
+      enabled: kReleaseMode,
       tools: [
         ...DevicePreview.defaultTools,
-        // const CustomPlugin(),
       ],
       builder: (context) => const App(),
     ),
@@ -28,11 +27,7 @@ class App extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: "UI Kit",
         themeMode: ThemeMode.light,
-        routerConfig: newRoutesConfig,
-        // navigatorKey: GetIt.I.get<NavigationService>().navigatorKey,
-        // initialRoute: MobileRoutes.root,
-        // onGenerateRoute: routes,
-        // home: RootWidget(),
+        routerConfig: goRouter,
       ),
     );
   }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_ui_kit_obkm/src/mobile_ui/84/widgets/bubble.dart';
+import 'package:flutter_ui_kit_obkm/src/screens/84/widgets/bubble.dart';
 
 class Page84 extends StatelessWidget {
   const Page84({super.key});

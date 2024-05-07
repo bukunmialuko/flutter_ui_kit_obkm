@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_ui_kit_obkm/src/mobile_ui/23/model/pg_23_model.dart';
+import 'package:flutter_ui_kit_obkm/src/screens/23/model/pg_23_model.dart';
 
 class ScheduleList extends StatelessWidget {
   const ScheduleList({Key? key}) : super(key: key);

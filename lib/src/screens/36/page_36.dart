@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_ui_kit_obkm/src/mobile_ui/36/permanent_bottom_sheet.dart';
+import 'package:flutter_ui_kit_obkm/src/screens/36/permanent_bottom_sheet.dart';
 
 class Page36 extends StatelessWidget {
   const Page36({Key? key}) : super(key: key);

@@ -1,18 +1,18 @@
 # Flutter Ui Kit
 
-A collection of mobile screens.
+A collection of reusable mobile screens & widgets.
 
-## ✨ Setup
+## 🧑‍💻 Setup
 
 Run the `install.sh` script in `.scripts` directory
 
-## Contributing
+## ✨ Contributing
 
 - You can add your own UI designs
 - You can code any screen on the figma design
+- Read contributing guide
 
-
-## 🤓 Design Credit
+## 🎖️ Design Credit
 
 **Oscar Sun**
 (https://www.oscarsun.design)

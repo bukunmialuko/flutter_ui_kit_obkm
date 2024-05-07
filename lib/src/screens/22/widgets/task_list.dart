@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_ui_kit_obkm/src/mobile_ui/22/models/pg_22_model.dart';
+import 'package:flutter_ui_kit_obkm/src/screens/22/models/pg_22_model.dart';
 
 class TaskList extends StatelessWidget {
   const TaskList({Key? key}) : super(key: key);

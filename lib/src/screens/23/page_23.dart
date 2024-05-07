@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_ui_kit_obkm/src/mobile_ui/23/widget/schedule_list.dart';
+import 'package:flutter_ui_kit_obkm/src/screens/23/widget/schedule_list.dart';
 import 'package:go_router/go_router.dart';
 
 class Page23 extends StatefulWidget {
