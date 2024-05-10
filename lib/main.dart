@@ -9,7 +9,8 @@ void main() async {
     DevicePreview(
       enabled: kReleaseMode,
       tools: [
-        ...DevicePreview.defaultTools,
+        DeviceSection(),
+        SettingsSection(),
       ],
       builder: (context) => const App(),
     ),
