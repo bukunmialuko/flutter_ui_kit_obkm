@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Page156To160 extends StatefulWidget {
   const Page156To160({Key? key}) : super(key: key);
@@ -15,18 +16,39 @@ class _Page156To160State extends State<Page156To160> {
       body: SafeArea(
         child: Column(
           children: [
-            Container(
-              height: 5.h,
-              padding: EdgeInsets.symmetric(horizontal: 1.w),
-              decoration: BoxDecoration(
-                color: Color(0xffD0D0D0),
-              ),
-              child: Row(
+            LinearProgressIndicator(
+              backgroundColor: Color(0xffD0D0D0),
+              color: Color(0xffAAB6B3),
+              value: 0.3,
+              minHeight: 5.h,
+            ),
+            // SingleChildScrollView(),
+            Expanded(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Container(color: Color(0xffAAB6B3), width: (MediaQuery.of(context).size.width * 0.5) - 2.w),
+                  Text(
+                    "What's your first name?",
+                    style: GoogleFonts.workSans(
+                      fontSize: 24.sp,
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  146.horizontalSpace,
+                  TextField(
+                    style: GoogleFonts.workSans(
+                      fontSize: 64.sp,
+                      fontWeight: FontWeight.w200,
+                    ),
+                    textAlign: TextAlign.center,
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: "name",
+                    ),
+                  ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),
