@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -46,6 +44,7 @@ class Page103 extends StatelessWidget {
         padding: EdgeInsets.symmetric(horizontal: 24.w),
         child: Column(
           children: [
+            27.verticalSpace,
             FilterGroup(
               filters: [
                 FilterItem(title: 'Class'),
@@ -54,11 +53,14 @@ class Page103 extends StatelessWidget {
                 FilterItem(title: 'Rep-based'),
               ],
               onChanged: (value) {},
+              width: 168.w,
               title: 'Format',
             ),
             36.verticalSpace,
             FilterGroup(
               onChanged: (value) {},
+              spacing: 7,
+              width: 109.w,
               filters: [
                 FilterItem(title: '15 min'),
                 FilterItem(title: '25 mins'),
@@ -69,6 +71,8 @@ class Page103 extends StatelessWidget {
             36.verticalSpace,
             FilterGroup(
               onChanged: (value) {},
+              width: 109.w,
+              spacing: 7,
               filters: [
                 FilterItem(
                   title: 'None',
@@ -81,6 +85,8 @@ class Page103 extends StatelessWidget {
             36.verticalSpace,
             FilterGroup(
               onChanged: (value) {},
+              spacing: 7,
+              width: 109.w,
               filters: [
                 FilterItem(title: 'Beginner'),
                 FilterItem(title: 'Intermediate'),
@@ -90,6 +96,8 @@ class Page103 extends StatelessWidget {
             ),
             36.verticalSpace,
             FilterGroup(
+              spacing: 7,
+              width: 109.w,
               title: 'Intensity',
               onChanged: (value) {},
               filters: [
@@ -98,6 +106,7 @@ class Page103 extends StatelessWidget {
                 FilterItem(title: 'High'),
               ],
             ),
+            4.verticalSpace,
           ],
         ),
       ),
@@ -111,53 +120,60 @@ class FilterGroup extends StatelessWidget {
     required this.filters,
     required this.onChanged,
     required this.title,
+    this.width,
+    this.spacing = 5,
   });
 
   final String title;
   final List<FilterItem> filters;
+  final double spacing;
+  final double? width;
   final Function(FilterItem value) onChanged;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: [
-          Text(
-            title,
-            style: TextStyle(
-              fontWeight: FontWeight.w500,
-              fontSize: 22.sp,
-            ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          title,
+          style: TextStyle(
+            fontWeight: FontWeight.w500,
+            fontSize: 22.sp,
           ),
-          Wrap(
-            runSpacing: 5,
-            spacing: 5,
-            children: filters
-                .map(
-                  (filter) => GestureDetector(
-                    onTap: () => onChanged(filter),
-                    child: FilterCard(
-                      title: filter.title,
-                    ),
+        ),
+        20.verticalSpace,
+        Wrap(
+          runSpacing: spacing,
+          spacing: spacing,
+          children: filters
+              .map(
+                (filter) => GestureDetector(
+                  onTap: () => onChanged(filter),
+                  child: FilterCard(
+                    width: width,
+                    title: filter.title,
                   ),
-                )
-                .toList(),
-          ),
-        ],
-      ),
+                ),
+              )
+              .toList(),
+        ),
+      ],
     );
   }
 }
 
 class FilterCard extends StatelessWidget {
-  const FilterCard({required this.title, super.key});
+  const FilterCard({required this.title, super.key, this.width});
 
   final String title;
+  final double? width;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 48.h,
+      width: width,
       padding: EdgeInsets.all(8.w),
       decoration: BoxDecoration(
         border: Border.all(
@@ -169,15 +185,13 @@ class FilterCard extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Expanded(
-            child: Text(
-              title,
-              style: TextStyle(
-                fontWeight: FontWeight.w500,
-                fontSize: 22.sp,
-              ),
-              textAlign: TextAlign.center,
+          Text(
+            title,
+            style: TextStyle(
+              fontWeight: FontWeight.w500,
+              fontSize: 13.sp,
             ),
+            textAlign: TextAlign.center,
           ),
         ],
       ),
