@@ -33,6 +33,10 @@ jobs:
           cd .scripts/
           bash ./install.sh
 
+      - name: Run flutter test
+        run: |
+          flutter test
+
       - name: Generate Web Build
         run: |
           cd .scripts/

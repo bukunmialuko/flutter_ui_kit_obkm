@@ -1,8 +1,6 @@
 name: (PR) Run flutter test
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
     types: [ opened, synchronize, reopened ]
 
