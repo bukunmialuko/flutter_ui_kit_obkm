@@ -1,0 +1,29 @@
+name: (PR) Run flutter test
+
+on:
+  pull_request:
+    types: [ opened, synchronize, reopened ]
+
+env:
+  flutter_version: '3.19.1'
+  flutter_channel: 'stable'
+
+jobs:
+  flutter_format:
+    name: Flutter Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2.5.0
+        with:
+          flutter-version: ${{ env.flutter_version }}
+          channel: ${{ env.flutter_channel }}
+          cache: true
+      - name: Generate required code
+        run: |
+          flutter pub get
+          flutter pub run build_runner build --delete-conflicting-outputs
+      - name: Run flutter test
+        run: |
+          flutter test
