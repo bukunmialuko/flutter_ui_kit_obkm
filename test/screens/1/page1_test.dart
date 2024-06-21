@@ -1,25 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_ui_kit_obkm/main.dart' as test_app;
-import 'package:flutter_ui_kit_obkm/src/screens/home/widgets/page_button_widget.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../../util.dart';
 
 void main() {
   setUp(() => GoogleFonts.config.allowRuntimeFetching = false);
 
-  testWidgets('Test Page 1', (tester) async {
-    await tester.binding.setSurfaceSize(Size(390, 844));
-    await tester.pumpWidget(
-      test_app.App(),
-    );
-    await tester.pumpAndSettle();
-
-    expect(find.text('Flutter Ui Kit'), findsOneWidget);
-
-    await tester.tap(find.widgetWithText(PageButtonWidget, '1'));
-    await tester.pumpAndSettle();
-
-    expect(find.text('Flutter Ui Kit'), findsNothing);
+  testWidgets('test textformfield is readonly', (tester) async {
+    await loadAppAndNavigate(tester, 1);
 
     expect(find.text("Contacts"), findsWidgets);
     expect(find.text('Hello'), findsNothing);
@@ -27,6 +16,12 @@ void main() {
     await tester.enterText(searchField, 'Hello');
     await tester.pumpAndSettle();
     expect(find.text('Hello'), findsNothing);
+    await tester.tap(find.widgetWithIcon(IconButton, Icons.add_circle));
+    await tester.pumpAndSettle();
+  });
+
+  testWidgets('test to find name at the end of listview items', (tester) async {
+    await loadAppAndNavigate(tester, 1);
     final contactsListFinder = find.byWidgetPredicate(
         (widget) => widget is Scrollable && widget.axis == Axis.vertical,
         description: 'Vertical Scroll list View');
