@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
@@ -16,6 +17,14 @@ var _page175List = [
 class Page175 extends StatelessWidget {
   const Page175({Key? key}) : super(key: key);
 
+  double getToolbarHeigth() {
+    return kIsWeb
+        ? 63.h
+        : Platform.isIOS
+            ? 63.h
+            : 83.h;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +32,7 @@ class Page175 extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.white,
-        toolbarHeight: Platform.isIOS ? 63.h : 83.h,
+        toolbarHeight: getToolbarHeigth(),
         centerTitle: true,
         titleSpacing: 8.w,
         leading: Padding(
