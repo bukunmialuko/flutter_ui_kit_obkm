@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_ui_kit_obkm/main.dart' as test_app;
+import 'package:flutter_ui_kit_obkm/src/screens/home/home_page.dart';
 import 'package:flutter_ui_kit_obkm/src/screens/home/widgets/page_button_widget.dart';
 
 Future<void> loadAppAndNavigate(WidgetTester tester, int page) async {
@@ -10,7 +11,7 @@ Future<void> loadAppAndNavigate(WidgetTester tester, int page) async {
   );
   await tester.pumpAndSettle();
 
-  expect(find.text('Flutter Ui Kit'), findsOneWidget);
+  expect(find.byType(MobileHomePage), findsOneWidget);
 
   final buttonFinder = find.widgetWithText(PageButtonWidget, '$page');
   final scrollableFinder = find.byType(Scrollable);
@@ -24,5 +25,5 @@ Future<void> loadAppAndNavigate(WidgetTester tester, int page) async {
   await tester.tap(buttonFinder);
   await tester.pumpAndSettle();
 
-  expect(find.text('Flutter Ui Kit'), findsNothing);
+  expect(find.byType(MobileHomePage), findsNothing);
 }
