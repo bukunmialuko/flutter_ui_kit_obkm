@@ -5,22 +5,22 @@ import 'package:flutter_ui_kit_obkm/src/res/styles.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+final List<String> names = [
+  "Justin Wan",
+  "Eathan Kwan",
+  "Tannzz Wan",
+  "Cecily Wan",
+  "Oscar Wan",
+  "Bukunmi Aluko",
+  "John Doe",
+  "Lorem Master",
+  "Elon Musk",
+  "Bill Gates",
+  "Jeff Bezos"
+];
+
 class Page1 extends StatelessWidget {
   const Page1({Key? key}) : super(key: key);
-
-  static const List<String> names = [
-    "Justin Wan",
-    "Eathan Kwan",
-    "Tannzz Wan",
-    "Cecily Wan",
-    "Oscar Wan",
-    "Bukunmi Aluko",
-    "John Doe",
-    "Lorem Master",
-    "Elon Musk",
-    "Bill Gates",
-    "Jeff Bezos"
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class Page1 extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            Padding(
+            Container(
               padding: EdgeInsets.fromLTRB(24.w, 54.h, 24.w, 29.h),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -37,14 +37,16 @@ class Page1 extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text(
-                        "Contacts",
-                        style: GoogleFonts.workSans(
-                          textStyle: TextStyle(
-                            fontSize: 24.sp,
-                            color: Colors.black,
-                            fontStyle: FontStyle.normal,
-                            fontWeight: FontWeight.w600,
+                      Expanded(
+                        child: Text(
+                          "Contacts",
+                          style: GoogleFonts.workSans(
+                            textStyle: TextStyle(
+                              fontSize: 24.sp,
+                              color: Colors.black,
+                              fontStyle: FontStyle.normal,
+                              fontWeight: FontWeight.w600,
+                            ),
                           ),
                         ),
                       ),
@@ -67,8 +69,6 @@ class Page1 extends StatelessWidget {
                   ),
                   SizedBox(height: 22.h),
                   TextFormField(
-                    readOnly: true,
-                    //false
                     autofocus: false,
                     // style: ,
                     decoration: InputDecoration(
@@ -76,7 +76,8 @@ class Page1 extends StatelessWidget {
                         padding: EdgeInsets.symmetric(horizontal: 8.w),
                         child: const Icon(Icons.search, color: Colors.black),
                       ),
-                      prefixIconConstraints: BoxConstraints(maxHeight: 20.w, maxWidth: 35.w),
+                      prefixIconConstraints:
+                          BoxConstraints(maxHeight: 20.w, maxWidth: 35.w),
                       hintText: "Contacts",
                       // hintStyle: textFieldPlaceholderTextStyle(context),
                       isDense: true,
@@ -98,67 +99,7 @@ class Page1 extends StatelessWidget {
                     onTap: () {},
                   ),
                   SizedBox(height: 30.h),
-                  Text(
-                    "Last Contacted",
-                    style: GoogleFonts.workSans(
-                      textStyle: TextStyle(
-                        fontSize: 14.sp,
-                        color: Colors.black,
-                        fontStyle: FontStyle.normal,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 24.h),
-                  SizedBox(
-                    height: 60.r,
-                    width: 359.w,
-                    child: ListView.separated(
-                      physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
-                      scrollDirection: Axis.horizontal,
-                      itemCount: names.length,
-                      itemBuilder: (c, i) {
-                        return SizedBox(
-                          width: 59.r,
-                          height: 59.r,
-                          child: Stack(
-                            fit: StackFit.loose,
-                            children: [
-                              Positioned(
-                                left: 0,
-                                top: 0,
-                                child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(8.r),
-                                  child: Container(
-                                    width: 56.r,
-                                    height: 56.r,
-                                    color: ColorName.grayC4,
-                                  ),
-                                ),
-                              ),
-                              Positioned(
-                                right: 0,
-                                bottom: 0,
-                                child: Container(
-                                  width: 18.r,
-                                  height: 18.r,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(18.r),
-                                    color: Colors.red,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        );
-                      },
-                      separatorBuilder: (BuildContext context, int index) {
-                        return SizedBox(
-                          width: 16.w,
-                        );
-                      },
-                    ),
-                  ),
+                  _LastContacted()
                 ],
               ),
             ),
@@ -182,82 +123,12 @@ class Page1 extends StatelessWidget {
                 ),
                 child: ListView.separated(
                   itemCount: names.length,
-                  physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
+                  padding: EdgeInsets.zero,
+                  physics: const BouncingScrollPhysics(
+                      parent: AlwaysScrollableScrollPhysics()),
                   itemBuilder: (c, i) {
-                    return SizedBox(
-                      width: 340.w,
-                      height: 60.h,
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(8.r),
-                            child: Container(
-                              width: 60.r,
-                              height: 60.r,
-                              // margin: EdgeInsets.only(right: 14.w),
-                              color: ColorName.grayC4,
-                            ),
-                          ),
-                          SizedBox(width: 14.w),
-                          Expanded(
-                            child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Row(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.end,
-                                  children: [
-                                    Expanded(
-                                      child: Text(
-                                        names[i],
-                                        style: GoogleFonts.workSans(
-                                          textStyle: TextStyle(
-                                            fontSize: 16.sp,
-                                            color: Colors.black,
-                                            fontStyle: FontStyle.normal,
-                                            fontWeight: FontWeight.w600,
-                                          ),
-                                        ),
-                                        maxLines: 1,
-                                        overflow: TextOverflow.ellipsis,
-                                      ),
-                                    ),
-                                    Text(
-                                      "14:23",
-                                      style: GoogleFonts.workSans(
-                                        textStyle: TextStyle(
-                                          fontSize: 14.sp,
-                                          color: const Color(0xffA8A8A8),
-                                          fontStyle: FontStyle.normal,
-                                          fontWeight: FontWeight.w400,
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                SizedBox(height: 3.h),
-                                Text(
-                                  "Lorem Ipsum",
-                                  style: GoogleFonts.workSans(
-                                    textStyle: TextStyle(
-                                      fontSize: 14.sp,
-                                      color: Colors.black,
-                                      fontStyle: FontStyle.normal,
-                                      fontWeight: FontWeight.w400,
-                                    ),
-                                  ),
-                                  maxLines: 1,
-                                  overflow: TextOverflow.ellipsis,
-                                ),
-                              ],
-                            ),
-                          )
-                        ],
-                      ),
+                    return _ListItem(
+                      name: names[i],
                     );
                   },
                   separatorBuilder: (c, i) {
@@ -269,6 +140,171 @@ class Page1 extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+class _ListItem extends StatelessWidget {
+  final String name;
+  const _ListItem({required this.name});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 340.w,
+      height: 60.h,
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          ClipRRect(
+            borderRadius: BorderRadius.circular(8.r),
+            child: Container(
+              width: 60.h,
+              height: 60.h,
+              color: ColorName.grayC4,
+            ),
+          ),
+          SizedBox(width: 14.w),
+          Expanded(
+            child: SizedBox(
+              height: 60.h,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Row(
+                    mainAxisSize: MainAxisSize.max,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Expanded(
+                        child: Text(
+                          name,
+                          style: TextStyle(
+                            fontSize: 16.sp,
+                            color: Colors.black,
+                            fontStyle: FontStyle.normal,
+                            fontWeight: FontWeight.w600,
+                            height: 1,
+                          ),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                      SizedBox(width: 8),
+                      Text(
+                        "14:23",
+                        style: TextStyle(
+                          fontSize: 12.sp,
+                          color: const Color(0xffA8A8A8),
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.w400,
+                          height: 1,
+                        ),
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ],
+                  ),
+                  3.verticalSpace,
+                  Flexible(
+                    child: Text(
+                      "Lorem Ipsum",
+                      style: GoogleFonts.workSans(
+                        textStyle: TextStyle(
+                          fontSize: 12.sp,
+                          color: Colors.black,
+                          fontStyle: FontStyle.normal,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class _LastContacted extends StatelessWidget {
+  const _LastContacted();
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(
+          "Last Contacted",
+          style: GoogleFonts.workSans(
+            textStyle: TextStyle(
+              fontSize: 14.sp,
+              color: Colors.black,
+              fontStyle: FontStyle.normal,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+          textAlign: TextAlign.left,
+        ),
+        SizedBox(height: 24.h),
+        SizedBox(
+          height: 60.r,
+          width: 359.w,
+          child: ListView.separated(
+            physics: const BouncingScrollPhysics(
+                parent: AlwaysScrollableScrollPhysics()),
+            scrollDirection: Axis.horizontal,
+            itemCount: names.length,
+            itemBuilder: (c, i) {
+              return SizedBox(
+                width: 59.r,
+                height: 59.r,
+                child: Stack(
+                  fit: StackFit.loose,
+                  children: [
+                    Positioned(
+                      left: 0,
+                      top: 0,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(8.r),
+                        child: Container(
+                          width: 56.r,
+                          height: 56.r,
+                          color: ColorName.grayC4,
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      right: 0,
+                      bottom: 0,
+                      child: Container(
+                        width: 18.r,
+                        height: 18.r,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(18.r),
+                          color: Colors.red,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              );
+            },
+            separatorBuilder: (BuildContext context, int index) {
+              return SizedBox(
+                width: 16.w,
+              );
+            },
+          ),
+        ),
+      ],
     );
   }
 }
