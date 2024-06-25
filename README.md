@@ -6,12 +6,6 @@ A collection of reusable mobile screens & widgets.
 
 Run the `install.sh` script in `.scripts` directory
 
-## ✨ Contributing
-
-- You can add your own UI designs
-- You can code any screen on the figma design
-- Read contributing guide
-
 ## 🎖️ Design Credit
 
 **Oscar Sun**
