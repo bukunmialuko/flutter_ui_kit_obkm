@@ -10,12 +10,19 @@ class Page2 extends StatelessWidget {
 
   static List<MessageModel> messages = [
     MessageModel(
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie fermentum porttitor diam purus ",
+        text:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie fermentum porttitor diam purus ",
         isRight: false,
         time: "08:30"),
     MessageModel(
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie.", isRight: false, time: "08:30"),
-    MessageModel(text: "Lorem ipsum dolor amet, consectetur.", isRight: true, time: "08:30"),
+        text:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie.",
+        isRight: false,
+        time: "08:30"),
+    MessageModel(
+        text: "Lorem ipsum dolor amet, consectetur.",
+        isRight: true,
+        time: "08:30"),
     MessageModel(text: "Consectetur", isRight: false, time: "08:30"),
     MessageModel(text: "ipsum .", isRight: true, time: "08:30")
   ];
@@ -65,8 +72,11 @@ class Page2 extends StatelessWidget {
                         ),
                         child: const Icon(Icons.search, color: Colors.black),
                       ),
-                      prefixIconConstraints:
-                          BoxConstraints(minHeight: 24.r, maxHeight: 24.r, minWidth: 41.w, maxWidth: 41.r),
+                      prefixIconConstraints: BoxConstraints(
+                          minHeight: 24.r,
+                          maxHeight: 24.r,
+                          minWidth: 41.w,
+                          maxWidth: 41.r),
                       hintText: "Search conversations",
                       // hintStyle: textFieldPlaceholderTextStyle(context),
                       isDense: true,
@@ -117,7 +127,8 @@ class Page2 extends StatelessWidget {
                           width: 24.r,
                           height: 24.r,
                           child: IconButton(
-                            visualDensity: VisualDensity.adaptivePlatformDensity,
+                            visualDensity:
+                                VisualDensity.adaptivePlatformDensity,
                             padding: EdgeInsets.zero,
                             onPressed: () {},
                             icon: const Icon(
@@ -139,7 +150,8 @@ class Page2 extends StatelessWidget {
                           width: 24.r,
                           height: 24.r,
                           child: IconButton(
-                            visualDensity: VisualDensity.adaptivePlatformDensity,
+                            visualDensity:
+                                VisualDensity.adaptivePlatformDensity,
                             padding: EdgeInsets.zero,
                             onPressed: () {},
                             icon: const Icon(
@@ -178,14 +190,16 @@ class Page2 extends StatelessWidget {
                   children: [
                     Expanded(
                       child: ListView.builder(
-                        physics: const BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
+                        physics: const BouncingScrollPhysics(
+                            parent: AlwaysScrollableScrollPhysics()),
                         itemCount: messages.length,
                         itemBuilder: (c, i) {
                           var showProfileBox = true;
                           if (i != 0) {
                             var currentChat = messages[i];
                             var previousChat = messages[i - 1];
-                            showProfileBox = currentChat.isRight != previousChat.isRight;
+                            showProfileBox =
+                                currentChat.isRight != previousChat.isRight;
                           }
                           return _buildChat(
                             chat: messages[i],
@@ -216,11 +230,15 @@ class Page2 extends StatelessWidget {
                                 isDense: true,
                                 filled: true,
                                 fillColor: ColorName.grayC4,
-                                focusedBorder: AppStyles.focusedTransparentBorder,
-                                disabledBorder: AppStyles.focusedTransparentBorder,
-                                enabledBorder: AppStyles.focusedTransparentBorder,
+                                focusedBorder:
+                                    AppStyles.focusedTransparentBorder,
+                                disabledBorder:
+                                    AppStyles.focusedTransparentBorder,
+                                enabledBorder:
+                                    AppStyles.focusedTransparentBorder,
                                 errorBorder: AppStyles.focusedTransparentBorder,
-                                focusedErrorBorder: AppStyles.focusedTransparentBorder,
+                                focusedErrorBorder:
+                                    AppStyles.focusedTransparentBorder,
                                 errorStyle: errorTextStyle(context),
                               ),
                               textInputAction: TextInputAction.next,
@@ -235,7 +253,8 @@ class Page2 extends StatelessWidget {
                           Container(
                             width: 45.r,
                             height: 45.r,
-                            margin: EdgeInsets.symmetric(horizontal: 2.w, vertical: 2.h),
+                            margin: EdgeInsets.symmetric(
+                                horizontal: 2.w, vertical: 2.h),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(45.r),
                               color: const Color(0xffF4F4F4),
@@ -244,7 +263,8 @@ class Page2 extends StatelessWidget {
                               width: 24.r,
                               height: 24.r,
                               child: IconButton(
-                                visualDensity: VisualDensity.adaptivePlatformDensity,
+                                visualDensity:
+                                    VisualDensity.adaptivePlatformDensity,
                                 padding: EdgeInsets.zero,
                                 onPressed: () {},
                                 icon: const Icon(
@@ -267,7 +287,24 @@ class Page2 extends StatelessWidget {
     );
   }
 
-  Container _buildChat({required MessageModel chat, required bool showProfileBox}) {
+  ChatBubble _buildChat(
+      {required MessageModel chat, required bool showProfileBox}) {
+    return ChatBubble(chat: chat, showProfileBox: showProfileBox);
+  }
+}
+
+class ChatBubble extends StatelessWidget {
+  const ChatBubble({
+    super.key,
+    required this.chat,
+    required this.showProfileBox,
+  });
+
+  final MessageModel chat;
+  final bool showProfileBox;
+
+  @override
+  Widget build(BuildContext context) {
     return chat.isRight
         ? Container(
             margin: EdgeInsets.only(bottom: 42.h),
@@ -335,7 +372,8 @@ class Page2 extends StatelessWidget {
                       children: [
                         Flexible(
                           child: Container(
-                            padding: EdgeInsets.fromLTRB(18.w, 13.h, 18.w, 12.h),
+                            padding:
+                                EdgeInsets.fromLTRB(18.w, 13.h, 18.w, 12.h),
                             decoration: BoxDecoration(
                               color: const Color(0xffD0D0D0),
                               borderRadius: BorderRadius.only(
