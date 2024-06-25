@@ -5,7 +5,7 @@ on:
     types: [ opened, synchronize, reopened ]
 
 env:
-  flutter_version: '3.19.1'
+  flutter_version: '3.22.2'
   flutter_channel: 'stable'
 
 jobs:
