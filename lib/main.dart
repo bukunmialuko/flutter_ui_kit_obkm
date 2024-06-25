@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/src/navigation/new_routes.dart';
+import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
 
 void main() async {
   runApp(
@@ -28,6 +29,9 @@ class App extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: "UI Kit",
         themeMode: ThemeMode.light,
+        theme: ThemeData(
+          scaffoldBackgroundColor: AppColors.lightScaffoldBg,
+        ),
         routerConfig: goRouter,
       ),
     );
