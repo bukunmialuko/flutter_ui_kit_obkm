@@ -32,16 +32,16 @@ dependencies:
 
   cupertino_icons: ^1.0.4
 
-  flutter_screenutil: ^5.5.3+2
-  flutter_svg: ^2.0.5
+  flutter_screenutil: ^5.9.3
+  flutter_svg: ^2.0.10+1
   google_fonts: ^4.0.4
-  get_it: ^7.2.0
+  get_it: ^7.7.0
   table_calendar: ^3.0.6
-  http: ^0.13.5
-  go_router: ^5.1.10
-  intl: ^0.18.1
+  http: ^1.2.1
+  go_router: ^14.2.0
+  intl: ^0.19.0
   flutter_staggered_grid_view: ^0.7.0
-  device_preview: ^1.1.0
+  device_preview: ^1.2.0
 
 dev_dependencies:
   flutter_test:
