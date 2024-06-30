@@ -16,6 +16,11 @@ class Page102 extends StatelessWidget {
           backgroundColor: Colors.white,
           title: Text('Browse By'),
           bottom: TabBar(
+            labelColor: Colors.black,
+            isScrollable: true,
+            indicatorColor: Colors.black,
+            indicatorSize: TabBarIndicatorSize.label,
+            tabAlignment: TabAlignment.start,
             tabs: [
               Tab(text: 'For You'),
               Tab(text: 'Browse'),
