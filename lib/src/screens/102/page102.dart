@@ -46,69 +46,7 @@ class Page102 extends StatelessWidget {
                   13.verticalSpace,
                   ...List.generate(
                     28,
-                    (index) => Container(
-                      height: 100.h,
-                      margin: EdgeInsets.only(
-                        bottom: 16.w,
-                      ),
-                      child: Row(
-                        children: [
-                          Container(
-                            width: 100.w,
-                            height: 100.w,
-                            color: Color(0xffC4C4C4),
-                            alignment: Alignment.center,
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Text(
-                                  '13',
-                                  style: GoogleFonts.workSans(
-                                    color: Colors.black,
-                                    fontSize: 24.sp,
-                                  ),
-                                ),
-                                16.verticalSpace,
-                                Text(
-                                  'min',
-                                  style: GoogleFonts.workSans(
-                                    fontSize: 16.sp,
-                                    color: Colors.black,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          14.horizontalSpace,
-                          Expanded(
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
-                              children: [
-                                Text(
-                                  'Abs & Arms',
-                                  style: GoogleFonts.workSans(
-                                    color: Color(0xff262626),
-                                    fontWeight: FontWeight.w500,
-                                    fontSize: 15.sp,
-                                  ),
-                                ),
-                                12.verticalSpace,
-                                Text(
-                                  'Intermediate - Basic equipment - Strength',
-                                  style: GoogleFonts.workSans(
-                                    color: Color(0xffA8A8A8),
-                                    fontWeight: FontWeight.w500,
-                                    fontSize: 14.sp,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
+                    (index) => WorkoutCard(),
                   ),
                 ],
               ),
@@ -118,6 +56,99 @@ class Page102 extends StatelessWidget {
             SizedBox(),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class WorkoutCard extends StatelessWidget {
+  const WorkoutCard({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 100.h,
+      margin: EdgeInsets.only(
+        bottom: 16.w,
+      ),
+      child: Row(
+        children: [
+          Container(
+            width: 100.w,
+            height: 100.w,
+            color: Color(0xffC4C4C4),
+            alignment: Alignment.center,
+            padding: EdgeInsets.all(20.w),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Flexible(
+                  flex: 1,
+                  fit: FlexFit.tight,
+                  child: Text(
+                    '13',
+                    style: GoogleFonts.workSans(
+                      color: Colors.black,
+                      fontSize: 24.sp,
+                    ),
+                  ),
+                ),
+                16.verticalSpace,
+                Flexible(
+                  flex: 1,
+                  fit: FlexFit.tight,
+                  child: Text(
+                    'min',
+                    style: GoogleFonts.workSans(
+                      fontSize: 16.sp,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          14.horizontalSpace,
+          Expanded(
+            child: Padding(
+              padding: EdgeInsets.symmetric(vertical: 13.h),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Flexible(
+                    flex: 1,
+                    fit: FlexFit.tight,
+                    child: Text(
+                      'Abs & Arms',
+                      style: GoogleFonts.workSans(
+                        color: Color(0xff262626),
+                        fontWeight: FontWeight.w500,
+                        fontSize: 15.sp,
+                      ),
+                    ),
+                  ),
+                  12.verticalSpace,
+                  Flexible(
+                    flex: 1,
+                    fit: FlexFit.loose,
+                    child: Text(
+                      'Intermediate - Basic equipment - Strength',
+                      style: GoogleFonts.workSans(
+                        color: Color(0xffA8A8A8),
+                        fontWeight: FontWeight.w500,
+                        fontSize: 14.sp,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
