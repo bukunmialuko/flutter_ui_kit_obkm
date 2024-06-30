@@ -57,77 +57,95 @@ class _Page101State extends State<Page101> {
                   child: CollapsedTitle()),
               flexibleSpace: ExpandedTitle(),
             ),
-            SliverToBoxAdapter(
-              child: Container(
-                padding: EdgeInsets.symmetric(horizontal: 24.w, vertical: 38),
-                child: Column(
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Icon(Icons.check_circle_outline),
-                            4.horizontalSpace,
-                            Text(
+            SliverPadding(
+              padding: EdgeInsets.symmetric(
+                horizontal: 24.w,
+                vertical: 38.h,
+              ),
+              sliver: SliverGrid(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  crossAxisSpacing: 53.w,
+                  mainAxisSpacing: 46.h,
+                  mainAxisExtent: 44.h,
+                ),
+                delegate: SliverChildListDelegate(
+                  [
+                    SizedBox(
+                      height: 44.h,
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Icon(Icons.check_circle_outline),
+                          4.horizontalSpace,
+                          Expanded(
+                            child: Text(
                               '4 stages',
                               style: GoogleFonts.workSans(
                                 fontSize: 16.sp,
                                 fontWeight: FontWeight.w500,
                               ),
                             ),
-                          ],
-                        ),
-                        Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Icon(Icons.calendar_today),
-                            4.horizontalSpace,
-                            Text(
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 44.h,
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Icon(Icons.calendar_today),
+                          4.horizontalSpace,
+                          Expanded(
+                            child: Text(
                               '8 weeks, 3x a week',
                               style: GoogleFonts.workSans(
                                 fontSize: 16.sp,
                                 fontWeight: FontWeight.w500,
                               ),
-                            )
-                          ],
-                        ),
-                      ],
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                    46.verticalSpace,
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Icon(Icons.stairs),
-                            4.horizontalSpace,
-                            Text(
-                              'Intermediate',
+                    SizedBox(
+                      height: 44.h,
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Icon(Icons.stairs),
+                          4.horizontalSpace,
+                          Expanded(
+                            child: Text(
+                              'Intermedate',
                               style: GoogleFonts.workSans(
                                 fontSize: 16.sp,
                                 fontWeight: FontWeight.w500,
                               ),
                             ),
-                          ],
-                        ),
-                        Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Icon(Icons.timer),
-                            4.horizontalSpace,
-                            Text(
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 44.h,
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Icon(Icons.timer),
+                          4.horizontalSpace,
+                          Expanded(
+                            child: Text(
                               '60+ min workouts',
                               style: GoogleFonts.workSans(
                                 fontSize: 16.sp,
                                 fontWeight: FontWeight.w500,
                               ),
-                            )
-                          ],
-                        ),
-                      ],
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),
