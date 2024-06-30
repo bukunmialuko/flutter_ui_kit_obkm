@@ -11,7 +11,6 @@ Run the `install.sh` script in `.scripts` directory
 **Oscar Sun**
 (https://www.oscarsun.design)
 
-
 ## 📸 Banner
 
 <p align="center">
@@ -125,6 +124,6 @@ Run the `install.sh` script in `.scripts` directory
 | ---------------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------- | ----------------------------------------------------- |
 | <img src="art/screenshots/page_97.png" width="200"/> | <img src="art/screenshots/page_98.png" width="200"/> | <img src="art/screenshots/page_99.png" width="200"/> | <img src="art/screenshots/page_100.png" width="200"/> |
 
-| Page 101 | Page 102 | Page 103                                              | Page 104 |
-| -------- | -------- | ----------------------------------------------------- | -------- |
-|          |          | <img src="art/screenshots/page_103.png" width="200"/> |          |
+| Page 101                                              | Page 102                                              | Page 103                                              | Page 104 |
+| ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | -------- |
+| <img src="art/screenshots/page_101.png" width="200"/> | <img src="art/screenshots/page_102.png" width="200"/> | <img src="art/screenshots/page_103.png" width="200"/> |          |
