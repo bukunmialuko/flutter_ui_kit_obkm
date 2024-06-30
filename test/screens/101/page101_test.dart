@@ -6,6 +6,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_ui_kit_obkm/src/screens/101/page101.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../utils/bootstrap.dart';
 import '../../utils/image_network_override.dart';
 
 void main() {
@@ -15,11 +16,7 @@ void main() {
 
   testWidgets('test appbar title appear and disappear when scroll',
       (tester) async {
-    await tester.pumpWidget(ScreenUtilInit(
-      designSize: const Size(390, 844),
-      child: Page101(),
-      builder: (context, child) => MaterialApp(home: child),
-    ));
+    await tester.pumpWidget(bootstrap(Page101()));
     await tester.pumpAndSettle();
 
     // find test paga 101
