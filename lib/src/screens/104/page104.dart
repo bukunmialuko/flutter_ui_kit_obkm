@@ -53,6 +53,7 @@ class Page104State extends State<Page104> {
             ),
             29.verticalSpace,
             GoalCard(
+              key: Key('goal_1'),
               isChosen: choises.contains('1'),
               value: '1',
               title: 'Get Fit',
@@ -69,6 +70,7 @@ class Page104State extends State<Page104> {
             ),
             16.verticalSpace,
             GoalCard(
+              key: Key('goal_2'),
               isChosen: choises.contains('2'),
               value: '2',
               title: 'Lose Weight',
@@ -85,6 +87,7 @@ class Page104State extends State<Page104> {
             ),
             16.verticalSpace,
             GoalCard(
+              key: Key('goal_3'),
               isChosen: choises.contains('3'),
               value: '3',
               title: 'Build Muscle',
@@ -101,6 +104,7 @@ class Page104State extends State<Page104> {
             ),
             16.verticalSpace,
             GoalCard(
+              key: Key('goal_4'),
               isChosen: choises.contains('4'),
               value: '4',
               title: 'Stay Healthy',
@@ -176,7 +180,6 @@ class GoalCard extends StatelessWidget {
       onTap: () => onChoosen(value),
       behavior: HitTestBehavior.opaque,
       child: Container(
-        key: Key('goal_$value'),
         decoration: BoxDecoration(
           border: Border.all(
             color: isChosen ? Color(0xff005819) : Colors.black,
