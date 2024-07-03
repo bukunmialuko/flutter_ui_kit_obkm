@@ -6,10 +6,10 @@ class Page104 extends StatefulWidget {
   const Page104({super.key});
 
   @override
-  State<Page104> createState() => _Page104State();
+  State<Page104> createState() => Page104State();
 }
 
-class _Page104State extends State<Page104> {
+class Page104State extends State<Page104> {
   List<String> choises = [];
   @override
   Widget build(BuildContext context) {
@@ -174,7 +174,9 @@ class GoalCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () => onChoosen(value),
+      behavior: HitTestBehavior.opaque,
       child: Container(
+        key: Key('goal_$value'),
         decoration: BoxDecoration(
           border: Border.all(
             color: isChosen ? Color(0xff005819) : Colors.black,
