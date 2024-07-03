@@ -32,7 +32,7 @@ class MobileHomePage extends StatelessWidget {
       body: GridView.count(
         crossAxisCount: columns,
         children: List.generate(
-          104,
+          105,
           (index) {
             return GridTile(
               child: GestureDetector(
