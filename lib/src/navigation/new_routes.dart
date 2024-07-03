@@ -632,6 +632,11 @@ var goRouter = GoRouter(
           builder: (BuildContext context, GoRouterState state) => Page104(),
         ),
 
+        GoRoute(
+          path: MobileRoutes.pg104,
+          builder: (BuildContext context, GoRouterState state) => Page104(),
+        ),
+
         /// 141 - 160
         GoRoute(
           path: MobileRoutes.pg156,
