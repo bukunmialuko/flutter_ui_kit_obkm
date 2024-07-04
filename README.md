@@ -126,4 +126,7 @@ Run the `install.sh` script in `.scripts` directory
 
 | Page 101                                              | Page 102                                              | Page 103                                              | Page 104 |
 | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | -------- |
-| <img src="art/screenshots/page_101.png" width="200"/> | <img src="art/screenshots/page_102.png" width="200"/> | <img src="art/screenshots/page_103.png" width="200"/> |          |
+| <img src="art/screenshots/page_101.png" width="200"/> | <img src="art/screenshots/page_102.png" width="200"/> | <img src="art/screenshots/page_103.png" width="200"/> |  <img src="art/screenshots/page104.png" width="200"/>        |
+| Page 105                                              | Page 106                                              | Page 107                                              | Page 108 |
+| ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | -------- |
+| <img src="art/screenshots/page_105.png" width="200"/> |                                                       |                                                       |          |
