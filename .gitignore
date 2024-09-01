@@ -46,3 +46,4 @@ app.*.map.json
 
 /lib/gen/
 
+coverage/

@@ -13,6 +13,20 @@ jobs:
     name: Test coverage
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2.5.0
+        with:
+          flutter-version: ${{ env.flutter_version }}
+          channel: ${{ env.flutter_channel }}
+          cache: true
+      - name: Generate required code
+        run: |
+          flutter pub get
+          flutter pub run build_runner build --delete-conflicting-outputs
+      - name: Genarate
+        run: |
+          very_good test --test-randomize-ordering-seed random --coverage
       - uses: actions/checkout@v2
       - name: Very Good Coverage
         uses: VeryGoodOpenSource/very_good_coverage@v2
