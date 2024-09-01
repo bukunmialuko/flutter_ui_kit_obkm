@@ -1,0 +1,22 @@
+name: (PR) Run flutter test
+
+on:
+  pull_request:
+    types: [ opened, synchronize, reopened ]
+
+env:
+  flutter_version: '3.24.1'
+  flutter_channel: 'stable'
+
+jobs:
+  build:
+    defaults:
+      run:
+        working-directory: my_project/
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Very Good Coverage
+        uses: VeryGoodOpenSource/very_good_coverage@v2
+        with:
+          path: /my_project/coverage/lcov.info
