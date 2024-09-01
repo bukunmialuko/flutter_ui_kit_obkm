@@ -9,7 +9,8 @@ env:
   flutter_channel: 'stable'
 
 jobs:
-  build:
+  test_coverage:
+    name: Test coverage
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
