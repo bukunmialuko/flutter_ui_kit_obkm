@@ -30,6 +30,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Very Good Coverage
         uses: VeryGoodOpenSource/very_good_coverage@v2
+        run: |
+          flutter test --coverage
         with:
           path: "./coverage/lcov.info"
           min_coverage: 4
