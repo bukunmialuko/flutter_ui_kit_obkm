@@ -1,4 +1,4 @@
-name: (PR) Run flutter test
+name: (PR) Test Coverage
 
 on:
   pull_request:
