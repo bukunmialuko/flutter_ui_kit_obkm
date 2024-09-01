@@ -1,4 +1,4 @@
-name: (PR) Run flutter test
+name: (PR) Run flutter test coverage
 
 on:
   pull_request:
@@ -9,8 +9,8 @@ env:
   flutter_channel: 'stable'
 
 jobs:
-  flutter_tests:
-    name: Flutter Tests
+  flutter_test_coverage:
+    name: Flutter Test Coverage
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -26,4 +26,11 @@ jobs:
           flutter pub run build_runner build --delete-conflicting-outputs
       - name: Run flutter test
         run: |
-          flutter test
+          flutter test --coverage
+      - uses: actions/checkout@v2
+      - name: Very Good Coverage
+        uses: VeryGoodOpenSource/very_good_coverage@v2
+        with:
+          path: "./coverage/lcov.info"
+          min_coverage: 4
+          exclude: '**/*_observer.dart **/change.dart'
