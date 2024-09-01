@@ -10,13 +10,10 @@ env:
 
 jobs:
   build:
-    defaults:
-      run:
-        working-directory: flutter_ui_kit_obkm/
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Very Good Coverage
         uses: VeryGoodOpenSource/very_good_coverage@v2
         with:
-          path: /flutter_ui_kit_obkm/coverage/lcov.info
+          path: /coverage/lcov.info
