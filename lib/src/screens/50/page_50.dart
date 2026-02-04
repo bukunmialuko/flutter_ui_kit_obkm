@@ -208,7 +208,7 @@ class ProductCard extends StatelessWidget {
                   Text(
                     "\$599.99",
                     style: TextStyle(
-                      fontFamily: GoogleFonts.openSansCondensed().fontFamily,
+                      fontFamily: GoogleFonts.workSans().fontFamily,
                       height: 0.85.h,
                       fontSize: 26.sp,
                       fontWeight: FontWeight.w300,
