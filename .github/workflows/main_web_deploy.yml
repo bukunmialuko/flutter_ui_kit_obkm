@@ -2,7 +2,7 @@ name: Generate Web Build & Deploy To Vercel
 
 on:
   push:
-    branches: [ main ]
+    branches: [ task/new ]
 
 env:
   flutter_version: '3.38.9'
