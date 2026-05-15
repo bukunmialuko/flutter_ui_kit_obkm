@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 
 class Page29 extends StatefulWidget {
-  const Page29({Key? key}) : super(key: key);
+  const Page29({super.key});
 
   @override
   State<Page29> createState() => _Page29State();
@@ -171,11 +171,11 @@ class _Page29State extends State<Page29> {
           width: 76.w,
           height: 76.w,
           decoration: BoxDecoration(
-            color: Color(0xffF4F4F4).withOpacity(1.0),
+            color: Color(0xffF4F4F4).withValues(alpha: 1.0),
             borderRadius: BorderRadius.circular(76.w),
             boxShadow: [
               BoxShadow(
-                color: Colors.white.withOpacity(1.0),
+                color: Colors.white.withValues(alpha: 1.0),
                 spreadRadius: 2,
                 blurRadius: 1,
                 offset: const Offset(1, 1),
@@ -232,7 +232,7 @@ class _Page29State extends State<Page29> {
           decoration: BoxDecoration(
             color: Color(0xffF4F4F4),
             border: Border.all(
-              color: Colors.grey.withOpacity(0.2),
+              color: Colors.grey.withValues(alpha: 0.2),
             ),
             borderRadius: BorderRadius.circular(25.0.w),
           ),
@@ -265,7 +265,7 @@ class _Page29State extends State<Page29> {
           width: 50.0.w,
           decoration: BoxDecoration(
             border: Border.all(
-              color: Colors.grey.withOpacity(0.5),
+              color: Colors.grey.withValues(alpha: 0.5),
             ),
             borderRadius: BorderRadius.circular(15.0.w),
           ),
@@ -295,7 +295,7 @@ class _Page29State extends State<Page29> {
               width: 120.0.w,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),
-                color: Color(0xff525252).withOpacity(.9),
+                color: Color(0xff525252).withValues(alpha: .9),
               ),
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10.0),
@@ -323,7 +323,7 @@ class _Page29State extends State<Page29> {
               width: 100.0.w,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),
-                color: Color(0xff525252).withOpacity(.9),
+                color: Color(0xff525252).withValues(alpha: .9),
               ),
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10.0),

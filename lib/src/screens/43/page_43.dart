@@ -193,8 +193,8 @@ class _CarouselState extends State<Carousel> {
     return Transform(
       transform: matrix
         ..setEntry(3, 2, 0.003)
-        ..scale(1.0, currScale)
-        ..translate(0.0, currTrans.abs()),
+        ..scaleByDouble(1.0, currScale, 1.0, 1.0)
+        ..translateByDouble(0.0, currTrans.abs(), 0.0, 1.0),
       child: Opacity(
         opacity: opacity,
         child: Container(

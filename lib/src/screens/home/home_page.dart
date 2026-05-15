@@ -4,7 +4,7 @@ import 'package:flutter_ui_kit_obkm/src/res/colors.dart';
 import 'package:go_router/go_router.dart';
 
 class MobileHomePage extends StatelessWidget {
-  const MobileHomePage({Key? key}) : super(key: key);
+  const MobileHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {

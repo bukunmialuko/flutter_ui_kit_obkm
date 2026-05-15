@@ -1,7 +1,11 @@
-import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
 import 'package:intl/intl.dart';
 
 void main() {
-  NumberFormat formatter = NumberFormat("00");
-  debugPrint("123 should be ${formatter.format(3)}");
+  test('NumberFormat("00") pads single-digit values with a leading zero', () {
+    final formatter = NumberFormat('00');
+    expect(formatter.format(3), '03');
+    expect(formatter.format(12), '12');
+    expect(formatter.format(0), '00');
+  });
 }

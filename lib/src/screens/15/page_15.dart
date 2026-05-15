@@ -3,7 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page15 extends StatefulWidget {
-  const Page15({Key? key}) : super(key: key);
+  const Page15({super.key});
 
   @override
   State<Page15> createState() => _Page15State();

@@ -8,7 +8,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'model/pg_21_model.dart';
 
 class Page21 extends StatefulWidget {
-  const Page21({Key? key}) : super(key: key);
+  const Page21({super.key});
 
   @override
   State<Page21> createState() => _Page21State();

@@ -3,8 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AddToCart extends StatelessWidget {
   const AddToCart({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class AddToCart extends StatelessWidget {
         ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.25),
+            color: Colors.black.withValues(alpha: 0.25),
             offset: Offset(0, 4.0),
             blurRadius: 16.0,
           ),
@@ -101,7 +101,7 @@ class AddToCart extends StatelessWidget {
               color: Color(0xfff4f4f4),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(0.25),
+                  color: Colors.black.withValues(alpha: 0.25),
                   offset: Offset(0.0, 1.w),
                   blurRadius: 4.w,
                 ),

@@ -1,7 +1,6 @@
 import 'dart:io' as io;
 
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_ui_kit_obkm/src/screens/101/page101.dart';
 import 'package:google_fonts/google_fonts.dart';

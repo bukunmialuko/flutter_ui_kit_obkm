@@ -18,67 +18,69 @@ class _Page67State extends State<Page67> {
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 24, vertical: 26),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              LinearProgressIndicator(
-                value: 0.4,
-                backgroundColor: Color(0xffD0D0D0),
-                color: Colors.black,
-              ),
-              SizedBox(
-                height: 40,
-              ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'What is your gender?',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 24,
-                      fontFamily: 'Work Sans',
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                  Text(
-                    'This helps us personalize your journey to you. ',
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 14,
-                      fontFamily: 'Work Sans',
-                      fontWeight: FontWeight.w400,
-                    ),
-                  )
-                ],
-              ),
-              SizedBox(
-                height: 67,
-              ),
-              ...List.generate(
-                options.length,
-                (index) => RadioListTile(
-                  value: options[index],
-                  groupValue: currentOption,
-                  onChanged: (value) {
-                    setState(() {
-                      currentOption = value!;
-                    });
-                  },
-                  contentPadding: EdgeInsets.symmetric(horizontal: 0),
-                  title: Text(
-                    options[index],
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 16,
-                      fontFamily: 'Work Sans',
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                  activeColor: Colors.black,
+          child: RadioGroup<String>(
+            groupValue: currentOption,
+            onChanged: (value) {
+              setState(() {
+                currentOption = value!;
+              });
+            },
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                LinearProgressIndicator(
+                  value: 0.4,
+                  backgroundColor: Color(0xffD0D0D0),
+                  color: Colors.black,
                 ),
-              ),
-            ],
+                SizedBox(
+                  height: 40,
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'What is your gender?',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 24,
+                        fontFamily: 'Work Sans',
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    Text(
+                      'This helps us personalize your journey to you. ',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 14,
+                        fontFamily: 'Work Sans',
+                        fontWeight: FontWeight.w400,
+                      ),
+                    )
+                  ],
+                ),
+                SizedBox(
+                  height: 67,
+                ),
+                ...List.generate(
+                  options.length,
+                  (index) => RadioListTile<String>(
+                    value: options[index],
+                    contentPadding: EdgeInsets.symmetric(horizontal: 0),
+                    title: Text(
+                      options[index],
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 16,
+                        fontFamily: 'Work Sans',
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    activeColor: Colors.black,
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),

@@ -6,7 +6,7 @@ import 'package:flutter_ui_kit_obkm/src/screens/35/widgets/nearby_event.dart';
 import 'package:go_router/go_router.dart';
 
 class Page35 extends StatelessWidget {
-  const Page35({Key? key}) : super(key: key);
+  const Page35({super.key});
 
   @override
   Widget build(BuildContext context) {

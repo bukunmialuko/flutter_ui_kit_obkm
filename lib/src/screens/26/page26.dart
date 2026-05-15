@@ -6,7 +6,7 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page26 extends StatefulWidget {
-  const Page26({Key? key}) : super(key: key);
+  const Page26({super.key});
 
   @override
   State<Page26> createState() => _Page26State();
@@ -166,8 +166,8 @@ class _Page26State extends State<Page26> {
 
 class GroupTaskCard extends StatelessWidget {
   const GroupTaskCard({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -183,7 +183,7 @@ class GroupTaskCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(16.r),
           boxShadow: [
             BoxShadow(
-              color: Colors.grey.withOpacity(0.5),
+              color: Colors.grey.withValues(alpha: 0.5),
               spreadRadius: 0.5,
               blurRadius: 2,
               offset: const Offset(0, 0),
@@ -280,9 +280,9 @@ class GoalCard extends StatelessWidget {
   final int goalNumber;
 
   const GoalCard({
-    Key? key,
+    super.key,
     required this.goalNumber,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -296,7 +296,7 @@ class GoalCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.withOpacity(0.5),
+            color: Colors.grey.withValues(alpha: 0.5),
             spreadRadius: 1,
             blurRadius: 2,
             offset: Offset(0, 0), // changes position of shadow

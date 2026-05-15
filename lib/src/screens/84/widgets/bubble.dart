@@ -31,10 +31,10 @@ class Triangle extends CustomPainter {
 
 class SentMessage extends StatelessWidget {
   const SentMessage({
-    Key? key,
+    super.key,
     required this.message,
     required this.time,
-  }) : super(key: key);
+  });
 
   final String message;
   final String time;
@@ -96,10 +96,10 @@ class SentMessage extends StatelessWidget {
 
 class ReceivedMessage extends StatelessWidget {
   const ReceivedMessage({
-    Key? key,
+    super.key,
     required this.message,
     required this.time,
-  }) : super(key: key);
+  });
 
   final String message;
   final String time;

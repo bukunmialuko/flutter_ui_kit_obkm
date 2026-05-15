@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/src/screens/23/model/pg_23_model.dart';
 
 class ScheduleList extends StatelessWidget {
-  const ScheduleList({Key? key}) : super(key: key);
+  const ScheduleList({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class ScheduleList extends StatelessWidget {
                         color: Color(0xffF4F4F4),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.grey.withOpacity(0.5),
+                            color: Colors.grey.withValues(alpha: 0.5),
                             spreadRadius: 0,
                             blurRadius: 4,
                             offset: Offset(0, 1), // changes position of shadow

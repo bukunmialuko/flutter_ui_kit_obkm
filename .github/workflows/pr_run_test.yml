@@ -1,11 +1,13 @@
-name: (PR) Run flutter test
+name: Flutter Tests
 
 on:
+  push:
+    branches: [ main ]
   pull_request:
     types: [ opened, synchronize, reopened ]
 
 env:
-  flutter_version: '3.38.9'
+  flutter_version: '3.41.6'
   flutter_channel: 'stable'
 
 jobs:
@@ -13,9 +15,9 @@ jobs:
     name: Flutter Tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Setup Flutter
-        uses: subosito/flutter-action@v2.5.0
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: ${{ env.flutter_version }}
           channel: ${{ env.flutter_channel }}
@@ -23,7 +25,8 @@ jobs:
       - name: Generate required code
         run: |
           flutter pub get
-          flutter pub run build_runner build --delete-conflicting-outputs
+          dart run build_runner build --delete-conflicting-outputs
+      - name: Analyze
+        run: flutter analyze
       - name: Run flutter test
-        run: |
-          flutter test
+        run: flutter test

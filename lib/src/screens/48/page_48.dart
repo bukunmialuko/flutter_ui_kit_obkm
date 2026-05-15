@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 // Todo: Page needs improvements
 class Page48 extends StatelessWidget {
-  const Page48({Key? key}) : super(key: key);
+  const Page48({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +65,7 @@ class Page48 extends StatelessWidget {
                 borderRadius: BorderRadius.circular(36),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
+                    color: Colors.grey.withValues(alpha: 0.5),
                     spreadRadius: 1,
                     blurRadius: 2,
                     offset: Offset(0, 0),

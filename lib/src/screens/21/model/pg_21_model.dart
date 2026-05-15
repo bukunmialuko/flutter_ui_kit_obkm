@@ -1,3 +1,5 @@
+import 'package:flutter/widgets.dart';
+
 class Pg21Model {
   final String title;
   final String duration;
@@ -6,7 +8,7 @@ class Pg21Model {
 }
 
 class Pg21ModelItems {
-  static List<Pg21Model> loadItems(context) {
+  static List<Pg21Model> loadItems(BuildContext context) {
     return <Pg21Model>[
       Pg21Model(
         title: "Song title #1",

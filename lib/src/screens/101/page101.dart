@@ -188,8 +188,8 @@ class ExpandedTitle extends StatelessWidget {
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
-                  Color(0xffC4C4C4).withOpacity(0.2),
-                  Color(0xff858585).withOpacity(0.2),
+                  Color(0xffC4C4C4).withValues(alpha: 0.2),
+                  Color(0xff858585).withValues(alpha: 0.2),
                 ],
               ),
             ),

@@ -4,7 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page16 extends StatelessWidget {
-  const Page16({Key? key}) : super(key: key);
+  const Page16({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -133,8 +133,8 @@ class Page16 extends StatelessWidget {
 
 class VerificationTextField extends StatelessWidget {
   const VerificationTextField({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -147,7 +147,7 @@ class VerificationTextField extends StatelessWidget {
         borderRadius: BorderRadius.circular(4),
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.withOpacity(0.6),
+            color: Colors.grey.withValues(alpha: 0.6),
             spreadRadius: 2,
             blurRadius: 2,
             offset: Offset.zero,

@@ -1,3 +1,5 @@
+import 'package:flutter/widgets.dart';
+
 class Pg22Model {
   final String title;
   final String category;
@@ -17,7 +19,7 @@ class Pg22Model {
 }
 
 class Pg22ModelItems {
-  static List<Pg22Model> loadItems(context) {
+  static List<Pg22Model> loadItems(BuildContext context) {
     return <Pg22Model>[
       Pg22Model(
         title: "low fi wireframe",

@@ -6,7 +6,7 @@ class BottomSheetWidget extends StatelessWidget {
   final ScrollController scrollController;
   final List<dynamic> data;
 
-  const BottomSheetWidget({Key? key, required this.data, required this.scrollController}) : super(key: key);
+  const BottomSheetWidget({super.key, required this.data, required this.scrollController});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class BottomSheetWidget extends StatelessWidget {
         ),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xffC4C4C4).withOpacity(0.25),
+            color: const Color(0xffC4C4C4).withValues(alpha: 0.25),
             spreadRadius: 0,
             blurRadius: 8,
             offset: const Offset(0, -4), // changes position of shadow

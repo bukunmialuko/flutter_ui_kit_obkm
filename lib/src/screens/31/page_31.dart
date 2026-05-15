@@ -4,7 +4,7 @@ import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:go_router/go_router.dart';
 
 class Page31 extends StatefulWidget {
-  const Page31({Key? key}) : super(key: key);
+  const Page31({super.key});
 
   @override
   State<Page31> createState() => _Page31State();
@@ -58,7 +58,7 @@ class _Page31State extends State<Page31> {
                   decoration: BoxDecoration(
                     color: Color(0xffF4F4F4),
                     border: Border.all(
-                      color: Colors.grey.withOpacity(0.2),
+                      color: Colors.grey.withValues(alpha: 0.2),
                     ),
                     borderRadius: BorderRadius.circular(6.0.r),
                   ),
@@ -167,7 +167,7 @@ class _Page31State extends State<Page31> {
             borderRadius: BorderRadius.circular(76.w),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.25),
+                color: Colors.black.withValues(alpha: 0.25),
                 blurRadius: 8,
                 offset: const Offset(0, 2),
               ),
