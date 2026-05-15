@@ -130,7 +130,7 @@ class CategoryCard extends StatelessWidget {
       ),
       clipBehavior: Clip.antiAlias,
       child: ColoredBox(
-        color: Color(0xffD0D0D0).withOpacity(0.8),
+        color: Color(0xffD0D0D0).withValues(alpha: 0.8),
         child: Center(
           child: Text(
             category,

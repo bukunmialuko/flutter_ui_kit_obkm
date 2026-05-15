@@ -4,7 +4,7 @@ import 'package:flutter_ui_kit_obkm/src/screens/23/widget/schedule_list.dart';
 import 'package:go_router/go_router.dart';
 
 class Page23 extends StatefulWidget {
-  const Page23({Key? key}) : super(key: key);
+  const Page23({super.key});
 
   @override
   State<Page23> createState() => _Page23State();
@@ -154,7 +154,7 @@ class _DateItem extends StatelessWidget {
   final bool isToday;
   final String day;
   final String dayNumber;
-  const _DateItem({Key? key, required this.isToday, required this.day, required this.dayNumber}) : super(key: key);
+  const _DateItem({required this.isToday, required this.day, required this.dayNumber});
 
   @override
   Widget build(BuildContext context) {
@@ -166,7 +166,7 @@ class _DateItem extends StatelessWidget {
           style: TextStyle(
             fontWeight: FontWeight.w500,
             fontSize: 13.sp,
-            color: Color(0xff3C3C43).withOpacity(0.3),
+            color: Color(0xff3C3C43).withValues(alpha: 0.3),
           ),
         ),
         Container(

@@ -15,7 +15,7 @@ var _page175List = [
 ];
 
 class Page175 extends StatelessWidget {
-  const Page175({Key? key}) : super(key: key);
+  const Page175({super.key});
 
   double getToolbarHeigth() {
     return kIsWeb

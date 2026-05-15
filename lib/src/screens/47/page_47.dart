@@ -47,7 +47,7 @@ class Page47 extends StatelessWidget {
                   color: Color(0xFFF4F4F4),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.25),
+                      color: Colors.black.withValues(alpha: 0.25),
                       offset: Offset(0, 4),
                       blurRadius: 16,
                     ),

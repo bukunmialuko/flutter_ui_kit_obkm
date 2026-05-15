@@ -4,7 +4,7 @@ import 'package:flutter_ui_kit_obkm/gen/colors.gen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page51ListItem extends StatelessWidget {
-  const Page51ListItem({Key? key}) : super(key: key);
+  const Page51ListItem({super.key});
 
   @override
   Widget build(BuildContext context) {

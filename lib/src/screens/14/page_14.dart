@@ -5,7 +5,7 @@ import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:go_router/go_router.dart';
 
 class Page14 extends StatefulWidget {
-  const Page14({Key? key}) : super(key: key);
+  const Page14({super.key});
 
   @override
   State<Page14> createState() => _Page14State();

@@ -6,7 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 
 class Page30 extends StatefulWidget {
-  const Page30({Key? key}) : super(key: key);
+  const Page30({super.key});
 
   @override
   State<Page30> createState() => _Page30State();
@@ -132,10 +132,10 @@ class _Page30State extends State<Page30> {
                       SizedBox(height: 10.0.r),
                       ElevatedButton(
                         style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(
-                            Colors.grey.withOpacity(0.5),
+                          backgroundColor: WidgetStateProperty.all<Color>(
+                            Colors.grey.withValues(alpha: 0.5),
                           ),
-                          shadowColor: MaterialStateProperty.all<Color>(
+                          shadowColor: WidgetStateProperty.all<Color>(
                             Colors.transparent,
                           ),
                         ),
@@ -189,7 +189,7 @@ class _Page30State extends State<Page30> {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(5.0),
                               border: Border.all(
-                                color: Colors.grey.withOpacity(0.2),
+                                color: Colors.grey.withValues(alpha: 0.2),
                               ),
                             ),
                             child: ListTile(
@@ -252,11 +252,11 @@ class _Page30State extends State<Page30> {
         width: 76.w,
         height: 76.w,
         decoration: BoxDecoration(
-          color: Colors.grey.withOpacity(0.2),
+          color: Colors.grey.withValues(alpha: 0.2),
           borderRadius: BorderRadius.circular(76.w),
           boxShadow: [
             BoxShadow(
-              color: Colors.white.withOpacity(1.0),
+              color: Colors.white.withValues(alpha: 1.0),
               spreadRadius: 2,
               blurRadius: 1,
               offset: const Offset(1, 1),

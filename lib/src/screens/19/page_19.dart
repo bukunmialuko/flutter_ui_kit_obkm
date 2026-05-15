@@ -5,7 +5,7 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page19 extends StatelessWidget {
-  const Page19({Key? key}) : super(key: key);
+  const Page19({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -76,7 +76,7 @@ class Page19 extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
+                      color: Colors.grey.withValues(alpha: 0.5),
                       spreadRadius: 0.5,
                       blurRadius: 5,
                       offset: const Offset(0, 0),
@@ -293,8 +293,8 @@ class Page19 extends StatelessWidget {
 
 class TicketCard extends StatelessWidget {
   const TicketCard({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -314,7 +314,7 @@ class TicketCard extends StatelessWidget {
                   borderRadius: BorderRadius.circular(8),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
+                      color: Colors.grey.withValues(alpha: 0.5),
                       spreadRadius: 0.5,
                       blurRadius: 5,
                       offset: const Offset(0, 0),
@@ -413,12 +413,12 @@ class TicketTile extends StatelessWidget {
   final CrossAxisAlignment? crossAxisAlignment;
 
   const TicketTile({
-    Key? key,
+    super.key,
     required this.title,
     this.titleWidget,
     required this.subTitle,
     this.crossAxisAlignment,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

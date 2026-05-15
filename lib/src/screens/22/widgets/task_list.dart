@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/src/screens/22/models/pg_22_model.dart';
 
 class TaskList extends StatelessWidget {
-  const TaskList({Key? key}) : super(key: key);
+  const TaskList({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class TaskList extends StatelessWidget {
 class _Completed extends StatelessWidget {
   final int index;
 
-  const _Completed({Key? key, required this.index}) : super(key: key);
+  const _Completed({required this.index});
 
   @override
   Widget build(BuildContext context) {
@@ -59,7 +59,7 @@ class _Completed extends StatelessWidget {
 class _OnGoing extends StatelessWidget {
   final int index;
 
-  const _OnGoing({Key? key, required this.index}) : super(key: key);
+  const _OnGoing({required this.index});
 
   @override
   Widget build(BuildContext context) {

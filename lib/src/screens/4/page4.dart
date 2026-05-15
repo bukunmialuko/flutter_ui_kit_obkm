@@ -5,7 +5,7 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page4 extends StatefulWidget {
-  const Page4({Key? key}) : super(key: key);
+  const Page4({super.key});
 
   @override
   State<Page4> createState() => _Page4State();
@@ -71,7 +71,7 @@ class _Page4State extends State<Page4> {
                     height: 30.h,
                     width: 390.w,
                     decoration: BoxDecoration(
-                      color: Colors.black.withOpacity(0.5),
+                      color: Colors.black.withValues(alpha: 0.5),
                       borderRadius: BorderRadius.only(
                         topRight: Radius.circular(36.r),
                       ),

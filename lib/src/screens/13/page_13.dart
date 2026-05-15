@@ -4,7 +4,7 @@ import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
 import 'package:go_router/go_router.dart';
 
 class Page13 extends StatefulWidget {
-  const Page13({Key? key}) : super(key: key);
+  const Page13({super.key});
 
   @override
   State<Page13> createState() => _Page13State();
@@ -39,7 +39,7 @@ class _Page13State extends State<Page13> {
                             BoxShadow(
                               offset: const Offset(0, 1),
                               blurRadius: 4,
-                              color: Colors.black.withOpacity(.25),
+                              color: Colors.black.withValues(alpha: .25),
                             ),
                           ],
                         ),

@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 
 class Page20 extends StatelessWidget {
-  const Page20({Key? key}) : super(key: key);
+  const Page20({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -72,7 +72,7 @@ class Page20 extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
+                      color: Colors.grey.withValues(alpha: 0.5),
                       spreadRadius: 0.5,
                       blurRadius: 5,
                       offset: const Offset(0, 0),
@@ -123,9 +123,9 @@ class SongTile extends StatelessWidget {
   final bool isPlaying;
 
   const SongTile({
-    Key? key,
+    super.key,
     required this.isPlaying,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

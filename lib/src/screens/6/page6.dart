@@ -9,7 +9,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'widgets/bottom_sheet.dart';
 
 class Page6 extends StatefulWidget {
-  const Page6({Key? key}) : super(key: key);
+  const Page6({super.key});
 
   @override
   State<Page6> createState() => _Page6State();

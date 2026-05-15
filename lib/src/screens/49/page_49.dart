@@ -8,7 +8,7 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page49 extends StatelessWidget {
-  const Page49({Key? key}) : super(key: key);
+  const Page49({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -88,7 +88,7 @@ class Page49 extends StatelessWidget {
             height: 120.h,
             padding: EdgeInsets.only(left: 23.w, right: 30.w, top: 20.h, bottom: 15.h),
             decoration: BoxDecoration(
-              color: Color(0xFFF4F4F4).withOpacity(0.8),
+              color: Color(0xFFF4F4F4).withValues(alpha: 0.8),
               borderRadius: BorderRadius.circular(32.r),
             ),
             child: Column(

@@ -8,7 +8,7 @@ class Pg21ListItem extends StatelessWidget {
   final int index;
   final Pg21Model model;
 
-  const Pg21ListItem({Key? key, required this.index, required this.model}) : super(key: key);
+  const Pg21ListItem({super.key, required this.index, required this.model});
 
   @override
   Widget build(BuildContext context) {

@@ -5,7 +5,7 @@ import 'package:go_router/go_router.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 class Page11 extends StatefulWidget {
-  const Page11({Key? key}) : super(key: key);
+  const Page11({super.key});
 
   @override
   State<Page11> createState() => _Page11State();
@@ -73,7 +73,7 @@ class _Page11State extends State<Page11> {
                     BoxShadow(
                       offset: const Offset(0, 2),
                       blurRadius: 8,
-                      color: Colors.black.withOpacity(.25),
+                      color: Colors.black.withValues(alpha: .25),
                     )
                   ],
                 ),
@@ -144,7 +144,7 @@ class _Page11State extends State<Page11> {
             BoxShadow(
               blurRadius: 60,
               offset: const Offset(0, 10),
-              color: Colors.black.withOpacity(.1),
+              color: Colors.black.withValues(alpha: .1),
             ),
           ],
         ),
@@ -172,12 +172,12 @@ class _Page11State extends State<Page11> {
                 weekdayStyle: TextStyle(
                   fontWeight: FontWeight.w500,
                   fontSize: 13.sp,
-                  color: const Color(0xFF3C3C43).withOpacity(.3),
+                  color: const Color(0xFF3C3C43).withValues(alpha: .3),
                 ),
                 weekendStyle: TextStyle(
                   fontWeight: FontWeight.w500,
                   fontSize: 13.sp,
-                  color: const Color(0xFF3C3C43).withOpacity(.3),
+                  color: const Color(0xFF3C3C43).withValues(alpha: .3),
                 ),
               ),
               headerStyle: HeaderStyle(
@@ -209,7 +209,7 @@ class _Page11State extends State<Page11> {
                   boxShadow: [
                     BoxShadow(
                       offset: const Offset(0, 4),
-                      color: Colors.black.withOpacity(.25),
+                      color: Colors.black.withValues(alpha: .25),
                       blurRadius: 16,
                     )
                   ],
@@ -238,7 +238,7 @@ class _Page11State extends State<Page11> {
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 4.w, vertical: 8.h),
                   decoration: BoxDecoration(
-                    color: const Color(0xFF767680).withOpacity(.12),
+                    color: const Color(0xFF767680).withValues(alpha: .12),
                     borderRadius: BorderRadius.circular(6),
                   ),
                   child: Row(
@@ -288,7 +288,7 @@ class _Page11State extends State<Page11> {
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 3.w, vertical: 4.h),
                   decoration: BoxDecoration(
-                    color: const Color(0xFF767680).withOpacity(.12),
+                    color: const Color(0xFF767680).withValues(alpha: .12),
                     borderRadius: BorderRadius.circular(8.91.r),
                   ),
                   child: Row(
@@ -318,12 +318,12 @@ class _Page11State extends State<Page11> {
                       BoxShadow(
                         offset: const Offset(0, 3),
                         blurRadius: 1,
-                        color: Colors.black.withOpacity(.04),
+                        color: Colors.black.withValues(alpha: .04),
                       ),
                       BoxShadow(
                         offset: const Offset(0, 3),
                         blurRadius: 8,
-                        color: Colors.black.withOpacity(.12),
+                        color: Colors.black.withValues(alpha: .12),
                       ),
                     ]
                   : []),

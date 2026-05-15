@@ -5,7 +5,7 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page27 extends StatefulWidget {
-  const Page27({Key? key}) : super(key: key);
+  const Page27({super.key});
 
   @override
   State<Page27> createState() => _Page27State();
@@ -163,8 +163,8 @@ class _Page27State extends State<Page27> {
 
 class WorkoutCard extends StatelessWidget {
   const WorkoutCard({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -189,7 +189,7 @@ class WorkoutCard extends StatelessWidget {
             width: double.infinity,
             padding: EdgeInsets.symmetric(horizontal: 30, vertical: 20),
             decoration: BoxDecoration(
-              color: Color(0xFFD0D0D0).withOpacity(0.9),
+              color: Color(0xFFD0D0D0).withValues(alpha: 0.9),
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(16.r),
                 bottomRight: Radius.circular(16.r),

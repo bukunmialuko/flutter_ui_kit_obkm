@@ -20,7 +20,7 @@ final List<String> names = [
 ];
 
 class Page1 extends StatelessWidget {
-  const Page1({Key? key}) : super(key: key);
+  const Page1({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -114,7 +114,7 @@ class Page1 extends StatelessWidget {
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: const Color(0xffC4C4C4).withOpacity(0.25),
+                      color: const Color(0xffC4C4C4).withValues(alpha: 0.25),
                       spreadRadius: 0,
                       blurRadius: 8,
                       offset: const Offset(0, -4), // changes position of shadow

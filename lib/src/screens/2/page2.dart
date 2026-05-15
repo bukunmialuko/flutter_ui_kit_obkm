@@ -6,7 +6,7 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page2 extends StatelessWidget {
-  const Page2({Key? key}) : super(key: key);
+  const Page2({super.key});
 
   static List<MessageModel> messages = [
     MessageModel(
@@ -167,7 +167,7 @@ class Page2 extends StatelessWidget {
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: const Color(0xffC4C4C4).withOpacity(0.25),
+                      color: const Color(0xffC4C4C4).withValues(alpha: 0.25),
                       spreadRadius: 0,
                       blurRadius: 8,
                       offset: const Offset(0, -4), // changes position of shadow

@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page156To160 extends StatefulWidget {
-  const Page156To160({Key? key}) : super(key: key);
+  const Page156To160({super.key});
 
   @override
   State<Page156To160> createState() => _Page156To160State();

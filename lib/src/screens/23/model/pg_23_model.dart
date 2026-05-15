@@ -1,3 +1,5 @@
+import 'package:flutter/widgets.dart';
+
 class Pg23Model {
   final String title;
   final String? type;
@@ -7,7 +9,7 @@ class Pg23Model {
 }
 
 class Pg23ModelItems {
-  static List<Pg23Model> loadItems(context) {
+  static List<Pg23Model> loadItems(BuildContext context) {
     return <Pg23Model>[
       Pg23Model(
         title: "Team introduction",

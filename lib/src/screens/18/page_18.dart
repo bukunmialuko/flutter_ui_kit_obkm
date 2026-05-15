@@ -5,7 +5,7 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page18 extends StatelessWidget {
-  const Page18({Key? key}) : super(key: key);
+  const Page18({super.key});
 
   @override
   Widget build(BuildContext context) {

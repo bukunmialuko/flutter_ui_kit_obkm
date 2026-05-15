@@ -71,8 +71,8 @@ class Page37 extends StatelessWidget {
 
 class FloatingButton extends StatelessWidget {
   const FloatingButton({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -89,7 +89,7 @@ class FloatingButton extends StatelessWidget {
               borderRadius: BorderRadius.circular(16.w),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(0.25),
+                  color: Colors.black.withValues(alpha: 0.25),
                   offset: Offset(0, 1.w),
                   blurRadius: 4.w,
                 ),
@@ -124,7 +124,7 @@ class FloatingButton extends StatelessWidget {
               borderRadius: BorderRadius.circular(16.w),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(0.25),
+                  color: Colors.black.withValues(alpha: 0.25),
                   offset: Offset(0, 1.w),
                   blurRadius: 4.w,
                 ),
@@ -159,7 +159,7 @@ class FloatingButton extends StatelessWidget {
               borderRadius: BorderRadius.circular(16.w),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(0.25),
+                  color: Colors.black.withValues(alpha: 0.25),
                   offset: Offset(0, 1.w),
                   blurRadius: 4.w,
                 ),

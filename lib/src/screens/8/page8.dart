@@ -6,7 +6,7 @@ import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Page8 extends StatefulWidget {
-  const Page8({Key? key}) : super(key: key);
+  const Page8({super.key});
 
   @override
   State<Page8> createState() => _Page8State();
@@ -135,7 +135,7 @@ class _Page8State extends State<Page8> {
                                           ),
                                           boxShadow: [
                                             BoxShadow(
-                                              color: Colors.black.withOpacity(0.25),
+                                              color: Colors.black.withValues(alpha: 0.25),
                                               spreadRadius: 0,
                                               blurRadius: 8,
                                               offset: const Offset(0, 4), // changes position of shadow
@@ -167,7 +167,7 @@ class _Page8State extends State<Page8> {
                                       // ),
                                       // boxShadow: [
                                       //   BoxShadow(
-                                      //     color: Colors.black.withOpacity(0.25),
+                                      //     color: Colors.black.withValues(alpha: 0.25),
                                       //     spreadRadius: 0,
                                       //     blurRadius: 6.r,
                                       //     offset: const Offset(
@@ -215,7 +215,7 @@ class _Page8State extends State<Page8> {
                             ),
                             boxShadow: [
                               BoxShadow(
-                                color: const Color(0xffC4C4C4).withOpacity(0.25),
+                                color: const Color(0xffC4C4C4).withValues(alpha: 0.25),
                                 spreadRadius: 0,
                                 blurRadius: 8,
                                 offset: const Offset(0, -4), // changes position of shadow

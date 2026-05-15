@@ -7,7 +7,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'circle_tab_indicator.dart';
 
 class Page32 extends StatefulWidget {
-  const Page32({Key? key}) : super(key: key);
+  const Page32({super.key});
 
   @override
   State<Page32> createState() => _Page32State();

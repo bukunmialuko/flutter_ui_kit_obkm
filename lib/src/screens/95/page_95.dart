@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ui_kit_obkm/gen/assets.gen.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class Page95 extends StatelessWidget {
   const Page95({super.key});
